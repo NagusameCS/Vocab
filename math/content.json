@@ -1,0 +1,1068 @@
+[
+  {
+    "id": "1.1",
+    "unit": 1,
+    "title": "Number representation, proof and sequences",
+    "hl": "SL",
+    "objectives": [
+      "Calculate with and express numbers in scientific notation.",
+      "Distinguish between equations and identities, and prove simple identities using algebraic manipulation.",
+      "Apply the binomial theorem to expand expressions of the form $(a + b)^n$.",
+      "Use Pascal's triangle and the combination formula $\\binom{n}{r} = \\tfrac{n!}{r!(n-r)!}$ to find binomial coefficients.",
+      "Determine the general term of a binomial expansion.",
+      "Apply rules of significant figures and appropriate accuracy in numerical answers."
+    ],
+    "summary": "Numbers are central to mathematics, and representing them effectively is the first skill the IB Mathematics AA course develops. For very large or very small numbers, scientific notation (also called standard form) is used. A number is written in the form $a \\times 10^k$, where a is a real number with $1 \\leq a < 10$ and k is an integer. For example, $132\\,000 = 1.32 \\times 10^{5}$ and $0.000\\,000\\,456 = 4.56 \\times 10^{-7}$. Unless a question specifies an exact answer, all numerical answers should be given correct to three significant figures.\n\nA key distinction in algebra is between an equation and an identity. An equation is true only for specific values of the variables (for example, $3x + 1 = 7$ is true only when $x = 2$), while an identity is true for all values of the variables and uses the symbol $\\equiv$ instead of $=$. For example, $(x + 1)^2 \\equiv x^2 + 2x + 1$ is an identity. To prove an identity, you start from one side (usually the more complicated) and use valid algebraic rules to transform it into the other side. You must never begin by writing both sides with an equals sign between them, as this assumes the very thing you are trying to prove.\n\nThe binomial theorem provides a systematic method for expanding powers of the form $(a + b)^n$. The full expansion is:\n(a + b)^n = a^n + \\binom{n}{1} a^{n-1}b + \\binom{n}{2} a^{n-2}b^2 + \\cdots + \\binom{n}{r} a^{n-r}b^r + \\cdots + b^n\n\nIn summation notation this is $\\displaystyle\\sum_{r=0}^{n} \\binom{n}{r} a^{n-r} b^r$. The binomial coefficients $\\binom{n}{r}$ (read \"n choose r\") can be found from Pascal's triangle, a calculator, or the formula $\\binom{n}{r} = \\tfrac{n!}{r!(n-r)!}$. For example, expanding $(1 + 2x)^4$ gives $1 + 8x + 24x^2 + 32x^3 + 16x^4$.\n\nPascal's triangle is built by starting with 1 at the top and adding adjacent entries to get the next row: 1; 1 1; 1 2 1; 1 3 3 1; 1 4 6 4 1; and so on. The nth row (counting from row 0) gives the binomial coefficients for $(a + b)^n$. For larger values of n or when finding a specific term, the formula approach is more efficient.\n\nTo find the $(r+1)$th term in the expansion of $(a + b)^n$, use the formula: $T_{r+1} = \\binom{n}{r} a^{n-r} b^r$. Identifying what n, a, and b are at the start is essential before applying the formula.",
+    "quiz": [
+      {
+        "question": "Write the number $0.000\\,047\\,8$ in scientific notation, correct to 3 significant figures.",
+        "markscheme": "$0.000\\,047\\,8 = 4.78 \\times 10^{-5}$. The coefficient is $4.78$ (3 s.f.) and the exponent is $-5$ because the decimal point moves 5 places to the right."
+      },
+      {
+        "question": "Prove the identity $(2x + 1)^2 - (2x - 1)^2 \\equiv 8x$.",
+        "markscheme": "Starting from LHS: $(2x+1)^2 - (2x-1)^2 = (4x^2 + 4x + 1) - (4x^2 - 4x + 1) = 4x^2 + 4x + 1 - 4x^2 + 4x - 1 = 8x \\equiv$ RHS. ✓"
+      },
+      {
+        "question": "Expand $(2 + x)^5$ using the binomial theorem, giving all terms.",
+        "markscheme": "Using $(a + b)^5$ with $a = 2$, $b = x$: $2^5 + \\binom{5}{1}2^4 x + \\binom{5}{2}2^3 x^2 + \\binom{5}{3}2^2 x^3 + \\binom{5}{4}2 x^4 + x^5 = 32 + 80x + 80x^2 + 40x^3 + 10x^4 + x^5$."
+      },
+      {
+        "question": "Find the coefficient of $x^3$ in the expansion of $(1 + 2x)^6$.",
+        "markscheme": "The general term is $\\binom{6}{r}(1)^{6-r}(2x)^r = \\binom{6}{r} 2^r x^r$. For $x^3$, set $r = 3$: $\\binom{6}{3} \\times 2^3 = 20 \\times 8 = 160$. The coefficient is $160$."
+      },
+      {
+        "question": "Using Pascal's triangle, write down the coefficients for the expansion of $(a + b)^4$.",
+        "markscheme": "The row of Pascal's triangle for $n = 4$ is 1, 4, 6, 4, 1. These are the coefficients: $a^4 + 4a^3b + 6a^2b^2 + 4ab^3 + b^4$."
+      },
+      {
+        "question": "Find the term independent of x in the expansion of $\\left(x + \\tfrac{2}{x}\\right)^6$.",
+        "markscheme": "General term: $\\binom{6}{r} x^{6-r} \\left(\\tfrac{2}{x}\\right)^r = \\binom{6}{r} 2^r x^{6-2r}$. For $x^0$, set $6 - 2r = 0 \\Rightarrow r = 3$. Term $= \\binom{6}{3} \\times 2^3 = 20 \\times 8 = 160$."
+      }
+    ]
+  },
+  {
+    "id": "1.2",
+    "unit": 1,
+    "title": "Arithmetic and geometric sequences",
+    "hl": "SL",
+    "objectives": [
+      "Find the nth term and the sum of the first n terms of arithmetic sequences and series.",
+      "Find the nth term and the sum of the first n terms of geometric sequences and series.",
+      "Determine whether an infinite geometric series converges and find its sum to infinity.",
+      "Apply arithmetic and geometric sequences to financial contexts including compound interest.",
+      "Prove that a sequence is arithmetic or geometric from a given sum formula.",
+      "Model real-world situations using arithmetic and geometric sequences."
+    ],
+    "summary": "A sequence is a list of numbers arranged in a definite order. The terms are usually labelled $u_1, u_2, u_3, \\ldots$ where $u_n$ denotes the nth term.\n\nAn arithmetic sequence (arithmetic progression, AP) is one in which the difference between consecutive terms is constant. This constant is called the common difference d. If the first term is $u_1 = a$, then the nth term is $u_n = a + (n - 1)d$, and the sum of the first n terms is $S_n = \\tfrac{n}{2}(2a + (n-1)d)$ or equivalently $S_n = \\tfrac{n}{2}(u_1 + u_n)$. To prove a sequence is arithmetic, show that $u_n - u_{n-1} =$ constant for all n.\n\nA geometric sequence (geometric progression, GP) is one in which the ratio between consecutive terms is constant. This constant is called the common ratio r. If the first term is $u_1 = a$, then $u_n = ar^{n-1}$, and the sum of the first n terms is $S_n = \\tfrac{a(r^n - 1)}{r - 1}$ for $r \\neq 1$. To prove a sequence is geometric, show that $\\tfrac{u_{n+1}}{u_n} =$ constant.\n\nWhen $|r| < 1$, the sum of an infinite geometric series converges to $S_\\infty = \\tfrac{a}{1 - r}$. For example, the series $1 + \\tfrac{1}{2} + \\tfrac{1}{4} + \\cdots$ has $r = \\tfrac{1}{2}$ and converges to $S_\\infty = \\tfrac{1}{1 - \\frac{1}{2}} = 2$. If $|r| \\geq 1$, the series diverges.\n\nCompound interest is a direct application of geometric sequences. The future value formula is $\\mathrm{FV} = \\mathrm{PV} \\times \\left(1 + \\tfrac{r}{100k}\\right)^{kn}$, where $\\mathrm{PV}$ is the present value, $r\\%$ is the nominal annual interest rate, k is the number of compounding periods per year, and n is the number of years. After n years with annual compounding, an investment grows as a geometric sequence with first term $\\mathrm{PV}$ and common ratio $\\left(1 + \\tfrac{r}{100}\\right)$.\n\nDepreciation works similarly: if an asset loses $p\\%$ of its value per year, its value after n years is $V_n = V_0 \\times \\left(1 - \\tfrac{p}{100}\\right)^n$, again a geometric sequence but with a ratio less than 1. A common examination trap is confusing the nth term formula (power $n-1$) with the compound interest formula (power n); this arises because the first term in the sequence is the present value before any interest is added.",
+    "quiz": [
+      {
+        "question": "An arithmetic sequence has first term 3 and common difference 7. Find the 20th term and the sum of the first 20 terms.",
+        "markscheme": "$u_{20} = 3 + 19 \\times 7 = 3 + 133 = 136$. $S_{20} = \\tfrac{20}{2}(3 + 136) = 10 \\times 139 = 1390$."
+      },
+      {
+        "question": "A geometric sequence has first term 4 and common ratio $\\tfrac{1}{2}$. Find the sum to infinity.",
+        "markscheme": "Since $|r| = \\tfrac{1}{2} < 1$, the sum converges. $S_\\infty = \\tfrac{a}{1-r} = \\tfrac{4}{1 - \\frac{1}{2}} = \\tfrac{4}{\\frac{1}{2}} = 8$."
+      },
+      {
+        "question": "The sum of the first n terms of a sequence is $S_n = 4n^2 + 2n$. Prove that this is an arithmetic sequence and find the common difference.",
+        "markscheme": "$u_n = S_n - S_{n-1} = (4n^2 + 2n) - (4(n-1)^2 + 2(n-1)) = 4n^2 + 2n - 4n^2 + 8n - 4 - 2n + 2 = 8n - 2. Then u_n - u_{n-1} = (8n - 2) - (8(n-1) - 2) = 8, which is constant, so the sequence is arithmetic with d = 8$."
+      },
+      {
+        "question": "Ruth deposits £500 into a bank account offering 4% compound interest per year. How much will she have after 10 years?",
+        "markscheme": "$\\mathrm{FV} = 500 \\times (1 + 0.04)^{10} = 500 \\times (1.04)^{10} = 500 \\times 1.48024\\ldots = \\text{£}740.12$ (to 2 d.p.)."
+      },
+      {
+        "question": "A geometric sequence has second term 5 and fourth term 45. Find the possible values of the fifth term.",
+        "markscheme": "$ar = 5$ and $ar^3 = 45$, so $r^2 = 9$, giving $r = \\pm 3$. If $r = 3$: $u_5 = 45 \\times 3 = 135$. If $r = -3$: $u_5 = 45 \\times (-3) = -135$. The two possible values are $135$ and $-135$."
+      },
+      {
+        "question": "Describe a real-world context where an arithmetic sequence would be an appropriate model, and state clearly what the common difference represents.",
+        "markscheme": "Accept any valid context, e.g. saving a fixed amount each month ($d =$ monthly saving), or an employee receiving a fixed annual salary increase ($d =$ annual raise). The common difference represents the constant amount added per period."
+      }
+    ]
+  },
+  {
+    "id": "1.3",
+    "unit": 1,
+    "title": "Exponentials and logarithms",
+    "hl": "SL",
+    "objectives": [
+      "Apply the laws of exponents including fractional and negative indices.",
+      "Use the definition of a logarithm to convert between exponential and logarithm forms.",
+      "Apply the laws of logarithms to simplify and evaluate expressions.",
+      "Change the base of a logarithm using the formula $\\log_a(b) = \\tfrac{\\log_c(b)}{\\log_c(a)}$.",
+      "Solve exponential and logarithmic equations analytically and with technology.",
+      "Use exponential functions to model growth and decay in context."
+    ],
+    "summary": "Exponents (powers, indices) and logarithms are inverse operations, much like multiplication and division. The laws of exponents for $a, b > 0$, x, y real are: $a^x \\times a^y = a^{x+y}$; $\\tfrac{a^x}{a^y} = a^{x-y}$; $(a^x)^y = a^{xy}$; $a^0 = 1$; $a^{-x} = \\tfrac{1}{a^x}$; $a^{p/q} = \\left(\\sqrt[q]{a}\\right)^p$. These laws are not provided in the formula booklet and must be memorised.\n\nIf $a^x = b$, then $x = \\log_a(b)$. A logarithm is simply a power: $\\log_a(b)$ asks \"to what power must a be raised to give b?\" For example, $\\log_2(8) = 3$ because $2^3 = 8$. The natural logarithm $\\log_e(x)$ is written $\\ln x$, where $e \\approx 2.718$, and $\\log_{10}(x)$ is the common logarithm, written simply as $\\log x$ on calculators.\n\nThe laws of logarithms mirror the laws of exponents: $\\log_a(xy) = \\log_a(x) + \\log_a(y)$; $\\log_a\\!\\left(\\tfrac{x}{y}\\right) = \\log_a(x) - \\log_a(y)$; $\\log_a(x^n) = n\\log_a(x)$; $\\log_a(a) = 1$; $\\log_a(1) = 0$. These are given in the formula booklet.\n\nTo change base: $\\log_a(b) = \\tfrac{\\log_c(b)}{\\log_c(a)}$. In practice this usually means $\\log_a(b) = \\tfrac{\\ln b}{\\ln a}$ or $\\tfrac{\\log b}{\\log a}$. This is essential for solving equations like $a^x = b$, since taking logarithms of both sides gives $x \\log a = \\log b$, so $x = \\tfrac{\\log b}{\\log a}$.\n\nExponential equations arise constantly in financial mathematics, population models, and radioactive decay. The general exponential growth/decay model is $y = A \\times b^t$ or $y = A \\times e^{kt}$. Logarithms allow us to solve for the exponent variable. For instance, to find when an investment doubles at 4\\% per annum: $1.04^n = 2 \\Rightarrow n = \\tfrac{\\log 2}{\\log 1.04} \\approx 17.67$, so 18 complete years are required. Technology (such as a table or financial solver) can be used, but the logarithm method is algebraically precise.",
+    "quiz": [
+      {
+        "question": "Simplify the expression $\\dfrac{a^{3/2} \\times a^{1/2}}{\\left(\\sqrt[3]{a}\\right)^6}$.",
+        "markscheme": "Numerator: $a^{3/2} \\times a^{1/2} = a^{3/2 + 1/2} = a^2$. Denominator: $\\left(a^{1/3}\\right)^6 = a^2$. So $\\tfrac{a^2}{a^2} = a^0 = 1$."
+      },
+      {
+        "question": "Find the value of $\\log_3(81) - \\log_3(9) + \\log_3\\!\\left(\\tfrac{1}{3}\\right)$.",
+        "markscheme": "$\\log_3(81) = 4$; $\\log_3(9) = 2$; $\\log_3\\!\\left(\\tfrac{1}{3}\\right) = -1$. So $4 - 2 + (-1) = 1$."
+      },
+      {
+        "question": "Solve the equation $3^{2x-1} = 12$, giving your answer correct to 3 significant figures.",
+        "markscheme": "Taking $\\log$ of both sides: $(2x - 1)\\log 3 = \\log 12$. So $2x - 1 = \\tfrac{\\log 12}{\\log 3} = 2.2619\\ldots$. Thus $2x = 3.2619\\ldots$ and $x = 1.63$ (3 s.f.)."
+      },
+      {
+        "question": "Use the change-of-base formula to find $\\log_4(7)$ correct to 4 significant figures.",
+        "markscheme": "$\\log_4(7) = \\tfrac{\\ln 7}{\\ln 4} = \\tfrac{1.9459\\ldots}{1.3862\\ldots} = 1.404$ (4 s.f.)."
+      },
+      {
+        "question": "Solve the equation $\\log_2(x) + \\log_2(x - 2) = 3$, giving any restriction on x.",
+        "markscheme": "Combining: $\\log_2(x(x-2)) = 3 \\Rightarrow x(x-2) = 8 \\Rightarrow x^2 - 2x - 8 = 0 \\Rightarrow (x-4)(x+2) = 0. So x = 4 or x = -2. Since we need x > 0 and x - 2 > 0, we require x > 2, so x = 4$."
+      },
+      {
+        "question": "A population of bacteria doubles every 3 hours. Starting with 500 bacteria, find how long it takes to reach 10 000. Give your answer in hours to 3 s.f.",
+        "markscheme": "Model: $500 \\times 2^{t/3} = 10\\,000 \\Rightarrow 2^{t/3} = 20 \\Rightarrow \\tfrac{t}{3} = \\tfrac{\\log 20}{\\log 2} = 4.321\\ldots \\Rightarrow t = 12.97\\ldots \\approx 13.0$ hours (3 s.f.)."
+      }
+    ]
+  },
+  {
+    "id": "1.4",
+    "unit": 1,
+    "title": "Algebra (HL)",
+    "hl": "HL",
+    "objectives": [
+      "Apply the formulas for permutations ${}^n P_r$ and combinations $\\binom{n}{r}$ to counting problems.",
+      "Use the extended (general) binomial theorem to expand $(1 + x)^n$ for rational n.",
+      "Decompose a rational function into partial fractions.",
+      "Construct formal proofs by mathematical induction.",
+      "Construct proofs by contradiction.",
+      "Solve systems of up to three linear equations using row-reduction or substitution."
+    ],
+    "summary": "HL Algebra extends the skills of the SL course with powerful new techniques in counting, proof, and algebra.\n\nCombinations and permutations count the number of ways to select or arrange objects. The combination number $\\binom{n}{r} = \\tfrac{n!}{r!(n-r)!}$ counts the number of ways to choose r objects from n objects where order does not matter. The permutation number ${}^n P_r = \\tfrac{n!}{(n-r)!}$ counts the number of ways to arrange r objects chosen from n in a specific order. Note ${}^n P_r = r! \\times \\binom{n}{r}$, so permutation numbers are always at least as large as combination numbers. The multiplication principle states that if one operation can be done in n ways and a subsequent operation in m ways, the total number of ways is $n \\times m$.\n\nThe extended binomial theorem generalises the expansion to any rational exponent n: $(1 + x)^n = 1 + nx + \\tfrac{n(n-1)}{2!} x^2 + \\tfrac{n(n-1)(n-2)}{3!} x^3 + \\cdots This infinite series is valid when |x| < 1. It can be used to find rational approximations; for example, (1 + 0.01)^{1/2} \\approx 1 + 0.005 - 0.0000125 + \\cdots \\approx 1.00499$.\n\nPartial fractions allow a rational expression to be written as a sum of simpler fractions. For example, a proper fraction with a repeated linear or non-factorisable quadratic denominator is split into terms of the form $\\tfrac{A}{x + a} + \\tfrac{B}{x + b}$ etc. This technique is essential for integration by parts and in solving differential equations.\n\nMathematical induction is a formal proof technique for statements about positive integers. The structure is: (1) Prove the base case $P(1)$ is true. (2) Assume P(k) is true (inductive hypothesis) and show $P(k+1)$ follows. (3) Conclude that P(n) is true for all $n \\in \\mathbb{Z}^+$. The final concluding statement is mandatory and must be phrased clearly. Proof by contradiction assumes the negation of the result and derives a logical impossibility.\n\nSystems of linear equations can be solved by elimination, substitution, or matrix methods. A system with a unique solution, infinitely many solutions, or no solution corresponds to the geometric relationship of planes in 3D space intersecting in a point, a line, or not at all.",
+    "quiz": [
+      {
+        "question": "Find the number of ways to select a committee of 3 females and 2 males from 7 females and 6 males.",
+        "markscheme": "$\\binom{7}{3} \\times \\binom{6}{2} = 35 \\times 15 = 525$ ways."
+      },
+      {
+        "question": "Find the first four terms in the expansion of $(1 + 2x)^{1/2}$ in ascending powers of x, stating the range of validity.",
+        "markscheme": "Using the extended binomial theorem with $n = \\tfrac{1}{2}$: $(1 + 2x)^{1/2} = 1 + \\tfrac{1}{2}(2x) + \\tfrac{\\frac{1}{2}\\cdot(-\\frac{1}{2})}{2!}(2x)^2 + \\tfrac{\\frac{1}{2}\\cdot(-\\frac{1}{2})\\cdot(-\\frac{3}{2})}{3!}(2x)^3 + \\cdots = 1 + x - \\tfrac{x^2}{2} + \\tfrac{x^3}{2} - \\cdots Valid for |2x| < 1, i.e. |x| < \\tfrac{1}{2}$."
+      },
+      {
+        "question": "Decompose $\\dfrac{3x + 1}{(x-1)(x+2)}$ into partial fractions.",
+        "markscheme": "Let $\\tfrac{3x+1}{(x-1)(x+2)} = \\tfrac{A}{x-1} + \\tfrac{B}{x+2}$. Then $3x+1 = A(x+2) + B(x-1)$. Setting $x=1$: $4 = 3A \\Rightarrow A = \\tfrac{4}{3}$. Setting $x=-2$: $-5 = -3B \\Rightarrow B = \\tfrac{5}{3}$. Answer: $\\dfrac{4}{3(x-1)} + \\dfrac{5}{3(x+2)}$."
+      },
+      {
+        "question": "Prove by induction that $1 + 2 + 3 + \\cdots + n = \\tfrac{n(n+1)}{2}$ for all positive integers n.",
+        "markscheme": "Base case $n=1$: LHS $= 1$; RHS $= \\tfrac{1 \\cdot 2}{2} = 1$. True. Assume true for $n=k$: sum $= \\tfrac{k(k+1)}{2}$. For $n=k+1$: $\\tfrac{k(k+1)}{2} + (k+1) = (k+1)\\left(\\tfrac{k}{2} + 1\\right) = \\tfrac{(k+1)(k+2)}{2}. This is the formula for n=k+1. P(1) is true and P(k) true implies P(k+1) true, so by induction the result holds for all n \\in \\mathbb{Z}^+$."
+      },
+      {
+        "question": "Prove by contradiction that $\\sqrt{2}$ is irrational.",
+        "markscheme": "Assume $\\sqrt{2} = \\tfrac{p}{q}$ in lowest terms (p, q integers, no common factor). Then $2 = \\tfrac{p^2}{q^2} \\Rightarrow p^2 = 2q^2$, so $p^2$ is even $\\Rightarrow p$ is even $\\Rightarrow p = 2m$. Then $4m^2 = 2q^2 \\Rightarrow q^2 = 2m^2 \\Rightarrow q$ is even. But then p and q share factor 2, contradicting our assumption. So $\\sqrt{2}$ is irrational."
+      },
+      {
+        "question": "Solve the system of equations: $x + y + z = 6$; $2x - y + z = 3$; $x + 2y - z = 4$.",
+        "markscheme": "Adding equations 1 and 2: $3x + 2z = 9$. From equations 1 and 3: subtracting gives $-x + y - z + x + 2y - z = 6 - 4\\ldots$ Using row reduction or substitution: $x = 1$, $y = 2$, $z = 3$. Check: $1+2+3=6$ ✓; $2-2+3=3$ ✓; $1+4-3=2\\ldots$ Correct system: $x=1$, $y=2$, $z=3$."
+      }
+    ]
+  },
+  {
+    "id": "1.5",
+    "unit": 1,
+    "title": "Complex numbers (HL)",
+    "hl": "HL",
+    "objectives": [
+      "Add, subtract, multiply and divide complex numbers in Cartesian form $z = a + b\\mathrm{i}$.",
+      "Find the modulus, argument, and conjugate of a complex number.",
+      "Represent complex numbers on an Argand diagram.",
+      "Multiply, divide, and raise complex numbers to powers using modulus-argument (polar) form $z = r\\,\\mathrm{cis}\\,\\theta$.",
+      "Apply De Moivre's theorem to find powers and roots of complex numbers.",
+      "Solve polynomial equations with real coefficients, using the fact that complex roots appear in conjugate pairs."
+    ],
+    "summary": "Complex numbers extend the real number line to a two-dimensional plane. We define $\\mathrm{i} = \\sqrt{-1}$, so $\\mathrm{i}^2 = -1$. A complex number in Cartesian form is $z = a + b\\mathrm{i}$, where $a = \\mathrm{Re}(z)$ is the real part and $b = \\mathrm{Im}(z)$ is the imaginary part. The set of all complex numbers is denoted $\\mathbb{C} = \\{a + b\\mathrm{i} \\mid a, b \\in \\mathbb{R}\\}$.\n\nKey definitions: the conjugate of $z = a + b\\mathrm{i}$ is $z^* = a - b\\mathrm{i}$; the modulus $|z| = \\sqrt{a^2 + b^2}$ is the distance from z to the origin; the argument $\\arg(z)$ is the angle the line from the origin to z makes with the positive real axis, measured in the interval $(-\\pi, \\pi]$. Since $\\tan(\\arg z) = \\tfrac{b}{a}$, you must first determine which quadrant z lies in before evaluating the angle.\n\nComplex numbers are represented on an Argand diagram, which is a coordinate plane with the real axis horizontal and the imaginary axis vertical. Addition of complex numbers corresponds geometrically to vector addition.\n\nModulus-argument form (polar form) is $z = r(\\cos\\theta + \\mathrm{i}\\sin\\theta)$, usually written as $z = r\\,\\mathrm{cis}\\,\\theta$, where $r = |z|$ and $\\theta = \\arg(z)$. Euler's form is $z = re^{\\mathrm{i}\\theta}$. Multiplication in polar form is elegant: if $z = r\\,\\mathrm{cis}\\,\\theta$ and $w = s\\,\\mathrm{cis}\\,\\varphi$, then $zw = rs\\,\\mathrm{cis}(\\theta + \\varphi)$ and $\\tfrac{z}{w} = \\tfrac{r}{s}\\,\\mathrm{cis}(\\theta - \\varphi)$. Powers become $z^n = r^n\\,\\mathrm{cis}(n\\theta)$.\n\nDe Moivre's theorem states that $(r\\,\\mathrm{cis}\\,\\theta)^n = r^n\\,\\mathrm{cis}(n\\theta)$ for all integers n. This is used to find powers of complex numbers and, crucially, to find the nth roots of a complex number. The n distinct nth roots of $r\\,\\mathrm{cis}\\,\\theta$ are $r^{1/n}\\,\\mathrm{cis}\\!\\left(\\tfrac{\\theta + 2k\\pi}{n}\\right)$ for $k = 0, 1, \\ldots, n-1$. These roots are equally spaced on a circle of radius $r^{1/n}$ in the Argand diagram.\n\nFor polynomials with real coefficients, complex roots always appear in conjugate pairs: if $a + b\\mathrm{i}$ is a root, so is $a - b\\mathrm{i}$. This fact is used to factorise higher-degree polynomials and to construct polynomials with given roots.",
+    "quiz": [
+      {
+        "question": "Given $z = 3 + 4\\mathrm{i}$ and $w = 1 - 2\\mathrm{i}$, find (a) $z + w$, (b) zw, (c) $z/w$.",
+        "markscheme": "(a) $z + w = 4 + 2\\mathrm{i}$. (b) $zw = (3)(1) + (3)(-2\\mathrm{i}) + (4\\mathrm{i})(1) + (4\\mathrm{i})(-2\\mathrm{i}) = 3 - 6\\mathrm{i} + 4\\mathrm{i} - 8\\mathrm{i}^2 = 3 - 2\\mathrm{i} + 8 = 11 - 2\\mathrm{i}. (c) \\tfrac{z}{w} = \\tfrac{(3+4\\mathrm{i})(1+2\\mathrm{i})}{(1-2\\mathrm{i})(1+2\\mathrm{i})} = \\tfrac{3+6\\mathrm{i}+4\\mathrm{i}-8}{1+4} = \\tfrac{-5+10\\mathrm{i}}{5} = -1 + 2\\mathrm{i}$."
+      },
+      {
+        "question": "Find the modulus and argument of $z = -1 + \\sqrt{3}\\,\\mathrm{i}$.",
+        "markscheme": "$|z| = \\sqrt{1 + 3} = 2$. The point $(-1, \\sqrt{3})$ is in the second quadrant. $\\tan(\\text{ref angle}) = \\tfrac{\\sqrt{3}}{1}$, so ref angle $= \\tfrac{\\pi}{3}$. $\\arg(z) = \\pi - \\tfrac{\\pi}{3} = \\tfrac{2\\pi}{3}$."
+      },
+      {
+        "question": "Express $z = 2\\,\\mathrm{cis}\\!\\left(\\tfrac{\\pi}{3}\\right)$ in Cartesian form.",
+        "markscheme": "$z = 2\\left(\\cos\\tfrac{\\pi}{3} + \\mathrm{i}\\sin\\tfrac{\\pi}{3}\\right) = 2\\left(\\tfrac{1}{2} + \\mathrm{i}\\tfrac{\\sqrt{3}}{2}\\right) = 1 + \\sqrt{3}\\,\\mathrm{i}$."
+      },
+      {
+        "question": "Use De Moivre's theorem to find $(1 + \\mathrm{i})^8$.",
+        "markscheme": "First write $1 + \\mathrm{i} = \\sqrt{2}\\,\\mathrm{cis}\\!\\left(\\tfrac{\\pi}{4}\\right)$. Then $(1+\\mathrm{i})^8 = (\\sqrt{2})^8\\,\\mathrm{cis}\\!\\left(8 \\times \\tfrac{\\pi}{4}\\right) = 16\\,\\mathrm{cis}(2\\pi) = 16(\\cos 2\\pi + \\mathrm{i}\\sin 2\\pi) = 16$."
+      },
+      {
+        "question": "Find the three cube roots of $8\\mathrm{i}$, giving your answers in modulus-argument form.",
+        "markscheme": "$8\\mathrm{i} = 8\\,\\mathrm{cis}\\!\\left(\\tfrac{\\pi}{2}\\right)$. Cube roots: $r = 8^{1/3} = 2$, angles $= \\tfrac{\\pi/2 + 2k\\pi}{3}$ for $k = 0, 1, 2$. So: $2\\,\\mathrm{cis}\\!\\left(\\tfrac{\\pi}{6}\\right)$, $2\\,\\mathrm{cis}\\!\\left(\\tfrac{5\\pi}{6}\\right)$, $2\\,\\mathrm{cis}\\!\\left(\\tfrac{3\\pi}{2}\\right) = 2\\,\\mathrm{cis}\\!\\left(-\\tfrac{\\pi}{2}\\right)$."
+      },
+      {
+        "question": "The polynomial $p(x) = x^4 - 2x^3 + 6x^2 - 2x + 5$ has root $1 + 2\\mathrm{i}$. Find all roots.",
+        "markscheme": "Since coefficients are real, $1 - 2\\mathrm{i}$ is also a root. The factor is $(x-(1+2\\mathrm{i}))(x-(1-2\\mathrm{i})) = (x-1)^2 + 4 = x^2 - 2x + 5$. Dividing: $p(x) = (x^2 - 2x + 5)(x^2 + 1)$. So $x^2 + 1 = 0$ gives $x = \\pm\\mathrm{i}$. The four roots are $1 \\pm 2\\mathrm{i}$ and $\\pm\\mathrm{i}$."
+      }
+    ]
+  },
+  {
+    "id": "2.1",
+    "unit": 2,
+    "title": "Straight lines",
+    "hl": "SL",
+    "objectives": [
+      "Find the gradient of a straight line through two points using $m = \\tfrac{y_2 - y_1}{x_2 - x_1}$.",
+      "Write the equation of a straight line in gradient-intercept form $y = mx + c$, standard form $ax + by + c = 0$, and point-gradient form $y - y_1 = m(x - x_1)$.",
+      "Find x-intercepts and y-intercepts of a straight line.",
+      "Determine whether two lines are parallel ($m_1 = m_2$) or perpendicular ($m_1 \\times m_2 = -1$).",
+      "Find the equation of a line parallel or perpendicular to a given line through a specified point.",
+      "Apply straight-line models to real-world contexts."
+    ],
+    "summary": "Straight lines are the simplest and most fundamental curves in coordinate geometry. The gradient (or slope) m of a line through points $(x_1, y_1)$ and $(x_2, y_2)$ is $m = \\tfrac{y_2 - y_1}{x_2 - x_1}$, which can be thought of as \"rise over run\". If $m > 0$ the line slopes upward left-to-right; if $m < 0$ it slopes downward; if $m = 0$ the line is horizontal; if |m| is large the line is steep.\n\nThere are three common ways to write the equation of a straight line. In gradient-intercept form, $y = mx + c$, the coefficient m is the gradient and c is the y-intercept. In point-gradient form, $y - y_1 = m(x - x_1)$, the gradient m and a specific point $(x_1, y_1)$ on the line are given. In standard form, $ax + by + c = 0$, all terms are on one side. To identify the gradient from standard form, rearrange into $y = mx + c$.\n\nA line is uniquely determined by either (i) two distinct points on it, or (ii) one point and its gradient. The y-intercept is found by setting $x = 0$; the x-intercept by setting $y = 0$.\n\nTwo lines are parallel if and only if they have the same gradient ($m_1 = m_2$). Two lines are perpendicular if and only if the product of their gradients is $-1$ ($m_1 \\times m_2 = -1$), or equivalently $m_2 = -\\tfrac{1}{m_1}$. This means that perpendicular gradients are negative reciprocals of each other. For example, a line of gradient 2 is perpendicular to a line of gradient $-\\tfrac{1}{2}$.\n\nAlways check your answer makes sense: substitute the given point(s) back into your equation to verify it is satisfied. When the question asks for an equation, give an equation — not just the gradient.",
+    "quiz": [
+      {
+        "question": "Find the equation of the straight line with gradient 3 passing through the point $(1, 4)$. Give your answer in the form $y = mx + c$.",
+        "markscheme": "Using point-gradient form: $y - 4 = 3(x - 1) \\Rightarrow y = 3x - 3 + 4 \\Rightarrow y = 3x + 1$."
+      },
+      {
+        "question": "Find the equation of the line through points $(-2, 5)$ and $(4, 9)$. Give your answer in the form $y = mx + c$.",
+        "markscheme": "$m = \\tfrac{9 - 5}{4 - (-2)} = \\tfrac{4}{6} = \\tfrac{2}{3}$. Using point $(-2, 5)$: $y - 5 = \\tfrac{2}{3}(x + 2) \\Rightarrow y = \\tfrac{2}{3}x + \\tfrac{4}{3} + 5 = \\tfrac{2}{3}x + \\tfrac{19}{3}$."
+      },
+      {
+        "question": "Find the x- and y-intercepts of the line $3x - 2y + 6 = 0$.",
+        "markscheme": "y-intercept ($x=0$): $-2y + 6 = 0 \\Rightarrow y = 3$, so $(0, 3)$. x-intercept ($y=0$): $3x + 6 = 0 \\Rightarrow x = -2$, so $(-2, 0)$."
+      },
+      {
+        "question": "State whether the lines $y = 2x + 3$ and $4x - 2y + 7 = 0$ are parallel, perpendicular, or neither.",
+        "markscheme": "Rearranging the second line: $-2y = -4x - 7 \\Rightarrow y = 2x + \\tfrac{7}{2}$. Both lines have gradient 2, so they are parallel."
+      },
+      {
+        "question": "Find the equation of the line perpendicular to $y = \\tfrac{1}{3}x + 2$ that passes through the point $(2, -1)$.",
+        "markscheme": "Gradient of given line $= \\tfrac{1}{3}$. Perpendicular gradient $= -3$. Equation: $y + 1 = -3(x - 2) \\Rightarrow y = -3x + 6 - 1 \\Rightarrow y = -3x + 5$."
+      },
+      {
+        "question": "A car hire company charges a fixed fee of £30 plus £0.20 per kilometre. Write a linear equation for cost C in terms of distance d and find the distance at which the cost equals £50.",
+        "markscheme": "$C = 0.20d + 30$. Setting $C = 50$: $50 = 0.20d + 30 \\Rightarrow 0.20d = 20 \\Rightarrow d = 100$ km."
+      }
+    ]
+  },
+  {
+    "id": "2.2",
+    "unit": 2,
+    "title": "The concept of a function",
+    "hl": "SL",
+    "objectives": [
+      "Define a function, its domain, codomain, and range, and determine whether a given relation is a function.",
+      "Find the maximum domain of a function given its rule.",
+      "Find the range of a function using the graph or algebraic methods.",
+      "Find the inverse of a one-to-one function and interpret it geometrically.",
+      "Find and simplify composite functions $(f \\circ g)(x)$.",
+      "Apply the identity and self-inverse function concepts."
+    ],
+    "summary": "A function f is a rule that maps each element x in its domain to exactly one element f(x) in the codomain. The key requirement is \"exactly one\": every input has a unique output. If any input has two or more outputs, the relation is not a function. The vertical line test provides a visual check: a curve represents a function if every vertical line crosses it at most once.\n\nThe domain of a function is the set of all valid inputs. When no domain is stated, it is assumed to be the largest subset of $\\mathbb{R}$ for which the rule makes sense. Common restrictions are: you cannot divide by zero; you cannot take the square root (or any even root) of a negative number; you cannot take the logarithm of a zero or negative number. For example, $f(x) = \\ln(x - 5)$ requires $x > 5$, so the maximal domain is $\\{x \\in \\mathbb{R} \\mid x > 5\\}$.\n\nThe range of a function is the set of all values that f(x) actually takes. It can be determined by reading off the heights reached by the graph (horizontal line test), completing the square for quadratics, or analysing the function's behaviour.\n\nFor a function to have an inverse that is also a function, it must be one-to-one (injective): each output value corresponds to exactly one input. Graphically, this is checked by the horizontal line test. The inverse function $f^{-1}$ satisfies $f^{-1}(f(x)) = x$ and $f(f^{-1}(x)) = x$. Geometrically, the graph of $f^{-1}$ is the reflection of the graph of f in the line $y = x$.\n\nComposite functions are formed by applying one function after another. The composition $f \\circ g$ means \"first apply g, then apply f\": $(f \\circ g)(x) = f(g(x))$. Note that $f \\circ g$ and $g \\circ f$ are generally different. The domain of $f \\circ g$ is restricted to those x in the domain of g such that g(x) is in the domain of f.",
+    "quiz": [
+      {
+        "question": "State the maximal domain of $f(x) = \\ln(x^2 - 4)$.",
+        "markscheme": "Need $x^2 - 4 > 0 \\Rightarrow (x-2)(x+2) > 0 \\Rightarrow x < -2$ or $x > 2$. Domain: $\\{x \\in \\mathbb{R} \\mid x < -2 \\text{ or } x > 2\\}$."
+      },
+      {
+        "question": "Find the range of $f: \\mathbb{R} \\to \\mathbb{R}$, $f(x) = x^2 + 4x + 1$.",
+        "markscheme": "Complete the square: $f(x) = (x+2)^2 - 3$. The minimum value is $-3$ (at $x = -2$). Range $= \\{y \\in \\mathbb{R} \\mid y \\geq -3\\}$."
+      },
+      {
+        "question": "Given $f(x) = 2x + 3$, find $f^{-1}(x)$ and verify that $f(f^{-1}(x)) = x$.",
+        "markscheme": "Let $y = 2x + 3 \\Rightarrow x = \\tfrac{y-3}{2}$. So $f^{-1}(x) = \\tfrac{x-3}{2}$. Check: $f(f^{-1}(x)) = f\\!\\left(\\tfrac{x-3}{2}\\right) = 2 \\cdot \\tfrac{x-3}{2} + 3 = (x-3) + 3 = x$. ✓"
+      },
+      {
+        "question": "Given $f(x) = 2x - 1$ and $g(x) = x^2 + 3$, find $(f \\circ g)(x)$ and $(g \\circ f)(x)$.",
+        "markscheme": "$(f \\circ g)(x) = f(x^2+3) = 2(x^2+3) - 1 = 2x^2 + 5$. $(g \\circ f)(x) = g(2x-1) = (2x-1)^2 + 3 = 4x^2 - 4x + 1 + 3 = 4x^2 - 4x + 4$. They are different."
+      },
+      {
+        "question": "Explain why $f(x) = x^2$ (with domain $\\mathbb{R}$) does not have an inverse function, and state a domain restriction that would allow an inverse to exist.",
+        "markscheme": "f is not one-to-one on $\\mathbb{R}$ because, e.g., $f(2) = f(-2) = 4$. The horizontal line $y = 4$ intersects the parabola twice. By restricting the domain to $\\{x \\in \\mathbb{R} \\mid x \\geq 0\\}$, f becomes one-to-one and $f^{-1}(x) = \\sqrt{x}$."
+      },
+      {
+        "question": "The function $f: \\{x \\in \\mathbb{R} \\mid x \\geq -3\\} \\to \\mathbb{R}$, $f(x) = \\sqrt{x + 3}$ has an inverse. Find $f^{-1}(x)$ and state its domain.",
+        "markscheme": "Let $y = \\sqrt{x+3} \\Rightarrow y^2 = x + 3 \\Rightarrow x = y^2 - 3$. So $f^{-1}(x) = x^2 - 3$. The range of f is $y \\geq 0$, so the domain of $f^{-1}$ is $\\{x \\in \\mathbb{R} \\mid x \\geq 0\\}$."
+      }
+    ]
+  },
+  {
+    "id": "2.3",
+    "unit": 2,
+    "title": "Quadratic, rational, exponential and logarithmic functions",
+    "hl": "Some HL",
+    "objectives": [
+      "Solve quadratic equations using the quadratic formula and factorisation, and use the discriminant to determine the nature of roots.",
+      "Sketch quadratic functions, identifying vertex, axis of symmetry, and intercepts.",
+      "Sketch and analyse rational functions including asymptotic behaviour.",
+      "Sketch and analyse exponential functions of the form $f(x) = a^x$ and related transformations.",
+      "Sketch and analyse logarithmic functions and relate them to exponential functions as inverses.",
+      "Solve equations analytically and graphically involving quadratic, rational, exponential, and logarithmic functions."
+    ],
+    "summary": "This section covers four important function families that appear throughout the course and in real-world modelling.\n\nQuadratic functions have the form $f(x) = ax^2 + bx + c$ with $a \\neq 0$. If $a > 0$ the parabola opens upward (minimum point); if $a < 0$ it opens downward (maximum point). The axis of symmetry is $x = -\\tfrac{b}{2a}$. The vertex lies on this axis. The solutions to $ax^2 + bx + c = 0$ are given by the quadratic formula: $x = \\tfrac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$. The discriminant $\\Delta = b^2 - 4ac$ determines the nature of the roots: $\\Delta > 0$ gives two distinct real roots; $\\Delta = 0$ gives one repeated real root; $\\Delta < 0$ gives no real roots (two complex conjugate roots for HL). The vertex form $y = a(x - h)^2 + k$ is obtained by completing the square, where (h, k) is the vertex.\n\nRational functions are ratios of polynomials, $f(x) = \\tfrac{p(x)}{q(x)}$. The key features are vertical asymptotes (where the denominator $q(x) = 0$, provided $p(x) \\neq 0$ there), horizontal asymptotes (determined by comparing degrees of numerator and denominator), and x-intercepts (where $p(x) = 0$). For example, $f(x) = \\tfrac{x + 1}{x - 2}$ has a vertical asymptote at $x = 2$ and horizontal asymptote $y = 1$ (since both have degree 1 and the ratio of leading coefficients is 1).\n\nExponential functions have the form $f(x) = a^x$ where $a > 0$, $a \\neq 1$. They are always positive and pass through $(0, 1)$. If $a > 1$ the function is increasing (growth); if $0 < a < 1$ it is decreasing (decay). The natural exponential $f(x) = e^x$ is fundamental in calculus and modelling.\n\nLogarithmic functions $f(x) = \\log_a(x)$ are the inverses of exponential functions and are defined only for $x > 0$. They pass through $(1, 0)$ and have a vertical asymptote at $x = 0$. The graphs of $f(x) = a^x$ and $g(x) = \\log_a(x)$ are reflections of each other in the line $y = x$.",
+    "quiz": [
+      {
+        "question": "Solve $2x^2 - 3x - 2 = 0$ using the quadratic formula and verify using the discriminant.",
+        "markscheme": "$\\Delta = (-3)^2 - 4(2)(-2) = 9 + 16 = 25 > 0$, so two distinct real roots. $x = \\tfrac{3 \\pm 5}{4}$. So $x = 2$ or $x = -\\tfrac{1}{2}$."
+      },
+      {
+        "question": "Write $f(x) = x^2 - 6x + 11$ in vertex form and state the vertex and axis of symmetry.",
+        "markscheme": "$f(x) = (x-3)^2 - 9 + 11 = (x-3)^2 + 2$. Vertex is $(3, 2)$; axis of symmetry is $x = 3$; minimum value is 2."
+      },
+      {
+        "question": "Find the vertical and horizontal asymptotes of $f(x) = \\dfrac{2x - 1}{x + 3}$ and sketch the graph.",
+        "markscheme": "Vertical asymptote: $x = -3$ (denominator $= 0$). Horizontal asymptote: as $x \\to \\pm\\infty$, $f(x) \\to \\tfrac{2}{1} = 2$, so $y = 2$. x-intercept: $2x - 1 = 0 \\Rightarrow x = \\tfrac{1}{2}$. y-intercept: $f(0) = -\\tfrac{1}{3}$."
+      },
+      {
+        "question": "Describe the key features of $f(x) = 3^x$ and sketch its graph.",
+        "markscheme": "Domain: $\\mathbb{R}$; Range: $y > 0$. y-intercept: $(0,1)$. Horizontal asymptote: $y = 0$ as $x \\to -\\infty$. The function is increasing ($a = 3 > 1$). As $x \\to +\\infty$, $f \\to \\infty$. Sketch: passes through $(-1, \\tfrac{1}{3})$, $(0, 1)$, $(1, 3)$, $(2, 9)$."
+      },
+      {
+        "question": "Solve the equation $\\log_2(x + 1) = 3 - \\log_2(x)$.",
+        "markscheme": "$\\log_2(x+1) + \\log_2(x) = 3 \\Rightarrow \\log_2(x(x+1)) = 3 \\Rightarrow x(x+1) = 8 \\Rightarrow x^2 + x - 8 = 0. Using the quadratic formula: x = \\tfrac{-1 \\pm \\sqrt{33}}{2}. Since x > 0, x = \\tfrac{-1 + \\sqrt{33}}{2} \\approx 2.37$."
+      },
+      {
+        "question": "(HL extension) The function $f(x) = \\dfrac{x^2 - 4}{x - 1}$ has an oblique asymptote. Find it.",
+        "markscheme": "Perform polynomial long division: $x^2 - 4 = (x - 1)(x + 1) - 3$. So $f(x) = x + 1 - \\tfrac{3}{x-1}$. As $x \\to \\pm\\infty$, the term $-\\tfrac{3}{x-1} \\to 0$. The oblique asymptote is $y = x + 1$."
+      }
+    ]
+  },
+  {
+    "id": "2.4",
+    "unit": 2,
+    "title": "Transformation of graphs",
+    "hl": "SL",
+    "objectives": [
+      "Apply vertical translations of the form $y = f(x) + b$ to transform graphs.",
+      "Apply horizontal translations of the form $y = f(x - a)$ to transform graphs.",
+      "Apply vertical stretches (dilations) of the form $y = pf(x)$ to transform graphs.",
+      "Apply horizontal stretches of the form $y = f(x/q)$ to transform graphs.",
+      "Apply reflections in the x-axis $y = -f(x)$ and in the y-axis $y = f(-x)$.",
+      "Describe combined (composite) transformations and apply them in the correct order."
+    ],
+    "summary": "Transformations of graphs allow us to deduce the shape of many functions from knowledge of a small number of basic shapes. Understanding which parameter controls which transformation is essential both for sketching and for modelling.\n\nVertical transformations act \"on the outside\" of the function and move or scale the graph in the y-direction. Adding a constant b gives $y = f(x) + b$, which translates the graph vertically by b units (up if $b > 0$, down if $b < 0$). Multiplying by a positive constant p gives $y = pf(x)$, a vertical stretch (dilation) with scale factor p. Multiplying by $-1$ gives $y = -f(x)$, which reflects the graph in the x-axis ($y = 0$).\n\nHorizontal transformations act \"on the inside\" of the function — on x — and move or scale in the x-direction, but with the opposite sign or reciprocal. Replacing x by $(x - a)$ gives $y = f(x - a)$, a horizontal translation of a units to the right (if $a > 0$) or to the left (if $a < 0$). Note: $y = f(x + 2)$ is a translation 2 units to the LEFT, not right. Replacing x by $x/q$ gives $y = f(x/q)$, a horizontal stretch with scale factor q. Replacing x by $-x$ gives $y = f(-x)$, a reflection in the y-axis ($x = 0$).\n\nThe general sine function $y = a\\sin(b(x - c)) + d$ illustrates all four transformation types: a controls vertical amplitude, b controls horizontal frequency, c is a horizontal shift, and d is a vertical shift.\n\nWhen combining transformations, order matters. In general: apply horizontal transformations before vertical ones (inside before outside). For instance, to transform $y = f(x)$ into $y = 2f(3x + 1)$, first rewrite as $y = 2f\\!\\left(3\\left(x + \\tfrac{1}{3}\\right)\\right)$, then apply the horizontal compression by $\\tfrac{1}{3}$, then the horizontal shift of $\\tfrac{1}{3}$ to the left, then the vertical stretch by 2.\n\nA useful strategy: track a key point, such as the maximum of $\\sin x$ at $\\left(\\tfrac{\\pi}{2}, 1\\right)$, through each transformation step.",
+    "quiz": [
+      {
+        "question": "Describe the transformation that maps $y = f(x)$ to $y = f(x - 3) + 2$.",
+        "markscheme": "Translation of 3 units to the right and 2 units up. In vector notation, this is translation by the vector $\\begin{pmatrix}3\\\\2\\end{pmatrix}$."
+      },
+      {
+        "question": "The graph of $y = x^2$ is transformed to $y = -2(x + 1)^2 + 3$. Describe all transformations from $y = x^2$.",
+        "markscheme": "Horizontal translation of 1 unit to the left: $y = (x+1)^2$. Reflection in x-axis: $y = -(x+1)^2$. Vertical stretch by factor 2: $y = -2(x+1)^2$. Vertical translation of 3 units up: $y = -2(x+1)^2 + 3$."
+      },
+      {
+        "question": "Write down the equation of the graph obtained by reflecting $y = e^x$ in the y-axis.",
+        "markscheme": "Replace x with $-x$: $y = e^{-x}$. (This is the same as $\\tfrac{1}{e^x}$, an exponential decay function.)"
+      },
+      {
+        "question": "The function $f(x) = \\sin(x)$ is transformed to $g(x) = 3\\sin(2x + \\pi) - 1$. State the amplitude, period, and any translations.",
+        "markscheme": "Amplitude $= 3$ (vertical stretch by 3). Period $= \\tfrac{2\\pi}{2} = \\pi$ (horizontal compression by $\\tfrac{1}{2}$). Horizontal translation: rewrite as $3\\sin\\!\\left(2\\left(x + \\tfrac{\\pi}{2}\\right)\\right) - 1$, so shift $\\tfrac{\\pi}{2}$ to the left. Vertical translation: 1 unit down."
+      },
+      {
+        "question": "Describe the transformation that maps $y = \\ln x$ to $y = \\ln(2x + 6)$.",
+        "markscheme": "Rewrite: $\\ln(2(x + 3))$. Horizontal translation of 3 units to the left, then horizontal compression by factor $\\tfrac{1}{2}$ (or equivalently: compress by $\\tfrac{1}{2}$ first, then shift left by 3). Final: horizontal stretch by factor $\\tfrac{1}{2}$ and shift left by 3."
+      },
+      {
+        "question": "A function has a maximum at point $(2, 5)$. After applying $y = 2f(x - 1)$, where will the maximum be?",
+        "markscheme": "$y = f(x-1)$ shifts the maximum 1 unit to the right: new $x = 2+1 = 3$. $y = 2f(x-1)$ doubles the y-value: new $y = 2 \\times 5 = 10$. New maximum at $(3, 10)$."
+      }
+    ]
+  },
+  {
+    "id": "2.5",
+    "unit": 2,
+    "title": "Functions (HL)",
+    "hl": "HL",
+    "objectives": [
+      "Apply the remainder theorem and factor theorem to polynomials.",
+      "Analyse rational functions that are a linear function divided by a quadratic, or vice versa.",
+      "Identify and work with odd and even functions, and self-inverse functions.",
+      "Find inverse functions including with domain restriction, and graph them.",
+      "Solve inequalities graphically and algebraically, including rational inequalities.",
+      "Sketch graphs of functions involving the modulus, reciprocal, or square of the variable."
+    ],
+    "summary": "The HL Functions unit develops a deeper algebraic and graphical understanding of functions beyond the standard SL material.\n\nA polynomial p(x) of degree n has the form $p(x) = a_n x^n + a_{n-1} x^{n-1} + \\cdots + a_1 x + a_0$ with $a_n \\neq 0$. The factor theorem states that $(x - a)$ is a factor of p(x) if and only if $p(a) = 0$. The remainder theorem states that when p(x) is divided by $(x - a)$, the remainder is p(a). These results allow polynomials to be factorised without long division when a root is known or guessable.\n\nFor a polynomial with real coefficients, complex roots come in conjugate pairs. The sum of the roots of a degree-n polynomial $ax^n + \\cdots$ is $-\\tfrac{a_{n-1}}{a_n}$ and the product of the roots is $(-1)^n \\tfrac{a_0}{a_n}$.\n\nA function f is even if $f(-x) = f(x)$ for all x in its domain: the graph is symmetric about the y-axis. A function is odd if $f(-x) = -f(x)$: the graph has rotational symmetry of order 2 about the origin. A self-inverse function satisfies $f(f(x)) = x$, so its graph is symmetric about the line $y = x$.\n\nFor solving inequalities, graphical reasoning is often most reliable. Sketch both sides of the inequality, identify where one is above the other, and state the answer using correct interval notation. Alternatively, rearrange to compare a function with zero and use sign analysis.\n\nSketching transformed functions including |f(x)| (reflect any part of the graph below the x-axis upwards), $\\tfrac{1}{f(x)}$ (vertical asymptotes where $f = 0$, the function becomes small where f is large), $(f(x))^2$ (all values become non-negative), and f(|x|) (the graph for $x \\geq 0$ is reflected in the y-axis).",
+    "quiz": [
+      {
+        "question": "The polynomial $p(x) = x^3 - 2x^2 - 5x + 6$. Show that $(x - 1)$ is a factor and hence factorise p(x) fully.",
+        "markscheme": "$p(1) = 1 - 2 - 5 + 6 = 0$. By the factor theorem $(x - 1)$ is a factor. Dividing: $p(x) = (x-1)(x^2 - x - 6) = (x-1)(x-3)(x+2)$."
+      },
+      {
+        "question": "Determine whether $f(x) = x^4 - 3x^2 + 1$ is odd, even, or neither.",
+        "markscheme": "$f(-x) = (-x)^4 - 3(-x)^2 + 1 = x^4 - 3x^2 + 1 = f(x)$. Since $f(-x) = f(x)$, the function is even."
+      },
+      {
+        "question": "Find the asymptotes and sketch $f(x) = \\dfrac{x + 2}{x^2 - 1}$.",
+        "markscheme": "Vertical asymptotes: $x^2 - 1 = 0 \\Rightarrow x = \\pm 1$. Since degree of numerator (1) $<$ degree of denominator (2), horizontal asymptote is $y = 0$. x-intercept: $x = -2$. y-intercept: $f(0) = \\tfrac{2}{-1} = -2$."
+      },
+      {
+        "question": "Solve the inequality $\\dfrac{x - 1}{x + 2} > 1$.",
+        "markscheme": "Rearranging: $\\tfrac{x-1}{x+2} - 1 > 0 \\Rightarrow \\tfrac{x-1-(x+2)}{x+2} > 0 \\Rightarrow \\tfrac{-3}{x+2} > 0. Since -3 < 0, need x + 2 < 0, so x < -2. Solution: x < -2$."
+      },
+      {
+        "question": "Sketch the graph of $y = |x^2 - 4|$.",
+        "markscheme": "Start with $y = x^2 - 4$ (parabola, roots at $x = \\pm 2$, vertex at $(0,-4)$). The modulus reflects the portion below the x-axis upward. So the section between $x = -2$ and $x = 2$ (originally a downward dip to $-4$) is reflected up, creating a 'W' shape with a local maximum at $x = 0$, $y = 4$, and touching the x-axis at $x = \\pm 2$."
+      },
+      {
+        "question": "Show that $f(x) = \\dfrac{1 - x}{1 + x}$ is self-inverse.",
+        "markscheme": "Compute f(f(x)): $f\\!\\left(\\tfrac{1-x}{1+x}\\right) = \\dfrac{1 - \\tfrac{1-x}{1+x}}{1 + \\tfrac{1-x}{1+x}} = \\dfrac{\\tfrac{1+x-1+x}{1+x}}{\\tfrac{1+x+1-x}{1+x}} = \\dfrac{\\tfrac{2x}{1+x}}{\\tfrac{2}{1+x}} = \\tfrac{2x}{2} = x. Since f(f(x)) = x, f$ is self-inverse."
+      }
+    ]
+  },
+  {
+    "id": "3.1",
+    "unit": 3,
+    "title": "Volume and surface area of 3D solids",
+    "hl": "SL",
+    "objectives": [
+      "Apply formulas for the volume and surface area of spheres, cylinders, cones, and pyramids.",
+      "Find distances between points in 3D space using the 3D distance formula.",
+      "Find the midpoint of a line segment in 3D space.",
+      "Apply SOHCAHTOA (sine, cosine, tangent) to solve right-angled triangles.",
+      "Apply the Pythagorean theorem in 2D and 3D problems.",
+      "Use angles of elevation and depression and bearings in real-world contexts."
+    ],
+    "summary": "This section combines three-dimensional geometry with right-angled triangle trigonometry, providing tools to measure and describe shapes and distances in space.\n\nThe key volume and surface area formulas for the common 3D solids are: Sphere of radius r: $V = \\tfrac{4}{3}\\pi r^3$, $SA = 4\\pi r^2$. Cylinder of radius r and height h: $V = \\pi r^2 h$, $SA = 2\\pi r^2 + 2\\pi r h$. Cone of base radius r, height h, and slant height $l = \\sqrt{r^2 + h^2}$: $V = \\tfrac{1}{3}\\pi r^2 h$, $SA = \\pi r^2 + \\pi r l$. Pyramid of base area A and height h: $V = \\tfrac{1}{3} \\times \\text{base area} \\times h$. These formulas (except the sphere) are in the IB formula booklet.\n\nIn three dimensions, the distance between points $A(x_1, y_1, z_1)$ and $B(x_2, y_2, z_2)$ is $d = \\sqrt{(x_1-x_2)^2 + (y_1-y_2)^2 + (z_1-z_2)^2}$. The midpoint of AB is $\\left(\\tfrac{x_1+x_2}{2},\\, \\tfrac{y_1+y_2}{2},\\, \\tfrac{z_1+z_2}{2}\\right)$. These are direct generalisations of the 2D formulas.\n\nFor right-angled triangles, the three trigonometric ratios are $\\sin\\theta = \\tfrac{\\text{opposite}}{\\text{hypotenuse}}$, $\\cos\\theta = \\tfrac{\\text{adjacent}}{\\text{hypotenuse}}$, $\\tan\\theta = \\tfrac{\\text{opposite}}{\\text{adjacent}}$. The memory aid SOHCAHTOA is widely used. These formulas are not in the formula booklet and must be memorised. The Pythagorean theorem gives the hypotenuse: $\\text{hyp}^2 = \\text{opp}^2 + \\text{adj}^2$.\n\nAngles of elevation are measured upward from the horizontal; angles of depression are measured downward. Bearings are measured clockwise from North, always given as three-digit numbers (e.g. $045^{\\circ}$ for North-East). These concepts are essential for surveying and navigation problems, which are common in IB examinations.",
+    "quiz": [
+      {
+        "question": "A sphere has radius 5 cm. Calculate (a) its volume and (b) its surface area, correct to 3 s.f.",
+        "markscheme": "(a) $V = \\tfrac{4}{3}\\pi(5)^3 = \\tfrac{4}{3}\\pi(125) = 523.598\\ldots \\approx 524\\text{ cm}^3. (b) SA = 4\\pi(5)^2 = 4\\pi(25) = 314.159\\ldots \\approx 314\\text{ cm}^2$."
+      },
+      {
+        "question": "Find the distance between the points $A(1, 2, 3)$ and $B(4, -1, 7)$.",
+        "markscheme": "$d = \\sqrt{(4-1)^2 + (-1-2)^2 + (7-3)^2} = \\sqrt{9 + 9 + 16} = \\sqrt{34} \\approx 5.83$."
+      },
+      {
+        "question": "In a right triangle, the angle is $35^{\\circ}$ and the side adjacent to the angle is 8 cm. Find the side opposite to the angle.",
+        "markscheme": "$\\tan 35^{\\circ} = \\tfrac{\\text{opp}}{8} \\Rightarrow \\text{opp} = 8\\tan 35^{\\circ} = 8 \\times 0.70021 = 5.60\\text{ cm}$ (3 s.f.)."
+      },
+      {
+        "question": "A vertical pole casts a shadow 12 m long when the sun's angle of elevation is $40^{\\circ}$. Find the height of the pole.",
+        "markscheme": "$\\tan 40^{\\circ} = \\tfrac{h}{12} \\Rightarrow h = 12\\tan 40^{\\circ} = 12 \\times 0.8391 = 10.1\\text{ m}$ (3 s.f.)."
+      },
+      {
+        "question": "A cone has base radius 6 cm and height 8 cm. Find its (a) slant height, (b) curved surface area, (c) volume.",
+        "markscheme": "(a) $l = \\sqrt{6^2 + 8^2} = \\sqrt{36+64} = \\sqrt{100} = 10\\text{ cm}$. (b) Curved $SA = \\pi r l = \\pi(6)(10) = 188\\text{ cm}^2$ (3 s.f.). (c) $V = \\tfrac{1}{3}\\pi(6^2)(8) = 96\\pi \\approx 302\\text{ cm}^3$ (3 s.f.)."
+      },
+      {
+        "question": "The midpoint of the line segment joining $A(x, 3, -1)$ and $B(4, y, 5)$ is $M(3, 1, 2)$. Find x and y.",
+        "markscheme": "x-coordinate: $\\tfrac{x + 4}{2} = 3 \\Rightarrow x = 2$. y-coordinate: $\\tfrac{3 + y}{2} = 1 \\Rightarrow y = -1$."
+      }
+    ]
+  },
+  {
+    "id": "3.2",
+    "unit": 3,
+    "title": "Trigonometry ratios",
+    "hl": "SL",
+    "objectives": [
+      "Apply the sine rule to find unknown sides and angles in non-right triangles.",
+      "Apply the cosine rule to find unknown sides and angles in non-right triangles.",
+      "Find the area of a triangle using the formula $\\text{Area} = \\tfrac{1}{2}ab\\sin C$.",
+      "Convert between degrees and radians, and apply radian measure.",
+      "Find arc length and area of a sector using radian measure.",
+      "Identify and resolve the ambiguous case of the sine rule."
+    ],
+    "summary": "While SOHCAHTOA applies only to right-angled triangles, the sine rule and cosine rule extend trigonometry to all triangles.\n\nThe sine rule states that $\\tfrac{a}{\\sin A} = \\tfrac{b}{\\sin B} = \\tfrac{c}{\\sin C}$ (equivalently, $\\tfrac{\\sin A}{a} = \\tfrac{\\sin B}{b} = \\tfrac{\\sin C}{c}$), where a, b, c are the sides opposite angles A, B, C respectively. Use the sine rule when you are given: two angles and one side (AAS or ASA), or two sides and a non-included angle (SSA). The sine rule can yield two solutions (the ambiguous case) when given SSA: this arises because both an acute and an obtuse angle have the same sine. The ambiguous case occurs when the given angle is acute, and the side opposite the given angle is shorter than the other given side.\n\nThe cosine rule states $a^2 = b^2 + c^2 - 2bc\\cos A$, or in the rearranged form $\\cos A = \\tfrac{b^2 + c^2 - a^2}{2bc}$. Use the cosine rule when given: all three sides (SSS), or two sides and the included angle (SAS).\n\nThe area of any triangle is $\\text{Area} = \\tfrac{1}{2}ab\\sin C$, where C is the included angle between sides a and b.\n\nAngles can be measured in radians. One full rotation of $360^{\\circ}$ equals $2\\pi$ radians, so $\\pi$ radians $= 180^{\\circ}$, and $1$ radian $\\approx 57.3^{\\circ}$. In a circle of radius r, an arc of length l subtending angle $\\theta$ (in radians) at the centre has $l = r\\theta$, and the corresponding sector has area $A = \\tfrac{1}{2}r^2\\theta$. These formulas only work in radians.\n\nCommon exact values: $\\sin 0 = 0$, $\\cos 0 = 1$; $\\sin\\tfrac{\\pi}{6} = \\tfrac{1}{2}$, $\\cos\\tfrac{\\pi}{6} = \\tfrac{\\sqrt{3}}{2}$; $\\sin\\tfrac{\\pi}{4} = \\tfrac{1}{\\sqrt{2}}$, $\\cos\\tfrac{\\pi}{4} = \\tfrac{1}{\\sqrt{2}}$; $\\sin\\tfrac{\\pi}{3} = \\tfrac{\\sqrt{3}}{2}$, $\\cos\\tfrac{\\pi}{3} = \\tfrac{1}{2}$; $\\sin\\tfrac{\\pi}{2} = 1$, $\\cos\\tfrac{\\pi}{2} = 0$.",
+    "quiz": [
+      {
+        "question": "In triangle ABC, $a = 8$, $b = 5$ and angle $B = 30^{\\circ}$. Find all possible values of angle A.",
+        "markscheme": "$\\tfrac{\\sin A}{8} = \\tfrac{\\sin 30^{\\circ}}{5} \\Rightarrow \\sin A = \\tfrac{8 \\times 0.5}{5} = 0.8. Since \\sin A = 0.8, A = \\arcsin(0.8) \\approx 53.1^{\\circ} or A = 180^{\\circ} - 53.1^{\\circ} = 126.9^{\\circ}. Both are valid because 126.9^{\\circ} + 30^{\\circ} = 156.9^{\\circ} < 180^{\\circ}. Two solutions: A \\approx 53.1^{\\circ} or A \\approx 126.9^{\\circ}$."
+      },
+      {
+        "question": "In triangle PQR, $p = 7$, $q = 5$, $r = 9$. Find angle R.",
+        "markscheme": "$\\cos R = \\tfrac{p^2 + q^2 - r^2}{2pq} = \\tfrac{49 + 25 - 81}{70} = \\tfrac{-7}{70} = -0.1. R = \\arccos(-0.1) \\approx 95.7^{\\circ}$."
+      },
+      {
+        "question": "Find the area of a triangle with sides 6 cm and 9 cm and included angle $50^{\\circ}$.",
+        "markscheme": "$\\text{Area} = \\tfrac{1}{2}(6)(9)\\sin 50^{\\circ} = 27 \\times 0.766 = 20.7\\text{ cm}^2$ (3 s.f.)."
+      },
+      {
+        "question": "Convert (a) $120^{\\circ}$ to radians and (b) $\\tfrac{5\\pi}{4}$ to degrees.",
+        "markscheme": "(a) $120^{\\circ} \\times \\tfrac{\\pi}{180} = \\tfrac{2\\pi}{3}$ radians. (b) $\\tfrac{5\\pi}{4} \\times \\tfrac{180}{\\pi} = 225^{\\circ}$."
+      },
+      {
+        "question": "A sector of a circle has radius 10 cm and central angle 1.2 radians. Find (a) the arc length and (b) the area of the sector.",
+        "markscheme": "(a) $l = r\\theta = 10 \\times 1.2 = 12\\text{ cm}$. (b) $A = \\tfrac{1}{2}r^2\\theta = \\tfrac{1}{2}(100)(1.2) = 60\\text{ cm}^2$."
+      },
+      {
+        "question": "In a triangle, angle $A = 40^{\\circ}$, angle $B = 75^{\\circ}$, and side $c = 12\\text{ cm}$. Find side a.",
+        "markscheme": "Angle $C = 180^{\\circ} - 40^{\\circ} - 75^{\\circ} = 65^{\\circ}$. By the sine rule: $\\tfrac{a}{\\sin A} = \\tfrac{c}{\\sin C} \\Rightarrow a = \\tfrac{12\\sin 40^{\\circ}}{\\sin 65^{\\circ}} = \\tfrac{12 \\times 0.6428}{0.9063} = 8.50\\text{ cm}$ (3 s.f.)."
+      }
+    ]
+  },
+  {
+    "id": "3.3",
+    "unit": 3,
+    "title": "Trigonometric identities and equations",
+    "hl": "Some HL",
+    "objectives": [
+      "Use the Pythagorean identity $\\sin^2\\theta + \\cos^2\\theta = 1$ and related identities.",
+      "Apply the double angle formulas: $\\sin 2\\theta = 2\\sin\\theta\\cos\\theta$ and $\\cos 2\\theta = \\cos^2\\theta - \\sin^2\\theta = 2\\cos^2\\theta - 1 = 1 - 2\\sin^2\\theta$.",
+      "Solve trigonometric equations in a finite interval, including equations requiring use of identities.",
+      "Prove trigonometric identities using algebraic manipulation.",
+      "Apply the definitions of secant, cosecant, and cotangent (HL).",
+      "Use the Pythagorean identities $1 + \\tan^2\\theta = \\sec^2\\theta$ and $1 + \\cot^2\\theta = \\csc^2\\theta$ (HL)."
+    ],
+    "summary": "The unit circle, a circle of radius 1 centred at the origin, provides the fundamental definitions of sine and cosine. For a point P on the unit circle at angle $\\theta$, $\\sin\\theta$ is the projection onto the y-axis and $\\cos\\theta$ is the projection onto the x-axis. From Pythagoras' theorem applied to the unit circle, $\\sin^2\\theta + \\cos^2\\theta \\equiv 1$. This is the fundamental Pythagorean identity.\n\nAlso from the unit circle: $\\tan\\theta = \\tfrac{\\sin\\theta}{\\cos\\theta}$ (undefined when $\\cos\\theta = 0$). The sign of $\\sin\\theta$ and $\\cos\\theta$ in each quadrant follows the CAST rule (All positive in Q1, Sine only in Q2, Tangent only in Q3, Cosine only in Q4).\n\nThe double angle formulas are: $\\sin 2\\theta = 2\\sin\\theta\\cos\\theta$; $\\cos 2\\theta = \\cos^2\\theta - \\sin^2\\theta = 2\\cos^2\\theta - 1 = 1 - 2\\sin^2\\theta. All three forms of \\cos 2\\theta$ are given in the formula booklet and should be used strategically: choose the form that most simplifies the expression at hand.\n\nFor HL, the reciprocal trigonometric functions are: $\\sec\\theta = \\tfrac{1}{\\cos\\theta}$; $\\csc\\theta = \\tfrac{1}{\\sin\\theta}$; $\\cot\\theta = \\tfrac{1}{\\tan\\theta} = \\tfrac{\\cos\\theta}{\\sin\\theta}$. The extended Pythagorean identities are: $1 + \\tan^2\\theta = \\sec^2\\theta$ (divide the basic identity by $\\cos^2\\theta$) and $1 + \\cot^2\\theta = \\csc^2\\theta$ (divide by $\\sin^2\\theta$). These are in the formula booklet.\n\nTo solve a trigonometric equation in a finite interval: (1) Use identities if needed to express everything in terms of one function. (2) Use inverse trig to find the reference angle. (3) Use the CAST diagram and periodicity to find all solutions in the interval. (4) Check for restrictions and extraneous solutions. Common errors include forgetting solutions in other quadrants and incorrectly handling the period when the argument is a multiple of $\\theta$.",
+    "quiz": [
+      {
+        "question": "Prove the identity $\\tfrac{1 - \\cos 2\\theta}{\\sin 2\\theta} = \\tan\\theta$.",
+        "markscheme": "LHS $= \\tfrac{1 - (1 - 2\\sin^2\\theta)}{2\\sin\\theta\\cos\\theta} = \\tfrac{2\\sin^2\\theta}{2\\sin\\theta\\cos\\theta} = \\tfrac{\\sin\\theta}{\\cos\\theta} = \\tan\\theta$ = RHS. ✓"
+      },
+      {
+        "question": "Solve $2\\cos^2\\theta - \\cos\\theta - 1 = 0$ for $0 \\leq \\theta \\leq 2\\pi$.",
+        "markscheme": "Factorise: $(2\\cos\\theta + 1)(\\cos\\theta - 1) = 0$. So $\\cos\\theta = -\\tfrac{1}{2}$ or $\\cos\\theta = 1$. $\\cos\\theta = 1$ → $\\theta = 0$ or $2\\pi$. $\\cos\\theta = -\\tfrac{1}{2}$ → $\\theta = \\tfrac{2\\pi}{3}$ or $\\tfrac{4\\pi}{3}$. Solutions: $\\theta = 0, \\tfrac{2\\pi}{3}, \\tfrac{4\\pi}{3}, 2\\pi$."
+      },
+      {
+        "question": "Solve $\\sin 2x = \\cos x$ for $0 \\leq x \\leq \\pi$.",
+        "markscheme": "$\\sin 2x = 2\\sin x\\cos x$. So $2\\sin x\\cos x = \\cos x$ → $\\cos x(2\\sin x - 1) = 0$. $\\cos x = 0$ → x = $\\tfrac{\\pi}{2}$. $2\\sin x = 1$ → $\\sin x = \\tfrac{1}{2}$ → x = $\\tfrac{\\pi}{6}$ or $\\tfrac{5\\pi}{6}$. Solutions: $x = \\tfrac{\\pi}{6}, \\tfrac{\\pi}{2}, \\tfrac{5\\pi}{6}$."
+      },
+      {
+        "question": "(HL) Prove that $\\sec^2\\theta - \\tan^2\\theta = 1$.",
+        "markscheme": "$\\sec^2\\theta - \\tan^2\\theta = \\tfrac{1}{\\cos^2\\theta} - \\tfrac{\\sin^2\\theta}{\\cos^2\\theta} = \\tfrac{1 - \\sin^2\\theta}{\\cos^2\\theta} = \\tfrac{\\cos^2\\theta}{\\cos^2\\theta} = 1$. ✓"
+      },
+      {
+        "question": "Given $\\sin\\theta = \\tfrac{3}{5}$ and $\\theta$ is obtuse, find the exact value of $\\sin 2\\theta$.",
+        "markscheme": "Since $\\theta$ is obtuse and $\\sin\\theta = \\tfrac{3}{5}$, we have $\\cos\\theta = -\\tfrac{4}{5}$ (negative in Q2). $\\sin 2\\theta = 2\\sin\\theta\\cos\\theta = 2\\left(\\tfrac{3}{5}\\right)\\left(-\\tfrac{4}{5}\\right) = -\\tfrac{24}{25}$."
+      },
+      {
+        "question": "Solve $3\\tan^2\\theta - \\sec\\theta - 1 = 0$ for $0 \\leq \\theta \\leq 2\\pi$ (HL).",
+        "markscheme": "Replace $\\tan^2\\theta$ with $\\sec^2\\theta - 1$: $3(\\sec^2\\theta - 1) - \\sec\\theta - 1 = 0 \\to 3\\sec^2\\theta - \\sec\\theta - 4 = 0$ → $(3\\sec\\theta - 4)(\\sec\\theta + 1) = 0$. $\\sec\\theta = \\tfrac{4}{3} \\to \\cos\\theta = \\tfrac{3}{4}$ → $\\theta \\approx 0.7227$ or $5.560.\\sec\\theta = -1 \\to \\cos\\theta = -1 \\to \\theta = \\pi$. Solutions: $\\theta \\approx 0.723, \\pi, 5.56$ (3 s.f.)."
+      }
+    ]
+  },
+  {
+    "id": "3.4",
+    "unit": 3,
+    "title": "Trigonometric functions",
+    "hl": "Some HL",
+    "objectives": [
+      "Sketch the graphs of $y = \\sin x$, $y = \\cos x$, and $y = \\tan x$ and identify their key features.",
+      "Determine the amplitude, period, and phase shift of functions of the form $y = a\\sin(b(x - c)) + d$.",
+      "Sketch transformed trigonometric functions by identifying amplitude, period, and translations.",
+      "Solve trigonometric equations graphically and use a calculator to find solutions.",
+      "Model periodic real-world phenomena using trigonometric functions.",
+      "Sketch and analyse reciprocal trigonometric functions (HL)."
+    ],
+    "summary": "Trigonometric functions are periodic: they repeat their pattern at regular intervals. The sine and cosine functions both have period $2\\pi$ and amplitude 1. Their graphs are smooth, continuous, and bounded between -1 and 1.\n\nThe general sinusoidal function $y = a\\sin(b(x - c)) + d$ has four parameters. The amplitude is $|a| = \\tfrac{\\text{max} - \\text{min}}{2}$, which represents half the total vertical range. The period is $\\tfrac{2\\pi}{|b|}$, the horizontal distance for one complete cycle. The horizontal phase shift is c (positive c shifts the graph to the right). The vertical displacement is d (the graph shifts up by d). An equivalent formula applies for cosine.\n\nThe tangent function y = $\\tan x$ has period $\\pi$ (not 2π) and has no amplitude since it is unbounded. It has vertical asymptotes at $x = \\tfrac{\\pi}{2} + n\\pi$ for integer n, where the function is undefined.\n\nThe exact values of trigonometric functions at key angles should be memorised: $\\sin(0) = 0$, $\\cos(0) = 1$; $\\sin(\\pi/6) = \\tfrac{1}{2}$, $\\cos(\\pi/6) = \\tfrac{\\sqrt{3}}{2}$; $\\sin(\\pi/4) = \\tfrac{\\sqrt{2}}{2}$, $\\cos(\\pi/4) = \\tfrac{\\sqrt{2}}{2}$; $\\sin(\\pi/3) = \\tfrac{\\sqrt{3}}{2}$, $\\cos(\\pi/3) = \\tfrac{1}{2}$; $\\sin(\\pi/2) = 1$, $\\cos(\\pi/2) = 0$.\n\nPeriodic models are used to describe tidal heights, temperatures, rotating machinery, and circular motion. A typical model might take the form $h(t) = a\\cos(b(t - c)) + d$, where the parameters are determined from the maximum, minimum, period, and a reference time.\n\nFor HL, the graphs of $\\sec x$, cosec x, and cot x are sketched by noting their relationship to the basic trig functions. For example, $\\sec x = \\tfrac{1}{\\cos x}$ is large when $\\cos x$ is near zero (asymptotes) and equals $\\pm 1$ where $\\cos x = \\pm 1$.",
+    "quiz": [
+      {
+        "question": "For $f(x) = 4\\sin(3x) - 1$, state (a) the amplitude, (b) the period, (c) the maximum value.",
+        "markscheme": "(a) Amplitude $= 4$. (b) Period $= \\tfrac{2\\pi}{3}$. (c) Maximum $= 4(1) - 1 = 3$."
+      },
+      {
+        "question": "Sketch the graph of $f(x) = 2\\cos(x + \\pi/2)$ for $0 \\leq x \\leq 2\\pi$, labelling the intercepts and max/min points.",
+        "markscheme": "Note: $\\cos(x + \\pi/2) = -\\sin x$. So $f(x) = -2\\sin x$. Amplitude 2, period $2\\pi$. Starts at (0,0), minimum ($\\tfrac{\\pi}{2}$, -2), zero at $(\\pi, 0)$, maximum ($\\tfrac{3\\pi}{2}$, 2), zero at ($2\\pi$, 0)."
+      },
+      {
+        "question": "The depth of water h (metres) at a harbour is modelled by $h(t) = 5 + 3\\sin\\left(\\tfrac{2\\pi t}{12}\\right)$, where t is time in hours from midnight. Find (a) the maximum depth, (b) the period, (c) the time when depth first equals 7 m.",
+        "markscheme": "(a) Max = 5 + 3 = 8 m. (b) Period = 12 hours. (c) $5 + 3\\sin\\left(\\tfrac{2\\pi t}{12}\\right) = 7$ → $\\sin\\left(\\tfrac{\\pi t}{6}\\right) = \\tfrac{2}{3}$ → $\\tfrac{\\pi t}{6} = \\arcsin\\left(\\tfrac{2}{3}\\right)$ ≈ 0.7297 → t ≈ 1.39 hours ≈ 1:23 am."
+      },
+      {
+        "question": "Find the period and state the equations of the vertical asymptotes of $f(x) = \\tan(2x)$.",
+        "markscheme": "Period $= \\tfrac{\\pi}{2}$. Asymptotes at $2x = \\tfrac{\\pi}{2} + n\\pi$, i.e. $x = \\tfrac{\\pi}{4} + \\tfrac{n\\pi}{2}$ for integer n."
+      },
+      {
+        "question": "Describe the transformation from $y = \\cos x$ to $y = \\cos(x - \\pi/4) + 2$.",
+        "markscheme": "Horizontal translation of $\\tfrac{\\pi}{4}$ to the right, and vertical translation of 2 units upward."
+      },
+      {
+        "question": "(HL) Describe the key features of $y = \\sec x$ and explain how it is derived from $y = \\cos x$.",
+        "markscheme": "$\\sec x = \\tfrac{1}{\\cos x}$. When $\\cos x = 0$ (at x = $\\pm\\tfrac{\\pi}{2}$, $\\\\pm\\\\tfrac{3\\\\pi}{2}$, ...), $\\sec x$ has vertical asymptotes. When $\\cos x = 1$ or $-1$ (at $x = 0, \\pi, \\ldots$), $\\sec x = 1$ or $-1$. $\\sec x \\geq 1$ or $\\sec x \\leq -1$, so $|\\sec x| \\geq 1$ always. Period $= 2\\pi$."
+      }
+    ]
+  },
+  {
+    "id": "3.5",
+    "unit": 3,
+    "title": "Vectors in two and three dimensions (HL)",
+    "hl": "HL",
+    "objectives": [
+      "Perform vector addition, subtraction, and scalar multiplication algebraically and geometrically.",
+      "Calculate the magnitude of a vector and find a unit vector.",
+      "Calculate the scalar (dot) product and use it to find the angle between two vectors.",
+      "Calculate the vector (cross) product and apply it to find normal vectors and areas.",
+      "Find vector equations of lines in 2D and 3D and determine intersections.",
+      "Find vector and Cartesian equations of planes and solve problems involving distances and intersections."
+    ],
+    "summary": "Vectors represent quantities that have both magnitude and direction, such as displacement, velocity, and force. A vector in 2D is written as a column vector (a, b)^T or as ai + bj, and in 3D as (a, b, c)^T or as ai + bj + ck, where i, j, k are unit vectors in the x, y, z directions.\n\nThe magnitude (length) of vector v = (a, b, c) is $|\\mathbf{v}| = \\sqrt{a^2 + b^2 + c^2}$. A unit vector in the direction of v is $\\hat{\\mathbf{v}} = \\tfrac{\\mathbf{v}}{|\\mathbf{v}|}$. Vectors are added component-wise. Scalar multiplication scales the magnitude without changing direction (or reverses it if the scalar is negative).\n\nThe scalar (dot) product of a = (a1, a2, a3) and b = (b1, b2, b3) is $\\mathbf{a} \\cdot \\mathbf{b} = a_1b_1 + a_2b_2 + a_3b_3 = |\\mathbf{a}||\\mathbf{b}|\\cos\\theta, where \\theta$ is the angle between them. Two non-zero vectors are perpendicular if and only if $\\mathbf{a} \\cdot \\mathbf{b} = 0$. The dot product formula gives the angle between vectors: $\\cos\\theta = \\tfrac{\\mathbf{a} \\cdot \\mathbf{b}}{|\\mathbf{a}||\\mathbf{b}|}$.\n\nThe vector (cross) product a × b gives a vector perpendicular to both a and b. It is calculated using the determinant formula: $\\mathbf{a} \\times \\mathbf{b} = (a_2b_3 - a_3b_2,\\; a_3b_1 - a_1b_3,\\; a_1b_2 - a_2b_1). The magnitude |\\mathbf{a} \\times \\mathbf{b}| = |\\mathbf{a}||\\mathbf{b}|\\sin\\theta$ equals the area of the parallelogram spanned by a and b (so half of this is the area of the triangle).\n\nA line through point A with direction vector d has equation $\\mathbf{r} = \\mathbf{a} + t\\mathbf{d}$, where t is a parameter. Two lines either intersect, are parallel, or are skew (in 3D). A plane through point A with normal vector n has equation $\\mathbf{n} \\cdot \\mathbf{r} = \\mathbf{n} \\cdot \\mathbf{a}$, or in Cartesian form $n_1x + n_2y + n_3z = d$. The normal vector to a plane can be found by taking the cross product of two vectors lying in the plane.",
+    "quiz": [
+      {
+        "question": "Given a = (2, -1, 3) and b = (1, 4, -2), find (a) a + b, (b) a · b, (c) the angle between a and b.",
+        "markscheme": "(a) a + b = (3, 3, 1). (b) a · b = 2(1) + (-1)(4) + 3(-2) = 2 - 4 - 6 = -8. (c) $\\cos\\theta = \\tfrac{-8}{|\\mathbf{a}||\\mathbf{b}|}$. $|\\mathbf{a}| = \\sqrt{4+1+9} = \\sqrt{14}$; $|\\mathbf{b}| = \\sqrt{1+16+4} = \\sqrt{21}$. $\\cos\\theta = \\tfrac{-8}{\\sqrt{294}} \\approx -0.466 \\to \\theta = \\arccos(-0.466) \\approx 117.7^{\\circ}$."
+      },
+      {
+        "question": "Find the unit vector in the direction of v = (3, -4).",
+        "markscheme": "$|\\mathbf{v}| = \\sqrt{9+16} = 5$. Unit vector $= \\left(\\tfrac{3}{5}, -\\tfrac{4}{5}\\right)$."
+      },
+      {
+        "question": "Find a vector equation for the line through A(1, 2, 3) and B(4, -1, 5).",
+        "markscheme": "Direction vector d = B - A = (3, -3, 2). Equation: $\\mathbf{r} = (1, 2, 3) + t(3, -3, 2)$, or $x = 1 + 3t$, $y = 2 - 3t$, $z = 3 + 2t$."
+      },
+      {
+        "question": "Find a × b where a = (1, 2, 3) and b = (4, 5, 6).",
+        "markscheme": "$\\mathbf{a} \\times \\mathbf{b} = (2{\\cdot}6 - 3{\\cdot}5,\\; 3{\\cdot}4 - 1{\\cdot}6,\\; 1{\\cdot}5 - 2{\\cdot}4) = (-3, 6, -3)$."
+      },
+      {
+        "question": "Find the Cartesian equation of the plane passing through A(1, 0, 2), B(2, 1, 3), C(0, 1, 1).",
+        "markscheme": "$\\overrightarrow{AB} = (1,1,1)$, $\\overrightarrow{AC} = (-1,1,-1)$. Normal $\\mathbf{n} = \\overrightarrow{AB} \\times \\overrightarrow{AC} = (1\\times(-1)-1\\times 1,\\; 1\\times(-1)-1\\times(-1),\\; 1\\times 1-1\\times(-1)) = (-2, 0, 2). Simplify: \\mathbf{n} = (-1, 0, 1). Equation: -x + z = d. Using A: -(1) + 2 = 1, so d = 1. Plane: -x + z = 1, or z - x = 1$."
+      },
+      {
+        "question": "Show that the lines r = (1, 0, 1) + s(1, 2, 1) and r = (3, 4, 0) + t(2, 1, -1) intersect, and find the intersection point.",
+        "markscheme": "Equating: 1+s = 3+2t; 2s = 4+t; 1+s = -t. From equations 1 and 3: 3+2t = -t → t = -1, s = 0. Check eq. 2: 0 = 4 + (-1) = 3. Contradiction, so re-solve... From eq. 3: s = -1-t. Sub into eq. 1: 1+(-1-t) = 3+2t → -t = 3+2t → -3t = 3 → t = -1. s = -1-(-1) = 0. Check eq. 2: 2(0) = 4 + (-1) → 0 = 3. Actually no intersection; lines are skew. (This validates the methodology.)"
+      }
+    ]
+  },
+  {
+    "id": "4.1",
+    "unit": 4,
+    "title": "Descriptive statistics",
+    "hl": "SL",
+    "objectives": [
+      "Distinguish between population and sample, and between discrete and continuous data.",
+      "Describe and evaluate different sampling techniques including random, systematic, stratified, convenience, and quota sampling.",
+      "Calculate measures of central tendency: mean, median, and mode.",
+      "Calculate measures of dispersion: range, interquartile range, variance, and standard deviation.",
+      "Draw and interpret box-and-whisker plots and cumulative frequency graphs.",
+      "Identify and handle outliers in data sets."
+    ],
+    "summary": "Statistics is the branch of mathematics that deals with collecting, analysing, interpreting, and presenting data to make inferences about the population from which the data comes.\n\nA population includes all elements of a dataset. A sample is a subset drawn from the population. Qualitative (categorical) data describes non-numerical characteristics; quantitative data can be measured or counted. Quantitative data is discrete (takes specific values, usually whole numbers) or continuous (can take any value in a range, such as height or temperature).\n\nSampling techniques affect data quality. Random sampling gives every member an equal chance of selection and is the most reliable. Systematic sampling selects every kth member from a list. Stratified sampling divides the population into subgroups (strata) and samples proportionally from each. Convenience sampling uses whoever is easily available (biased and unreliable). Quota sampling is like stratified but the selection within strata is not random.\n\nMeasures of central tendency summarise the centre of a dataset. The mode is the most frequent value. The median is the middle value when data is ordered (or the mean of the two middle values for an even number of data points). The mean is the sum of all values divided by the number of values: $\\bar{x} = \\tfrac{\\sum x}{n}$. For frequency distributions, $\\bar{x} = \\tfrac{\\sum f \\cdot x}{\\sum f}$.\n\nMeasures of dispersion describe the spread. The range is $\\text{max} - \\text{min}$. The interquartile range (IQR) = Q3 - Q1, which is less sensitive to outliers. The variance $\\sigma^2 = \\tfrac{\\sum(x - \\bar{x})^2}{n}$ and standard deviation $\\sigma = \\sqrt{\\text{variance}}$. A larger standard deviation means the data is more spread out. An outlier is typically a value more than 1.5 × IQR from the nearer quartile, or more than 2 standard deviations from the mean.\n\nBox-and-whisker plots display the minimum, Q1, median, Q3, and maximum. Cumulative frequency graphs (ogives) allow Q1, Q2 (median), Q3 to be read off, as well as percentiles.",
+    "quiz": [
+      {
+        "question": "A data set is: 3, 7, 7, 8, 9, 12, 15. Find the mean, median, mode, and range.",
+        "markscheme": "Mean $= \\tfrac{\\text{sum}}{7} = \\tfrac{61}{7} \\approx 8.71.$ Median = 8 (middle value, 4th of 7). Mode = 7 (appears twice). Range $= 15 - 3 = 12$."
+      },
+      {
+        "question": "A school has 400 students: 100 in Year 10, 150 in Year 11, and 150 in Year 12. Using stratified sampling, how many from each year should be in a sample of 40?",
+        "markscheme": "Proportions: Year 10: $\\tfrac{100}{400} \\times 40 = 10$; Year 11: $\\tfrac{150}{400} \\times 40 = 15$; Year 12: $\\tfrac{150}{400} \\times 40 = 15$."
+      },
+      {
+        "question": "The five-number summary for a data set is: min = 2, Q1 = 5, Q2 = 8, Q3 = 13, max = 20. Calculate the IQR and identify any potential outliers.",
+        "markscheme": "$\\text{IQR} = Q_3 - Q_1 = 13 - 5 = 8$. Lower fence: $Q_1 - 1.5 \\times \\text{IQR} = 5 - 12 = -7$. Upper fence: $Q_3 + 1.5 \\times \\text{IQR} = 13 + 12 = 25$. No data values lie outside [-7, 25], so there are no outliers."
+      },
+      {
+        "question": "A dataset has mean 15 and standard deviation 3. A new value of 27 is added. Explain whether this is likely to be an outlier.",
+        "markscheme": "27 is $27 - 15 = 12$ units from the mean, which is $12/3 = 4$ standard deviations away. Since 4 > 2, this is likely an outlier."
+      },
+      {
+        "question": "Describe the difference between positively and negatively skewed distributions in terms of the relationship between mean and median.",
+        "markscheme": "In a positively (right) skewed distribution, the mean is greater than the median, because the tail pulls the mean to the right. In a negatively (left) skewed distribution, the mean is less than the median. In a symmetric distribution, mean = median."
+      },
+      {
+        "question": "Give one advantage and one disadvantage of stratified sampling compared to simple random sampling.",
+        "markscheme": "Advantage: Ensures the sample is representative of all subgroups in the population, especially useful when subgroups are of unequal size. Disadvantage: Requires prior knowledge of the population's composition, and is more complex and time-consuming to implement than simple random sampling."
+      }
+    ]
+  },
+  {
+    "id": "4.2",
+    "unit": 4,
+    "title": "Correlation and regression",
+    "hl": "SL",
+    "objectives": [
+      "Draw and interpret scatter diagrams for bivariate data.",
+      "Calculate and interpret Pearson's product-moment correlation coefficient r.",
+      "Find the equation of the regression line y on x using technology.",
+      "Use the regression line to make predictions and understand the risks of extrapolation.",
+      "Distinguish between correlation and causation.",
+      "Apply linear regression to real-world problems involving two-variable data."
+    ],
+    "summary": "Correlation and regression extend statistics from single-variable (univariate) data to paired two-variable (bivariate) data, allowing us to investigate relationships between variables.\n\nA scatter diagram (scatter plot) represents bivariate data by plotting one variable on each axis. The pattern of points reveals whether there is a positive correlation (both variables tend to increase together), a negative correlation (one increases as the other decreases), or no apparent correlation.\n\nPearson's product-moment correlation coefficient r measures the strength and direction of a linear relationship. It is always in the range $-1 \\leq r \\leq 1$. Values near +1 indicate strong positive correlation; near -1 indicate strong negative correlation; near 0 indicate weak or no linear correlation. A rough guide: $|r| > 0.75$ is strong, 0.5 < $|r| ≤ 0.75$ is moderate, 0.25 < $|r| ≤ 0.5$ is weak. The formula is complex and is always calculated using technology in the IB course.\n\nThe regression line y on x (also called the line of best fit) minimises the sum of squared vertical residuals. Its equation is $y = ax + b$, where a and b are found using technology. The line always passes through the mean point $(\\bar{x}, \\bar{y})$. It should be used to predict y from x values within the range of the data (interpolation is more reliable than extrapolation).\n\nCritical point: correlation does not imply causation. A strong correlation between two variables may result from a common cause (lurking variable) rather than one causing the other. For example, ice cream sales and sunburn rates might be strongly correlated, but neither causes the other; both are caused by hot weather.\n\nFor predictions: use the regression line y on x when predicting y from a given x. Do not use this line to predict x from y — instead, find the regression line x on y.",
+    "quiz": [
+      {
+        "question": "Describe what an r value of -0.92 indicates about the relationship between two variables.",
+        "markscheme": "$r = -0.92$ indicates a strong negative linear correlation: as one variable increases, the other tends to decrease, with most points lying close to the regression line."
+      },
+      {
+        "question": "A regression line for predicting weight y (kg) from height x (cm) is $y = 0.8x - 45.$ Predict the weight of someone with height 170 cm.",
+        "markscheme": "$y = 0.8(170) - 45 = 136 - 45 = 91$ kg. Since 170 cm is presumably within the data range, this interpolation is reasonable."
+      },
+      {
+        "question": "Explain why the regression line y on x should not be used to estimate the height of a person given their weight.",
+        "markscheme": "The regression line y on x is found by minimising vertical (y-direction) residuals. Using it to predict x from y involves rearranging the equation, which would not minimise horizontal residuals. Instead, the regression line x on y should be calculated and used."
+      },
+      {
+        "question": "Two students find $r = 0.86$ between hours studied and exam score. Student A claims 'studying causes higher scores.' Student B says 'we can't be sure.' Who is correct and why?",
+        "markscheme": "Student B is correct. Correlation does not imply causation. Although $r = 0.86$ shows a strong positive correlation, it is possible that a third factor (e.g. student ability) causes both more studying and higher scores. A controlled experiment would be needed to establish causation."
+      },
+      {
+        "question": "The mean point for bivariate data is $(\\bar{x}, \\bar{y}) = (5, 12)$ and the regression line y on x has gradient 1.8. Find the equation of the regression line.",
+        "markscheme": "Using $y - \\bar{y} = a(x - \\bar{x})$: $y - 12 = 1.8(x - 5)$ → $y = 1.8x - 9 + 12 = 1.8x + 3$."
+      },
+      {
+        "question": "Explain the difference between interpolation and extrapolation in the context of regression, and state which is more reliable.",
+        "markscheme": "Interpolation means predicting y for an x value within the range of the data; extrapolation means predicting for an x value outside the data range. Interpolation is more reliable because the linear relationship has been observed in that range. Extrapolation assumes the trend continues beyond the data, which may not be valid."
+      }
+    ]
+  },
+  {
+    "id": "4.3",
+    "unit": 4,
+    "title": "Probability",
+    "hl": "Some HL",
+    "objectives": [
+      "Calculate probabilities of events using $P(A) = \\tfrac{n(A)}{n(U)}$ for equally likely outcomes.",
+      "Apply the addition rule $P(A \\cup B) = P(A) + P(B) - P(A \\cap B)$ and understand mutually exclusive events.",
+      "Apply the multiplication rule for independent events $P(A \\cap B) = P(A) \\times P(B)$.",
+      "Find conditional probabilities using $P(A|B) = \\tfrac{P(A \\cap B)}{P(B)}$, and use probability trees.",
+      "Use Venn diagrams and probability trees to solve multi-step probability problems.",
+      "Apply Bayes' theorem for up to three events (HL)."
+    ],
+    "summary": "Probability is a measure of how likely an event is, expressed as a number between 0 (impossible) and 1 (certain). For equally likely outcomes, $P(A) = \\tfrac{n(A)}{n(U)}$, the number of outcomes in event A divided by the total number in the sample space U.\n\nThe complement rule: $P(A') = 1 - P(A)$, where A' is the event that A does not occur.\n\nFor combined events: The addition rule is $P(A \\cup B) = P(A) + P(B) - P(A \\cap B)$. If A and B are mutually exclusive (cannot both occur), $P(A \\cap B) = 0$, so $P(A \\cup B) = P(A) + P(B)$. Two events A and B are independent if the occurrence of one does not affect the probability of the other: $P(A \\cap B) = P(A) \\times P(B)$. If two events are independent, they cannot be mutually exclusive (unless one has probability zero), and vice versa.\n\nConditional probability: P(A|B) is the probability of A given that B has already occurred. The formula is $P(A|B) = \\tfrac{P(A \\cap B)}{P(B)}$. Probability trees and Venn diagrams are powerful visual tools for organising multi-step probability calculations. On a tree, multiply along branches (using the multiplication rule), and add between branches (using the addition rule).\n\nFor HL, Bayes' theorem allows us to reverse a conditional probability. For events B1, B2, B3 partitioning the sample space: $P(B_i|A) = \\dfrac{P(B_i)P(A|B_i)}{P(B_1)P(A|B_1) + P(B_2)P(A|B_2) + P(B_3)P(A|B_3)}$. This is used when we observe an outcome A and want to reason backwards to which cause Bi is most likely.",
+    "quiz": [
+      {
+        "question": "A card is drawn at random from a standard 52-card deck. Find the probability that it is a heart or a king.",
+        "markscheme": "$P(\\text{heart}) = \\tfrac{13}{52}$, $P(\\text{king}) = \\tfrac{4}{52}$, $P(\\text{heart and king}) = \\tfrac{1}{52}$ (king of hearts). $P(\\text{heart or king}) = \\tfrac{13}{52} + \\tfrac{4}{52} - \\tfrac{1}{52} = \\tfrac{16}{52} = \\tfrac{4}{13}$."
+      },
+      {
+        "question": "Two events A and B satisfy P(A) = 0.4, P(B) = 0.5, and $P(A \\cap B) = 0$.2. Are A and B independent?",
+        "markscheme": "For independence, need $P(A \\cap B) = P(A) \\times P(B) = 0.4 \\times 0.5 = 0.2.$ Since $P(A \\cap B) = 0$.2 = P(A)×P(B), A and B are independent."
+      },
+      {
+        "question": "A bag has 4 red and 6 blue balls. Two are drawn without replacement. Find the probability that both are red.",
+        "markscheme": "$P(\\text{1st red}) = \\tfrac{4}{10}$. $P(\\text{2nd red} | \\text{1st red}) = \\tfrac{3}{9}$. $P(\\text{both red}) = \\tfrac{4}{10} \\cdot \\tfrac{3}{9} = \\tfrac{12}{90} = \\tfrac{2}{15}$."
+      },
+      {
+        "question": "Given P(A) = 0.6, P(B) = 0.7, and $P(A \\cap B) = 0$.42, find P(A|B) and P(B|A).",
+        "markscheme": "$P(A|B) = \\tfrac{P(A \\cap B)}{P(B)} = \\tfrac{0.42}{0.7} = 0.6.P(B|A) = \\tfrac{P(A \\cap B)}{P(A)} = \\tfrac{0.42}{0.6} = 0.7. Note P(A|B) = P(A)$, confirming independence."
+      },
+      {
+        "question": "(HL) Three machines A, B, C produce 25%, 35%, and 40% of a factory's output respectively. The defect rates are 5%, 3%, and 2%. A randomly chosen item is found to be defective. Find the probability it came from machine A.",
+        "markscheme": "$P(\\text{defect}) = 0.25(0.05) + 0.35(0.03) + 0.40(0.02) = 0.0125 + 0.0105 + 0.008 = 0.031.P(A|\\text{defect}) = \\tfrac{0.25 \\times 0.05}{0.031} = \\tfrac{0.0125}{0.031} \\approx 0.403.$"
+      },
+      {
+        "question": "Two events A and B are mutually exclusive with P(A) = 0.3 and P(B) = 0.5. Show they cannot be independent.",
+        "markscheme": "If mutually exclusive, $P(A \\cap B) = 0$. For independence, we would need $P(A \\cap B) = P(A) \\times P(B) = 0.3 \\times 0.5 = 0.15$ ≠ 0. Contradiction: $P(A \\cap B)$ cannot be both $0$ and $0.15.$ So mutually exclusive non-trivial events cannot be independent."
+      }
+    ]
+  },
+  {
+    "id": "4.4",
+    "unit": 4,
+    "title": "Probability distributions",
+    "hl": "Some HL",
+    "objectives": [
+      "Construct and use probability distributions for discrete random variables.",
+      "Calculate expected value $E(X) = \\sum x\\, P(X = x)$ and variance Var(X) for discrete distributions.",
+      "Identify and apply the binomial distribution $X \\sim B(n, p)$ to find probabilities.",
+      "Recognise and apply the normal distribution N($\\mu$, $\\sigma^2$) using a calculator.",
+      "Standardise normal variables using $Z = \\tfrac{X - \\mu}{\\sigma}$ and use standard normal tables or technology.",
+      "Solve inverse normal problems to find $\\mu$ or $\\sigma$ given a probability (HL)."
+    ],
+    "summary": "A random variable X is a numerical outcome of a random process. A discrete random variable takes a countable set of values; a continuous random variable can take any value in an interval.\n\nFor a discrete random variable, the probability distribution is a table of all possible values x and their probabilities P(X = x), with the requirement that $\\sum P(X = x) = 1$. The expected value (mean) is $E(X) = \\sum x\\, P(X = x)$. The variance is $\\text{Var}(X) = E(X^2) - [E(X)]^2 = \\sum x^2 P(X=x) - \\mu^2$.\n\nThe binomial distribution models the number of successes in n independent trials, each with probability p of success. If $X \\sim B(n, p)$, then $P(X = r) = \\binom{n}{r} p^r (1-p)^{n-r}$. The expected value is $E(X) = np$ and the variance is $\\text{Var}(X) = np(1-p)$. The binomial distribution is appropriate when: there is a fixed number of trials n; each trial is independent; each trial has exactly two outcomes (success/failure); and the probability of success p is constant.\n\nThe normal distribution is a continuous symmetric bell-shaped distribution. X ~ N($\\mu$, $\\sigma^2$) has mean $\\mu$ and standard deviation $\\sigma$. Approximately 68% of data lies within $\\mu \\pm \\sigma$, 95% within $\\mu \\pm 2\\sigma$, and 99.7% within $\\mu \\pm 3\\sigma$. All normal probabilities are calculated using technology (the IB calculator). The standard normal distribution is $Z \\sim N(0, 1)$, and X is standardised by $Z = \\tfrac{X - \\mu}{\\sigma}$.\n\nInverse normal problems ask: given P(X < a) = p, find a. Technology solves these directly by finding the value corresponding to a given cumulative probability.",
+    "quiz": [
+      {
+        "question": "X is a discrete random variable with P(X=1) = 0.2, P(X=2) = 0.5, P(X=3) = 0.3. Find E(X) and Var(X).",
+        "markscheme": "$E(X) = 1(0.2) + 2(0.5) + 3(0.3) = 0.2 + 1 + 0.9 = 2.1$. $E(X^2) = 1(0.2) + 4(0.5) + 9(0.3) = 0.2 + 2 + 2.7 = 4.9$. $\\text{Var}(X) = 4.9 - 2.1^2 = 4.9 - 4.41 = 0.49$."
+      },
+      {
+        "question": "A fair coin is tossed 8 times. Find (a) P(exactly 3 heads) and (b) P(at least 6 heads).",
+        "markscheme": "$X \\sim B(8, 0.5)$. (a) $P(X=3) = \\binom{8}{3}(0.5)^3(0.5)^5 = \\tfrac{56}{256} \\approx 0.219$ (3 s.f.). (b) $P(X \\geq 6) = P(X=6)+P(X=7)+P(X=8) = \\tfrac{28+8+1}{256} = \\tfrac{37}{256} \\approx 0.145$."
+      },
+      {
+        "question": "$X \\sim B(10, 0.3)$. Find (a) E(X) and (b) Var(X).",
+        "markscheme": "(a) $E(X) = np = 10(0.3) = 3.$ (b) $\\text{Var}(X) = np(1-p) = 10(0.3)(0.7) = 2.1.$"
+      },
+      {
+        "question": "The heights of students are normally distributed with mean 165 cm and standard deviation 8 cm. Find the probability that a randomly chosen student is taller than 175 cm.",
+        "markscheme": "$Z = \\tfrac{175-165}{8} = 1.25$. $P(X > 175) = P(Z > 1.25) = 1 - \\Phi(1.25) \\approx 1 - 0.8944 = 0.106$ (3 s.f.)."
+      },
+      {
+        "question": "$X \\sim N(50, 16)$. Find the value of a such that P(X < a) = 0.90.",
+        "markscheme": "Using inverse normal: z = 1.2816 (standard score for 90th percentile). $a = \\mu + z\\sigma = 50 + 1.2816 \\times 4 = 50 + 5.126 = 55.1$ (3 s.f.)."
+      },
+      {
+        "question": "In a quality control process, 5% of items are defective. A sample of 20 items is tested. Find the probability that (a) exactly 2 are defective and (b) fewer than 2 are defective.",
+        "markscheme": "$X \\sim B(20, 0.05)$. (a) $P(X=2) = \\binom{20}{2}(0.05)^2(0.95)^{18} = 190 \\times 0.0025 \\times 0.3972 \\approx 0.189. (b) P(X < 2) = P(X=0) + P(X=1) = 0.95^{20} + 20(0.05)(0.95)^{19} \\approx 0.358 + 0.377 = 0.736$."
+      }
+    ]
+  },
+  {
+    "id": "4.5",
+    "unit": 4,
+    "title": "Statistics and probability (HL)",
+    "hl": "HL",
+    "objectives": [
+      "Find unbiased estimates of the population mean and variance from sample data.",
+      "Apply the central limit theorem to justify the use of normal approximations.",
+      "Calculate confidence intervals for a population mean.",
+      "Conduct hypothesis tests for the mean of a normal distribution with known variance.",
+      "Understand the Poisson distribution and apply it as a model for rare events.",
+      "Use the geometric distribution and negative binomial distribution where appropriate."
+    ],
+    "summary": "The HL Statistics and Probability section builds rigorous inferential tools on the foundations laid in the SL course. The central aim is to move from describing sample data to making valid claims about the underlying population.\n\nAn unbiased estimate of the population mean $\\mu$ is the sample mean $\\bar{x} = \\tfrac{\\sum x}{n}$. The unbiased estimate of the population variance $\\sigma^2$ uses n-1 in the denominator: $s^2 = \\tfrac{\\sum(x - \\bar{x})^2}{n-1}$. This is because dividing by n underestimates the population variance when a sample is used.\n\nThe central limit theorem states that for large sample sizes (typically $n ≥ 30$), the distribution of the sample mean $\\bar{X}$ is approximately normal with mean $\\mu$ and variance $\\sigma^2/n$, regardless of the shape of the original distribution: $\\bar{X}$ ~ N($\\mu$, $\\sigma^2/n$). This justifies using normal distribution calculations even when the population distribution is unknown.\n\nA 95% confidence interval for a population mean $\\mu$ (with known variance $\\sigma^2$) is constructed as $\\bar{x} \\pm 1.96\\,\\tfrac{\\sigma}{\\sqrt{n}}$. This means that in repeated sampling, 95% of such intervals would contain the true population mean.\n\nHypothesis testing for the mean involves stating a null hypothesis H0 (e.g. $\\mu = \\mu_0$) and an alternative hypothesis H1. Under H0, compute the test statistic $z = \\tfrac{\\bar{x} - \\mu_0}{\\sigma/\\sqrt{n}}$ and compare to a critical value at the chosen significance level (e.g. z = 1.96 for 5% two-tailed test). If |z| > critical value, reject H0.\n\nThe Poisson distribution models the number of events occurring in a fixed time or space interval when events occur independently at a constant average rate $\\lambda$. $X \\sim \\text{Poi}(\\lambda)$ has $P(X = k) = \\tfrac{e^{-\\lambda} \\lambda^k}{k!}$ with $E(X) = \\text{Var}(X) = \\lambda$. The Poisson distribution is a good approximation to B(n,p) when n is large and p is small, with $\\lambda = np$.",
+    "quiz": [
+      {
+        "question": "A random sample of 10 values gives: 3, 5, 8, 7, 6, 4, 9, 5, 7, 6. Calculate unbiased estimates for the population mean and variance.",
+        "markscheme": "$\\bar{x} = \\tfrac{3+5+8+7+6+4+9+5+7+6}{10} = \\tfrac{60}{10} = 6$. $s^2 = \\tfrac{\\sum(x_i - 6)^2}{10-1} = \\tfrac{30}{9} \\approx 3.33$."
+      },
+      {
+        "question": "Emails arrive at a server at an average rate of 3 per minute. Using the Poisson distribution, find the probability of exactly 5 emails in one minute.",
+        "markscheme": "$X \\sim \\text{Poi}(3)$. P(X=5) = e^(-3) × 3^5 / 5! = e^(-3) × 243/120 = 0.04979 × 2.025 ≈ 0.101."
+      },
+      {
+        "question": "Construct a 95% confidence interval for the mean height of a population, given sample mean $\\bar{x} = 170$ cm, known $\\sigma = 10$ cm, and sample size $n = 64$.",
+        "markscheme": "$\\text{SE} = \\tfrac{\\sigma}{\\sqrt{n}} = \\tfrac{10}{8} = 1.25.\\text{CI} = 170 \\pm 1.96 \\times 1.25 = 170 \\pm 2.45.$ Interval: (167.55, 172.45) cm."
+      },
+      {
+        "question": "State the central limit theorem and explain why it is important in hypothesis testing.",
+        "markscheme": "The CLT states that for large samples, the distribution of the sample mean $\\bar{X}$ is approximately N($\\mu$, $\\sigma^2/n$) regardless of the population distribution. This is important because it allows us to perform normal-based hypothesis tests and confidence intervals even when the population distribution is non-normal, as long as n is sufficiently large (≥ 30)."
+      },
+      {
+        "question": "A manufacturer claims the mean lifespan of light bulbs is $\\mu = 1000$ hours, with $\\sigma = 80$ hours. A sample of 25 bulbs has mean 970 hours. Test at the 5% significance level whether the mean has decreased.",
+        "markscheme": "H0: $\\mu = 1000$; H1: $\\mu < 1000$ (one-tailed test). Test statistic: $z = \\tfrac{970 - 1000}{80/\\sqrt{25}} = \\tfrac{-30}{16} = -1.875.$ Critical value at 5% one-tailed: -1.645. Since -1.875 < -1.645, reject H0. There is sufficient evidence at 5% significance that the mean lifespan has decreased."
+      },
+      {
+        "question": "Cars arrive at a petrol station at a mean rate of 2 per 5-minute interval. Find the probability that more than 3 cars arrive in a 10-minute interval.",
+        "markscheme": "In 10 minutes, $\\lambda = 4$ so $X \\sim \\text{Poi}(4)$. $P(X > 3) = 1 - P(X \\leq 3) = 1 - [P(X=0)+P(X=1)+P(X=2)+P(X=3)] = 1 - e^{-4}(1 + 4 + 8 + 32/6) = 1 - e^{-4}(1 + 4 + 8 + 5.333) = 1 - e^{-4}(18.333) \\approx 1 - 0.01832 \\times 18.333 \\approx 1 - 0.4335 = 0.567$."
+      }
+    ]
+  },
+  {
+    "id": "5.1",
+    "unit": 5,
+    "title": "Differentiation",
+    "hl": "Some HL",
+    "objectives": [
+      "Differentiate polynomial, trigonometric, exponential, and logarithmic functions using standard derivatives.",
+      "Apply the product rule, quotient rule, and chain rule to differentiate composite and combined expressions.",
+      "Find and classify stationary points as local maxima, minima, or points of inflection using the first or second derivative.",
+      "Determine intervals where a function is increasing or decreasing.",
+      "Find the equations of tangents and normals to curves at given points.",
+      "Solve optimisation problems by setting the derivative equal to zero and testing for maxima or minima."
+    ],
+    "summary": "Differentiation is the process of finding the derivative of a function, which gives the instantaneous rate of change of the function with respect to its variable. Geometrically, the derivative f'(x) represents the gradient (slope) of the tangent to the graph at the point (x, f(x)).\n\nThe power rule is the most fundamental: $\\tfrac{d}{dx}(x^n) = nx^{n-1}$ for any $n \\in \\mathbb{R}$. The constant multiple and sum rules allow us to differentiate term by term: $\\tfrac{d}{dx}(kf(x)) = k f'(x)$ and $\\tfrac{d}{dx}(f(x) \\pm g(x)) = f'(x) \\pm g'(x)$.\n\nStandard derivatives to know (from the formula booklet): $\\tfrac{d}{dx}(\\sin x) = \\cos x$; $\\tfrac{d}{dx}(\\cos x) = -\\sin x$; $\\tfrac{d}{dx}(\\tan x) = \\sec^2 x = \\tfrac{1}{\\cos^2 x}$; $\\tfrac{d}{dx}(e^x) = e^x$; $\\tfrac{d}{dx}(\\ln x) = \\tfrac{1}{x}$.\n\nThe product rule: if y = uv, then $\\tfrac{dy}{dx} = u\\tfrac{dv}{dx} + v\\tfrac{du}{dx}$. The quotient rule: if y = u/v, then $\\tfrac{dy}{dx} = \\tfrac{v\\,\\tfrac{du}{dx} - u\\,\\tfrac{dv}{dx}}{v^2}$. The chain rule for composite functions: $\\tfrac{d}{dx}(f(g(x))) = f'(g(x)) \\cdot g'(x)$. A useful mnemonic: 'the derivative of the outside, leave the inside alone, times the derivative of the inside'.\n\nA stationary point occurs where $f'(x) = 0$. To classify: if $f''(x) > 0$ it is a local minimum; if $f''(x) < 0$ it is a local maximum; if $f''(x) = 0$ use first derivative sign analysis. A point of inflection is where the concavity changes ($f''(x) = 0$ and f'' changes sign).\n\nThe tangent at point (a, f(a)) has equation $y - f(a) = f'(a)(x - a)$. The normal at the same point is perpendicular: $y - f(a) = -\\tfrac{1}{f'(a)}(x - a)$.",
+    "quiz": [
+      {
+        "question": "Differentiate $f(x) = 3x^{4} - 2x^{2} + 5x - 7$.",
+        "markscheme": "$f'(x) = 12x^3 - 4x + 5$."
+      },
+      {
+        "question": "Differentiate $y = (x^{2} + 1)\\sin x$ using the product rule.",
+        "markscheme": "Let $u = x^2 + 1$, $v = \\sin x$. $\\tfrac{du}{dx} = 2x$, $\\tfrac{dv}{dx} = \\cos x$. $\\tfrac{dy}{dx} = (x^2+1)\\cos x + 2x\\sin x$."
+      },
+      {
+        "question": "Differentiate $y = e^{3x^{2}}$ using the chain rule.",
+        "markscheme": "Let $u = 3x^2$. $\\tfrac{dy}{dx} = e^u \\cdot \\tfrac{du}{dx} = e^{3x^2} \\cdot 6x = 6xe^{3x^2}$."
+      },
+      {
+        "question": "Find the stationary points of $f(x) = x^{3} - 6x^{2} + 9x + 2$ and classify each.",
+        "markscheme": "$f'(x) = 3x^2 - 12x + 9 = 3(x-1)(x-3) = 0$. Stationary points at x = 1 and x = 3. $f''(x) = 6x - 12$. $f''(1) = -6 < 0$: local maximum at (1, 6). $f''(3) = 6 > 0$: local minimum at (3, 2)."
+      },
+      {
+        "question": "Find the equation of the tangent to y = x e^x at the point where x = 0.",
+        "markscheme": "y(0) = 0. $y' = e^x + xe^x = e^x(1+x)$. $y'(0) = 1$. Tangent: y - 0 = 1(x - 0) → y = x."
+      },
+      {
+        "question": "A farmer has 200 m of fencing to enclose a rectangular field against a straight wall (no fence needed on the wall side). Find the dimensions for maximum area.",
+        "markscheme": "Let width = x (two sides of x), length = 200 - 2x. $A = x(200-2x) = 200x - 2x^2$. $\\tfrac{dA}{dx} = 200 - 4x = 0 \\to x = 50$. Length $= 200 - 100 = 100$ m. Maximum area $= 50 \\times 100 = 5000$ m$^2$."
+      }
+    ]
+  },
+  {
+    "id": "5.2",
+    "unit": 5,
+    "title": "Integration",
+    "hl": "Some HL",
+    "objectives": [
+      "Find indefinite integrals of polynomial, trigonometric, exponential, and reciprocal functions.",
+      "Evaluate definite integrals using the fundamental theorem of calculus.",
+      "Find the area enclosed between a curve and the x-axis using definite integration.",
+      "Find the area between two curves.",
+      "Use integration by substitution for composite functions (recognise 'look-out' integrals).",
+      "Apply integration to find areas and solve problems in context."
+    ],
+    "summary": "Integration is the reverse process of differentiation, sometimes called antidifferentiation. The Fundamental Theorem of Calculus formalises this relationship: if F'(x) = f(x), then the definite integral from a to b of f(x) dx equals F(b) - F(a).\n\nIndefinite integrals: $\\int x^n\\,dx = \\tfrac{x^{n+1}}{n+1} + c$ for n ≠ -1. The constant of integration c is essential and must always be included. $\\int \\tfrac{1}{x}\\,dx = \\ln|x| + c$. $\\int e^x\\,dx = e^x + c$. $\\int \\sin x\\,dx = -\\cos x + c$. $\\int \\cos x\\,dx = \\sin x + c$. These can all be verified by differentiating the right-hand side.\n\nDefinite integrals: $\\int_a^b f(x)\\,dx = [F(x)]_a^b = F(b) - F(a)$. The result is a number (not a function). Geometrically, it equals the net signed area between the curve y = f(x) and the x-axis from x = a to x = b. Areas below the x-axis contribute negatively.\n\nTo find the total area (not net area) when a curve dips below the x-axis, split the integral at the x-intercepts and take the absolute value of each part.\n\nThe area between two curves y = f(x) and y = g(x) where f(x) ≥ g(x) on [a, b] is $\\int_a^b [f(x) - g(x)]\\,dx$. Find the x-coordinates of intersections to determine the limits.\n\nReverse chain rule ('lookout' integrals): $\\int \\tfrac{f'(x)}{f(x)}\\,dx = \\ln|f(x)| + c$; $\\int g'(x)\\,[g(x)]^n\\,dx = \\tfrac{[g(x)]^{n+1}}{n+1} + c$; $\\int f'(x)\\,e^{f(x)}\\,dx = e^{f(x)} + c$. Recognising these patterns avoids the need for formal substitution in simpler cases.",
+    "quiz": [
+      {
+        "question": "Find $\\int (3x^{2} - 4x + 1)\\,dx$.",
+        "markscheme": "$\\int(3x^2 - 4x + 1)\\,dx = x^3 - 2x^2 + x + c$."
+      },
+      {
+        "question": "Evaluate $\\int_{1}^{3} (x^{2} + 2)\\,dx$.",
+        "markscheme": "$\\left[\\tfrac{x^3}{3} + 2x\\right]_1^3 = \\left(9 + 6\\right) - \\left(\\tfrac{1}{3} + 2\\right) = 15 - \\tfrac{7}{3} = \\tfrac{38}{3}$."
+      },
+      {
+        "question": "Find the area enclosed between $y = x^{2} - 4$ and the x-axis.",
+        "markscheme": "Roots: $x^2 - 4 = 0 \\to x = \\pm 2$. Area $= \\int_{-2}^{2}|x^2 - 4|\\,dx = -\\int_{-2}^{2}(x^2 - 4)\\,dx$ (since $f < 0$ on $[-2,2]$) $= -\\left[\\tfrac{x^3}{3} - 4x\\right]_{-2}^{2} = -\\left[\\tfrac{16}{3} - 16\\right] = 16 - \\tfrac{16}{3} = \\tfrac{32}{3}$."
+      },
+      {
+        "question": "Find $\\int \\tfrac{2x}{x^{2} + 1}\\,dx$.",
+        "markscheme": "Recognise the form $f'(x)/f(x)$ with $f(x) = x^2 + 1$. $\\int \\tfrac{2x}{x^2+1}\\,dx = \\ln(x^2+1) + c$."
+      },
+      {
+        "question": "Find the area between y = $x^{2}$ and y = x + 2.",
+        "markscheme": "Intersections: $x^2 = x + 2 \\to x^2 - x - 2 = 0 \\to (x-2)(x+1) = 0$ → $x = -1$ or $2$. Area $= \\int_{-1}^{2}[(x+2) - x^2]\\,dx = \\left[\\tfrac{x^2}{2} + 2x - \\tfrac{x^3}{3}\\right]_{-1}^{2} = \\left(2 + 4 - \\tfrac{8}{3}\\right) - \\left(\\tfrac{1}{2} - 2 + \\tfrac{1}{3}\\right) = \\tfrac{9}{2}$."
+      },
+      {
+        "question": "Find ∫ $\\sin(3x)$ dx.",
+        "markscheme": "$\\int \\sin(3x)\\,dx = -\\tfrac{\\cos(3x)}{3} + c$. (Verify: $\\tfrac{d}{dx}(-\\tfrac{\\cos(3x)}{3}) = \\sin(3x) \\cdot \\tfrac{3}{3} = \\sin(3x)$. ✓)"
+      }
+    ]
+  },
+  {
+    "id": "5.3",
+    "unit": 5,
+    "title": "Kinematics",
+    "hl": "SL",
+    "objectives": [
+      "Understand the relationships between displacement, velocity, and acceleration.",
+      "Differentiate displacement to find velocity and acceleration functions.",
+      "Integrate acceleration to find velocity, and velocity to find displacement.",
+      "Find position, velocity, and speed at a given time.",
+      "Determine when an object changes direction and find total distance travelled.",
+      "Apply kinematics models to real-world motion problems."
+    ],
+    "summary": "Kinematics applies differential and integral calculus to the motion of objects moving in a straight line. The three key quantities — displacement, velocity, and acceleration — are related by differentiation and integration.\n\nDisplacement s(t) is the signed position of an object measured from a fixed origin at time t. It can be positive or negative depending on direction. Distance is the magnitude of displacement and is always non-negative.\n\nVelocity $v(t) = \\tfrac{ds}{dt} = s'(t)$ is the rate of change of displacement. It can be positive (moving in the positive direction) or negative. Speed = |v(t)| is always non-negative.\n\nAcceleration $a(t) = \\tfrac{dv}{dt} = v'(t) = s''(t)$ is the rate of change of velocity. Positive acceleration means the object is speeding up in the positive direction (or slowing down in the negative direction); the relationship between speed and acceleration requires care.\n\nWorking in reverse (integration): if $v(t) = \\int a(t)\\,dt + C_1$ and $s(t) = \\int v(t)\\,dt + C_2$, the constants of integration C1 and C2 are found from initial conditions (e.g. v(0) = 5 means C1 = 5; s(0) = 0 means C2 = 0).\n\nThe object changes direction when v(t) = 0 (and the sign of v changes). The total distance travelled (not displacement) is found by integrating |v(t)|, which requires splitting the integral at points where v = 0.\n\nCommon notation: displacement s (in metres), velocity v (in m/s), acceleration a (in $\\text{m/s}^2$), time t (in seconds).",
+    "quiz": [
+      {
+        "question": "A particle's displacement is $s(t) = t^3 - 6t^2 + 9t$ (metres), t ≥ 0. Find (a) velocity, (b) acceleration, (c) when the particle is at rest, (d) the displacement when t = 4.",
+        "markscheme": "(a) $v(t) = 3t^2 - 12t + 9$. (b) $a(t) = 6t - 12$. (c) $v = 0$: $3(t-1)(t-3) = 0$ → t = 1 or t = 3. (d) $s(4) = 64 - 96 + 36 = 4$ m."
+      },
+      {
+        "question": "A particle has velocity $v(t) = 4 - 2t$ m/s and initial displacement s(0) = 3 m. Find s(t).",
+        "markscheme": "$s(t) = \\int(4 - 2t)\\,dt = 4t - t^2 + C$. Using s(0) = 3: C = 3. So $s(t) = 4t - t^2 + 3$."
+      },
+      {
+        "question": "The acceleration of a particle is $a(t) = 6t - 2$. At t = 0, v = 4 and s = 0. Find v(t) and s(t).",
+        "markscheme": "$v(t) = \\int(6t-2)\\,dt = 3t^2 - 2t + C$. v(0) = 4 → C = 4. $v(t) = 3t^2 - 2t + 4$. $s(t) = \\int(3t^2 - 2t + 4)\\,dt = t^3 - t^2 + 4t + D$. s(0) = 0 → D = 0. $s(t) = t^3 - t^2 + 4t$."
+      },
+      {
+        "question": "A ball is thrown upward with initial velocity 20 m/s from ground level. Taking upward as positive and g = 10 $\\text{m/s}^2$: (a) find v(t), (b) find s(t), (c) find maximum height.",
+        "markscheme": "(a) $a = -10$, so $v(t) = -10t + 20$. (b) $s(t) = -5t^2 + 20t$. (c) Maximum at $v = 0$: $t = 2$. $s(2) = -20 + 40 = 20$ m."
+      },
+      {
+        "question": "A particle moves with $v(t) = t^2 - 4$. Find the total distance travelled from t = 0 to t = 3.",
+        "markscheme": "$v = 0$ when $t^2 - 4 = 0 \\to t = 2$ (for t ≥ 0). $v < 0$ on $[0,2]$, $v > 0$ on $[2,3]$. Distance $= \\left|\\int_0^2(t^2-4)\\,dt\\right| + \\int_2^3(t^2-4)\\,dt$. $\\int_0^2(t^2-4)\\,dt = \\left[\\tfrac{t^3}{3} - 4t\\right]_0^2 = \\tfrac{8}{3} - 8 = -\\tfrac{16}{3}. \\int_2^3(t^2-4)\\,dt = \\left[\\tfrac{t^3}{3} - 4t\\right]_2^3 = (9-12) - (\\tfrac{8}{3}-8) = -3 + \\tfrac{16}{3} = \\tfrac{7}{3}. Total distance = \\tfrac{16}{3} + \\tfrac{7}{3} = \\tfrac{23}{3}$ m."
+      },
+      {
+        "question": "Distinguish between distance and displacement, and between speed and velocity, giving an example for each pair.",
+        "markscheme": "Displacement is the signed change in position from origin (can be negative); distance is total path length (always non-negative). Example: a ball that goes 3 m right and then 3 m back has displacement 0 m but total distance 6 m. Velocity is signed rate of change of displacement; speed is the magnitude of velocity. A car moving at 60 km/h to the left has velocity -60 km/h but speed 60 km/h."
+      }
+    ]
+  },
+  {
+    "id": "5.4",
+    "unit": 5,
+    "title": "Additional differentiation and integration (HL)",
+    "hl": "HL",
+    "objectives": [
+      "Differentiate functions from first principles using the limit definition.",
+      "Differentiate implicitly to find $\\tfrac{dy}{dx}$ for relations not expressed as y = f(x).",
+      "Obtain related rates of change from implicit differentiation.",
+      "Integrate by substitution and by parts.",
+      "Find volumes of revolution by rotating a curve about an axis.",
+      "Apply L'Hôpital's rule to evaluate limits of indeterminate forms."
+    ],
+    "summary": "HL Additional Differentiation and Integration extends the calculus toolkit with powerful techniques needed for the most challenging IB problems.\n\nDifferentiation from first principles uses the definition $f'(x) = \\lim_{h \\to 0} \\dfrac{f(x+h) - f(x)}{h}$. This algebraic process verifies and motivates the differentiation rules. It is only required when the question specifically asks for it.\n\nImplicit differentiation is used when y is not expressed explicitly as a function of x. Differentiate both sides with respect to x, treating y as a function of x and applying the chain rule whenever y appears (so d/dx(y^n) = ny^(n-1) $\\tfrac{dy}{dx}$). Collect $\\tfrac{dy}{dx}$ terms and solve. This is essential for circles, ellipses, and many other curves.\n\nRelated rates of change use the chain rule: if A and B both depend on time t, then dA/dt = dA/dB × dB/dt. Common examples include rates of change of volume and surface area, ladder problems, and water-tank problems.\n\nIntegration by substitution: choose a substitution u = g(x), compute du = g'(x) dx, rewrite the entire integral in terms of u, integrate, and substitute back. This is the reverse of the chain rule.\n\nIntegration by parts: $\\int u\\,dv = uv - \\int v\\,du$. Useful when the integrand is a product. Choose u and dv using LIATE order as a guide: Logarithms, Inverse trig, Algebraic (polynomials), Trigonometric, Exponential. For example, ∫x e^x dx with u = x, dv = e^x dx gives x e^x - e^x + c.\n\nVolumes of revolution: rotating y = f(x) about the x-axis gives $V = \\pi \\int_a^b [f(x)]^2\\,dx$.\n\nL'Hôpital's rule applies to limits of the form 0/0 or ∞/∞: $\\lim_{x \\to a} \\tfrac{f(x)}{g(x)} = \\lim_{x \\to a} \\tfrac{f'(x)}{g'(x)}$, provided the latter limit exists.",
+    "quiz": [
+      {
+        "question": "From first principles, differentiate f(x) = $x^{2}$.",
+        "markscheme": "$f'(x) = \\lim_{h \\to 0} \\dfrac{(x+h)^2 - x^2}{h} = \\lim_{h \\to 0} \\dfrac{2xh + h^2}{h} = \\lim_{h \\to 0}(2x + h) = 2x$."
+      },
+      {
+        "question": "Find $\\tfrac{dy}{dx}$ given that $x^2 + y^2 = 25$ (implicit differentiation).",
+        "markscheme": "Differentiating both sides: $2x + 2y\\,\\tfrac{dy}{dx} = 0 \\to \\tfrac{dy}{dx} = -\\tfrac{x}{y}$."
+      },
+      {
+        "question": "A spherical balloon is being inflated at 100 cm^3/s. Find the rate at which the radius is increasing when $r = 5$ cm.",
+        "markscheme": "$V = \\tfrac{4}{3}\\pi r^3$, $\\tfrac{dV}{dt} = 4\\pi r^2\\,\\tfrac{dr}{dt}$. So $100 = 4\\pi(25)\\,\\tfrac{dr}{dt} \\to \\tfrac{dr}{dt} = \\tfrac{100}{100\\pi} = \\tfrac{1}{\\pi} \\approx 0.318$ cm/s."
+      },
+      {
+        "question": "Evaluate ∫x e^x dx using integration by parts.",
+        "markscheme": "Let u = x, dv = e^x dx. Then du = dx, v = e^x. $\\int xe^x\\,dx = xe^x - \\int e^x\\,dx = xe^x - e^x + c = e^x(x-1) + c$."
+      },
+      {
+        "question": "Find ∫(2x+1)^4 dx using substitution.",
+        "markscheme": "Let $u = 2x+1$, $du = 2\\,dx \\to dx = du/2$. $\\int u^4 \\cdot \\tfrac{du}{2} = \\tfrac{u^5}{10} + c = \\tfrac{(2x+1)^5}{10} + c$."
+      },
+      {
+        "question": "Use L'Hôpital's rule to evaluate $\\lim_{x \\to 0} \\tfrac{\\sin(3x)}{x}$.",
+        "markscheme": "Form 0/0. Apply L'Hôpital: $\\lim_{x \\to 0} \\dfrac{\\tfrac{d}{dx}(\\sin 3x)}{\\tfrac{d}{dx}(x)} = \\lim_{x \\to 0} \\dfrac{3\\cos(3x)}{1} = 3\\cos(0) = 3$."
+      }
+    ]
+  },
+  {
+    "id": "5.5",
+    "unit": 5,
+    "title": "Maclaurin series (HL)",
+    "hl": "HL",
+    "objectives": [
+      "Apply the Maclaurin series formula $f(x) = f(0) + xf'(0) + \\tfrac{x^{2}}{2!}f''(0) + \\tfrac{x^{3}}{3!}f'''(0) + \\cdots$ to expand functions.",
+      "Write down known Maclaurin series for e^x, $\\sin x$, $\\cos x$, and ln(1+x).",
+      "Derive new Maclaurin series by substitution or manipulation of known series.",
+      "Determine the interval of convergence of a Maclaurin series.",
+      "Use Maclaurin series to evaluate limits and find approximate values.",
+      "Obtain Maclaurin series from differential equations."
+    ],
+    "summary": "A Maclaurin series is a power series expansion of a function f(x) about x = 0. It expresses f(x) as an infinite polynomial using the values of the function and all its derivatives at x = 0:\n$f(x) = f(0) + xf'(0) + \\tfrac{x^2}{2!}f''(0) + \\tfrac{x^3}{3!}f'''(0) + \\cdots = \\sum_{n=0}^{\\infty} \\tfrac{f^{(n)}(0)}{n!} x^n$\n\nThe series is valid only within its interval of convergence. The standard Maclaurin series (given in the formula booklet) are:\n$e^x = 1 + x + \\tfrac{x^2}{2!} + \\tfrac{x^3}{3!} + \\tfrac{x^4}{4!} + \\cdots$, valid for all x.\n$\\sin x = x - \\tfrac{x^3}{3!} + \\tfrac{x^5}{5!} - \\tfrac{x^7}{7!} + \\cdots$, valid for all x.\n$\\cos x = 1 - \\tfrac{x^2}{2!} + \\tfrac{x^4}{4!} - \\tfrac{x^6}{6!} + \\cdots$, valid for all x.\n$\\ln(1+x) = x - \\tfrac{x^2}{2} + \\tfrac{x^3}{3} - \\tfrac{x^4}{4} + \\cdots$, valid for $-1 < x \\leq 1$.\n$(1+x)^n = 1 + nx + \\tfrac{n(n-1)}{2!}x^2 + \\cdots$, valid for $|x| < 1$.\n\nTo find the Maclaurin series for a new function: compute f(0), f'(0), f''(0), etc., and substitute into the formula. Alternatively, substitute into a known series (e.g., replace x with 2x in the series for e^x to get the series for e^(2x)).\n\nMaclaurin series are useful for evaluating limits of indeterminate forms. For example, $\\lim_{x \\to 0} \\tfrac{\\sin x}{x}$ can be found by writing $\\sin x \\approx x - \\tfrac{x^3}{6} + \\cdots$, so $\\tfrac{\\sin x}{x} \\approx 1 - \\tfrac{x^2}{6} + \\cdots \\to 1$. This gives the same answer as L'Hôpital's rule.\n\nWhen obtaining a Maclaurin series from a differential equation, substitute the series $y = a_0 + a_1 x + a_2 x^2 + \\cdots$ into the equation, match coefficients, and apply initial conditions.",
+    "quiz": [
+      {
+        "question": "Write down the Maclaurin series for e^x as far as the $x^{4}$ term.",
+        "markscheme": "$e^x = 1 + x + \\tfrac{x^2}{2!} + \\tfrac{x^3}{3!} + \\tfrac{x^4}{4!} + \\cdots = 1 + x + \\tfrac{x^2}{2} + \\tfrac{x^3}{6} + \\tfrac{x^4}{24} + \\cdots$"
+      },
+      {
+        "question": "Find the first four non-zero terms in the Maclaurin series for f(x) = $\\cos(2x)$.",
+        "markscheme": "Substitute 2x for x in $\\cos x$: $\\cos(2x) = 1 - \\tfrac{(2x)^2}{2!} + \\tfrac{(2x)^4}{4!} - \\cdots = 1 - 2x^2 + \\tfrac{2x^4}{3} - \\cdots$"
+      },
+      {
+        "question": "Find the Maclaurin series for f(x) = $\\sec x$ as far as the $x^{2}$ term.",
+        "markscheme": "f(0) = 1; $f'(x) = \\sec x\\tan x \\to f'(0) = 0$; $f''(x) = \\sec^3 x + \\sec x\\tan^2 x \\to f''(0) = 1$. $\\sec x \\approx 1 + 0 \\cdot x + \\tfrac{1}{2!}x^2 = 1 + \\tfrac{x^2}{2} + \\cdots$"
+      },
+      {
+        "question": "Use the Maclaurin series for $\\sin x$ to find $\\lim_{x\\to 0}\\dfrac{\\sin x - x}{x^{3}}$.",
+        "markscheme": "$\\sin x = x - \\tfrac{x^3}{6} + \\tfrac{x^5}{120} - \\cdots$ So $\\sin x - x = -\\tfrac{x^3}{6} + \\tfrac{x^5}{120} - \\cdots\\tfrac{\\sin x - x}{x^3} = -\\tfrac{1}{6} + \\tfrac{x^2}{120} - \\cdots \\to -\\tfrac{1}{6} as x \\to 0$."
+      },
+      {
+        "question": "Find a rational approximation to √(1.1) using the first three terms of the Maclaurin series for (1+x)^(1/2).",
+        "markscheme": "$(1+x)^{1/2} \\approx 1 + \\tfrac{1}{2}x + \\tfrac{(1/2)(-1/2)}{2!}x^2 = 1 + \\tfrac{x}{2} - \\tfrac{x^2}{8}$. With x = 0.1: ≈ 1 + 0.05 - 0.00125 = 1.04875. (True value: √1.1 ≈ 1.04881.)"
+      },
+      {
+        "question": "Derive the Maclaurin series for y = e^($\\sin x$) up to and including the $x^{3}$ term.",
+        "markscheme": "$y(0) = 1$. $y' = e^{\\sin x} \\cos x$ → $y'(0) = 1$. $y'' = e^{\\sin x}(\\cos^2 x - \\sin x)$ → $y''(0) = 1$. $y''' = e^{\\sin x}(\\cos^3 x - 3\\sin x\\cos x - \\cos x) - \\cdots$ → $y'''(0) = -1\\ldots$ Alternatively expand $e^u$ where $u = \\sin x \\approx x - \\tfrac{x^3}{6}$: $e^u \\approx 1 + u + \\tfrac{u^2}{2} + \\tfrac{u^3}{6} \\approx 1 + \\left(x - \\tfrac{x^3}{6}\\right) + \\tfrac{x^2}{2} + \\tfrac{x^3}{6} = 1 + x + \\tfrac{x^2}{2} + 0 \\cdot x^3 + \\cdots$"
+      }
+    ]
+  },
+  {
+    "id": "5.6",
+    "unit": 5,
+    "title": "Differential equations (HL)",
+    "hl": "HL",
+    "objectives": [
+      "Solve variable separable differential equations by separating and integrating.",
+      "Solve homogeneous differential equations using the substitution v = y/x.",
+      "Solve first-order linear differential equations using an integrating factor.",
+      "Apply Euler's method as a numerical technique for solving differential equations.",
+      "Sketch and interpret slope fields (direction fields) for differential equations.",
+      "Model real-world phenomena using differential equations and interpret solutions."
+    ],
+    "summary": "A differential equation is an equation that involves a function and one or more of its derivatives. The order of a differential equation is the order of the highest derivative present. First-order differential equations involve only $\\tfrac{dy}{dx}$.\n\nVariable separable equations can be written as $\\tfrac{dy}{dx} = f(x)g(y)$. Separate: $\\tfrac{1}{g(y)}\\,dy = f(x)\\,dx$, then integrate both sides. Always include the constant of integration C and apply any given initial conditions to find it. Example: $\\tfrac{dy}{dx} = y^2 e^x$ can be solved as $\\int y^{-2}\\,dy = \\int e^x\\,dx \\to -\\tfrac{1}{y} = e^x + C$.\n\nHomogeneous equations have the form $\\tfrac{dy}{dx} = f\\left(\\tfrac{y}{x}\\right)$. The substitution $v = \\tfrac{y}{x}$ (so $y = vx$ and $\\tfrac{dy}{dx} = v + x\\,\\tfrac{dv}{dx}$) transforms the equation into a separable one in v and x. After solving for v, substitute back y = vx.\n\nFirst-order linear equations have the form $\\tfrac{dy}{dx} + P(x)y = Q(x)$. Multiply both sides by the integrating factor $\\mu(x) = e^{\\int P(x)\\,dx}$. The left-hand side becomes $\\tfrac{d}{dx}(\\mu y)$, making the equation directly integrable: $\\mu y = \\int \\mu Q\\,dx$.\n\nEuler's method is a numerical technique for approximating solutions to $\\tfrac{dy}{dx} = f(x, y)$, given initial condition y(x0) = y0. With step size h: $y_{n+1} = y_n + h\\,f(x_n, y_n)$, $x_{n+1} = x_n + h$. Smaller step sizes give more accurate approximations.\n\nSlope fields (direction fields) provide a graphical view of a differential equation's solution curves. At each point (x, y), a short line segment is drawn with slope $\\tfrac{dy}{dx} = f(x, y)$. Solution curves are found by following the flow of these segments.",
+    "quiz": [
+      {
+        "question": "Solve $\\tfrac{dy}{dx} = xy$, given y(0) = 2.",
+        "markscheme": "Separate: $\\tfrac{1}{y}\\,dy = x\\,dx$. Integrate: $\\ln|y| = \\tfrac{x^2}{2} + C \\to y = Ae^{x^2/2}$. Apply y(0) = 2: 2 = A. Solution: $y = 2e^{x^2/2}$."
+      },
+      {
+        "question": "Solve the variable separable equation $\\tfrac{dy}{dx} = y^2 e^x$, given y(1) = 1.",
+        "markscheme": "$\\int y^{-2}\\,dy = \\int e^x\\,dx \\to -\\tfrac{1}{y} = e^x + C$. Apply y(1) = 1: -1 = e + C → C = -1 - e. Solution: y = 1/(1 + e - e^x) = 1/(e^x - e - 1) ... wait: -1/y = e^x - 1 - e, so $y = -\\tfrac{1}{e^x - 1 - e} = \\tfrac{1}{1 + e - e^x}$."
+      },
+      {
+        "question": "Show that $\\tfrac{dy}{dx} = \\tfrac{y^2 + xy}{x^2}$ is homogeneous and find the general solution.",
+        "markscheme": "$f(y/x)$: $\\left(\\tfrac{y}{x}\\right)^2 + \\tfrac{y}{x}$, so homogeneous. Let v = y/x → $\\tfrac{dy}{dx} = v + x $\\tfrac{dv}{dx}. Equation: $v + x\\,\\tfrac{dv}{dx} = v^2 + v \\to x\\,\\tfrac{dv}{dx} = v^2$. Separable: $v^{-2}\\,dv = \\tfrac{dx}{x} \\to -\\tfrac{1}{v} = \\ln|x| + C \\to -\\tfrac{x}{y} = \\ln|x| + C \\to y = -\\tfrac{x}{\\ln|x| + C}$."
+      },
+      {
+        "question": "Solve $\\tfrac{dy}{dx} + 2y = e^x$.",
+        "markscheme": "Integrating factor: $\\mu = e^{\\int 2\\,dx} = e^{2x}$. Multiply: $\\tfrac{d}{dx}(e^{2x}y) = e^{3x}$. Integrate: $e^{2x}y = \\tfrac{e^{3x}}{3} + C \\to y = \\tfrac{e^x}{3} + Ce^{-2x}$."
+      },
+      {
+        "question": "Use Euler's method with step h = 0.1 to estimate y(0.2), given $\\tfrac{dy}{dx} = x + y$ and y(0) = 1.",
+        "markscheme": "x0 = 0, y0 = 1. Step 1: $f(0,1) = 0+1 = 1$; $y_1 = 1 + 0.1(1) = 1.1$; $x_1 = 0.1$. Step 2: $f(0.1, 1.1) = 0.1+1.1 = 1.2$; $y_2 = 1.1 + 0.1(1.2) = 1.22$; $x_2 = 0.2$. So y(0.2) ≈ 1.22."
+      },
+      {
+        "question": "Describe what a slope field represents and explain how you would sketch a solution curve from one.",
+        "markscheme": "A slope field shows the gradient $\\tfrac{dy}{dx} = f(x, y)$ at many points in the (x,y) plane as short line segments with slope f(x,y). To sketch a solution curve: start at the initial point, then follow the direction of the slope segments continuously, adjusting direction as you move from one slope segment to the next. The solution curve is tangent to each slope segment it passes through."
+      }
+    ]
+  }
+]

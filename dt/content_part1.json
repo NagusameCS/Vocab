@@ -1,0 +1,254 @@
+[
+  {
+    "id": "1.1",
+    "unit": 1,
+    "title": "Anthropometrics",
+    "hl": "SL",
+    "objectives": [
+      "Define anthropometrics and explain its role in design.",
+      "Describe the difference between static and dynamic anthropometric data.",
+      "Explain the concepts of percentile data and how designers use the 5th, 50th, and 95th percentiles.",
+      "Analyse how anthropometric data is applied to real design problems.",
+      "Discuss the limitations of anthropometric data in design contexts."
+    ],
+    "summary": "Anthropometrics is the scientific study of the measurements and proportions of the human body. It provides designers with quantitative data about body dimensions — lengths, widths, reaches, and clearances — that can be used to ensure products and environments fit the full range of intended users. Without anthropometric data, designers risk producing objects that are uncomfortable, inefficient, or even hazardous for significant portions of the population.\n\nAnthropometric measurements are classified as either static or dynamic. Static (structural) anthropometrics are measurements of the body in a fixed, standardised posture — for example, sitting height, shoulder width, or hand length. Dynamic (functional) anthropometrics measure the body in motion or in specific working postures, such as the reach envelope of an arm during a particular task. Designers of workstations, vehicle cabins, and hand tools rely heavily on dynamic data because users are rarely stationary during product use.\n\nBecause human dimensions vary across a population, designers use statistical tools to manage this variability. Data is typically presented as a normal distribution, and designers refer to percentile values to understand the spread. The 5th percentile represents the smallest 5% of the population for a given measurement, while the 95th percentile represents the largest 5%. The 50th percentile is the median — the 'average' person — but designing only for the average risks excluding the extremes. In practice, designers usually aim to accommodate from the 5th to the 95th percentile, accepting that the extremes (below 5th or above 95th) are difficult to accommodate cost-effectively.\n\nDifferent design strategies apply depending on whether the design constraint is a minimum clearance, a maximum reach, or an adjustable fit. Clearances (such as the headroom in a vehicle) are designed for the largest users (95th percentile), ensuring everyone can fit. Reaches and controls are designed for the smallest users (5th percentile), ensuring everyone can operate them. Where possible, adjustability is built in — as in office chairs with height-adjustable seats — to accommodate the widest range of users.\n\nAnthropometric data has important limitations. Most historical datasets were compiled from military or industrial samples that were predominantly male and from specific national populations (particularly North American and Northern European). Applying such data to global consumer products or to products used by children, the elderly, or people with disabilities introduces systematic errors. Designers must be aware of which population the data was collected from and whether it matches the intended user group. Furthermore, global population dimensions are changing over time due to improved nutrition, so older datasets may underrepresent contemporary users.\n\nData tables used in IB Design & Technology assessments typically present measurements in millimetres and distinguish between male and female data, reflecting the well-documented differences in body dimensions between sexes. Students are expected to be able to read percentile tables and apply appropriate values to specific design decisions, justifying why a particular percentile has been chosen for a given constraint.",
+    "quiz": [
+      {
+        "question": "Define anthropometrics and explain why it is important in product design.",
+        "markscheme": "Anthropometrics is the scientific study and measurement of the dimensions and proportions of the human body. It is important in design because it provides quantitative data that helps designers ensure products, environments, and systems fit the range of intended users, improving comfort, safety, and usability while reducing the risk of injury or exclusion."
+      },
+      {
+        "question": "Describe the difference between static and dynamic anthropometric measurements, giving one example of each.",
+        "markscheme": "Static (structural) anthropometrics measure the body in a fixed standardised posture, e.g. sitting height or shoulder width. Dynamic (functional) anthropometrics measure the body in motion or working postures, e.g. the arm reach envelope during a task. Dynamic data is more relevant when users will be moving or operating a product."
+      },
+      {
+        "question": "Explain how designers use the 5th, 50th, and 95th percentiles when making design decisions.",
+        "markscheme": "The 5th percentile is the value below which only 5% of the population falls; the 95th percentile is the value above which only 5% falls; the 50th percentile is the median. Clearances are designed for the 95th percentile (largest users); reach dimensions for the 5th percentile (smallest users). Designing only for the 50th percentile excludes many users. Adjustability allows accommodation of a wider range."
+      },
+      {
+        "question": "Analyse one limitation of using existing anthropometric data tables when designing a product for a global market.",
+        "markscheme": "Most anthropometric datasets were collected from limited populations (e.g. military, North American, Northern European, predominantly male). Applying such data to global markets risks systematic mismatch because dimensions vary significantly across ethnic groups, nationalities, age groups, and sexes. Additionally, population dimensions change over time, making older data less representative. Designers must identify the target user population and verify that available data is appropriate."
+      },
+      {
+        "question": "Discuss why designing for the 'average' user (50th percentile) is generally considered poor design practice.",
+        "markscheme": "Designing for the 50th percentile means only users who happen to match the median dimension are ideally served; users at the extremes (smallest and largest) may find the product uncomfortable, inaccessible, or dangerous. Good design accommodates from the 5th to the 95th percentile. Where adjustment is not possible, the percentile chosen should reflect the critical constraint — clearance for large users, reach for small users. Focusing on the 'average' is statistically flawed because few individuals are average across all dimensions simultaneously."
+      }
+    ]
+  },
+  {
+    "id": "1.2",
+    "unit": 1,
+    "title": "Psychological factors",
+    "hl": "SL",
+    "objectives": [
+      "Explain how psychological factors influence user interaction with products.",
+      "Define perception, cognition, and memory in the context of design.",
+      "Describe how designers use Gestalt principles to organise visual information.",
+      "Analyse the role of affordance and signifiers in intuitive product design.",
+      "Discuss the impact of colour psychology on user experience."
+    ],
+    "summary": "Psychological factors concern the mental processes users bring to their interactions with products and environments. Understanding how people perceive, process, and respond to stimuli is fundamental to creating products that are not only functional but also intuitive, satisfying, and safe to use.\n\nPerception is the process by which users interpret sensory information — visual, auditory, tactile, and olfactory — from a product. Designers must consider that perception is not a passive recording of the world; it is an active construction influenced by context, expectation, and prior experience. Cognitive processes such as attention, memory, and decision-making determine how users interact with controls, read instructions, and learn to operate new products. Cognitive load refers to the mental effort required to use a product; well-designed products minimise unnecessary cognitive load by presenting information clearly and making controls self-explanatory.\n\nGestalt psychology provides a set of principles describing how humans naturally group visual elements. The key principles include proximity (elements close together are perceived as a group), similarity (elements that look alike are seen as related), continuity (the eye follows smooth paths), closure (incomplete shapes are perceived as complete), and figure-ground (the tendency to distinguish a focal object from its background). These principles are heavily used in interface design, signage, and product labelling to organise information in ways that align with natural visual perception.\n\nAffordance is a concept introduced by psychologist J.J. Gibson and popularised in design by Donald Norman. An affordance is a property of an object that suggests how it should be used. A well-designed door handle affords pulling; a flat plate affords pushing. A signifier is a perceptible signal — often a deliberate design feature — that communicates the correct action to the user. The distinction matters because affordances are intrinsic properties, while signifiers are explicit communication aids. Poor signifiers lead to user error; good signifiers make products feel self-explanatory and reduce the need for instruction manuals.\n\nColour has powerful psychological associations that vary across cultures and contexts. In product and interface design, colour is used to guide attention, convey status (e.g. red for warning, green for safe), create brand identity, and influence emotional responses. Designers must consider accessibility — approximately 8% of males have some form of colour vision deficiency — and must not rely on colour alone to convey critical information. Cultural differences in colour meaning (e.g. white signifying mourning in some Asian cultures) are important when designing for international markets.\n\nTogether, psychological factors underpin much of what makes a product feel 'right' or frustrating. Designers who understand and apply psychological principles create products that align with users' mental models — their internal representations of how a system works — resulting in shorter learning curves, fewer errors, and higher user satisfaction.",
+    "quiz": [
+      {
+        "question": "Explain how cognitive load affects user interaction with a product, and describe one design strategy to reduce it.",
+        "markscheme": "Cognitive load is the mental effort required to use a product. High cognitive load leads to errors, frustration, and slower task completion. Strategies to reduce it include clear labelling, logical grouping of controls (applying Gestalt principles), progressive disclosure (revealing information only when needed), and consistent use of familiar interface conventions. Reducing cognitive load makes products more intuitive and accessible."
+      },
+      {
+        "question": "Describe three Gestalt principles and explain how a designer could apply them to a product's interface.",
+        "markscheme": "Accept any three from: proximity (group related controls close together so users see them as a set), similarity (use consistent colours or shapes for related functions), continuity (arrange elements along a line or curve to guide the eye through the interface), closure (use incomplete shapes that the brain completes, reducing visual complexity), figure-ground (ensure key controls stand out from the background). Each principle should be linked to a specific design application."
+      },
+      {
+        "question": "Distinguish between affordance and signifier, using a product example to illustrate your answer.",
+        "markscheme": "An affordance is an intrinsic property of an object that suggests a possible action — e.g. a recessed button affords pressing. A signifier is an explicit perceptible cue that communicates the correct action — e.g. a printed arrow or label on the button. Affordances can exist without signifiers, but poorly signified products lead to user error. For example, a door with a flat plate affords pushing, but if a pull handle is fitted instead, the signifier contradicts the affordance, causing confusion."
+      },
+      {
+        "question": "Analyse the role of colour psychology in product design, including one limitation designers must consider.",
+        "markscheme": "Colour guides attention, communicates meaning (red = danger/stop, green = safe/go, amber = caution), creates emotional responses, and supports brand identity. Designers use colour strategically to improve usability and user experience. A key limitation is colour vision deficiency (affecting ~8% of males), meaning designs that rely solely on colour to convey critical information may be inaccessible. Cultural differences in colour associations (e.g. white = mourning in some cultures) are also a limitation for international products."
+      },
+      {
+        "question": "Discuss how understanding users' mental models can improve product design.",
+        "markscheme": "A mental model is a user's internal representation of how a system works. When a product's design aligns with the user's mental model, it feels intuitive, reduces errors, and shortens the learning curve. Designers should research existing mental models through user testing and observation, and design products to match these expectations — for example, using familiar icons and conventions in digital interfaces. Mismatches between the product's design model and users' mental models are a primary cause of usability problems."
+      }
+    ]
+  },
+  {
+    "id": "1.3",
+    "unit": 1,
+    "title": "Physiological factors",
+    "hl": "SL",
+    "objectives": [
+      "Define ergonomics and explain its relationship to physiological design factors.",
+      "Describe the key physiological factors designers must consider when designing products and workspaces.",
+      "Explain the concept of the neutral body posture and its relevance to seating and workstation design.",
+      "Analyse how repetitive strain injury (RSI) can result from poor ergonomic design.",
+      "Evaluate design solutions that address physiological needs of users."
+    ],
+    "summary": "Physiological factors in design refer to the physical characteristics and capabilities of the human body — how muscles work, how forces are applied, how the body responds to posture and repetitive motion, and what physical limits apply to lifting, gripping, and sustaining effort. These factors are central to ergonomics, which is the discipline of designing products, systems, and environments so that they fit the people who use them, rather than requiring people to adapt to the design.\n\nThe primary goal of physiological ergonomics is to minimise physical stress, fatigue, and injury during product use. Key physiological considerations include the range of motion of joints, grip strength and preferred grip types, the forces required to operate controls, the effects of vibration, the thermal environment, and the body's posture during use. Designers of hand tools, keyboards, vehicle seats, and industrial machinery must all address these factors rigorously.\n\nThe concept of neutral body posture is fundamental to ergonomic seating and workstation design. The neutral posture is the body's natural resting configuration in a weightless or supported environment — typically characterised by slightly flexed hips and knees, a slight lumbar curve, relaxed shoulders, and wrists in a near-straight position. Sustained deviation from neutral posture places stress on muscles, tendons, and joints. Ergonomic chairs and adjustable desks are designed to support neutral posture for prolonged working periods.\n\nRepetitive strain injury (RSI) — also called work-related upper limb disorder (WRULD) — is a collective term for conditions caused by repetitive movements, sustained postures, or awkward working positions. RSI affects tendons, muscles, and nerves, commonly in the wrists, forearms, shoulders, and neck. Products designed without physiological awareness — such as poorly shaped keyboards, tools requiring excessive grip force, or assembly tasks demanding repeated awkward motions — are significant contributors to RSI. Designers can mitigate RSI risk by reducing the required force, providing handles that distribute pressure over a wider area, allowing variation in task posture, and incorporating rest breaks into workflows.\n\nPhysical capability varies considerably with age, sex, disability status, and individual fitness level. Older users typically experience reduced joint flexibility, muscle strength, and sensory acuity. Products designed for all users — following universal design principles — must account for these variations. For example, lever-style door handles require less grip strength than round knobs and are more accessible to people with arthritis or limited hand strength.\n\nDesigners use a range of tools to evaluate physiological ergonomics: task analysis to break down the physical demands of using a product; force gauges and pressure mapping to quantify physical loads; motion capture and postural analysis to identify deviations from neutral posture; and user trials to gather subjective feedback on comfort and fatigue. Good physiological design reduces injury risk, improves productivity, and extends the working life of users.",
+    "quiz": [
+      {
+        "question": "Define ergonomics and explain how physiological factors are central to ergonomic design.",
+        "markscheme": "Ergonomics is the discipline of designing products, systems, and environments to fit the physical and cognitive characteristics of users, reducing stress, injury, and fatigue. Physiological factors — such as body dimensions, muscle strength, joint range of motion, and responses to posture and repetition — directly determine whether a product can be used safely and comfortably. Ignoring physiological factors leads to discomfort, inefficiency, and injury risk."
+      },
+      {
+        "question": "Explain the concept of neutral body posture and describe how it influences the design of office seating.",
+        "markscheme": "Neutral body posture is the body's natural resting configuration, characterised by slightly flexed hips and knees, a maintained lumbar curve, relaxed shoulders, and straight wrists. Sustained deviation increases musculoskeletal stress. Office chairs should support the lumbar curve, allow the feet to rest flat, position the thighs near horizontal, and allow adjustments so different users can maintain neutral posture. Adjustable lumbar support, seat height, and armrests are key features."
+      },
+      {
+        "question": "Analyse how poor ergonomic design can lead to repetitive strain injury (RSI).",
+        "markscheme": "RSI is caused by repetitive movements, sustained awkward postures, or excessive force applied over time. Poor ergonomic design — such as tools requiring high grip force, keyboards that force wrist extension, or assembly tasks requiring repeated overhead reaches — places repeated stress on tendons, muscles, and nerves. Over time, this causes inflammation, pain, and reduced function. Designers can reduce RSI risk by minimising required force, using shapes that distribute load, and allowing postural variation."
+      },
+      {
+        "question": "Describe two physiological design considerations that are especially important when designing products for older users.",
+        "markscheme": "Accept any two from: reduced grip strength (design larger handles, lever mechanisms instead of twisting knobs); reduced joint flexibility (avoid designs requiring extreme joint angles); reduced muscle strength (minimise force requirements); reduced sensory acuity — vision/hearing (use larger text, tactile feedback, auditory signals); slower reaction times (build in longer response windows). Each should be explained with a design implication."
+      },
+      {
+        "question": "Evaluate the effectiveness of adjustability as a design strategy for meeting the physiological needs of diverse users.",
+        "markscheme": "Adjustability allows a single product to be configured to fit users of different sizes and physical capabilities, making it highly effective at accommodating diversity. For example, adjustable office chairs, car seats, and steering columns allow users to establish neutral posture. Strengths include broad accommodation and longevity. Limitations include added cost and complexity, the possibility that users will not make correct adjustments, and that not all dimensions can practically be made adjustable. Evaluation should weigh these trade-offs."
+      }
+    ]
+  },
+  {
+    "id": "2.1",
+    "unit": 2,
+    "title": "Resources and reserves",
+    "hl": "SL",
+    "objectives": [
+      "Distinguish between renewable and non-renewable resources.",
+      "Define the concept of reserves and explain how reserve estimates change over time.",
+      "Explain the environmental impact of extracting and processing raw materials.",
+      "Analyse the concept of resource depletion and its implications for product designers.",
+      "Discuss strategies designers and manufacturers can use to reduce dependence on scarce resources."
+    ],
+    "summary": "Resources are the raw materials and energy sources that designers and manufacturers draw upon to create products. Understanding the difference between renewable and non-renewable resources is foundational to sustainable design practice. Non-renewable resources — including fossil fuels, metallic ores, and certain minerals — exist in finite quantities and are not replenished on human timescales. Once extracted and consumed, they are effectively gone. Renewable resources — such as timber, natural fibres, and solar energy — can be replenished naturally within a reasonable timeframe, provided they are managed sustainably.\n\nThe term 'reserves' refers to the known quantity of a resource that can be extracted economically using current technology. This is distinct from total geological deposits, much of which may be technically or economically inaccessible. Reserve estimates are not fixed; they change as new deposits are discovered, as extraction technology improves (making previously uneconomic deposits viable), and as commodity prices rise or fall (altering what is economically worth extracting). This dynamic nature of reserves means that predictions of 'resource exhaustion' must be interpreted carefully.\n\nExtracting and processing raw materials has significant environmental impacts. Mining operations disturb large areas of land, generate toxic waste, consume large quantities of water, and produce greenhouse gas emissions. Smelting and refining metals are highly energy-intensive. Logging for timber can lead to deforestation, biodiversity loss, and disruption of carbon cycles. Life cycle analysis (LCA) is the tool designers use to quantify these impacts from raw material extraction through to end-of-life disposal.\n\nResource depletion — the progressive exhaustion of a non-renewable resource — poses a long-term challenge for product designers. As high-quality, easily accessible deposits are consumed, the energy and cost of extraction increase. Critical materials such as rare earth elements (used in electronics and magnets), indium (used in touchscreens), and lithium (used in batteries) face particular supply risks due to geopolitical concentration of reserves, increasing demand, and limited recycling infrastructure. Designers who build products around scarce, geopolitically concentrated materials create supply chain vulnerabilities.\n\nDesigners and manufacturers can reduce resource dependence through several strategies: material substitution (replacing scarce materials with more abundant alternatives), design for disassembly (making products easy to take apart so materials can be recovered and recycled), closed-loop manufacturing (recovering and reusing materials within the production system), and dematerialisation (achieving the same function with less material through improved design). At a systemic level, transitioning from a linear economy (extract–make–dispose) to a circular economy (where material value is preserved through reuse and recycling) is the most effective long-term strategy.",
+    "quiz": [
+      {
+        "question": "Distinguish between renewable and non-renewable resources, giving one example of each.",
+        "markscheme": "Non-renewable resources exist in finite quantities and are not replenished on human timescales — e.g. iron ore, crude oil. Renewable resources can be replenished naturally within a reasonable timeframe — e.g. timber (if sustainably managed), solar energy. The key distinction is the timescale of replenishment relative to the rate of human consumption."
+      },
+      {
+        "question": "Explain why reserve estimates for a mineral resource may increase over time, even as the resource is being consumed.",
+        "markscheme": "Reserves are quantities extractable economically with current technology. New discoveries add to reserves. Improved extraction technology makes previously uneconomic deposits viable. Rising commodity prices increase the economic viability of lower-grade deposits. Therefore reserves can increase even as consumption continues, though this does not mean the resource is infinite — total geological deposits remain fixed."
+      },
+      {
+        "question": "Describe two environmental impacts of extracting and processing metallic ores.",
+        "markscheme": "Accept any two with explanation: land disturbance and habitat destruction from open-cast or underground mining; toxic waste (tailings) contaminating soil and water; high energy consumption and associated greenhouse gas emissions from smelting and refining; water consumption and contamination; air pollution from processing. Each impact should be clearly described."
+      },
+      {
+        "question": "Analyse why the concentration of rare earth element reserves in a small number of countries creates a risk for product designers.",
+        "markscheme": "Rare earth elements (e.g. neodymium, dysprosium) are used in electronics, motors, and magnets. Their reserves are geographically concentrated (notably in China), creating geopolitical supply risks. Trade disputes, export restrictions, or political instability in producing countries can disrupt supply chains, increase costs, and halt production. Designers who specify these materials create vulnerability; they should consider material substitution or designing for material recovery and recycling to reduce this risk."
+      },
+      {
+        "question": "Discuss the concept of a circular economy and explain how it differs from a linear economy in terms of resource management.",
+        "markscheme": "A linear economy follows an extract–make–dispose model: raw materials are extracted, made into products, and discarded at end of life, with material value lost. A circular economy aims to keep materials in use at their highest value for as long as possible through strategies such as reuse, repair, remanufacturing, and recycling. Benefits include reduced resource depletion, lower environmental impact, and reduced supply chain risk. Challenges include designing for disassembly, developing recycling infrastructure, and changing consumer behaviour."
+      }
+    ]
+  },
+  {
+    "id": "2.2",
+    "unit": 2,
+    "title": "Waste mitigation strategies",
+    "hl": "SL",
+    "objectives": [
+      "Define waste and classify the main types of waste generated in product manufacture and use.",
+      "Explain the waste hierarchy (refuse, reduce, reuse, recycle, recover, dispose) and its application in design.",
+      "Describe strategies designers can use to minimise waste during manufacture.",
+      "Analyse the role of extended producer responsibility (EPR) in waste management.",
+      "Evaluate the effectiveness of designing for disassembly as a waste mitigation strategy."
+    ],
+    "summary": "Waste is any material or energy that is discarded without further use. In the context of product design and manufacture, waste arises at every stage of the product life cycle: in raw material extraction, during manufacture (off-cuts, rejects, and process waste), in distribution (packaging), during product use (consumables), and at end of life (disposal of worn-out products). Reducing waste is both an environmental imperative and an economic opportunity — waste represents resources that have been paid for but not converted into value.\n\nThe waste hierarchy is a framework for prioritising waste management strategies from most to least preferred. The hierarchy typically runs: Refuse (avoid generating waste in the first place — the most effective option), Reduce (minimise the amount of waste generated), Reuse (use items or materials multiple times), Recycle (recover materials for reprocessing), Recover (recover energy from waste), and Dispose (landfill or incineration without energy recovery — the least preferred option). Designers can influence all levels of this hierarchy through their material choices, product architecture, and end-of-life planning.\n\nDuring manufacture, waste mitigation strategies include lean manufacturing principles such as just-in-time material delivery (minimising buffer stocks that may become waste), optimised nesting of parts in sheet materials (reducing off-cuts), statistical process control (minimising defective products), and closed-loop recycling of process waste (e.g. swarf in metalworking). Additive manufacturing (3D printing) is inherently less wasteful than subtractive processes because material is added only where needed, rather than being cut away.\n\nExtended Producer Responsibility (EPR) is a policy approach that holds manufacturers legally and financially responsible for the end-of-life management of the products they place on the market. EPR schemes for electronics (WEEE directive in the EU), batteries, and packaging oblige producers to fund collection and recycling infrastructure. EPR changes the economic incentives for designers: when manufacturers bear the cost of end-of-life disposal, they have an incentive to design products that are easier and cheaper to dismantle and recycle.\n\nDesigning for disassembly (DfD) is a product architecture strategy that makes it easy to take a product apart at end of life so that materials can be separated and recovered. Key principles include minimising the number of fasteners, using snap-fits or screws rather than adhesives or welds, avoiding mixed-material components (e.g. metal inserts in plastic parts), and clearly labelling materials to guide sorting. DfD is most effective when combined with reverse logistics systems and market demand for recycled materials. Its limitation is that it can add cost and complexity to the initial product, and its benefits only materialise if effective collection and sorting systems exist.\n\nAt the material level, designing products to use mono-materials (a single material type) greatly simplifies recycling. Avoiding composite materials and coatings that contaminate recyclate streams is an important strategy. Biodegradable materials offer an alternative end-of-life route for appropriate product types, though their benefits depend on the availability of industrial composting or anaerobic digestion facilities.",
+    "quiz": [
+      {
+        "question": "Explain the waste hierarchy and describe how a product designer can apply it when designing a new consumer product.",
+        "markscheme": "The waste hierarchy ranks strategies from most preferred (Refuse) through Reduce, Reuse, Recycle, Recover, to least preferred (Dispose). A designer applies it by: refusing unnecessary components (simplifying design); reducing material use through optimisation; designing for reuse (durable, repairable product); designing for recycling (mono-materials, clear labelling, easy disassembly); recovering energy from unavoidable waste; minimising landfill. The hierarchy guides decisions at each design stage."
+      },
+      {
+        "question": "Describe two manufacturing waste mitigation strategies and explain how each reduces material waste.",
+        "markscheme": "Accept any two: optimised nesting of parts (reducing material off-cuts in sheet processing); closed-loop recycling of process waste (e.g. re-melting swarf or off-cuts); additive manufacturing (adding material only where needed, eliminating subtractive waste); statistical process control (reducing defective product rates); just-in-time delivery (minimising buffer stock that may spoil or become obsolete). Each strategy should be explained with a clear mechanism linking it to waste reduction."
+      },
+      {
+        "question": "Analyse how Extended Producer Responsibility (EPR) can change the incentives for product designers.",
+        "markscheme": "EPR makes manufacturers financially responsible for end-of-life product management. This internalises disposal costs that were previously externalised onto consumers or governments. When designers know their company will pay to collect and recycle a product, they have a financial incentive to design for easy disassembly and recyclability, reducing end-of-life costs. EPR therefore aligns commercial and environmental incentives. Limitations include that EPR applies mainly to regulated sectors, and compliance may be achieved through fees rather than design improvement."
+      },
+      {
+        "question": "Evaluate designing for disassembly as a strategy for reducing product end-of-life waste.",
+        "markscheme": "Strengths: enables material recovery and recycling; reduces landfill; supports EPR compliance; aligns with circular economy principles. It can be facilitated by using screws over adhesives, mono-materials, and clear material labelling. Weaknesses: may increase initial manufacturing cost and complexity; benefits only materialise if effective collection and sorting systems exist; consumers may not return products; recycled material markets must be viable. Overall evaluation: effective as part of a systemic approach (combined with reverse logistics and EPR) but limited if implemented in isolation."
+      },
+      {
+        "question": "Describe the difference between recycling and recovering energy from waste, and explain which is higher in the waste hierarchy and why.",
+        "markscheme": "Recycling involves reprocessing waste material into new raw material for further use — material value is partially preserved. Energy recovery involves incinerating waste to generate heat or electricity — material value is destroyed but energy value is partially captured. Recycling is higher in the hierarchy because it preserves more of the original resource value and avoids the need to extract virgin materials. Energy recovery is preferable to landfill but inferior to recycling because it permanently destroys the material."
+      }
+    ]
+  },
+  {
+    "id": "2.3",
+    "unit": 2,
+    "title": "Energy utilization, storage, and distribution",
+    "hl": "SL",
+    "objectives": [
+      "Identify the main primary energy sources and distinguish between renewable and non-renewable energy.",
+      "Explain the concept of energy efficiency and calculate efficiency ratios.",
+      "Describe methods of energy storage and their applications in product design.",
+      "Analyse the challenges of distributing electrical energy and their design implications.",
+      "Discuss the role of product designers in reducing energy consumption."
+    ],
+    "summary": "Energy is required at every stage of a product's life — in the extraction and processing of raw materials, during manufacture, in the product's use phase, and at disposal. Product designers make decisions that directly affect energy consumption across all these stages. Understanding energy sources, storage technologies, and distribution challenges is therefore essential design knowledge.\n\nPrimary energy sources are those found in nature before any conversion. They include fossil fuels (coal, oil, natural gas), nuclear fuels (uranium), and renewables (solar, wind, hydroelectric, geothermal, tidal, and biomass). Non-renewable sources are finite and produce greenhouse gas emissions when combusted (with the exception of nuclear). Renewable sources are replenishable and generally have lower lifecycle emissions, though they have intermittency challenges (solar and wind produce energy only when the sun shines or wind blows) and land-use implications.\n\nEnergy efficiency describes how effectively input energy is converted into useful output energy. It is expressed as a percentage: efficiency = (useful output energy ÷ total input energy) × 100. All energy conversions involve losses, typically as heat. Improving product energy efficiency reduces both operating costs for users and environmental impact across the product life cycle. In the EU and many markets, mandatory energy efficiency labelling and minimum performance standards drive designers to improve efficiency.\n\nEnergy storage is a critical design challenge, particularly for portable and mobile products and for grid-scale integration of intermittent renewables. Key storage technologies include electrochemical batteries (lithium-ion, lead-acid, nickel-metal hydride), capacitors and supercapacitors (high power density, rapid charge/discharge), flywheels (mechanical energy storage), pumped hydro (large-scale gravitational storage), compressed air energy storage, and hydrogen (chemical energy storage via electrolysis). For consumer electronics and electric vehicles, lithium-ion batteries are currently dominant, offering high energy density and acceptable cycle life, though they raise concerns about lithium and cobalt supply.\n\nElectrical energy distribution from generating stations to end users involves transmission losses — energy dissipated as heat in cables due to electrical resistance. High-voltage transmission (e.g. 400 kV) minimises current and therefore reduces resistive losses over long distances. Local distribution at lower voltages serves homes and businesses. In product design, the location of power generation and the availability of grid infrastructure influence whether products are grid-connected or must carry their own energy storage. Off-grid applications (e.g. remote sensors, outdoor lighting) often integrate photovoltaic panels with battery storage.\n\nDesigners can reduce energy consumption through: selection of energy-efficient components, use of low-power modes and sleep states, thermal insulation to reduce heating/cooling loads, lightweighting to reduce propulsion energy in vehicles, optimisation of drive systems, and designing products for longer life (reducing the energy cost of manufacturing replacements). Energy-conscious design is both an environmental responsibility and a competitive advantage, as operating energy costs are a significant factor in consumer purchasing decisions.",
+    "quiz": [
+      {
+        "question": "Distinguish between renewable and non-renewable primary energy sources, giving two examples of each.",
+        "markscheme": "Non-renewable sources are finite and not replenished on human timescales: coal, oil, natural gas, uranium. Renewable sources are replenishable and will not run out on human timescales: solar, wind, hydroelectric, geothermal, tidal, biomass. Non-renewable sources generally produce greenhouse gas emissions when combusted (except nuclear); renewables have lower lifecycle emissions but face challenges of intermittency."
+      },
+      {
+        "question": "A motor uses 500 J of electrical energy to produce 350 J of mechanical energy. Calculate the efficiency of the motor and explain what happens to the remaining energy.",
+        "markscheme": "Efficiency = (350 ÷ 500) × 100 = 70%. The remaining 150 J (30%) is lost, primarily as heat due to electrical resistance in the windings and friction in moving parts. This wasted energy reduces operating efficiency and may require additional thermal management in the product design."
+      },
+      {
+        "question": "Describe two different methods of energy storage, giving a product application for each.",
+        "markscheme": "Accept any two: lithium-ion batteries (portable electronics, electric vehicles — high energy density, rechargeable); capacitors/supercapacitors (regenerative braking systems — rapid charge/discharge); flywheels (uninterruptible power supplies — stores kinetic energy); pumped hydro (grid-scale energy storage for intermittent renewables); hydrogen storage (fuel cell vehicles — energy stored as chemical fuel). Each answer should include a mechanism and a relevant product application."
+      },
+      {
+        "question": "Explain why electrical energy is transmitted at high voltages over long distances, and describe one implication of this for product designers.",
+        "markscheme": "High-voltage transmission reduces the current for the same power (P = IV), which reduces resistive heat losses in cables (P_loss = I²R). Transformers step voltage up for transmission and down for distribution. For product designers, an implication is that grid-connected products must be designed to operate at the local distribution voltage (e.g. 230 V AC in Europe, 120 V in North America) and include appropriate power supply circuitry to convert to the voltages required by internal components."
+      },
+      {
+        "question": "Discuss three design strategies a product designer can use to reduce the energy consumption of a consumer product during its use phase.",
+        "markscheme": "Accept any three: use of energy-efficient components (e.g. LED lighting instead of incandescent); sleep/low-power modes that reduce energy draw when the product is idle; thermal insulation to reduce heating or cooling loads; lightweighting to reduce propulsion energy (relevant to vehicles); optimised drive systems (e.g. variable speed drives in appliances); smart controls that match energy use to actual need. Each strategy should be explained with a mechanism and ideally a specific example."
+      }
+    ]
+  },
+  {
+    "id": "2.4",
+    "unit": 2,
+    "title": "Clean technology",
+    "hl": "SL",
+    "objectives": [
+      "Define clean technology and distinguish it from end-of-pipe pollution control.",
+      "Describe examples of clean technologies relevant to product design and manufacture.",
+      "Explain how biologically inspired design (biomimicry) contributes to clean technology.",
+      "Analyse the role of photovoltaic (PV) technology as an example of clean energy.",
+      "Evaluate the barriers to widespread adoption of clean technologies."
+    ],
+    "summary": "Clean technology, or 'cleantech', refers to products, processes, and services that harness renewable materials and energy, reduce waste and pollution, and use resources more productively and efficiently than conventional alternatives. It is fundamentally different from 'end-of-pipe' pollution control, which treats pollution after it has been generated (e.g. fitting a catalytic converter to an existing engine). Clean technology prevents pollution from arising in the first place by redesigning processes and products at a fundamental level.\n\nIn manufacturing, clean technology approaches include: using water-based or powder coatings instead of solvent-based paints (eliminating volatile organic compound emissions); supercritical carbon dioxide as a solvent in cleaning processes (replacing toxic chlorinated solvents); closed-loop water systems in industrial processes; the use of agricultural or biological feedstocks instead of petrochemicals in plastics and chemicals; and additive manufacturing processes that eliminate subtractive waste. At the energy generation level, wind turbines, solar panels, tidal generators, and fuel cells are all examples of clean technologies.\n\nBiomimicry is a design approach that draws inspiration from natural systems and organisms to solve engineering and design challenges. Nature has evolved highly optimised solutions over millions of years of selection pressure. Examples relevant to clean technology include: the Eastgate Centre building in Zimbabwe, whose passive ventilation system is inspired by termite mounds; Velcro, inspired by the hook-and-loop attachment of burdock burrs; shark skin-inspired surface textures that reduce hydrodynamic drag on aircraft and swimsuits; and the lotus leaf effect (superhydrophobicity) applied to self-cleaning surfaces, reducing the need for chemical cleaning products.\n\nPhotovoltaic (PV) technology converts solar radiation directly into electrical energy using semiconductor materials, most commonly silicon. When photons strike the semiconductor, they release electrons, creating a flow of electrical current. PV panels produce no direct emissions during operation and have rapidly falling costs — the cost per watt of solar PV has fallen by over 90% since 2010. PV is now integrated into products at multiple scales: building-integrated photovoltaics (BIPV), solar-powered consumer electronics, solar-charged electric vehicles, and large utility-scale solar farms. Limitations include intermittency (dependent on sunlight), land area requirements, energy storage needs, and embodied energy in manufacturing.\n\nBarriers to the widespread adoption of clean technologies include: higher initial capital cost compared to conventional alternatives (though lifecycle costs are often competitive); existing infrastructure lock-in (fossil fuel infrastructure represents trillions in sunk investment); institutional and regulatory inertia; lack of consumer awareness; skills gaps in installation and maintenance; and, for some technologies, performance limitations relative to incumbent solutions. Policy mechanisms such as carbon pricing, feed-in tariffs, tax incentives, and regulatory standards are tools used to overcome these barriers and accelerate adoption.",
+    "quiz": [
+      {
+        "question": "Define clean technology and explain how it differs from end-of-pipe pollution control, using an example of each.",
+        "markscheme": "Clean technology prevents pollution from arising by redesigning processes and products — e.g. using water-based paint instead of solvent-based paint eliminates VOC emissions at source. End-of-pipe control treats pollution after it has been generated — e.g. fitting a catalytic converter to reduce exhaust emissions from a petrol engine that continues to burn fuel. The key distinction is prevention versus treatment: clean technology addresses root causes while end-of-pipe controls manage symptoms."
+      },
+      {
+        "question": "Describe two examples of clean manufacturing technologies and explain the environmental benefit of each.",
+        "markscheme": "Accept any two: water/powder coatings (eliminate solvent VOC emissions and associated health/environmental risks); supercritical CO₂ cleaning (replaces chlorinated solvents — zero toxic waste, CO₂ is recoverable); additive manufacturing (eliminates subtractive material waste); biological feedstocks in plastics (reduces fossil fuel dependency and lowers embodied carbon). Each technology should be described with a clear environmental benefit."
+      },
+      {
+        "question": "Explain the principle of biomimicry and describe one product that has been designed using this approach.",
+        "markscheme": "Biomimicry draws on solutions evolved by nature to solve design problems. Nature's solutions are optimised through millions of years of selection. A valid example with a clear link to the natural system: Sharklet surface texture (inspired by shark skin, reduces bacterial adhesion and drag); Velcro (inspired by burdock burr hooks); lotus-effect surfaces (inspired by the lotus leaf's superhydrophobic microstructure, enabling self-cleaning). The explanation should name both the natural model and the design application."
+      },
+      {
+        "question": "Analyse photovoltaic (PV) technology as a clean energy solution, including both its advantages and limitations.",
+        "markscheme": "Advantages: no direct emissions during operation; rapidly falling cost per watt; scalable from small electronics to utility farms; long operational lifespan; low maintenance. Limitations: intermittent generation (dependent on sunlight — requires storage or grid backup); land/roof area requirements; embodied energy and materials in manufacturing (silicon, metals); end-of-life recycling challenges for panels. A balanced analysis addresses both aspects and may note that the overall lifecycle emissions of PV are still far lower than fossil fuels."
+      },
+      {
+        "question": "Discuss two barriers to the widespread adoption of clean technologies and suggest how each might be overcome.",
+        "markscheme": "Accept any two with discussion: higher initial capital cost (can be overcome through subsidies, tax incentives, green finance, and as scale increases); infrastructure lock-in (overcome through regulation phasing out old technologies, stranded asset policies, and investment in new infrastructure); skills gaps (overcome through training programmes and updated building regulations); consumer awareness (overcome through labelling, education campaigns, mandatory efficiency standards). Each barrier should be explained and a realistic overcoming strategy given."
+      }
+    ]
+  }
+]

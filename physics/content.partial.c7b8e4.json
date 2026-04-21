@@ -1,0 +1,889 @@
+[
+  {
+    "id": "A.1",
+    "unit": 1,
+    "title": "Kinematics",
+    "hl": "Some HL",
+    "objectives": [
+      "Define displacement, velocity, and acceleration as vector quantities, distinguishing them from their scalar counterparts.",
+      "Apply the equations of uniform acceleration (v = u + at, s = ut + ½at², v² = u² + 2as) to solve problems in one dimension.",
+      "Describe projectile motion as the combination of independent horizontal uniform motion and vertical uniformly accelerated motion.",
+      "Explain the effect of fluid resistance on the motion of a falling object, including the concept of terminal velocity.",
+      "Determine the gradient of a displacement–time graph as velocity and the gradient of a velocity–time graph as acceleration.",
+      "Apply graphical and algebraic methods to analyse motion in two dimensions, including relative velocity (HL)."
+    ],
+    "summary": "Kinematics is the study of motion without reference to its causes. The key quantities are displacement (s), a vector representing change in position; velocity (v), the rate of change of displacement; and acceleration (a), the rate of change of velocity. Speed and distance are the corresponding scalar magnitudes. Average velocity is defined as v_avg = Δs/Δt, while instantaneous velocity is the gradient of the displacement–time graph at a point.\n\nFor uniformly accelerated motion (constant a), the four kinematic equations connect displacement, initial velocity (u), final velocity (v), acceleration, and time: v = u + at; s = ut + ½at²; v² = u² + 2as; s = ½(u + v)t. These are derived from the definitions of acceleration and average velocity. On a velocity–time graph, displacement is the area under the curve and acceleration is the gradient; on a displacement–time graph, velocity is the gradient.\n\nProjectile motion results from combining a constant horizontal velocity (no air resistance) with a constant downward acceleration g ≈ 9.81 m s⁻². The horizontal and vertical components are completely independent. Horizontally: x = v_x t. Vertically: y = u_y t − ½gt², v_y = u_y − gt. The trajectory is parabolic. Range is maximised at 45° for launch and landing at the same height, giving R = u² sin 2θ / g.\n\nWhen fluid resistance (drag) acts on a falling object, the net downward force decreases as speed increases, because drag increases with velocity (F_drag ∝ v or ∝ v² depending on regime). The object accelerates at a rate less than g, and eventually reaches terminal velocity when drag equals weight: mg = kv_T (or kv_T²). At terminal velocity, net force is zero and acceleration is zero; the velocity–time graph levels off to a horizontal asymptote.\n\nAt HL, relative velocity is treated algebraically in two dimensions. If observer A moves with velocity v_A and object B has velocity v_B, the velocity of B relative to A is v_BA = v_B − v_A. Vector subtraction using components or scale drawing gives the relative velocity. This extends to problems such as river crossings and rain at an angle. Graphical methods — including vector triangles — are essential tools for two-dimensional kinematics problems.",
+    "quiz": [
+      {
+        "question": "Define displacement and explain how it differs from distance.",
+        "markscheme": "Displacement is a vector quantity representing the change in position from a starting point to an end point, including both magnitude and direction. Distance is a scalar quantity representing the total path length travelled, regardless of direction. For example, an object moving 3 m east then 4 m north has a distance of 7 m but a displacement of 5 m (since √(3² + 4²) = 5 m) at an angle north of east."
+      },
+      {
+        "question": "A car accelerates uniformly from rest and reaches a velocity of 20 m s⁻¹ in 8.0 s. Calculate the acceleration and the distance travelled.",
+        "markscheme": "Acceleration: a = (v − u)/t = (20 − 0)/8.0 = 2.5 m s⁻². Distance: s = ut + ½at² = 0 + ½(2.5)(8.0²) = ½ × 2.5 × 64 = 80 m. Alternatively, v² = u² + 2as → 400 = 2(2.5)s → s = 80 m. Or s = ½(u + v)t = ½(0 + 20)(8) = 80 m."
+      },
+      {
+        "question": "Describe the motion of a projectile launched horizontally from a cliff of height 45 m at 15 m s⁻¹. Calculate the time of flight and the horizontal range. (g = 9.81 m s⁻²)",
+        "markscheme": "The projectile has constant horizontal velocity 15 m s⁻¹ and constant downward acceleration 9.81 m s⁻². Vertically: h = ½gt² → 45 = ½(9.81)t² → t² = 9.17 → t = 3.03 s. Horizontally: R = v_x × t = 15 × 3.03 = 45.4 m ≈ 45 m. At all times, horizontal and vertical components are independent."
+      },
+      {
+        "question": "Explain the concept of terminal velocity for an object falling through air, and sketch the velocity–time graph.",
+        "markscheme": "As the object falls, gravitational force (mg) is constant downward. Air resistance increases with speed. Initially acceleration ≈ g; as speed increases, drag increases and net force decreases, so acceleration decreases. Eventually drag = mg, net force = 0, acceleration = 0, and the object moves at constant terminal velocity v_T. The v–t graph starts with gradient g, curves upward with decreasing gradient, and asymptotically approaches the terminal velocity as a horizontal line."
+      },
+      {
+        "question": "A velocity–time graph shows a straight line from (0, 4) to (6, 16). Determine the acceleration and the displacement over this 6 s interval.",
+        "markscheme": "Acceleration = gradient = (v₂ − v₁)/(t₂ − t₁) = (16 − 4)/(6 − 0) = 12/6 = 2.0 m s⁻². Displacement = area under graph = area of trapezium = ½(v₁ + v₂) × t = ½(4 + 16) × 6 = ½ × 20 × 6 = 60 m."
+      },
+      {
+        "question": "A boat can travel at 4.0 m s⁻¹ relative to the water. A river flows at 3.0 m s⁻¹. If the boat points perpendicular to the bank, calculate the resultant velocity and the angle it makes with the bank. (HL)",
+        "markscheme": "The resultant velocity is v = √(v_boat² + v_river²) = √(4.0² + 3.0²) = √(16 + 9) = √25 = 5.0 m s⁻¹. The angle to the bank (direction of river flow): tan θ = v_boat/v_river = 4.0/3.0, so θ = arctan(1.33) ≈ 53° from the bank (i.e. the boat moves 53° upstream from the bank direction). The angle to the bank on the downstream side is 90° − 53° = 37°."
+      }
+    ]
+  },
+  {
+    "id": "A.2",
+    "unit": 1,
+    "title": "Forces and momentum",
+    "hl": "Some HL",
+    "objectives": [
+      "State Newton's three laws of motion and apply them to systems in equilibrium and in acceleration.",
+      "Draw and interpret free-body diagrams, resolving forces into components along chosen axes.",
+      "Define linear momentum as p = mv and impulse as J = FΔt, and apply the impulse–momentum theorem.",
+      "Apply the law of conservation of momentum to elastic and inelastic collisions in one and two dimensions.",
+      "Explain the origin of viscosity and buoyancy forces, and describe their effects on motion.",
+      "Apply Newton's laws to uniform circular motion, identifying centripetal force and acceleration (a = v²/r).",
+      "Analyse angular velocity, centripetal acceleration, and vertical circular motion at HL."
+    ],
+    "summary": "Newton's first law states that an object remains at rest or in uniform motion unless acted upon by a net external force. Newton's second law relates net force to the rate of change of momentum: F_net = ma (when mass is constant), or more generally F_net = Δp/Δt. Newton's third law states that when body A exerts a force on body B, body B exerts an equal and opposite force on body A — these action–reaction pairs act on different bodies.\n\nA free-body diagram isolates one object and shows all forces acting on it as vectors with tails at the object. Common forces include weight (W = mg downward), normal reaction (perpendicular to surface), friction (f ≤ μN, opposing relative motion), tension, and applied forces. Resolving forces along perpendicular axes (often parallel and perpendicular to a slope) simplifies calculations: ΣF_x = ma_x and ΣF_y = ma_y.\n\nLinear momentum p = mv (kg m s⁻¹) is a vector. The impulse of a force J = FΔt = Δp, which means a large force over a short time (or a smaller force over longer time) produces the same change in momentum. The area under a force–time graph equals the impulse. The law of conservation of momentum states that in a closed system (no net external force) the total momentum is constant: Σp_before = Σp_after. In elastic collisions, kinetic energy is also conserved; in perfectly inelastic collisions, objects stick together and kinetic energy is not conserved.\n\nViscosity is the internal friction of a fluid; it gives rise to a drag force on objects moving through fluids, approximated by Stokes' law for spheres at low speed: F = 6πηrv. Buoyancy (upthrust) arises from the pressure difference between the bottom and top of a submerged object: F_b = ρ_fluid × V_displaced × g (Archimedes' principle). An object floats when upthrust equals weight.\n\nFor uniform circular motion, the object moves at constant speed but continuously changing direction; the acceleration is centripetal (directed towards the centre): a_c = v²/r = ω²r, where ω = 2π/T is the angular velocity. The centripetal force F_c = mv²/r is not a new type of force — it is the resultant of existing forces such as tension, gravity, or friction directed towards the centre. At HL, problems extend to vertical circles where the centripetal force equation must account for the weight component; at the top of a loop F_net = mg + N = mv²/r, and at the bottom F_net = N − mg = mv²/r.",
+    "quiz": [
+      {
+        "question": "State Newton's second law and explain why it is more accurately expressed as F = Δp/Δt than F = ma.",
+        "markscheme": "Newton's second law: the net force acting on an object equals the rate of change of its momentum, F_net = Δp/Δt. The form F = ma is valid only when mass is constant. The more general form F = d(mv)/dt handles variable mass situations (e.g. rockets expelling mass). In both forms, force and acceleration are in the same direction as the net force."
+      },
+      {
+        "question": "Draw a free-body diagram for a 5.0 kg block on a frictionless 30° incline and calculate the acceleration down the slope.",
+        "markscheme": "Forces: weight W = mg = 5.0 × 9.81 = 49.1 N downward; normal reaction N perpendicular to slope. Resolving parallel to slope: net force = mg sin 30° = 49.1 × 0.5 = 24.5 N. Perpendicular: N = mg cos 30° = 42.5 N. Acceleration a = F/m = 24.5/5.0 = 4.9 m s⁻² down the slope."
+      },
+      {
+        "question": "A 0.15 kg ball strikes a wall with velocity 12 m s⁻¹ and rebounds at 8.0 m s⁻¹. The contact time is 0.020 s. Calculate the impulse and average force exerted by the wall.",
+        "markscheme": "Take the initial direction as positive. Change in momentum = m(v_f − v_i) = 0.15 × (−8.0 − 12) = 0.15 × (−20) = −3.0 N s. Impulse magnitude = 3.0 N s directed away from the wall. Average force F = J/Δt = 3.0/0.020 = 150 N, directed away from the wall (i.e. the wall pushes the ball back)."
+      },
+      {
+        "question": "A 2.0 kg trolley moving at 4.0 m s⁻¹ collides with a stationary 3.0 kg trolley and they stick together. Show that momentum is conserved and calculate the loss of kinetic energy.",
+        "markscheme": "Initial momentum: p_i = 2.0 × 4.0 + 3.0 × 0 = 8.0 kg m s⁻¹. After collision: v_f = p_i/(m₁ + m₂) = 8.0/5.0 = 1.6 m s⁻¹. Final momentum = 5.0 × 1.6 = 8.0 kg m s⁻¹ — conserved. Initial KE = ½(2.0)(4.0²) = 16 J. Final KE = ½(5.0)(1.6²) = 6.4 J. Loss = 16 − 6.4 = 9.6 J (converted to heat and sound)."
+      },
+      {
+        "question": "Explain why a ship floats, using Archimedes' principle.",
+        "markscheme": "Archimedes' principle states that the upthrust on an object equals the weight of fluid displaced: F_b = ρ_fluid V_displaced g. A ship floats when the upthrust equals its total weight. As the ship is loaded it sinks deeper, displacing more water until upthrust again equals weight. The hull shape ensures a large volume is displaced at moderate depth, so even a dense steel hull floats because the average density of the ship (including air inside) is less than that of water."
+      },
+      {
+        "question": "A car of mass 1200 kg travels around a circular bend of radius 80 m at 15 m s⁻¹. Calculate the centripetal force and identify which force provides it.",
+        "markscheme": "Centripetal acceleration a_c = v²/r = 15²/80 = 225/80 = 2.81 m s⁻². Centripetal force F_c = ma_c = 1200 × 2.81 = 3375 N ≈ 3400 N directed towards the centre of the circle. This force is provided by the static friction between the tyres and the road. If the road is banked, the horizontal component of the normal reaction also contributes to the centripetal force."
+      },
+      {
+        "question": "A 0.50 kg ball on a string of length 1.2 m completes a vertical circle. Calculate the minimum speed at the top of the circle to maintain tension in the string. (HL)",
+        "markscheme": "At the top of the circle, both tension T and weight mg act downward, providing centripetal force: T + mg = mv²/r. For minimum speed, T = 0, so mg = mv²_min/r → v²_min = gr = 9.81 × 1.2 = 11.77 m² s⁻² → v_min = √11.77 ≈ 3.43 m s⁻¹. Below this speed, the string would go slack and circular motion would not be maintained."
+      }
+    ]
+  },
+  {
+    "id": "A.3",
+    "unit": 1,
+    "title": "Work, energy and power",
+    "hl": "Some HL",
+    "objectives": [
+      "Define work as W = Fs cos θ and apply it to calculate work done by constant and variable forces.",
+      "State the work–energy theorem and use it to relate net work to changes in kinetic energy.",
+      "Define gravitational potential energy (E_p = mgh) and elastic potential energy (E_p = ½kx²) and apply conservation of energy.",
+      "Define power as P = W/t = Fv and distinguish between useful output power and input power via efficiency.",
+      "Describe and compare different energy sources in terms of energy density, renewability, and environmental impact.",
+      "Apply Hooke's law (F = kx) and derive the work stored in a spring, extending to non-linear elastic materials at HL."
+    ],
+    "summary": "Work is done when a force causes displacement. For a constant force F at angle θ to the displacement s, the work done is W = Fs cos θ (joules). Work is a scalar quantity. A force perpendicular to motion does no work (e.g. centripetal force). For a variable force, work equals the area under a force–displacement graph.\n\nThe work–energy theorem states that the net work done on an object equals the change in its kinetic energy: W_net = ΔE_k = ½mv² − ½mu². Kinetic energy E_k = ½mv² depends on mass and the square of speed. This theorem is derived directly from Newton's second law combined with the kinematic equation v² = u² + 2as.\n\nGravitational potential energy near Earth's surface: E_p = mgh, measured relative to a chosen reference level. Elastic potential energy stored in a spring obeying Hooke's law (F = kx, where k is the spring constant in N m⁻¹ and x is the extension): E_p = ½kx². The elastic potential energy equals the area of the triangle under the F–x graph. Conservation of mechanical energy applies when only conservative forces act: E_k + E_p = constant. In real situations, non-conservative forces (friction, drag) dissipate energy as thermal energy and sound, so total energy is still conserved but useful mechanical energy decreases.\n\nPower is the rate of doing work: P = W/t (watts, W = J s⁻¹). For a force F producing velocity v in the same direction, P = Fv. Efficiency η = useful output power / total input power = P_out / P_in, expressed as a fraction or percentage. A Sankey diagram illustrates energy flow showing useful and wasted energy.\n\nEnergy sources include fossil fuels (coal, oil, natural gas — high energy density but non-renewable and releasing CO₂), nuclear fission, and renewables (solar, wind, hydroelectric, tidal, geothermal). Renewable sources have low or zero carbon emissions but variable availability. Solar panels convert solar irradiance (W m⁻²) to electrical energy; wind turbines extract kinetic energy from moving air. At HL, the non-linear force–extension relationship of real materials and calculation of work using integration or area under non-linear graphs extends the analysis of elastic energy.",
+    "quiz": [
+      {
+        "question": "Calculate the work done when a 50 N force acts on an object at 60° to the direction of displacement of 8.0 m.",
+        "markscheme": "W = Fs cos θ = 50 × 8.0 × cos 60° = 400 × 0.5 = 200 J. Only the component of force parallel to the displacement (F cos θ = 50 × 0.5 = 25 N) does work. The perpendicular component does no work."
+      },
+      {
+        "question": "Apply the work–energy theorem to find the final speed of a 2.0 kg object that starts from rest and has 60 J of net work done on it.",
+        "markscheme": "Work–energy theorem: W_net = ΔE_k = ½mv² − ½mu². With u = 0: 60 = ½(2.0)v² → v² = 60 → v = √60 ≈ 7.75 m s⁻¹. This means all the net work goes into kinetic energy, consistent with there being no friction or other dissipative force doing negative work."
+      },
+      {
+        "question": "A 0.20 kg ball is released from rest at a height of 3.0 m. Calculate its speed just before impact with the ground, using conservation of energy.",
+        "markscheme": "Initial E_p = mgh = 0.20 × 9.81 × 3.0 = 5.89 J; E_k = 0. At the ground (reference level), E_p = 0 and all energy is kinetic. E_k = ½mv² = 5.89 J → v² = 2 × 5.89/0.20 = 58.9 → v = √58.9 ≈ 7.67 m s⁻¹. (Alternatively, using v² = 2gh = 2 × 9.81 × 3.0 = 58.9.)"
+      },
+      {
+        "question": "A machine lifts a 500 kg load through 12 m in 30 s. Its efficiency is 60%. Calculate the useful output power and the input power.",
+        "markscheme": "Useful work = mgh = 500 × 9.81 × 12 = 58 860 J. Useful output power P_out = W/t = 58 860/30 = 1962 W ≈ 2.0 kW. Efficiency = P_out/P_in → P_in = P_out/efficiency = 1962/0.60 = 3270 W ≈ 3.3 kW. The remaining 40% of input power (≈ 1.3 kW) is wasted as heat in the motor and gears."
+      },
+      {
+        "question": "Compare fossil fuels and solar energy as sources of electrical power, discussing energy density, renewability, and environmental impact.",
+        "markscheme": "Fossil fuels have very high energy density (e.g. coal ≈ 24 MJ kg⁻¹, oil ≈ 42 MJ kg⁻¹) and can generate power on demand (dispatchable). However, they are non-renewable and combustion releases CO₂ (greenhouse gas) and other pollutants. Solar energy is renewable (powered by the Sun) and produces no direct emissions during operation, but has low energy density and is intermittent (dependent on sunlight hours). Solar panels require large surface areas and have lower overall conversion efficiency (~15–20% for photovoltaic). Energy storage (batteries) is needed to address intermittency."
+      },
+      {
+        "question": "A spring has spring constant k = 400 N m⁻¹. Calculate the elastic potential energy stored when it is compressed by 0.050 m, and determine the force required at that compression.",
+        "markscheme": "Hooke's law: F = kx = 400 × 0.050 = 20 N. Elastic PE: E_p = ½kx² = ½ × 400 × (0.050)² = ½ × 400 × 0.0025 = 0.50 J. The energy stored equals the area of the triangle under the F–x graph: ½ × F × x = ½ × 20 × 0.050 = 0.50 J (consistent)."
+      }
+    ]
+  },
+  {
+    "id": "A.4",
+    "unit": 1,
+    "title": "Rigid body mechanics",
+    "hl": "HL",
+    "objectives": [
+      "Define torque (moment of a force) as τ = Fr sin θ and apply the conditions for translational and rotational equilibrium.",
+      "Describe the rotational analogues of displacement, velocity, acceleration, force, mass, and momentum.",
+      "Apply the equations of rotational kinematics (ω = ω₀ + αt, θ = ω₀t + ½αt²) to problems involving constant angular acceleration.",
+      "Define moment of inertia I = Σmr² and use it in Newton's second law for rotation: τ_net = Iα.",
+      "Apply conservation of angular momentum L = Iω to systems where no net external torque acts.",
+      "Calculate rotational kinetic energy E_rot = ½Iω² and apply the total energy equation for rolling objects."
+    ],
+    "summary": "Rigid body mechanics extends Newtonian dynamics to objects that can rotate as well as translate. The rotational analogue of force is torque (moment): τ = Fr sin θ, where F is the applied force, r is the distance from the pivot, and θ is the angle between the force and the position vector. Torque has units of N m. For a rigid body in static equilibrium, both the net force and the net torque about any point must be zero: ΣF = 0 and Στ = 0.\n\nThe angular kinematic quantities mirror the linear ones: angular displacement θ (rad), angular velocity ω = dθ/dt (rad s⁻¹), and angular acceleration α = dω/dt (rad s⁻²). For uniform angular acceleration, the equations are: ω = ω₀ + αt; θ = ω₀t + ½αt²; ω² = ω₀² + 2αθ; θ = ½(ω₀ + ω)t. Linear and angular quantities are related by v = rω and a_tangential = rα, with centripetal acceleration a_c = ω²r.\n\nThe moment of inertia I = Σmᵢrᵢ² (kg m²) is the rotational analogue of mass; it measures resistance to changes in rotational motion. It depends on both the total mass and its distribution about the axis. Common values: solid disk I = ½MR²; hollow ring I = MR²; solid sphere I = ⅖MR²; thin rod about centre I = (1/12)ML². Newton's second law for rotation is τ_net = Iα, analogous to F_net = ma.\n\nAngular momentum L = Iω (kg m² s⁻¹) is the rotational analogue of linear momentum. The law of conservation of angular momentum states that when no net external torque acts, L is constant: I₁ω₁ = I₂ω₂. This explains why a spinning figure skater speeds up when arms are drawn in (I decreases, ω increases). Rotational kinetic energy E_rot = ½Iω². For a rolling object (no slipping), total kinetic energy = ½mv² + ½Iω², where v = rω.\n\nEquilibrium problems require careful choice of the pivot point to eliminate unknown forces from the torque equation. Real-world applications include cranes, bridges, seesaws, and the analysis of the human spine under load. The parallel axis theorem I = I_cm + Md² allows the moment of inertia about any axis to be calculated from the moment of inertia about the centre of mass axis.",
+    "quiz": [
+      {
+        "question": "A uniform horizontal beam of mass 20 kg and length 4.0 m is supported at both ends. A 50 kg person stands 1.5 m from the left support. Calculate the reaction forces at each support.",
+        "markscheme": "Let R_L and R_R be the reactions. Taking torques about the left support (clockwise positive): −R_R × 4.0 + (50 × 9.81 × 1.5) + (20 × 9.81 × 2.0) = 0. So R_R × 4.0 = 735.75 + 392.4 = 1128.15 → R_R = 282 N. ΣF_y = 0: R_L + R_R = (50 + 20) × 9.81 = 686.7 N → R_L = 686.7 − 282 = 405 N."
+      },
+      {
+        "question": "State the rotational analogues of mass, force, velocity, and momentum, including their units.",
+        "markscheme": "Mass → moment of inertia I (kg m²). Force → torque τ (N m). Linear velocity v → angular velocity ω (rad s⁻¹). Linear momentum p → angular momentum L (kg m² s⁻¹). Linear kinetic energy ½mv² → rotational kinetic energy ½Iω². Newton's second law F = ma → τ = Iα."
+      },
+      {
+        "question": "A flywheel (solid disk, mass 5.0 kg, radius 0.30 m) is accelerated from rest to 120 rad s⁻¹ in 8.0 s. Calculate the angular acceleration, torque required, and angle turned.",
+        "markscheme": "α = (ω − ω₀)/t = (120 − 0)/8.0 = 15 rad s⁻². I = ½MR² = ½ × 5.0 × (0.30)² = 0.225 kg m². Torque τ = Iα = 0.225 × 15 = 3.375 ≈ 3.4 N m. Angle θ = ω₀t + ½αt² = 0 + ½ × 15 × 64 = 480 rad."
+      },
+      {
+        "question": "Calculate the moment of inertia of a 3.0 kg solid sphere of radius 0.20 m and the moment of inertia of a thin ring of the same mass and radius. Compare their resistances to angular acceleration under the same torque.",
+        "markscheme": "Solid sphere: I = ⅖MR² = ⅖ × 3.0 × (0.20)² = 0.4 × 3.0 × 0.04 = 0.048 kg m². Thin ring: I = MR² = 3.0 × (0.20)² = 3.0 × 0.04 = 0.12 kg m². Under the same torque τ, α = τ/I. The sphere has a smaller I, so α_sphere = τ/0.048 is larger than α_ring = τ/0.12 — the sphere accelerates more easily because mass is concentrated near the centre."
+      },
+      {
+        "question": "A figure skater spinning at 2.0 rev s⁻¹ with arms extended (I = 4.5 kg m²) pulls her arms in so I = 1.8 kg m²). Calculate her new angular velocity.",
+        "markscheme": "Conservation of angular momentum: L = I₁ω₁ = I₂ω₂. ω₁ = 2.0 rev s⁻¹ × 2π = 4π rad s⁻¹ ≈ 12.57 rad s⁻¹. I₁ω₁ = 4.5 × 12.57 = 56.5 kg m² s⁻¹. ω₂ = L/I₂ = 56.5/1.8 = 31.4 rad s⁻¹ = 5.0 rev s⁻¹. The spin rate increases by a factor of 2.5 because I decreased by a factor of 2.5."
+      },
+      {
+        "question": "A solid cylinder (mass 2.0 kg, radius 0.15 m) rolls without slipping down a slope from rest, dropping a height of 0.80 m. Calculate its linear speed at the bottom.",
+        "markscheme": "Conservation of energy: mgh = ½mv² + ½Iω². For solid cylinder I = ½mr², and v = rω → ω = v/r. So mgh = ½mv² + ½(½mr²)(v/r)² = ½mv² + ¼mv² = ¾mv². Thus v² = (4/3)gh = (4/3) × 9.81 × 0.80 = 10.45 → v = √10.45 ≈ 3.23 m s⁻¹. If it had slid without rolling: v² = 2gh = 15.7 → v = 3.96 m s⁻¹ (faster, as no energy goes to rotation)."
+      }
+    ]
+  },
+  {
+    "id": "A.5",
+    "unit": 1,
+    "title": "Galilean and special relativity",
+    "hl": "HL",
+    "objectives": [
+      "Describe Galilean relativity and explain why it fails to account for the constancy of the speed of light.",
+      "State Einstein's two postulates of special relativity and explain their implications for absolute time and space.",
+      "Apply the Lorentz factor γ = 1/√(1 − v²/c²) to problems involving time dilation (t = γt₀) and length contraction (L = L₀/γ).",
+      "Explain the concept of simultaneity and how observers in different inertial frames disagree on whether events are simultaneous.",
+      "Apply the relativistic velocity addition formula and discuss invariant quantities such as the spacetime interval.",
+      "Interpret spacetime diagrams (Minkowski diagrams) showing world lines, light cones, and the relationship between events."
+    ],
+    "summary": "Galilean relativity, established by Newton's mechanics, holds that the laws of mechanics are the same in all inertial (non-accelerating) reference frames. The Galilean velocity transformation v' = v − u states that velocities simply add. However, Maxwell's equations of electromagnetism predict that light travels at c ≈ 3.00 × 10⁸ m s⁻¹ regardless of the motion of the source. The Michelson–Morley experiment (1887) found no variation in the speed of light with direction, contradicting Galilean expectations and undermining the notion of a luminiferous ether.\n\nEinstein's two postulates of special relativity (1905): (1) The laws of physics are the same in all inertial reference frames. (2) The speed of light in a vacuum c is the same for all inertial observers, regardless of the motion of the source or observer. These postulates require abandoning the concepts of absolute time and absolute space.\n\nThe Lorentz factor γ = 1/√(1 − v²/c²) ≥ 1, where v is the relative speed between frames and β = v/c. Time dilation: a moving clock runs slow — the proper time t₀ measured in the rest frame of the clock is related to the dilated time t measured in another frame by t = γt₀. Length contraction: an object moving relative to an observer appears shorter along the direction of motion — proper length L₀ (measured at rest) is related to the contracted length L = L₀/γ. Both effects are reciprocal and real, not illusions.\n\nSimultaneity is relative: two events that are simultaneous in one inertial frame are generally not simultaneous in another. The relativity of simultaneity follows directly from the second postulate. Relativistic velocity addition for speeds along one axis: v_rel = (v₁ + v₂)/(1 + v₁v₂/c²), ensuring that no object exceeds c. The spacetime interval s² = c²t² − x² is invariant (the same value in all inertial frames), even though space and time intervals individually are not.\n\nA Minkowski spacetime diagram has the time axis ct vertical and the space axis x horizontal. Each object traces a world line; stationary objects have vertical world lines and light travels at 45°. Events in the light cone of event O can be causally connected to O; events outside the light cone are space-like separated and cannot influence O. Proper time is the time read by a clock along its world line: Δτ = Δs/c.",
+    "quiz": [
+      {
+        "question": "Explain why Galilean relativity is inconsistent with the observed constancy of the speed of light.",
+        "markscheme": "Galilean relativity gives velocity transformation v' = v − u: an observer moving at speed u relative to a light source should measure light at speed c − u. Experiments (Michelson–Morley) show the speed of light is c for all observers regardless of their motion. This contradicts the Galilean transformation, which assumes time is absolute and universal. Einstein resolved this by postulating that c is the same in all inertial frames, requiring new transformation equations (Lorentz transformations) and the abandonment of absolute time."
+      },
+      {
+        "question": "State Einstein's two postulates and explain what they imply about measurements of time and length for observers in relative motion.",
+        "markscheme": "Postulate 1: the laws of physics are identical in all inertial reference frames. Postulate 2: the speed of light in a vacuum is c for all inertial observers, independent of the motion of the source. Consequences: (a) time dilation — a moving clock appears to run slow (t = γt₀); (b) length contraction — a moving object appears shorter (L = L₀/γ); (c) simultaneity is relative — events simultaneous in one frame may not be in another. These effects become significant only when v is an appreciable fraction of c."
+      },
+      {
+        "question": "A muon is created in the upper atmosphere at a height of 15 km above Earth's surface and travels downward at v = 0.98c. Calculate the Lorentz factor, the muon's proper lifetime if its dilated lifetime is 34 μs, and the contracted height from the muon's frame.",
+        "markscheme": "γ = 1/√(1 − 0.98²) = 1/√(1 − 0.9604) = 1/√0.0396 = 1/0.199 ≈ 5.03. Proper lifetime: t₀ = t/γ = 34/5.03 ≈ 6.76 μs ≈ 6.8 μs (consistent with measured muon lifetime ~2.2 μs in some versions). Contracted height: L = L₀/γ = 15 000/5.03 ≈ 2983 m ≈ 3.0 km. From the muon's frame, the atmosphere is compressed to ~3 km, so the muon can survive the journey in its own proper time."
+      },
+      {
+        "question": "Explain the relativity of simultaneity using a thought experiment involving a train and lightning strikes.",
+        "markscheme": "Imagine a train moving at speed v. Two lightning bolts strike both ends of the train simultaneously in the ground frame — an observer at the midpoint of the track sees both flashes at the same time. A passenger at the centre of the train is moving towards the front strike and away from the rear strike. Because light travels at c in both frames, the passenger receives the front flash before the rear flash, and concludes the front was struck first. Both observers are correct in their own frames. This demonstrates that simultaneity is not absolute — it depends on the reference frame of the observer."
+      },
+      {
+        "question": "Spacecraft A travels at 0.70c relative to Earth. Spacecraft B travels in the same direction at 0.80c relative to Earth. Calculate the speed of B as measured by A, using relativistic velocity addition.",
+        "markscheme": "Relativistic addition: v_rel = (v_B − v_A)/(1 − v_A v_B/c²) = (0.80c − 0.70c)/(1 − 0.70 × 0.80) = 0.10c/(1 − 0.56) = 0.10c/0.44 = 0.227c ≈ 0.23c. Galilean addition would give 0.10c; relativistic addition gives a slightly different result but the key point is that v_rel < c (in fact, even if both were 0.99c, the result would still be less than c)."
+      },
+      {
+        "question": "Describe the features of a Minkowski spacetime diagram and explain how time dilation can be read from the diagram.",
+        "markscheme": "A Minkowski diagram has axes ct (vertical) and x (horizontal). A stationary observer has a vertical world line (x = constant). A moving observer at speed v has a tilted world line with gradient c/v (since slope = Δ(ct)/Δx = c/v). Light rays travel at 45° (slope = 1). The proper time along a world line is shorter than the coordinate time (time dilation): τ = t/γ. Graphically, equal intervals of proper time along the moving observer's tilted world line correspond to larger coordinate time intervals. The invariant spacetime interval s² = c²t² − x² is represented by hyperbolas; all frames agree on the value of s²."
+      }
+    ]
+  },
+  {
+    "id": "B.1",
+    "unit": 2,
+    "title": "Thermal energy transfers",
+    "hl": "Some HL",
+    "objectives": [
+      "Define temperature, internal energy, and thermal energy, distinguishing between heat and temperature.",
+      "Apply the specific heat capacity equation Q = mcΔT to calculate energy exchanges during heating and cooling.",
+      "Explain the concept of latent heat and apply Q = mL to phase changes at constant temperature.",
+      "Describe the three mechanisms of thermal energy transfer: conduction, convection, and radiation.",
+      "Apply the Stefan–Boltzmann law (P = σAT⁴) and Wien's displacement law (λ_max T = 2.90 × 10⁻³ m K) to stellar and blackbody radiation.",
+      "Define luminosity and apparent brightness, and apply the inverse square law for light intensity."
+    ],
+    "summary": "Temperature is a measure of the average random kinetic energy of the particles in a substance; it is measured in kelvin (T/K = T/°C + 273). Internal energy is the total energy of all particles in a substance — both their random kinetic energy and their potential energy due to intermolecular forces. Thermal energy (heat) Q is energy transferred from a hotter body to a cooler one due to a temperature difference; it is a process, not a property.\n\nThe specific heat capacity c of a substance is the energy required to raise the temperature of 1 kg by 1 K: Q = mcΔT (joules). For water, c ≈ 4200 J kg⁻¹ K⁻¹. When two objects reach thermal equilibrium, heat gained by the cooler body equals heat lost by the hotter body (assuming no losses to surroundings).\n\nA phase change (melting, boiling) occurs at constant temperature despite energy being supplied. This energy breaks intermolecular bonds rather than raising kinetic energy. The specific latent heat L is defined by Q = mL. Latent heat of fusion L_f refers to the solid–liquid transition; latent heat of vaporisation L_v refers to the liquid–gas transition (L_v > L_f for most substances because gas molecules must be fully separated).\n\nConduction is heat transfer through a solid by direct particle collisions and, in metals, by free electrons. Fourier's law of conduction: Q/t = kA(ΔT/d), where k is thermal conductivity, A is cross-sectional area, and d is thickness. Convection is heat transfer through a fluid by the bulk movement of warmer, less dense fluid rising and cooler fluid sinking. Radiation is the transfer of energy by electromagnetic waves (principally infrared) and requires no medium.\n\nA perfect blackbody absorbs all incident radiation and emits radiation according to the Stefan–Boltzmann law: P = σAT⁴, where σ = 5.67 × 10⁻⁸ W m⁻² K⁻⁴ is the Stefan–Boltzmann constant and T is absolute temperature. Wien's displacement law gives the peak wavelength of emission: λ_max T = 2.90 × 10⁻³ m K — hotter objects emit at shorter wavelengths (bluer). Stars are approximated as blackbodies; their colour indicates surface temperature. Luminosity L = σAT⁴ × 4πR² for a spherical star of radius R. Apparent brightness b = L/(4πd²) — the inverse square law — where d is the distance to the star.",
+    "quiz": [
+      {
+        "question": "Distinguish between heat and temperature, and explain why stirring hot coffee does not change its temperature significantly.",
+        "markscheme": "Temperature measures the average random kinetic energy per particle (in kelvin or Celsius). Heat is energy transferred between bodies due to a temperature difference; it is a process, not a stored quantity. Stirring transfers mechanical (ordered) energy to the coffee, slightly increasing internal energy, but the rise is negligible because the thermal capacity of the coffee is large compared to the work done by stirring. Temperature reflects random molecular kinetic energy, not ordered mechanical motion."
+      },
+      {
+        "question": "Calculate the energy needed to raise 2.0 kg of water from 20°C to 100°C, and then to vaporise it completely. (c_water = 4200 J kg⁻¹ K⁻¹, L_v = 2.26 × 10⁶ J kg⁻¹)",
+        "markscheme": "Heating: Q₁ = mcΔT = 2.0 × 4200 × (100 − 20) = 2.0 × 4200 × 80 = 672 000 J = 672 kJ. Vaporisation: Q₂ = mL_v = 2.0 × 2.26 × 10⁶ = 4.52 × 10⁶ J = 4520 kJ. Total = 672 + 4520 = 5192 kJ ≈ 5.2 MJ. Note that much more energy is needed for vaporisation than for heating: the gas phase requires complete separation of intermolecular bonds."
+      },
+      {
+        "question": "Describe the difference between conduction and convection as mechanisms of thermal energy transfer, with one example of each.",
+        "markscheme": "Conduction: energy transferred through a material by direct molecular collisions (and free electrons in metals) without bulk movement of material. Example: heat spreading along a metal rod when one end is heated. Convection: energy transferred by bulk movement of a fluid — heated fluid expands, becomes less dense, and rises; cooler fluid sinks to replace it, creating convection currents. Example: a radiator heating a room — warm air rises, cool air at the floor moves toward the radiator, circulates. Conduction occurs in solids; convection in fluids (liquids and gases)."
+      },
+      {
+        "question": "A star has surface temperature 6000 K and radius 1.5 times the Sun's radius (R_Sun = 6.96 × 10⁸ m). Calculate its luminosity. (σ = 5.67 × 10⁻⁸ W m⁻² K⁻⁴)",
+        "markscheme": "Surface area: A = 4πR² = 4π(1.5 × 6.96 × 10⁸)² = 4π(1.044 × 10⁹)² = 4π × 1.09 × 10¹⁸ = 1.37 × 10¹⁹ m². Luminosity: L = σAT⁴ = 5.67 × 10⁻⁸ × 1.37 × 10¹⁹ × (6000)⁴. (6000)⁴ = 1.296 × 10¹⁵. L = 5.67 × 10⁻⁸ × 1.37 × 10¹⁹ × 1.296 × 10¹⁵ = 5.67 × 1.37 × 1.296 × 10²⁶ ≈ 1.007 × 10²⁷ W ≈ 1.0 × 10²⁷ W."
+      },
+      {
+        "question": "Apply Wien's displacement law to determine the surface temperature of a star whose peak emission wavelength is 480 nm.",
+        "markscheme": "Wien's law: λ_max T = 2.90 × 10⁻³ m K. T = (2.90 × 10⁻³)/(λ_max) = (2.90 × 10⁻³)/(480 × 10⁻⁹) = (2.90 × 10⁻³)/(4.80 × 10⁻⁷) = 6042 K ≈ 6000 K. A peak wavelength in the blue-green visible range corresponds to a hot star — blue stars have higher surface temperatures than red stars, which have longer peak wavelengths."
+      },
+      {
+        "question": "A star has apparent brightness 3.2 × 10⁻¹⁰ W m⁻² at Earth. If its luminosity is 4.0 × 10²⁶ W, calculate its distance from Earth.",
+        "markscheme": "Inverse square law: b = L/(4πd²) → d² = L/(4πb) = (4.0 × 10²⁶)/(4π × 3.2 × 10⁻¹⁰) = (4.0 × 10²⁶)/(4.02 × 10⁻⁹) = 9.95 × 10³⁴ m². d = √(9.95 × 10³⁴) ≈ 3.15 × 10¹⁷ m ≈ 3.2 × 10¹⁷ m (about 10 parsecs or ~33 light-years)."
+      }
+    ]
+  },
+  {
+    "id": "B.2",
+    "unit": 2,
+    "title": "Greenhouse effect",
+    "hl": "SL",
+    "objectives": [
+      "Describe the mechanism of the greenhouse effect and distinguish between natural and enhanced greenhouse effects.",
+      "Explain why certain gases (CO₂, CH₄, H₂O, N₂O) are greenhouse gases in terms of molecular vibration and IR absorption.",
+      "Apply the concept of albedo and calculate the equilibrium temperature of a planet using the Stefan–Boltzmann law.",
+      "Discuss the evidence for and consequences of enhanced global warming, including feedback mechanisms.",
+      "Evaluate strategies for reducing greenhouse gas emissions, including renewable energy, carbon capture, and international agreements."
+    ],
+    "summary": "Solar radiation peaks in the visible range (~500 nm) and passes through the atmosphere largely unhindered (the atmosphere is transparent to visible light). Earth's surface absorbs this radiation and re-emits it as infrared (IR) radiation at longer wavelengths (peak ~10 μm) due to its lower temperature (~255–288 K). Greenhouse gases (GHGs) — principally CO₂, CH₄, H₂O vapour, and N₂O — absorb and re-emit this outgoing IR radiation, trapping energy in the lower atmosphere. This is the greenhouse effect; without it, Earth's mean surface temperature would be approximately −18°C instead of +15°C.\n\nGreenhouse gases absorb IR because their molecular bonds undergo resonant vibrational modes at the same frequencies as the incoming IR photons. Diatomic symmetric molecules (N₂, O₂) do not absorb IR because they lack an oscillating electric dipole moment. Polyatomic asymmetric molecules (CO₂, H₂O, CH₄) have asymmetric stretching and bending modes that couple with IR.\n\nThe equilibrium temperature of a planet can be estimated by balancing absorbed solar power with emitted blackbody power. Solar power absorbed: P_absorbed = (1 − α) × S × πR², where α is the albedo (fraction of incident radiation reflected), S is the solar constant (≈ 1361 W m⁻²), and R is the planet radius. Power emitted: P_emitted = σ × 4πR² × T⁴. Setting P_absorbed = P_emitted gives T_e = [S(1−α)/(4σ)]^(1/4). For Earth (α ≈ 0.30), T_e ≈ 255 K (−18°C). The actual surface temperature (~288 K) is higher due to the greenhouse effect.\n\nThe enhanced greenhouse effect results from human activities increasing atmospheric concentrations of GHGs, primarily CO₂ from fossil fuel combustion and deforestation, and CH₄ from agriculture and landfill. Evidence includes rising CO₂ levels (exceeding 420 ppm), rising global average temperatures, sea level rise, and melting ice caps. Feedback mechanisms include: (positive) melting of ice reduces albedo, permafrost thaw releases CH₄; (negative) increased plant growth absorbs more CO₂. Strategies include transitioning to renewable energy, improving energy efficiency, carbon capture and storage (CCS), reforestation, and international frameworks such as the Paris Agreement.",
+    "quiz": [
+      {
+        "question": "Explain the natural greenhouse effect and describe how it keeps Earth's surface warmer than would otherwise be expected.",
+        "markscheme": "Solar radiation (mostly visible) passes through the atmosphere and is absorbed by Earth's surface, warming it. The surface re-emits longer-wavelength infrared (IR) radiation. Greenhouse gases (CO₂, H₂O, CH₄, N₂O) in the atmosphere absorb and re-emit this IR in all directions, including back toward Earth, trapping energy in the lower atmosphere. This raises the surface temperature above the simple blackbody equilibrium value of −18°C to the actual average of ~+15°C. Without the natural greenhouse effect, Earth would be frozen."
+      },
+      {
+        "question": "Explain why CO₂ is a greenhouse gas but N₂ is not, in terms of molecular structure and IR absorption.",
+        "markscheme": "CO₂ is a triatomic molecule with asymmetric vibrational modes (bending and asymmetric stretching) that produce an oscillating electric dipole moment. These modes have natural frequencies matching IR radiation frequencies (~15 μm for bending), so CO₂ absorbs IR photons resonantly. N₂ is a symmetric diatomic molecule; its bond vibrations do not create a changing dipole moment, so it cannot absorb IR radiation. Similarly, O₂ does not absorb IR. Only molecules with changing electric dipole moments during vibration act as greenhouse gases."
+      },
+      {
+        "question": "Calculate the equilibrium temperature of a planet with albedo 0.35, given solar constant S = 1361 W m⁻² and σ = 5.67 × 10⁻⁸ W m⁻² K⁻⁴.",
+        "markscheme": "Balancing power: S(1−α)πR² = σ(4πR²)T⁴. Simplifying: T⁴ = S(1−α)/(4σ) = 1361 × 0.65/(4 × 5.67 × 10⁻⁸) = 884.65/(2.268 × 10⁻⁷) = 3.901 × 10⁹ K⁴. T = (3.901 × 10⁹)^(1/4) = (3.901)^(1/4) × 10^(9/4) = 1.404 × 10^2.25 = 1.404 × 177.8 ≈ 249.7 K ≈ 250 K. Higher albedo reflects more radiation, resulting in a cooler equilibrium temperature."
+      },
+      {
+        "question": "Describe two positive feedback mechanisms associated with global warming and explain why they accelerate climate change.",
+        "markscheme": "1. Ice-albedo feedback: as ice melts due to warming, the highly reflective ice surface is replaced by darker ocean or land. The lower albedo means more solar radiation is absorbed, causing further warming, which melts more ice — a self-amplifying cycle. 2. Permafrost–methane feedback: warming thaws Arctic permafrost, releasing stored organic carbon as CO₂ and CH₄ (potent GHGs) into the atmosphere. These gases enhance the greenhouse effect, causing more warming, which thaws more permafrost. Both are positive feedbacks — they amplify the initial warming signal."
+      },
+      {
+        "question": "Evaluate two strategies for reducing the enhanced greenhouse effect, discussing advantages and limitations of each.",
+        "markscheme": "1. Renewable energy (e.g. solar, wind): replaces fossil fuels, producing electricity with near-zero CO₂ emissions. Advantages: abundant resource, rapidly falling costs, scalable. Limitations: intermittent supply (dependent on sun/wind), requires energy storage and grid upgrades, initial manufacturing has carbon cost. 2. Carbon capture and storage (CCS): captures CO₂ from power station flue gases and stores it underground. Advantages: allows continued use of existing infrastructure, can remove CO₂ from atmosphere. Limitations: high cost (~$50–100/tonne CO₂), unproven at large scale, storage sites may leak, high energy penalty (reduces power plant efficiency by ~20–30%)."
+      }
+    ]
+  },
+  {
+    "id": "B.3",
+    "unit": 2,
+    "title": "Gas laws",
+    "hl": "Some HL",
+    "objectives": [
+      "State and apply Boyle's law (pV = constant at constant T), Charles's law (V/T = constant at constant p), and Gay-Lussac's law (p/T = constant at constant V).",
+      "Derive and apply the combined ideal gas law pV/T = constant and the equation of state pV = nRT.",
+      "Describe the molecular model of an ideal gas and the assumptions underlying the kinetic theory.",
+      "Derive expressions for the pressure of an ideal gas and relate mean kinetic energy to temperature: E_k = (3/2)k_B T.",
+      "Distinguish between ideal and real gases, explaining deviations from ideal behaviour at high pressure and low temperature."
+    ],
+    "summary": "The three empirical gas laws describe the behaviour of ideal gases. Boyle's law: at constant temperature, pressure and volume are inversely proportional: p₁V₁ = p₂V₂ (pV = constant). Charles's law: at constant pressure, volume is directly proportional to absolute temperature: V₁/T₁ = V₂/T₂. Gay-Lussac's law (pressure law): at constant volume, pressure is directly proportional to absolute temperature: p₁/T₁ = p₂/T₂. All three are combined in the ideal gas law: pV/T = constant for a fixed amount of gas.\n\nThe equation of state for an ideal gas is pV = nRT, where n is the number of moles of gas (mol), R = 8.314 J mol⁻¹ K⁻¹ is the universal gas constant, and T is the absolute temperature in kelvin. An equivalent form uses the number of molecules N: pV = Nk_B T, where k_B = 1.38 × 10⁻²³ J K⁻¹ is the Boltzmann constant and k_B = R/N_A (N_A = 6.02 × 10²³ mol⁻¹ is Avogadro's number).\n\nKinetic theory models a gas as a large number of identical point particles in constant random motion, with no intermolecular forces except during perfectly elastic collisions, and negligible particle volume compared to the container. From kinetic theory, the pressure of an ideal gas is p = (1/3)(Nm/V)⟨c²⟩, where m is particle mass and ⟨c²⟩ is the mean square speed. Comparing with pV = Nk_B T gives the mean kinetic energy of a molecule: E_k = ½m⟨c²⟩ = (3/2)k_B T. Temperature is thus a direct measure of the mean translational kinetic energy per molecule. The root mean square speed is c_rms = √(3k_B T/m) = √(3RT/M), where M is the molar mass.\n\nReal gases deviate from ideal behaviour because (1) molecules have finite volume and (2) intermolecular attractions exist. At high pressure, the finite molecular volume means the actual volume is larger than predicted by pV = nRT. At low temperature or high pressure, intermolecular attractions reduce the kinetic energy available, causing the gas to occupy less volume than predicted. These deviations are described by the van der Waals equation: (p + a n²/V²)(V − nb) = nRT, where a accounts for intermolecular attractions and b for finite molecular volume. At high temperature and low pressure, all real gases approach ideal behaviour.",
+    "quiz": [
+      {
+        "question": "A gas has volume 2.0 L at pressure 150 kPa. If the temperature is kept constant and the pressure is increased to 450 kPa, calculate the new volume.",
+        "markscheme": "Boyle's law: p₁V₁ = p₂V₂ (constant T). V₂ = p₁V₁/p₂ = (150 × 2.0)/450 = 300/450 = 0.667 L ≈ 0.67 L. Tripling the pressure (at constant temperature) reduces the volume to one-third. Note: pressure and volume are always in consistent units, but since we are taking a ratio, any consistent unit works."
+      },
+      {
+        "question": "A gas occupies 4.0 L at 27°C. Calculate the volume at 127°C at constant pressure.",
+        "markscheme": "Convert to Kelvin: T₁ = 27 + 273 = 300 K; T₂ = 127 + 273 = 400 K. Charles's law: V₁/T₁ = V₂/T₂ → V₂ = V₁ × T₂/T₁ = 4.0 × (400/300) = 4.0 × 1.333 = 5.33 L ≈ 5.3 L. The temperature in Kelvin increases by a factor of 4/3, so the volume also increases by 4/3. Celsius temperatures must be converted to Kelvin before applying gas laws."
+      },
+      {
+        "question": "State the assumptions of the kinetic model of an ideal gas and explain which assumption breaks down for a real gas at high pressure.",
+        "markscheme": "Assumptions: (1) gas consists of a large number of identical point particles with negligible volume; (2) particles are in constant random motion; (3) collisions between particles and with walls are perfectly elastic; (4) there are no intermolecular forces except during collisions; (5) the time of collision is negligible compared to time between collisions. At high pressure, the volume of the molecules themselves becomes significant compared to the total container volume (assumption 1 fails), and the distance between molecules is small enough for intermolecular attractions to be significant (assumption 4 fails)."
+      },
+      {
+        "question": "Calculate the rms speed of nitrogen molecules (M = 0.028 kg mol⁻¹) at 300 K. (R = 8.314 J mol⁻¹ K⁻¹)",
+        "markscheme": "c_rms = √(3RT/M) = √(3 × 8.314 × 300 / 0.028) = √(7482.6/0.028) = √(267 236) = 517 m s⁻¹ ≈ 520 m s⁻¹. This is approximately the average molecular speed in air at room temperature (for N₂). Heavier molecules at the same temperature move slower (c_rms ∝ 1/√M), and speed increases with temperature (c_rms ∝ √T)."
+      },
+      {
+        "question": "Explain how the kinetic theory leads to the relationship E_k = (3/2)k_B T, and state what this implies about absolute zero.",
+        "markscheme": "From kinetic theory, pressure p = (1/3)(Nm/V)⟨c²⟩. From the ideal gas law, pV = Nk_B T. Equating: (1/3)Nm⟨c²⟩ = Nk_B T → ½m⟨c²⟩ = (3/2)k_B T. The left side is the mean translational kinetic energy per molecule. So E_k = (3/2)k_B T. At absolute zero (T = 0 K), E_k = 0, meaning particles would have no thermal kinetic energy. This is the theoretical lower limit of temperature — no substance can be cooled below 0 K."
+      }
+    ]
+  },
+  {
+    "id": "B.4",
+    "unit": 2,
+    "title": "Thermodynamics",
+    "hl": "HL",
+    "objectives": [
+      "Define thermodynamic system, surroundings, and the concepts of internal energy, work, and heat in the context of thermodynamics.",
+      "State and apply the first law of thermodynamics: ΔU = Q + W (or ΔU = Q − W depending on sign convention).",
+      "Calculate work done by or on a gas during isothermal, adiabatic, isochoric, and isobaric processes on p–V diagrams.",
+      "State the second law of thermodynamics and define entropy, explaining why entropy increases in spontaneous processes.",
+      "Analyse ideal heat engines using the Carnot cycle and calculate thermal efficiency: η = 1 − T_C/T_H.",
+      "Discuss the difference between heat engines and heat pumps, and apply the coefficient of performance (COP)."
+    ],
+    "summary": "Thermodynamics describes energy transformations involving heat, work, and internal energy. A thermodynamic system is the object or region of interest; the surroundings are everything else. Internal energy U is the total microscopic energy of the system. Heat Q is energy transferred due to a temperature difference; work W is energy transferred by a mechanical process (e.g. compression). The sign convention most common in IB Physics: Q > 0 when heat enters the system; W > 0 when work is done on the system (so ΔU = Q + W).\n\nThe first law of thermodynamics is a statement of energy conservation: ΔU = Q + W (or ΔU = Q − W when W is work done by the gas). For an ideal gas, internal energy depends only on temperature: ΔU = (3/2)nRΔT for a monatomic ideal gas. Work done by a gas against a constant external pressure: W = pΔV (or on a p–V diagram, work = area under the curve). Four special processes: isothermal (ΔT = 0, ΔU = 0, Q = −W); adiabatic (Q = 0, ΔU = W); isochoric (ΔV = 0, W = 0, ΔU = Q); isobaric (constant p, W = pΔV).\n\nThe second law of thermodynamics: the total entropy of an isolated system never decreases; for irreversible processes it increases. Entropy S is a state function: ΔS = Q/T for a reversible isothermal process. The second law means heat cannot spontaneously flow from a cold body to a hot body, and no heat engine can be 100% efficient.\n\nA heat engine absorbs heat Q_H from a hot reservoir at T_H, performs work W, and rejects heat Q_C to a cold reservoir at T_C. Efficiency η = W/Q_H = 1 − Q_C/Q_H. The Carnot cycle (two isothermal and two adiabatic processes) is the most efficient possible cycle operating between T_H and T_C: η_Carnot = 1 − T_C/T_H. No real engine can exceed Carnot efficiency. A heat pump does work to transfer heat from a cold reservoir to a hot one (e.g. refrigerators, air conditioners). The coefficient of performance COP = Q_H/W = T_H/(T_H − T_C) for heating, or COP = Q_C/W = T_C/(T_H − T_C) for cooling.",
+    "quiz": [
+      {
+        "question": "State the first law of thermodynamics and apply it to an ideal gas that absorbs 500 J of heat while having 200 J of work done on it.",
+        "markscheme": "First law: ΔU = Q + W (where W is work done on the system). Q = +500 J (heat absorbed by system), W = +200 J (work done on system). ΔU = 500 + 200 = 700 J. The internal energy of the gas increases by 700 J. For an ideal gas, this corresponds to a rise in temperature: ΔT = ΔU/(nC_v), where C_v = (3/2)R for a monatomic gas."
+      },
+      {
+        "question": "Calculate the work done by a gas that expands at constant pressure of 2.0 × 10⁵ Pa from 3.0 L to 7.5 L. Identify this process as isobaric and state the relationship between heat supplied, internal energy change, and work done.",
+        "markscheme": "Work done by gas: W = pΔV = 2.0 × 10⁵ × (7.5 − 3.0) × 10⁻³ = 2.0 × 10⁵ × 4.5 × 10⁻³ = 900 J. This is an isobaric (constant pressure) process. By first law: Q = ΔU + W_by_gas (work done by gas). Some of the heat supplied goes to increasing internal energy (raising temperature) and some goes to doing work against the external pressure. On a p–V diagram, the work equals the rectangular area under the horizontal isobar."
+      },
+      {
+        "question": "Explain the second law of thermodynamics in terms of entropy, and give one example of an irreversible process that illustrates entropy increase.",
+        "markscheme": "The second law states that in any natural (spontaneous, irreversible) process, the total entropy of the universe increases: ΔS_total ≥ 0. Entropy is a measure of disorder or the number of accessible microstates. Example: heat conduction from a hot cup of tea to a cold room. The hot object loses entropy ΔS = −Q/T_hot, and the room gains ΔS = +Q/T_cold. Since T_cold < T_hot, the gain exceeds the loss, so total ΔS > 0. The reverse — spontaneous heat flow from cold to hot — never happens because it would decrease total entropy."
+      },
+      {
+        "question": "A Carnot heat engine operates between 600 K and 300 K. It absorbs 1200 J per cycle from the hot reservoir. Calculate the work output, heat rejected, and thermal efficiency.",
+        "markscheme": "Efficiency: η = 1 − T_C/T_H = 1 − 300/600 = 0.50 = 50%. Work output: W = η × Q_H = 0.50 × 1200 = 600 J. Heat rejected: Q_C = Q_H − W = 1200 − 600 = 600 J. The Carnot cycle is the theoretical maximum efficiency — no real engine operating between these temperatures can achieve more than 50% efficiency. The 50% result arises because T_C = T_H/2."
+      },
+      {
+        "question": "Describe how a heat pump operates and calculate the COP for heating a building if T_H = 293 K and T_C = 273 K.",
+        "markscheme": "A heat pump uses work W to transfer heat Q_C from a cold reservoir (outdoor air at T_C) and delivers a larger amount of heat Q_H = Q_C + W to the hot reservoir (building interior at T_H). COP for heating = Q_H/W = T_H/(T_H − T_C) = 293/(293 − 273) = 293/20 = 14.65 ≈ 15. This means for every 1 J of electrical work done, the heat pump delivers ~15 J of heat to the building — far more efficient than a simple electric heater (COP = 1). High COP values are achievable when the temperature difference is small."
+      },
+      {
+        "question": "Sketch a p–V diagram for a Carnot cycle and identify the four processes. Explain which two processes involve entropy changes and which do not.",
+        "markscheme": "The Carnot cycle consists of: (1) isothermal expansion at T_H — gas absorbs Q_H from hot reservoir at constant temperature; (2) adiabatic expansion — gas expands without heat exchange (Q = 0), temperature drops from T_H to T_C; (3) isothermal compression at T_C — gas rejects Q_C to cold reservoir; (4) adiabatic compression — Q = 0, temperature rises from T_C back to T_H. Entropy changes: processes 1 and 3 are isothermal; ΔS = Q/T ≠ 0 (entropy increases in 1, decreases in 3). Adiabatic processes 2 and 4 are reversible with Q = 0, so ΔS = 0 — they are isentropic. For the complete cycle ΔS_cycle = 0, consistent with the Carnot cycle being reversible."
+      }
+    ]
+  },
+  {
+    "id": "B.5",
+    "unit": 2,
+    "title": "Current and circuits",
+    "hl": "Some HL",
+    "objectives": [
+      "Define electric current (I = ΔQ/Δt), potential difference (V = W/Q), and resistance (R = V/I), and state Ohm's law.",
+      "Apply Kirchhoff's current law (ΣI_in = ΣI_out) and Kirchhoff's voltage law (ΣV = 0) to analyse series and parallel circuits.",
+      "Calculate power dissipation in resistors using P = IV = I²R = V²/R and apply conservation of energy in circuits.",
+      "Describe the behaviour of capacitors in DC circuits, and apply Q = CV and E = ½CV² to charging and discharging.",
+      "Explain the concept of internal resistance (ε = V + Ir) and determine terminal voltage and efficiency of a cell.",
+      "Analyse resistor combinations, potential dividers, and sensor circuits (thermistor, LDR) in both SL and HL contexts."
+    ],
+    "summary": "Electric current I = ΔQ/Δt (amperes) is the rate of flow of charge. In conductors, current is carried by free electrons flowing from lower to higher potential (conventional current flows from + to −). Potential difference (voltage) V = W/Q is the work done per unit charge between two points. Resistance R = V/I (ohms, Ω). Ohm's law states that for a metallic conductor at constant temperature, V ∝ I, so R is constant. Non-ohmic devices (diodes, thermistors, filament bulbs) have R that varies with current or temperature.\n\nResistors in series: R_total = R₁ + R₂ + ... (same current through each). Resistors in parallel: 1/R_total = 1/R₁ + 1/R₂ + ... (same voltage across each). Kirchhoff's current law (KCL): at any junction, the sum of currents entering equals the sum leaving (conservation of charge). Kirchhoff's voltage law (KVL): the sum of potential differences around any closed loop is zero (conservation of energy).\n\nElectrical power P = IV = I²R = V²/R. The energy dissipated (as heat) in a resistor: E = Pt = IVt. A potential divider uses two resistors in series to produce a fraction of the supply voltage: V_out = V_in × R₂/(R₁ + R₂). Thermistors (resistance decreases with temperature) and LDRs (resistance decreases with light intensity) are used as sensors in potential divider circuits.\n\nA real cell has internal resistance r; the emf ε = V_terminal + Ir, where V_terminal = ε − Ir is the terminal voltage (tending to drop at high current). The efficiency of a cell: η = P_external/P_total = IR/(IR + Ir) = R/(R + r). Maximum power is transferred to the external circuit when R = r (matched load).\n\nCapacitors store charge; capacitance C = Q/V (farads). Energy stored: E = ½CV² = Q²/(2C) = ½QV. In a charging/discharging circuit with resistance R, the charge, voltage, and current vary exponentially with time constant τ = RC: Q = Q₀e^(−t/RC) for discharge; V = V₀(1 − e^(−t/RC)) for charging. At HL, students analyse more complex circuits using Kirchhoff's laws and explore the exponential nature of capacitor charge/discharge quantitatively.",
+    "quiz": [
+      {
+        "question": "A conductor carries a charge of 90 C in 30 s. Calculate the current. If the resistance is 15 Ω, find the potential difference and the power dissipated.",
+        "markscheme": "Current: I = ΔQ/Δt = 90/30 = 3.0 A. Potential difference: V = IR = 3.0 × 15 = 45 V. Power: P = IV = 3.0 × 45 = 135 W. Alternatively: P = I²R = 3.0² × 15 = 9 × 15 = 135 W. Or P = V²/R = 45²/15 = 2025/15 = 135 W. All three formulae are equivalent and interchangeable using Ohm's law."
+      },
+      {
+        "question": "A 12 V battery is connected to three resistors: 4 Ω and 6 Ω in parallel, combined in series with 2 Ω. Calculate the total resistance, total current, and current through the 6 Ω resistor.",
+        "markscheme": "Parallel combination: 1/R_p = 1/4 + 1/6 = 3/12 + 2/12 = 5/12 → R_p = 2.4 Ω. Total resistance: R_T = R_p + 2 = 2.4 + 2 = 4.4 Ω. Total current: I_T = V/R_T = 12/4.4 = 2.73 A. Voltage across parallel combination: V_p = I_T × R_p = 2.73 × 2.4 = 6.55 V. Current through 6 Ω: I₆ = V_p/6 = 6.55/6 = 1.09 A ≈ 1.1 A. Check: I₄ = 6.55/4 = 1.64 A; I₄ + I₆ = 1.64 + 1.09 = 2.73 A ✓ (Kirchhoff's current law)."
+      },
+      {
+        "question": "Apply Kirchhoff's laws to find the current in each branch of a circuit where a 10 V battery (negligible internal resistance) connects two parallel branches: one with 5 Ω and one with 10 Ω.",
+        "markscheme": "Both branches have the full 10 V across them (KVL). I₁ = 10/5 = 2.0 A through the 5 Ω. I₂ = 10/10 = 1.0 A through the 10 Ω. Total current from battery (KCL): I_T = I₁ + I₂ = 2.0 + 1.0 = 3.0 A. Total power: P = V × I_T = 10 × 3 = 30 W. Power in 5 Ω: P = I²R = 4 × 5 = 20 W; in 10 Ω: P = 1² × 10 = 10 W. Total = 30 W ✓."
+      },
+      {
+        "question": "A cell of emf 6.0 V and internal resistance 1.5 Ω is connected to an external resistance of 4.5 Ω. Calculate the terminal voltage and the electrical efficiency of the cell.",
+        "markscheme": "Current: I = ε/(R + r) = 6.0/(4.5 + 1.5) = 6.0/6.0 = 1.0 A. Terminal voltage: V = ε − Ir = 6.0 − (1.0)(1.5) = 6.0 − 1.5 = 4.5 V. (Or V = IR = 1.0 × 4.5 = 4.5 V ✓.) Efficiency: η = P_external/P_total = IV/(Iε) = V/ε = 4.5/6.0 = 0.75 = 75%. The other 25% (1.5 W) is dissipated as heat in the internal resistance."
+      },
+      {
+        "question": "A 100 μF capacitor is charged to 12 V. Calculate the charge stored and the energy stored, and describe what happens to the energy when the capacitor is discharged through a resistor.",
+        "markscheme": "Charge: Q = CV = 100 × 10⁻⁶ × 12 = 1.2 × 10⁻³ C = 1.2 mC. Energy: E = ½CV² = ½ × 100 × 10⁻⁶ × 144 = 7.2 × 10⁻³ J = 7.2 mJ. When discharged through a resistor, the electrical energy stored in the capacitor is dissipated as thermal energy (heat) in the resistor. Current flows exponentially: I = I₀e^(−t/RC), so half the stored energy remains after time t = RC ln 2. Eventually all energy is dissipated as heat."
+      },
+      {
+        "question": "A potential divider consists of a 10 kΩ fixed resistor in series with a thermistor. At 20°C the thermistor has resistance 8 kΩ; at 80°C it has resistance 2 kΩ. The supply voltage is 5.0 V. Calculate V_out across the thermistor at both temperatures and describe how this circuit could be used as a temperature sensor.",
+        "markscheme": "At 20°C: V_out = V_in × R_thermistor/(R_fixed + R_thermistor) = 5.0 × 8000/(10 000 + 8000) = 5.0 × 8/18 = 2.22 V. At 80°C: V_out = 5.0 × 2000/(10 000 + 2000) = 5.0 × 2/12 = 0.833 V. As temperature increases, thermistor resistance decreases, so V_out decreases. This voltage can be connected to a comparator or ADC; when V_out falls below a threshold, a circuit could switch on a fan or trigger an alarm, making it a simple over-temperature sensor."
+      }
+    ]
+  },
+  {
+    "id": "C.1",
+    "unit": 3,
+    "title": "Simple harmonic motion",
+    "hl": "Some HL",
+    "objectives": [
+      "Define simple harmonic motion (SHM) in terms of restoring force proportional to displacement: F = −kx.",
+      "Apply the equations of SHM: x = A cos(ωt + φ), v = −Aω sin(ωt + φ), a = −Aω² cos(ωt + φ).",
+      "Derive expressions for the period of a mass–spring system T = 2π√(m/k) and a simple pendulum T = 2π√(L/g).",
+      "Describe energy transformations in SHM, showing that E_total = ½kA² = constant at any displacement.",
+      "Distinguish between free, damped, and forced oscillations, and describe resonance and its practical implications.",
+      "Analyse the phase difference between displacement, velocity, and acceleration in SHM graphs (HL)."
+    ],
+    "summary": "Simple harmonic motion (SHM) occurs when an object experiences a restoring force proportional to and directed opposite to its displacement from equilibrium: F = −kx, where k is a constant (the spring constant for a mass–spring system). The negative sign indicates the force always acts towards equilibrium. This gives Newton's second law as ma = −kx, or a = −(k/m)x = −ω²x, where ω = √(k/m) is the angular frequency in rad s⁻¹.\n\nThe general solution is x = A cos(ωt + φ), where A is the amplitude and φ is the initial phase. Velocity v = dx/dt = −Aω sin(ωt + φ) and acceleration a = d²x/dt² = −Aω² cos(ωt + φ) = −ω²x. The period T = 2π/ω and frequency f = ω/(2π). For a mass–spring system: T = 2π√(m/k). For a simple pendulum (small angle approximation, sin θ ≈ θ): T = 2π√(L/g), independent of amplitude and mass.\n\nIn SHM, energy is continuously interchanged between kinetic and potential forms. Kinetic energy: E_k = ½mv² = ½mω²(A² − x²). Potential energy: E_p = ½kx² = ½mω²x². Total mechanical energy: E_total = E_k + E_p = ½kA² = ½mω²A² = constant (for undamped SHM). At the equilibrium position (x = 0), E_k is maximum and E_p = 0. At the amplitude (x = ±A), E_k = 0 and E_p = ½kA².\n\nFree oscillations occur at the natural frequency with constant amplitude (no damping). Damped oscillations lose energy to friction or resistance; amplitude decreases over time. Light damping: gradual amplitude decrease, still oscillates. Critical damping: system returns to equilibrium as quickly as possible without oscillating. Overdamping: slow return without oscillation. Forced oscillations occur when a periodic driving force is applied; the system oscillates at the driving frequency. Resonance occurs when the driving frequency equals the natural frequency: amplitude reaches a maximum. Resonance can be useful (e.g. MRI, musical instruments) or destructive (Tacoma Narrows Bridge, vibrating machinery).",
+    "quiz": [
+      {
+        "question": "State the conditions for simple harmonic motion and write the equation relating acceleration and displacement.",
+        "markscheme": "SHM requires: (1) a restoring force that is always directed toward the equilibrium position; (2) the magnitude of the restoring force (and hence the acceleration) is directly proportional to the displacement from equilibrium. The equation is a = −ω²x, where ω is the angular frequency and x is the displacement. The negative sign confirms the acceleration is always directed opposite to the displacement (toward equilibrium). This produces oscillatory motion."
+      },
+      {
+        "question": "A mass of 0.50 kg is attached to a spring (k = 50 N m⁻¹). Calculate the angular frequency, period, and maximum speed if the amplitude is 0.10 m.",
+        "markscheme": "ω = √(k/m) = √(50/0.50) = √100 = 10 rad s⁻¹. Period: T = 2π/ω = 2π/10 = 0.628 s ≈ 0.63 s. Maximum speed (at x = 0): v_max = Aω = 0.10 × 10 = 1.0 m s⁻¹. At maximum displacement v = 0; at equilibrium v = v_max = Aω. Alternatively, using energy: ½mv²_max = ½kA² → v_max = A√(k/m) = 0.10 × 10 = 1.0 m s⁻¹."
+      },
+      {
+        "question": "A simple pendulum has length 0.25 m. Calculate its period on Earth (g = 9.81 m s⁻²) and on the Moon (g = 1.6 m s⁻²), and explain why the period differs.",
+        "markscheme": "Earth: T = 2π√(L/g) = 2π√(0.25/9.81) = 2π√(0.02549) = 2π × 0.1597 = 1.003 s ≈ 1.0 s. Moon: T = 2π√(0.25/1.6) = 2π√(0.15625) = 2π × 0.3953 = 2.485 s ≈ 2.5 s. The period is longer on the Moon because g is weaker — the restoring force (component of gravity) is smaller, so the bob oscillates more slowly. Period is independent of mass and amplitude (small angles only)."
+      },
+      {
+        "question": "Describe the energy transformations in a mass–spring system executing SHM, and calculate the potential energy when the displacement is half the amplitude.",
+        "markscheme": "At maximum displacement (x = ±A): all energy is elastic PE = ½kA²; KE = 0. At equilibrium (x = 0): all energy is KE = ½mv²_max = ½kA²; PE = 0. At intermediate positions, both KE and PE contribute. At x = A/2: PE = ½k(A/2)² = ½k × A²/4 = ¼ × ½kA² = ¼ E_total. KE = E_total − PE = ¾ E_total. So at half the amplitude, PE is ¼ of total energy and KE is ¾ of total energy."
+      },
+      {
+        "question": "Explain resonance and describe one beneficial and one potentially harmful application.",
+        "markscheme": "Resonance occurs when the frequency of a periodic driving force matches the natural frequency of the oscillating system. At resonance, the amplitude of oscillation reaches a maximum because energy is most efficiently transferred from the driver to the system. For a lightly damped system, the amplitude at resonance can be very large. Beneficial: MRI scanners use resonance of nuclear spins at their Larmor frequency to produce images. Microwave ovens drive resonance of water molecules. Beneficial in musical instruments — strings and air columns resonate at their natural frequencies. Harmful: the Tacoma Narrows Bridge (1940) collapsed due to aerodynamic forcing near its natural frequency. Machinery vibrating at resonant frequencies can cause structural fatigue and failure."
+      },
+      {
+        "question": "Sketch and describe the phase relationships between displacement, velocity, and acceleration in SHM. (HL)",
+        "markscheme": "For x = A cos(ωt): velocity v = −Aω sin(ωt) = Aω cos(ωt + π/2) — velocity leads displacement by π/2 (90°). Acceleration a = −Aω² cos(ωt) = Aω² cos(ωt + π) — acceleration is π (180°) out of phase with displacement (always opposite). On a graph: x and a are in antiphase (opposite); v is π/2 ahead of x. At t = 0 (maximum displacement A), v = 0 and a = −Aω² (maximum, toward equilibrium). At t = T/4 (x = 0), v = −Aω (maximum speed), a = 0."
+      }
+    ]
+  },
+  {
+    "id": "C.2",
+    "unit": 3,
+    "title": "Wave model",
+    "hl": "Some HL",
+    "objectives": [
+      "Define wave characteristics: amplitude, wavelength, frequency, period, and wave speed, and apply v = fλ.",
+      "Distinguish between transverse and longitudinal waves, with examples of each.",
+      "Describe the principle of superposition and explain constructive and destructive interference.",
+      "Define wavefronts and rays, and describe the behaviour of waves at boundaries including reflection and refraction.",
+      "Apply Snell's law (n₁ sin θ₁ = n₂ sin θ₂) and define the refractive index of a medium.",
+      "Explain total internal reflection and calculate the critical angle: sin θ_c = n₂/n₁."
+    ],
+    "summary": "A wave is a periodic disturbance that transfers energy without transferring matter. Key wave properties: amplitude A (maximum displacement from equilibrium); wavelength λ (distance between adjacent points in phase, e.g. crest to crest); frequency f (oscillations per second, Hz); period T = 1/f; wave speed v = fλ. The speed depends on the medium, not the frequency (for non-dispersive media).\n\nTransverse waves have particle displacement perpendicular to the direction of wave propagation. Examples: electromagnetic waves (light, radio), waves on a string. Longitudinal waves have particle displacement parallel to propagation. Example: sound waves in air (compressions and rarefactions). Some waves (surface water waves) have both components.\n\nThe principle of superposition: when two or more waves overlap, the resultant displacement at any point is the algebraic sum of the individual displacements. Constructive interference occurs when waves overlap in phase (path difference = nλ, n = 0, 1, 2, ...): amplitude increases. Destructive interference occurs when waves are in antiphase (path difference = (n + ½)λ): amplitude decreases or cancels.\n\nWavefronts are surfaces of constant phase; rays are lines perpendicular to wavefronts showing wave direction. At a boundary, waves can be reflected (angle of incidence = angle of reflection) or refracted (change in speed causes change in direction). Snell's law: n₁ sin θ₁ = n₂ sin θ₂, where n = c/v is the refractive index of a medium (dimensionless; n ≥ 1 for optical media). Light slows and bends toward the normal when entering a denser medium.\n\nTotal internal reflection occurs when light attempts to travel from a denser to a less dense medium and the angle of incidence exceeds the critical angle θ_c, given by sin θ_c = n₂/n₁ (for n₂ < n₁). At θ > θ_c, all light is reflected. Applications: optical fibres (communications), diamonds (brilliance), endoscopes. Dispersion of light in glass occurs because n depends on wavelength; violet light (shorter λ) has higher n and refracts more than red.",
+    "quiz": [
+      {
+        "question": "A wave has frequency 440 Hz and wavelength 0.77 m. Calculate its speed and period.",
+        "markscheme": "Wave speed: v = fλ = 440 × 0.77 = 338.8 m s⁻¹ ≈ 340 m s⁻¹ (speed of sound in air at ~20°C). Period: T = 1/f = 1/440 = 2.27 × 10⁻³ s ≈ 2.3 ms. The period is the time for one complete oscillation; the frequency is the number of complete oscillations per second. These quantities are reciprocals of each other."
+      },
+      {
+        "question": "Distinguish between transverse and longitudinal waves, giving two examples of each.",
+        "markscheme": "Transverse waves: particle displacement is perpendicular (at right angles) to the direction of energy/wave propagation. Examples: light and other electromagnetic waves; waves on a string or rope; seismic S-waves. Longitudinal waves: particle displacement is parallel (along the same direction) to wave propagation, creating alternating compressions (high pressure) and rarefactions (low pressure). Examples: sound waves in air; ultrasound; seismic P-waves. EM waves can travel through a vacuum; sound requires a medium."
+      },
+      {
+        "question": "Two coherent waves arrive at a point with path difference 2.5λ. Determine whether this produces constructive or destructive interference and explain using the principle of superposition.",
+        "markscheme": "Path difference = 2.5λ = 2½λ. For constructive interference, path difference = nλ (n integer). For destructive interference, path difference = (n + ½)λ. Since 2.5 = 2 + ½, this is destructive interference: the waves arrive in antiphase (phase difference = π), so the crests of one wave align with the troughs of the other. By the principle of superposition, the displacements cancel: if both waves have the same amplitude A, the resultant amplitude is zero at this point."
+      },
+      {
+        "question": "A ray of light in air (n = 1.00) strikes a glass surface (n = 1.50) at an angle of incidence of 35°. Calculate the angle of refraction.",
+        "markscheme": "Snell's law: n₁ sin θ₁ = n₂ sin θ₂ → sin θ₂ = (n₁/n₂) sin θ₁ = (1.00/1.50) × sin 35° = 0.667 × 0.574 = 0.382. θ₂ = arcsin(0.382) = 22.5° ≈ 23°. The ray bends toward the normal when entering the denser medium (glass, higher n). The angle of refraction (23°) is smaller than the angle of incidence (35°)."
+      },
+      {
+        "question": "Calculate the critical angle for a glass–air interface where n_glass = 1.52, and explain what happens to a ray incident at angles above and below this angle.",
+        "markscheme": "sin θ_c = n_air/n_glass = 1.00/1.52 = 0.658 → θ_c = arcsin(0.658) = 41.1° ≈ 41°. For angles of incidence below 41°: the ray is partially refracted into air (and partially reflected). For angles at or above 41°: total internal reflection — all the light is reflected back into the glass, no refracted ray. Applications include optical fibres, which rely on light bouncing along a glass core (higher n) surrounded by cladding (lower n), so light undergoes TIR and travels long distances with minimal loss."
+      },
+      {
+        "question": "Explain how optical fibres use total internal reflection to transmit data, and identify one advantage and one limitation of this technology.",
+        "markscheme": "An optical fibre consists of a glass core (high refractive index) surrounded by cladding (lower refractive index). Light enters the fibre at an angle greater than the critical angle and undergoes repeated total internal reflection along the fibre, with no light escaping. Digital data is encoded as pulses of light and transmitted over long distances with very low loss. Advantage: very high data transmission bandwidth (many wavelengths of light can carry independent signals simultaneously — wavelength division multiplexing); low signal attenuation compared to copper cables. Limitation: fibres can be damaged by bending (reducing TIR); 'modal dispersion' in multimode fibres can cause pulse broadening, limiting data rate over long distances."
+      }
+    ]
+  },
+  {
+    "id": "C.3",
+    "unit": 3,
+    "title": "Wave phenomena",
+    "hl": "Some HL",
+    "objectives": [
+      "Describe and explain the diffraction of waves at single slits and apertures, and discuss how wavelength and slit width affect diffraction.",
+      "Apply the double-slit interference formula: s = λD/d, where s is fringe spacing, D is screen distance, and d is slit separation.",
+      "Explain how a diffraction grating works and apply the grating equation nλ = d sin θ.",
+      "Describe polarisation as a property of transverse waves and explain methods of producing polarised light.",
+      "Apply Malus's law (I = I₀ cos² θ) to calculate intensity of polarised light passing through an analyser."
+    ],
+    "summary": "Diffraction is the spreading of waves around obstacles and through apertures. It is most pronounced when the wavelength is comparable to the size of the opening. For a single slit of width b, the first minimum of the diffraction pattern is at sin θ = λ/b. Wider slits produce narrower central maxima; narrower slits produce wider spreading. For circular apertures, the Rayleigh criterion for the limit of resolution is θ_min = 1.22λ/D, where D is the aperture diameter.\n\nYoung's double-slit experiment demonstrates wave nature of light through interference. Coherent light of wavelength λ passes through two slits separated by distance d; on a screen at distance D, alternating bright and dark fringes (maxima and minima) are observed. Fringe spacing: s = λD/d. Maxima (constructive) occur where path difference = nλ; minima (destructive) at path difference = (n + ½)λ. This experiment provides a method of measuring the wavelength of light.\n\nA diffraction grating has many parallel slits (typically thousands per mm), producing sharp, widely spaced interference maxima. The grating equation is nλ = d sin θ, where d is the slit spacing (d = 1/N where N is slits per metre), θ is the angle of the nth-order maximum, and n is the order number (n = 0, ±1, ±2, ...). Gratings are used in spectrometers to measure emission and absorption spectra.\n\nPolarisation is a property unique to transverse waves. Unpolarised light has electric field oscillations in all planes perpendicular to the direction of travel. A polariser (e.g. Polaroid filter) transmits only oscillations in one plane — the transmission axis — producing plane-polarised light. Methods of polarisation: transmission through a polaroid filter; reflection at Brewster's angle (tan θ_B = n); scattering (e.g. sky blue is partially polarised). Malus's law: when polarised light of intensity I₀ passes through an analyser with its axis at angle θ to the polarisation direction, the transmitted intensity is I = I₀ cos² θ. At θ = 90°, I = 0 (extinction). Applications include LCD screens, sunglasses, photography filters, and stress analysis in transparent materials.",
+    "quiz": [
+      {
+        "question": "Explain why a sound wave diffracts around a doorway but visible light does not, using the concept of wavelength compared to aperture size.",
+        "markscheme": "Diffraction is significant when wavelength ≈ aperture size. Sound waves have wavelengths of roughly 0.017–17 m (audible range), comparable to a doorway (~0.8–1 m wide). So sound diffracts readily around door frames and corners. Visible light has wavelengths of ~400–700 nm (4–7 × 10⁻⁷ m), far smaller than a doorway, so diffraction is negligible and light appears to travel in straight lines. Diffraction of light is observed only with very narrow slits or very small apertures (< 1 mm)."
+      },
+      {
+        "question": "In a Young's double-slit experiment, slit separation d = 0.50 mm, screen distance D = 1.8 m, and the fringe spacing is 2.2 mm. Calculate the wavelength of light used.",
+        "markscheme": "Fringe spacing formula: s = λD/d → λ = sd/D = (2.2 × 10⁻³ × 0.50 × 10⁻³)/1.8 = (1.1 × 10⁻⁶)/1.8 = 6.11 × 10⁻⁷ m = 611 nm ≈ 610 nm. This is in the orange-red region of the visible spectrum. If slit separation were halved (d → 0.25 mm), fringe spacing would double to 4.4 mm, showing the inverse relationship between d and s."
+      },
+      {
+        "question": "A diffraction grating has 600 lines per mm. Calculate the angle of the second-order maximum for light of wavelength 550 nm.",
+        "markscheme": "Slit spacing: d = 1/(600 × 10³) = 1.667 × 10⁻⁶ m. Grating equation: nλ = d sin θ → sin θ = nλ/d = (2 × 550 × 10⁻⁹)/(1.667 × 10⁻⁶) = (1.1 × 10⁻⁶)/(1.667 × 10⁻⁶) = 0.660. θ = arcsin(0.660) = 41.3° ≈ 41°. Check: for n = 3, sin θ = 3 × 0.330 = 0.990, so n = 3 is just possible; n = 4 would require sin θ > 1 (impossible), so n = 3 is the highest order observable."
+      },
+      {
+        "question": "Describe how plane-polarised light is produced using a polaroid filter and explain Malus's law.",
+        "markscheme": "Unpolarised light contains electric field oscillations in all planes perpendicular to the direction of travel. A polaroid filter contains long-chain polymer molecules aligned in one direction, which absorb the component of the electric field parallel to the chains and transmit only the perpendicular component. The transmitted light is plane-polarised, with electric field oscillations confined to one plane (the transmission axis). Malus's law: when this polarised light (intensity I₀) passes through a second polaroid (analyser) whose transmission axis makes angle θ with the polarisation direction, the transmitted intensity is I = I₀ cos² θ. At θ = 0°, I = I₀ (maximum); at θ = 90°, I = 0 (extinction)."
+      },
+      {
+        "question": "Polarised light of intensity 800 W m⁻² is incident on an analyser. Calculate the transmitted intensity when the angle between the polariser and analyser is (a) 30° and (b) 60°.",
+        "markscheme": "(a) θ = 30°: I = I₀ cos² θ = 800 × cos² 30° = 800 × (√3/2)² = 800 × 0.75 = 600 W m⁻². (b) θ = 60°: I = 800 × cos² 60° = 800 × (0.5)² = 800 × 0.25 = 200 W m⁻². Note that the intensity at 60° is one-quarter that at 0°, while at 30° it is three-quarters. The sum of intensities at complementary angles (30° + 60° = 90°) is I₀: 600 + 200 = 800 ✓ — a consistency check."
+      }
+    ]
+  },
+  {
+    "id": "C.4",
+    "unit": 3,
+    "title": "Standing waves and resonance",
+    "hl": "Some HL",
+    "objectives": [
+      "Explain how standing (stationary) waves are formed by the superposition of two identical waves travelling in opposite directions.",
+      "Identify nodes and antinodes in standing wave patterns, and describe the motion of particles at each.",
+      "Determine the harmonic frequencies of strings fixed at both ends and open and closed pipes.",
+      "Apply the relationship between standing wave patterns, wavelength, and wave speed to solve problems.",
+      "Explain resonance in the context of standing waves and describe how resonance conditions determine the pitch of musical instruments."
+    ],
+    "summary": "A standing (stationary) wave is formed when two identical waves travel in opposite directions along the same medium and superpose. Unlike travelling waves, energy is not transported along a standing wave. The pattern consists of nodes (points of permanent zero displacement, where the two waves always cancel) and antinodes (points of maximum amplitude, where the two waves always reinforce). The distance between adjacent nodes (or adjacent antinodes) is λ/2.\n\nFor a string fixed at both ends (e.g. guitar string), both ends must be nodes. The allowed wavelengths are λ_n = 2L/n (n = 1, 2, 3, ...) and harmonic frequencies are f_n = nv/(2L) = nf₁, where v is the wave speed on the string and f₁ = v/(2L) is the fundamental frequency. The fundamental (n = 1) has a single antinode at the centre. Harmonics (overtones) are integer multiples of f₁.\n\nFor open pipes (both ends open), both ends are antinodes. The resonant frequencies are f_n = nv/(2L), same pattern as strings — all harmonics present. For closed pipes (one end closed, one open), the closed end is a node and the open end is an antinode. The fundamental has wavelength λ₁ = 4L, so f₁ = v/(4L). Only odd harmonics are present: f_n = nv/(4L) where n = 1, 3, 5, .... The closed pipe sounds an octave lower than the open pipe of the same length.\n\nResonance in musical instruments: pitch is determined by the resonant (natural) frequency of the air column or string. Tightening a string increases wave speed v (v = √(T/μ), where T is tension and μ is linear mass density), raising pitch. Shortening the string (fretting) reduces L, increasing f₁. Changing tube length (trombone, flute keys) adjusts the resonant frequencies of the air column.",
+    "quiz": [
+      {
+        "question": "Explain how a standing wave is formed on a string, distinguishing nodes from antinodes.",
+        "markscheme": "A standing wave forms when two waves of equal amplitude, frequency, and wavelength travel in opposite directions (e.g. an incident wave and its reflection). By the principle of superposition, the two waves add at every point. At nodes, the two waves are always in antiphase and cancel completely — displacement is always zero. At antinodes, the two waves are always in phase and add to give maximum amplitude — displacement oscillates between +2A and −2A. Nodes and antinodes alternate, with spacing λ/4 between a node and adjacent antinode, and λ/2 between successive nodes."
+      },
+      {
+        "question": "A guitar string of length 0.65 m has a wave speed of 420 m s⁻¹. Calculate the fundamental frequency and the frequency of the third harmonic.",
+        "markscheme": "For a string fixed at both ends, fundamental: f₁ = v/(2L) = 420/(2 × 0.65) = 420/1.30 = 323 Hz ≈ 320 Hz. Third harmonic: f₃ = 3f₁ = 3 × 323 = 969 Hz ≈ 970 Hz. In general, f_n = nf₁ for a string, so all integer multiples of the fundamental are present. Higher harmonics (overtones) give the instrument its characteristic timbre (tone colour)."
+      },
+      {
+        "question": "An organ pipe, closed at one end, has length 0.40 m. Taking the speed of sound as 340 m s⁻¹, calculate the fundamental frequency and the next possible resonant frequency.",
+        "markscheme": "For a pipe closed at one end: λ₁ = 4L = 4 × 0.40 = 1.60 m. f₁ = v/λ₁ = 340/1.60 = 212.5 Hz ≈ 213 Hz. Only odd harmonics present: next resonant frequency is f₃ = 3f₁ = 3 × 212.5 = 637.5 Hz ≈ 638 Hz (3rd harmonic, λ₃ = 4L/3 = 0.533 m). The even harmonics (f₂, f₄, ...) are absent because no standing wave can form with an even multiple fitting the node-antinode boundary conditions."
+      },
+      {
+        "question": "Compare the resonant frequencies of an open pipe and a closed pipe of the same length L, with speed of sound v.",
+        "markscheme": "Open pipe (both ends antinodes): f_n = nv/(2L) for n = 1, 2, 3, 4, ... — all harmonics present. Fundamental f₁ = v/(2L). Closed pipe (one node, one antinode): f_n = nv/(4L) for n = 1, 3, 5, ... — only odd harmonics. Fundamental f₁ = v/(4L). The closed pipe's fundamental is half that of the open pipe of the same length — it sounds an octave lower. The open pipe has a richer sound because it contains more harmonics. A flute (open at both ends) sounds higher than a clarinet (acts as closed at the mouthpiece end) of similar length."
+      },
+      {
+        "question": "Explain how changing string tension affects the frequency of a guitar string, using the formula v = √(T/μ).",
+        "markscheme": "The wave speed on the string v = √(T/μ), where T is the tension (N) and μ is the linear mass density (kg m⁻¹). The fundamental frequency f₁ = v/(2L) = (1/(2L))√(T/μ). Increasing tension T increases v and therefore increases f₁ — the note rises in pitch. Doubling tension increases v by √2 and raises the frequency by √2 (about 3 semitones). This is how a guitar is tuned: tightening the tuning peg increases tension and raises the pitch, while loosening it lowers the pitch."
+      }
+    ]
+  },
+  {
+    "id": "C.5",
+    "unit": 3,
+    "title": "Doppler effect",
+    "hl": "Some HL",
+    "objectives": [
+      "Describe the Doppler effect and explain why it occurs for both sound and light.",
+      "Apply the Doppler equation for a moving source: f' = f × v/(v ± v_s), identifying when to use + or −.",
+      "Apply the Doppler equation for a moving observer: f' = f × (v ± v_o)/v.",
+      "Explain redshift and blueshift in the context of light from astronomical sources.",
+      "Apply the approximation Δf/f ≈ v/c for the Doppler shift of electromagnetic waves (HL)."
+    ],
+    "summary": "The Doppler effect is the change in observed frequency of a wave when the source or observer is in motion relative to the medium. When a source moves toward an observer, successive wave fronts are compressed, reducing the effective wavelength and increasing the observed frequency (blueshift for light, higher pitch for sound). When the source moves away, wave fronts are stretched, reducing the observed frequency (redshift, lower pitch).\n\nFor sound, with wave speed v in the medium and source moving at v_s: the observed frequency is f' = f × v/(v − v_s) when the source approaches, and f' = f × v/(v + v_s) when the source recedes. For a moving observer (source stationary), moving toward the source: f' = f × (v + v_o)/v; moving away: f' = f × (v − v_o)/v. When both source and observer move, both formulae are combined.\n\nFor electromagnetic waves (light), there is no medium, and the Doppler formula must be modified. The exact relativistic Doppler formula is f' = f√[(1 − β)/(1 + β)] for a receding source and f' = f√[(1 + β)/(1 − β)] for an approaching source, where β = v/c. For v ≪ c, the approximation Δf/f ≈ v/c applies, where Δf = f' − f and v is the speed of recession or approach.\n\nAstronomical applications: spectral lines of distant galaxies are shifted toward longer wavelengths (redshift, z = Δλ/λ). The greater the redshift, the faster the galaxy is receding. Hubble's law v = H₀d relates recession speed to distance, showing the universe is expanding. Blueshifted spectra indicate approach (e.g. Andromeda Galaxy approaching the Milky Way). Doppler radar uses reflected microwaves to measure wind speed and vehicle speed; medical ultrasound uses Doppler shifts to measure blood flow velocity.",
+    "quiz": [
+      {
+        "question": "Explain why a passing ambulance siren changes in pitch, using the Doppler effect.",
+        "markscheme": "As the ambulance approaches, it emits sound waves that are compressed in front of it: the wavefronts bunch together, reducing the effective wavelength and increasing the frequency heard by the observer (higher pitch). As the ambulance passes and recedes, wavefronts behind it are stretched, increasing the effective wavelength and decreasing the frequency heard (lower pitch). The siren's actual frequency does not change; only the perceived frequency changes due to the relative motion between source and observer. The effect is more pronounced the faster the source moves relative to the speed of sound."
+      },
+      {
+        "question": "An ambulance emits a siren at 800 Hz while approaching at 30 m s⁻¹. Calculate the observed frequency. (Speed of sound = 340 m s⁻¹)",
+        "markscheme": "Source approaching, observer stationary: f' = f × v/(v − v_s) = 800 × 340/(340 − 30) = 800 × 340/310 = 800 × 1.0968 = 877.4 Hz ≈ 877 Hz. As the ambulance recedes at the same speed: f' = 800 × 340/(340 + 30) = 800 × 340/370 = 800 × 0.9189 = 735 Hz. The pitch drops from 877 Hz to 735 Hz as the source passes — a change of ~142 Hz, clearly audible."
+      },
+      {
+        "question": "A train whistle emits 500 Hz. An observer moves toward the stationary train at 20 m s⁻¹. Calculate the frequency heard. (Speed of sound = 340 m s⁻¹)",
+        "markscheme": "Moving observer, approaching stationary source: f' = f × (v + v_o)/v = 500 × (340 + 20)/340 = 500 × 360/340 = 500 × 1.0588 = 529.4 Hz ≈ 529 Hz. If the observer moved away from the source: f' = 500 × (340 − 20)/340 = 500 × 320/340 = 470.6 Hz ≈ 471 Hz. The pitch is higher when approaching and lower when receding, regardless of whether it's the source or observer that moves."
+      },
+      {
+        "question": "A galaxy shows a spectral line at 656 nm (Hα, rest wavelength) shifted to 720 nm. Calculate the recession speed and comment on what this implies about the universe.",
+        "markscheme": "Redshift: z = Δλ/λ = (720 − 656)/656 = 64/656 = 0.0976 ≈ 0.098. Using Δλ/λ ≈ v/c (valid for v ≪ c): v = zc = 0.0976 × 3.0 × 10⁸ = 2.93 × 10⁷ m s⁻¹ ≈ 2.9 × 10⁷ m s⁻¹ (about 10% of the speed of light). The galaxy is receding from Earth. Hubble's law (v = H₀d) can then give the distance. Most galaxies show redshift, indicating the universe is expanding uniformly in all directions — evidence for the Big Bang model."
+      },
+      {
+        "question": "A radar gun emits microwaves at 10.0 GHz. A vehicle reflects the signal with a frequency shift of 1.2 kHz measured. Calculate the speed of the vehicle. (HL) (c = 3.0 × 10⁸ m s⁻¹)",
+        "markscheme": "Using the approximation Δf/f ≈ 2v/c (factor of 2 because both the reflection and the source-to-detector path contribute to the Doppler shift in radar): v = cΔf/(2f) = (3.0 × 10⁸ × 1.2 × 10³)/(2 × 10.0 × 10⁹) = (3.6 × 10¹¹)/(2.0 × 10¹⁰) = 18 m s⁻¹ ≈ 18 m s⁻¹ (64.8 km h⁻¹). Alternatively using Δf/f ≈ v/c (single pass): v = cΔf/f = 3.0 × 10⁸ × 1.2 × 10³/(10 × 10⁹) = 36 m s⁻¹. The correct radar formula uses factor of 2 for the round-trip Doppler effect."
+      }
+    ]
+  },
+  {
+    "id": "D.1",
+    "unit": 4,
+    "title": "Gravitational fields",
+    "hl": "Some HL",
+    "objectives": [
+      "Define gravitational field strength g as force per unit mass and apply Newton's law of gravitation: F = Gm₁m₂/r².",
+      "Calculate gravitational field strength at the surface and above the surface of a spherical mass: g = GM/r².",
+      "Define gravitational potential V_grav = −GM/r and relate it to gravitational potential energy E_p = mV = −GMm/r.",
+      "Apply conservation of energy to orbital mechanics, including escape speed: v_esc = √(2GM/r).",
+      "Derive and apply Kepler's third law: T² ∝ r³, relating orbital period to orbital radius.",
+      "Distinguish between gravitational field and potential energy graphs, and describe equipotential surfaces (HL)."
+    ],
+    "summary": "A gravitational field exists in the region of space surrounding any mass, where another mass experiences a gravitational force. Gravitational field strength g at a point is defined as the gravitational force per unit mass placed at that point: g = F/m (N kg⁻¹). Near Earth's surface, g ≈ 9.81 N kg⁻¹. Newton's law of universal gravitation: F = Gm₁m₂/r², where G = 6.67 × 10⁻¹¹ N m² kg⁻² is the gravitational constant and r is the centre-to-centre distance. For a uniform sphere of mass M, g = GM/r² at distance r from the centre.\n\nGravitational potential V_grav at a point is the work done per unit mass to bring a small test mass from infinity to that point: V_grav = −GM/r (J kg⁻¹). It is negative because gravity is attractive and work is done by the field (not against it). Gravitational potential energy of a mass m at distance r: E_p = mV = −GMm/r. The negative sign means energy must be supplied to move the mass to a greater distance.\n\nFor a circular orbit of radius r, the gravitational force provides the centripetal force: GMm/r² = mv²/r, giving orbital speed v = √(GM/r) and orbital period T = 2πr/v = 2π√(r³/GM). Squaring: T² = (4π²/GM)r³, which is Kepler's third law. Escape speed: the minimum speed needed to escape a gravitational field from the surface: ½mv²_esc = GMm/r → v_esc = √(2GM/r). Note v_esc = √2 × v_orbital.\n\nGravitational potential energy is negative and increases toward zero as r → ∞. On a V vs r graph, V = −GM/r is a negative curve tending to zero. Equipotential surfaces are spherical shells centred on the mass (in the field of a point mass). No work is done moving along an equipotential. At HL, the field between two masses includes a neutral point where the field strength is zero but the potential has a local maximum (most negative point on a combined potential well).",
+    "quiz": [
+      {
+        "question": "Calculate the gravitational force between Earth (M = 6.0 × 10²⁴ kg) and the Moon (m = 7.3 × 10²² kg) at a centre-to-centre distance of 3.8 × 10⁸ m. (G = 6.67 × 10⁻¹¹ N m² kg⁻²)",
+        "markscheme": "F = Gm₁m₂/r² = (6.67 × 10⁻¹¹ × 6.0 × 10²⁴ × 7.3 × 10²²)/(3.8 × 10⁸)². Numerator: 6.67 × 6.0 × 7.3 × 10⁻¹¹⁺²⁴⁺²² = 292.2 × 10³⁵ = 2.922 × 10³⁷. Denominator: (3.8)² × 10¹⁶ = 14.44 × 10¹⁶ = 1.444 × 10¹⁷. F = 2.922 × 10³⁷/1.444 × 10¹⁷ = 2.02 × 10²⁰ N ≈ 2.0 × 10²⁰ N. This force keeps the Moon in its orbit."
+      },
+      {
+        "question": "Calculate the gravitational field strength at the surface of Mars (M = 6.4 × 10²³ kg, R = 3.4 × 10⁶ m) and compare it to Earth's g.",
+        "markscheme": "g_Mars = GM/R² = (6.67 × 10⁻¹¹ × 6.4 × 10²³)/(3.4 × 10⁶)² = (4.27 × 10¹³)/(1.156 × 10¹³) = 3.69 m s⁻² ≈ 3.7 m s⁻². Compared to Earth: g_Mars/g_Earth = 3.7/9.81 ≈ 0.38. The gravitational field on Mars is about 38% that of Earth. This means objects on Mars weigh about 38% of their Earth weight, though their mass is unchanged."
+      },
+      {
+        "question": "Calculate the orbital period of a satellite in a circular orbit at height 400 km above Earth's surface. (M_E = 6.0 × 10²⁴ kg, R_E = 6.4 × 10⁶ m, G = 6.67 × 10⁻¹¹ N m² kg⁻²)",
+        "markscheme": "Orbital radius: r = R_E + h = 6.4 × 10⁶ + 0.4 × 10⁶ = 6.8 × 10⁶ m. From T² = 4π²r³/(GM): T² = 4π² × (6.8 × 10⁶)³/(6.67 × 10⁻¹¹ × 6.0 × 10²⁴). Numerator: 4π² × 3.14 × 10²⁰ = 39.48 × 3.14 × 10²⁰ = 1.24 × 10²². Denominator: 4.0 × 10¹⁴. T² = 1.24 × 10²²/4.0 × 10¹⁴ = 3.1 × 10⁷. T = √(3.1 × 10⁷) = 5568 s ≈ 5600 s ≈ 93 min. This is the typical orbital period of the International Space Station."
+      },
+      {
+        "question": "Calculate the escape speed from the surface of the Moon. (M_Moon = 7.3 × 10²² kg, R_Moon = 1.74 × 10⁶ m)",
+        "markscheme": "v_esc = √(2GM/R) = √(2 × 6.67 × 10⁻¹¹ × 7.3 × 10²²/1.74 × 10⁶). Numerator inside root: 2 × 6.67 × 7.3 × 10⁻¹¹⁺²² = 97.4 × 10¹¹ = 9.74 × 10¹². v_esc = √(9.74 × 10¹²/1.74 × 10⁶) = √(5.60 × 10⁶) = 2366 m s⁻¹ ≈ 2400 m s⁻¹ = 2.4 km s⁻¹. This is much less than Earth's escape speed (~11.2 km s⁻¹), explaining why the Moon has no atmosphere (gas molecules can easily reach escape speed at lunar temperatures)."
+      },
+      {
+        "question": "State Kepler's third law and verify it for Earth (T = 365 days, r = 1.5 × 10¹¹ m) and Mars (T = 687 days, r = 2.28 × 10¹¹ m).",
+        "markscheme": "Kepler's third law: T² ∝ r³, or T²/r³ = constant = 4π²/(GM_Sun). For Earth: T²/r³ = (365)²/(1.5 × 10¹¹)³. In SI: T_E = 3.156 × 10⁷ s; r_E³ = 3.375 × 10³³ m³; ratio = (3.156 × 10⁷)²/(3.375 × 10³³) = 9.96 × 10¹⁴/3.375 × 10³³ = 2.95 × 10⁻¹⁹. For Mars: T_M = 5.94 × 10⁷ s; r_M³ = (2.28 × 10¹¹)³ = 1.187 × 10³⁴; ratio = (5.94 × 10⁷)²/1.187 × 10³⁴ = 3.53 × 10¹⁵/1.187 × 10³⁴ = 2.97 × 10⁻¹⁹. Both ratios ≈ 2.96 × 10⁻¹⁹, confirming Kepler's third law."
+      },
+      {
+        "question": "Describe the shape of a gravitational potential (V vs r) graph for a point mass and explain the significance of equipotential surfaces. (HL)",
+        "markscheme": "The gravitational potential V = −GM/r is negative for all finite r and tends to zero as r → ∞. On a V vs r graph, the curve starts at a large negative value near the surface and asymptotically approaches zero. Equipotential surfaces are spherical shells centred on the mass; all points on the surface have the same V. No work is done moving along an equipotential (F · ds = 0). The gravitational field g = −dV/dr is the negative gradient of the potential; where equipotentials are closely spaced (near the mass), g is large. For the combined field of two masses, there is a saddle point (neutral point) between them where g = 0 but V has a maximum negative value."
+      }
+    ]
+  },
+  {
+    "id": "D.2",
+    "unit": 4,
+    "title": "Electric and magnetic fields",
+    "hl": "Some HL",
+    "objectives": [
+      "Define electric field strength E = F/q and apply Coulomb's law F = kq₁q₂/r² to point charges.",
+      "Calculate electric field and potential for point charges, and describe uniform fields between parallel plates.",
+      "Define magnetic flux density B and apply the force on a current-carrying conductor F = BIL sin θ and on a charged particle F = qvB sin θ.",
+      "Describe the patterns of electric and magnetic field lines for common configurations.",
+      "Apply the relationship between electric field and potential: E = −ΔV/Δx.",
+      "Explain how a mass spectrometer, velocity selector, and cyclotron use electric and magnetic fields."
+    ],
+    "summary": "An electric field is a region where a charged particle experiences a force. Electric field strength E = F/q (N C⁻¹ = V m⁻¹), defined as the force per unit positive charge. For a point charge Q, Coulomb's law gives the force on charge q at distance r: F = kq₁q₂/r² where k = 1/(4πε₀) = 8.99 × 10⁹ N m² C⁻². The field from a point charge: E = kQ/r². Field lines run from positive to negative charges; uniform fields exist between parallel plates.\n\nElectric potential V at a point is the work done per unit positive charge moving from infinity to that point: V = kQ/r (volts). The potential difference ΔV between two points is the energy per unit charge transferred. Electric field and potential are related: E = −ΔV/Δx (the field is the negative gradient of potential). Equipotential lines are perpendicular to field lines.\n\nA magnetic field exerts a force on a current-carrying conductor: F = BIL sin θ, where B is magnetic flux density (tesla, T), I is current, L is the conductor length in the field, and θ is the angle between the current direction and the field. Fleming's left-hand rule gives the direction of the force. For a particle of charge q moving at speed v in a magnetic field: F = qvB sin θ. The magnetic force is always perpendicular to v, so it does no work and only changes direction — producing circular motion: r = mv/(qB).\n\nA velocity selector uses crossed electric and magnetic fields: E force (qE) and B force (qvB) balance for selected speed v = E/B. A mass spectrometer separates ions by mass/charge ratio using this principle followed by circular motion in B: m/q = Br/v. A cyclotron accelerates particles in a spiral using alternating electric fields between D-shaped regions (dees), with a perpendicular magnetic field providing circular motion; radius increases as speed increases. Electric field lines from a positive point charge radiate outward; magnetic field lines around a long wire are concentric circles (right-hand screw rule). The Earth's magnetic field protects the atmosphere from solar wind by deflecting charged particles.",
+    "quiz": [
+      {
+        "question": "Calculate the electric force between two charges q₁ = +3.0 μC and q₂ = −2.0 μC separated by 0.15 m in air. (k = 8.99 × 10⁹ N m² C⁻²)",
+        "markscheme": "F = kq₁q₂/r² = (8.99 × 10⁹ × 3.0 × 10⁻⁶ × 2.0 × 10⁻⁶)/(0.15)². Numerator: 8.99 × 10⁹ × 6.0 × 10⁻¹² = 8.99 × 6.0 × 10⁻³ = 53.94 × 10⁻³ = 0.05394. Denominator: 0.0225. F = 0.05394/0.0225 = 2.40 N. The force is attractive (opposite charges) with magnitude 2.40 N directed along the line joining the charges. By Newton's third law, q₂ also exerts a 2.40 N force on q₁."
+      },
+      {
+        "question": "Parallel plates are separated by 5.0 mm and have a potential difference of 200 V. Calculate the uniform electric field strength between the plates and the force on a proton placed between them.",
+        "markscheme": "E = ΔV/Δx = 200/(5.0 × 10⁻³) = 40 000 V m⁻¹ = 4.0 × 10⁴ N C⁻¹. Force on proton: F = qE = 1.6 × 10⁻¹⁹ × 4.0 × 10⁴ = 6.4 × 10⁻¹⁵ N, directed from the positive plate toward the negative plate (in the direction of the field for a positive charge). This field is uniform between the plates (field lines are parallel and equally spaced)."
+      },
+      {
+        "question": "A wire of length 0.30 m carrying 5.0 A is placed perpendicular to a magnetic field of 0.40 T. Calculate the force on the wire.",
+        "markscheme": "F = BIL sin θ = 0.40 × 5.0 × 0.30 × sin 90° = 0.40 × 5.0 × 0.30 × 1 = 0.60 N. The force is perpendicular to both the current direction and the field direction, determined by Fleming's left-hand rule: first finger = field direction, second finger = current direction, thumb = force (thrust) direction. If the wire is not perpendicular (θ ≠ 90°), the force is reduced by factor sin θ."
+      },
+      {
+        "question": "A proton (q = 1.6 × 10⁻¹⁹ C, m = 1.67 × 10⁻²⁷ kg) moves at 2.0 × 10⁶ m s⁻¹ perpendicular to a magnetic field of 0.50 T. Calculate the radius of its circular path.",
+        "markscheme": "The magnetic force provides centripetal force: qvB = mv²/r → r = mv/(qB). r = (1.67 × 10⁻²⁷ × 2.0 × 10⁶)/(1.6 × 10⁻¹⁹ × 0.50) = (3.34 × 10⁻²¹)/(8.0 × 10⁻²⁰) = 0.04175 m ≈ 0.042 m = 4.2 cm. Note: the magnetic force does no work on the proton (F ⊥ v), so the speed remains constant and the path is a perfect circle of constant radius."
+      },
+      {
+        "question": "Describe the operation of a velocity selector and explain how it can be used to determine the charge-to-mass ratio of an ion.",
+        "markscheme": "A velocity selector has a uniform electric field E (from parallel plates) and a uniform magnetic field B (perpendicular to both E and the particle's velocity). For a particle moving through the selector: electric force qE acts one way, magnetic force qvB acts the other. They balance when qE = qvB → v = E/B — only particles with speed v = E/B pass straight through; others are deflected. After selection, the beam enters a region with only field B. The particle undergoes circular motion: r = mv/(qB) → m/q = Br/v = B²r/E. By measuring r (radius of circular path), knowing B and E, the charge-to-mass ratio can be determined. This is the principle of the mass spectrometer."
+      },
+      {
+        "question": "Sketch and compare the electric field line patterns for (a) a positive point charge, (b) two equal positive charges, and (c) a positive and a negative charge of equal magnitude.",
+        "markscheme": "(a) Positive point charge: field lines radiate outward in all directions (spherically symmetric for a 3D diagram; radially outward in 2D cross-section). Lines are closer together near the charge (stronger field). (b) Two equal positive charges: lines repel between the charges; there is a neutral point midway between them where field strength = 0. Lines curve away from each charge. (c) Positive and negative charges (electric dipole): lines leave the positive charge and enter the negative charge; lines are most dense between the charges (strongest field); the pattern is like the D-shape of a bar magnet field, suggesting attraction. In all cases, field lines are perpendicular to equipotential surfaces and never cross each other."
+      }
+    ]
+  },
+  {
+    "id": "D.3",
+    "unit": 4,
+    "title": "Motion in electromagnetic fields",
+    "hl": "Some HL",
+    "objectives": [
+      "Analyse the motion of charged particles in uniform electric fields, including deflection of electrons in a cathode ray tube.",
+      "Describe the Hall effect and apply the formula V_H = IB/(nqt) to determine carrier concentration.",
+      "Explain the principle of electromagnetic induction and apply Faraday's law: ε = −ΔΦ/Δt.",
+      "Apply Lenz's law to determine the direction of an induced current or force.",
+      "Describe the operation of a simple AC generator and a transformer, applying V_p/V_s = N_p/N_s."
+    ],
+    "summary": "A charged particle entering a uniform electric field perpendicular to the field experiences constant acceleration parallel to the field (F = qE) while its perpendicular velocity remains unchanged — the motion is parabolic, analogous to projectile motion. A cathode ray tube (CRT) exploits this: electrons accelerated through potential V acquire speed v = √(2eV/m), then are deflected by electric (or magnetic) fields to hit a phosphor screen.\n\nThe Hall effect occurs when current flows through a conductor in a perpendicular magnetic field. The magnetic force on charge carriers (F = qvB) causes them to accumulate on one side, creating a transverse potential difference (Hall voltage): V_H = IB/(nqt), where n is the number density of charge carriers, q is carrier charge, and t is the thickness of the conductor. The polarity of V_H identifies the sign of the majority charge carrier. The Hall probe is used to measure magnetic field strength.\n\nElectromagnetic induction (Faraday): when the magnetic flux Φ = BA cos θ through a circuit changes, an emf is induced: ε = −N dΦ/dt (Faraday's law), where N is the number of turns. The negative sign (Lenz's law) means the induced current opposes the change causing it (conservation of energy). Lenz's law: the induced current creates a magnetic field that opposes the change in flux. This manifests as a braking force on a moving conductor.\n\nAn AC generator uses electromagnetic induction: a coil rotating in a magnetic field produces a sinusoidal emf ε = NBAω sin(ωt) = ε₀ sin(ωt), where ε₀ = NBAω is the peak emf. A transformer changes AC voltage: V_p/V_s = N_p/N_s (voltage ratio equals turns ratio). For an ideal transformer, power is conserved: V_p I_p = V_s I_s. Step-up transformers increase voltage (and decrease current) for efficient long-distance power transmission; step-down transformers reduce voltage for domestic use. Power losses in transmission lines: P_loss = I²R; transmitting at high voltage (low current) minimizes resistive losses.",
+    "quiz": [
+      {
+        "question": "An electron is accelerated through 500 V and then enters a uniform electric field of 3.0 × 10⁴ V m⁻¹ perpendicular to its motion. Calculate its entry speed and describe its subsequent path. (e = 1.6 × 10⁻¹⁹ C, m_e = 9.11 × 10⁻³¹ kg)",
+        "markscheme": "Entry speed: eV = ½mv² → v = √(2eV/m) = √(2 × 1.6 × 10⁻¹⁹ × 500/9.11 × 10⁻³¹) = √(1.6 × 10⁻¹⁶/9.11 × 10⁻³¹) = √(1.756 × 10¹⁴) = 1.325 × 10⁷ m s⁻¹ ≈ 1.3 × 10⁷ m s⁻¹. In the deflecting field, the electron experiences constant force F = eE = 1.6 × 10⁻¹⁹ × 3.0 × 10⁴ = 4.8 × 10⁻¹⁵ N perpendicular to motion, giving acceleration a = F/m_e = 5.27 × 10¹⁵ m s⁻². The path is parabolic, curving toward the positive plate (electron is negatively charged, attracted to positive plate)."
+      },
+      {
+        "question": "Explain the Hall effect and state how the Hall voltage can be used to determine the sign of charge carriers in a semiconductor.",
+        "markscheme": "When conventional current I flows through a conductor of thickness t in a perpendicular magnetic field B, the magnetic force F = qvB acts on the charge carriers, pushing them to one side of the conductor. This creates an uneven charge distribution: a transverse electric field builds up (Hall field) until it balances the magnetic force: qE_H = qvB → E_H = vB. The Hall voltage V_H = E_H × t = vBt. Since current I = nqvA (A = cross-section), v = I/(nqA). So V_H = IB/(nqt). If the top face becomes positive, carriers are positive (conventional current direction); if the top face becomes negative, carriers are electrons (negative charge moving opposite to conventional current direction). This distinguishes p-type (hole) from n-type (electron) semiconductors."
+      },
+      {
+        "question": "A rectangular coil of 50 turns and area 0.020 m² is placed in a magnetic field of 0.40 T. The coil is pulled out of the field in 0.25 s. Calculate the average induced emf.",
+        "markscheme": "Initial flux: Φ₁ = BA = 0.40 × 0.020 = 8.0 × 10⁻³ Wb. Final flux: Φ₂ = 0 (coil completely removed). Change in flux: ΔΦ = 0 − 8.0 × 10⁻³ = −8.0 × 10⁻³ Wb. Faraday's law: |ε| = N|ΔΦ/Δt| = 50 × 8.0 × 10⁻³/0.25 = 50 × 0.032 = 1.6 V. By Lenz's law, the induced current in the coil will flow in the direction that creates a field to maintain the original flux (opposing its decrease), resulting in a braking force on the coil opposing its removal."
+      },
+      {
+        "question": "Apply Lenz's law to explain why a copper ring falls more slowly when dropped over a bar magnet than when dropped freely, and calculate the braking force if the induced emf is 0.020 V and the ring has resistance 0.05 Ω.",
+        "markscheme": "As the ring falls toward the magnet, the flux through the ring increases. By Lenz's law, the induced current opposes this increase — it flows in a direction to create a magnetic field opposing the magnet's field (repelling the ring). This creates an upward force opposing the motion. Induced current I = ε/R = 0.020/0.05 = 0.40 A. The braking force = BIL (force on the current-carrying ring in the field). The ring falls at terminal velocity when this upward magnetic braking force equals the weight of the ring (net force = 0), analogous to terminal velocity in fluid resistance — demonstrating conservation of energy: the gravitational PE lost equals the electrical energy dissipated as heat in the ring."
+      },
+      {
+        "question": "A transformer has 500 primary turns and 50 secondary turns. The primary is connected to 230 V AC. Calculate the secondary voltage and the secondary current if the primary current is 0.10 A (assume 100% efficiency).",
+        "markscheme": "Turns ratio: N_p/N_s = 500/50 = 10. V_s = V_p × (N_s/N_p) = 230 × (50/500) = 230 × 0.1 = 23 V. This is a step-down transformer (voltage reduced by factor 10). For 100% efficiency, input power = output power: V_p I_p = V_s I_s → I_s = V_p I_p/V_s = 230 × 0.10/23 = 1.0 A. Current increases by factor 10 as voltage decreases by factor 10, consistent with power conservation: P = 230 × 0.10 = 23 W = 23 × 1.0 = 23 W ✓."
+      }
+    ]
+  },
+  {
+    "id": "D.4",
+    "unit": 4,
+    "title": "Induction",
+    "hl": "HL",
+    "objectives": [
+      "Define magnetic flux Φ = BA cos θ and apply Faraday's law of electromagnetic induction: ε = −N dΦ/dt.",
+      "Apply Lenz's law and explain it as a consequence of conservation of energy.",
+      "Describe mutual inductance and self-inductance, and apply ε = −L dI/dt for a coil.",
+      "Analyse the behaviour of inductors in DC circuits, including the time constant τ = L/R for LR circuits.",
+      "Explain the production and transmission of AC power, including transformers and their role in power grids.",
+      "Apply the concepts of peak and rms values of AC current and voltage: V_rms = V₀/√2, I_rms = I₀/√2."
+    ],
+    "summary": "Magnetic flux through a surface is Φ = BA cos θ (Weber, Wb = T m²), where B is the flux density, A is the area, and θ is the angle between B and the normal to the surface. Faraday's law: the induced emf in a circuit is proportional to the rate of change of flux linkage ε = −N dΦ/dt. The magnitude of the emf is |ε| = N|ΔΦ/Δt| for a coil of N turns. Lenz's law provides the direction of the induced emf: it is such that the induced current opposes the change in flux that produces it (conservation of energy — the source must do work against the induced braking force).\n\nSelf-inductance L (henry, H) measures a coil's ability to induce an emf in itself due to its own changing current: ε = −L dI/dt. The energy stored in an inductor carrying current I: E = ½LI². Mutual inductance M between two coils: ε₂ = −M dI₁/dt. In an LR series circuit, when a DC source is switched on, the current builds up exponentially with time constant τ = L/R: I(t) = I₀(1 − e^(−t/τ)), where I₀ = V/R. When the source is disconnected, current decays as I(t) = I₀ e^(−t/τ).\n\nAC generators produce a sinusoidal output: ε(t) = ε₀ sin(ωt), where ε₀ = NBAω is the peak emf. The rms (root mean square) value is the DC equivalent that delivers the same power: V_rms = V₀/√2 ≈ 0.707 V₀; I_rms = I₀/√2. Power in AC circuit: P = V_rms I_rms cos φ (where φ is the phase angle between V and I; for resistive loads cos φ = 1).\n\nTransformers operate on mutual induction between primary and secondary coils. For an ideal transformer: V_p/V_s = N_p/N_s = I_s/I_p. Transformers enable electricity to be transmitted at high voltage (low current) through the national grid, minimising resistive losses (P_loss = I²R). Step-up transformers at power stations increase voltage to ~400 kV; step-down transformers at substations reduce it for domestic use (~230 V). This is one key advantage of AC over DC for power distribution.",
+    "quiz": [
+      {
+        "question": "Calculate the magnetic flux through a rectangular loop of area 0.060 m² placed at 40° to a magnetic field of 0.80 T.",
+        "markscheme": "Φ = BA cos θ. The angle θ is between the field B and the normal to the plane of the loop. If the loop plane is at 40° to B, the normal is at 90° − 40° = 50° to B. Φ = 0.80 × 0.060 × cos 50° = 0.048 × 0.643 = 0.0309 Wb ≈ 0.031 Wb. Note: if θ is given as the angle between the field and the plane (not the normal), use Φ = BA sin θ = 0.80 × 0.060 × sin 40° = 0.048 × 0.643 = 0.031 Wb (same numerical result in this case)."
+      },
+      {
+        "question": "Explain Lenz's law as a consequence of conservation of energy, using the example of a magnet being pushed into a coil.",
+        "markscheme": "When a magnet is pushed toward a coil, the increasing flux induces an emf. By Lenz's law, the induced current flows in a direction to create a magnetic field opposing the magnet's approach — the near face of the coil acts as a like pole, repelling the magnet. To push the magnet into the coil, work must be done against this repulsive force. This work equals the electrical energy dissipated in the coil's resistance. If the induced current instead aided the magnet's motion (Lenz's law violated), the magnet would accelerate indefinitely, creating energy from nothing — violating conservation of energy. Lenz's law is therefore a direct consequence of the energy principle."
+      },
+      {
+        "question": "An inductor of L = 50 mH is in series with a 25 Ω resistor, connected to a 12 V battery. Calculate the time constant, final steady-state current, and the current 4 ms after switching on.",
+        "markscheme": "Time constant: τ = L/R = 50 × 10⁻³/25 = 2.0 × 10⁻³ s = 2.0 ms. Final current: I₀ = V/R = 12/25 = 0.48 A. Current at t = 4 ms: I(t) = I₀(1 − e^(−t/τ)) = 0.48 × (1 − e^(−4/2)) = 0.48 × (1 − e^(−2)) = 0.48 × (1 − 0.135) = 0.48 × 0.865 = 0.415 A ≈ 0.42 A. After one time constant (t = 2 ms): I = 0.48 × (1 − e⁻¹) = 0.48 × 0.632 = 0.303 A (63.2% of final value — consistent with exponential approach)."
+      },
+      {
+        "question": "The UK mains supply has a peak voltage of 325 V. Calculate the rms voltage, rms current through a 1200 W appliance, and its resistance.",
+        "markscheme": "V_rms = V₀/√2 = 325/√2 = 325/1.414 = 229.9 V ≈ 230 V. Power P = V_rms × I_rms → I_rms = P/V_rms = 1200/230 = 5.22 A ≈ 5.2 A. Resistance: R = V_rms/I_rms = 230/5.22 = 44.1 Ω ≈ 44 Ω. Alternatively: R = V_rms²/P = 230²/1200 = 52900/1200 = 44.1 Ω. The rms values are the equivalent DC values for power calculations; the peak current is I₀ = I_rms × √2 = 5.22 × 1.414 = 7.38 A."
+      },
+      {
+        "question": "Explain why electricity is transmitted at high voltage in the national grid and calculate the power loss in a transmission cable (R = 20 Ω) when transmitting 1.0 MW at (a) 500 V and (b) 50 000 V.",
+        "markscheme": "High voltage reduces current for the same power (P = VI): lower current means less resistive power loss (P_loss = I²R). (a) At 500 V: I = P/V = 1.0 × 10⁶/500 = 2000 A. P_loss = I²R = (2000)² × 20 = 4 × 10⁶ × 20 = 80 MW — far more than the power being transmitted! (b) At 50 000 V: I = 1.0 × 10⁶/50 000 = 20 A. P_loss = (20)² × 20 = 400 × 20 = 8000 W = 8 kW — only 0.8% of the transmitted power. This illustrates why transformers (step-up before transmission, step-down before distribution) are essential in AC power grids."
+      },
+      {
+        "question": "Describe the energy stored in an inductor and calculate the energy stored in an inductor L = 0.20 H carrying a current of 3.0 A. Explain what happens to this energy when the circuit is suddenly broken.",
+        "markscheme": "Energy: E = ½LI² = ½ × 0.20 × (3.0)² = ½ × 0.20 × 9 = 0.90 J. When the circuit is suddenly broken, the current cannot instantaneously fall to zero (the inductor opposes changes in current). The inductor attempts to maintain the current, inducing a large emf (ε = −L dI/dt; with dI/dt very large, ε is very large). In practice, this large voltage causes a spark across the switch contacts. The stored magnetic energy is rapidly dissipated as heat and light in the spark, or in a protective diode placed across the inductor to provide a current path."
+      }
+    ]
+  },
+  {
+    "id": "E.1",
+    "unit": 5,
+    "title": "Structure of the atom",
+    "hl": "Some HL",
+    "objectives": [
+      "Describe the Rutherford scattering experiment and explain how it provided evidence for the nuclear model of the atom.",
+      "State the composition of the nucleus (protons and neutrons) and define atomic number Z, mass number A, and neutron number N.",
+      "Explain atomic line spectra in terms of electron transitions between discrete energy levels: ΔE = hf.",
+      "Apply the Bohr model of the hydrogen atom: energy levels E_n = −13.6/n² eV.",
+      "Describe nuclear reactions using conservation of charge number and mass number.",
+      "Explain the existence of nuclear binding energy and apply E = mc² to mass–energy equivalence."
+    ],
+    "summary": "In 1909, Geiger, Marsden, and Rutherford fired alpha particles at thin gold foil. Most passed straight through; some deflected at large angles; a very few bounced back. Rutherford concluded that the atom is mostly empty space, with a tiny, dense, positively charged nucleus containing almost all the mass. This replaced the Thomson 'plum pudding' model with the nuclear model.\n\nThe nucleus contains Z protons and N neutrons; mass number A = Z + N. Atoms of the same element with different N are isotopes. Nuclear size is ~10⁻¹⁵ m (femtometre, fm); atomic radius ~10⁻¹⁰ m (ångström). Nuclear density is approximately constant at ~2.3 × 10¹⁷ kg m⁻³ because nuclear volume ∝ A and mass ∝ A.\n\nElectrons occupy discrete energy levels around the nucleus. In the Bohr model for hydrogen: E_n = −13.6/n² eV, where n = 1, 2, 3, ... is the principal quantum number. The ground state is n = 1 (E = −13.6 eV); the ionisation energy is 13.6 eV. When an electron transitions from level n₂ to n₁ (n₂ > n₁ > emission), a photon is emitted with frequency f given by: ΔE = E_upper − E_lower = hf = hc/λ. Absorption spectra arise from atoms absorbing photons and exciting electrons to higher levels. Emission spectra (line spectra) are the reverse. Each element has a unique spectral fingerprint.\n\nNuclear binding energy is the energy needed to completely separate all nucleons. It equals the mass defect × c²: E_binding = Δm × c², where Δm = (Zm_p + Nm_n) − m_nucleus is the mass defect. The binding energy per nucleon peaks at around iron-56, explaining why both fission and fusion can release energy. Nuclear reactions conserve charge number (total Z) and mass number (total A). At HL, nuclear energy levels and gamma emission extend the discussion of discrete energy quantisation.",
+    "quiz": [
+      {
+        "question": "Describe the Rutherford alpha-scattering experiment and explain what each observation tells us about atomic structure.",
+        "markscheme": "Setup: a source of alpha particles aimed at a thin gold foil; detectors placed at various angles. Observations and inferences: (1) Most alphas pass straight through → the atom is mostly empty space. (2) A small fraction are deflected at large angles → there is a concentrated region of positive charge (the nucleus) that repels the alpha particles. (3) A very small fraction (about 1 in 20 000) scatter back at near 180° → the nucleus is much more massive than the alpha particle (it barely recoils) and is very small (the nucleus occupies about 10⁻¹⁵/10⁻¹⁰ = 10⁻⁵ of the atomic diameter). This led to the nuclear model: a tiny, massive, positively charged nucleus surrounded by distant, orbiting electrons."
+      },
+      {
+        "question": "An electron in a hydrogen atom falls from the n = 4 level to the n = 2 level. Calculate the wavelength of the emitted photon. (E_n = −13.6/n² eV, h = 6.63 × 10⁻³⁴ J s, c = 3.0 × 10⁸ m s⁻¹, 1 eV = 1.6 × 10⁻¹⁹ J)",
+        "markscheme": "E₄ = −13.6/16 = −0.850 eV. E₂ = −13.6/4 = −3.40 eV. ΔE = E₄ − E₂ = −0.850 − (−3.40) = 2.55 eV = 2.55 × 1.6 × 10⁻¹⁹ = 4.08 × 10⁻¹⁹ J. Frequency: f = ΔE/h = 4.08 × 10⁻¹⁹/6.63 × 10⁻³⁴ = 6.15 × 10¹⁴ Hz. Wavelength: λ = c/f = 3.0 × 10⁸/6.15 × 10¹⁴ = 4.88 × 10⁻⁷ m = 488 nm (blue-green visible light — part of the Balmer series)."
+      },
+      {
+        "question": "Calculate the binding energy of helium-4 nucleus. (m_p = 1.6726 × 10⁻²⁷ kg, m_n = 1.6749 × 10⁻²⁷ kg, m_He-4 = 6.6447 × 10⁻²⁷ kg, c = 3.0 × 10⁸ m s⁻¹)",
+        "markscheme": "He-4 has Z = 2 protons and N = 2 neutrons. Mass of free nucleons: 2m_p + 2m_n = 2(1.6726) + 2(1.6749) = 3.3452 + 3.3498 = 6.6950 × 10⁻²⁷ kg. Mass defect: Δm = 6.6950 − 6.6447 = 0.0503 × 10⁻²⁷ kg = 5.03 × 10⁻²⁹ kg. Binding energy: E = Δmc² = 5.03 × 10⁻²⁹ × (3.0 × 10⁸)² = 5.03 × 10⁻²⁹ × 9.0 × 10¹⁶ = 4.527 × 10⁻¹² J ≈ 4.5 × 10⁻¹² J ≈ 28.3 MeV. Binding energy per nucleon = 28.3/4 ≈ 7.1 MeV/nucleon."
+      },
+      {
+        "question": "Write a balanced nuclear equation for the alpha decay of radium-226 (Z = 88) and identify the daughter nucleus.",
+        "markscheme": "Alpha particle: ⁴₂He (or ⁴₂α), Z = 2, A = 4. Conservation of mass number: 226 = 4 + A_daughter → A_daughter = 222. Conservation of charge number: 88 = 2 + Z_daughter → Z_daughter = 86. Element with Z = 86 is radon (Rn). Equation: ²²⁶₈₈Ra → ²²²₈₆Rn + ⁴₂He. The daughter nucleus is radon-222. Alpha decay occurs when the nucleus is too large and nucleon binding energy can be increased by emitting a helium-4 nucleus."
+      },
+      {
+        "question": "Explain the concept of binding energy per nucleon and use it to explain why both fission and fusion can release energy.",
+        "markscheme": "Binding energy per nucleon (BE/A) is the energy required to remove one nucleon from the nucleus, on average. A higher BE/A means a more stable nucleus. The BE/A curve peaks at approximately 8.8 MeV/nucleon for iron-56 (A ≈ 56). For light nuclei (low A), BE/A increases with A — fusing two light nuclei (e.g. deuterium + tritium → helium-4) produces a product with higher BE/A; the extra binding energy is released as kinetic energy. For heavy nuclei (high A, e.g. uranium-235), BE/A decreases — splitting the nucleus (fission) produces fragments with higher BE/A; the energy difference is released. In both cases, the products are more tightly bound (lower rest mass) and the mass defect × c² is released as energy."
+      },
+      {
+        "question": "Describe how the line emission spectrum of hydrogen provides evidence for discrete energy levels in the atom.",
+        "markscheme": "When hydrogen gas is excited (e.g. by electrical discharge), it emits light only at specific wavelengths — a series of discrete spectral lines rather than a continuous spectrum. This can only be explained if electrons occupy discrete energy levels and not a continuous range of energies. Each spectral line corresponds to an electron transition between two specific energy levels; ΔE = hf, so each transition emits a photon of a single specific frequency (and wavelength). The Balmer series (visible, n → 2) gives lines at 656 nm (red), 486 nm (blue-green), 434 nm (violet), etc. The exact wavelengths agree precisely with the Bohr model predictions: E_n = −13.6/n² eV. No classical model (continuous orbits) can explain this discrete spectrum."
+      }
+    ]
+  },
+  {
+    "id": "E.2",
+    "unit": 5,
+    "title": "Quantum physics",
+    "hl": "HL",
+    "objectives": [
+      "Describe the photoelectric effect and explain why it cannot be explained by classical wave theory.",
+      "Apply the photoelectric equation: E_k(max) = hf − φ, where φ is the work function.",
+      "Describe wave–particle duality and apply the de Broglie wavelength: λ = h/p = h/(mv).",
+      "Explain the Heisenberg uncertainty principle: Δx Δp ≥ ħ/2 and ΔE Δt ≥ ħ/2.",
+      "Describe the double-slit experiment with electrons and interpret the probability interpretation of the wavefunction.",
+      "Outline the tunnel effect and describe its applications in scanning tunnelling microscopy and alpha decay."
+    ],
+    "summary": "The photoelectric effect: light incident on a metal surface ejects electrons (photoelectrons). Classical wave theory predicts that any frequency of light (given sufficient intensity) should eventually eject electrons, and that the kinetic energy of ejected electrons should increase with intensity. Experimentally: no photoelectrons are emitted below a threshold frequency f₀, regardless of intensity; kinetic energy depends on frequency, not intensity; emission is instantaneous. Einstein (1905) explained this by treating light as photons, each of energy E = hf. A photon ejects one electron; the minimum energy to escape the surface is the work function φ. Maximum kinetic energy of ejected electrons: E_k(max) = hf − φ. Threshold: hf₀ = φ. Stopping potential V_s: eV_s = E_k(max).\n\nWave–particle duality: light exhibits both wave properties (interference, diffraction) and particle properties (photoelectric effect, Compton scattering). Matter also has wave properties; the de Broglie wavelength associated with a particle of momentum p = mv is λ = h/p. Electron diffraction confirms this: electrons directed at a crystal lattice (spacing ~10⁻¹⁰ m) produce diffraction patterns, only explicable if λ = h/(mv) is comparable to the lattice spacing.\n\nHeisenberg's uncertainty principle places a fundamental limit on simultaneously knowing position and momentum: Δx Δp ≥ ħ/2 (where ħ = h/(2π)). A more precise position measurement (smaller Δx) necessarily disturbs momentum more (larger Δp). This is not a measurement limitation but a fundamental property of quantum systems. Similarly, ΔE Δt ≥ ħ/2 — energy and time cannot both be precisely determined simultaneously.\n\nIn the double-slit experiment with electrons (one at a time), an interference pattern builds up on a detector screen after many electrons — each electron goes through both slits simultaneously as a wavefunction and interferes with itself. The wavefunction |ψ|² gives the probability density for finding the particle at a given location. This probability interpretation (Born interpretation) means only the probability of outcomes can be predicted, not individual events.\n\nQuantum tunnelling: a particle can penetrate and pass through a potential energy barrier even when its kinetic energy is less than the barrier height — classically forbidden but quantum-mechanically allowed because the wavefunction has a non-zero amplitude inside and beyond the barrier. Applications: scanning tunnelling microscopy (STM) — tunnelling current between tip and surface maps atomic topography; alpha decay — alpha particles tunnel through the Coulomb barrier of the nucleus despite lacking sufficient classical energy to escape.",
+    "quiz": [
+      {
+        "question": "Describe three features of the photoelectric effect that classical wave theory cannot explain, and explain how the photon model accounts for each.",
+        "markscheme": "(1) Threshold frequency: classical theory predicts any frequency (given enough intensity) should eject electrons. Photon model: only photons with E = hf ≥ φ (work function) have enough energy to eject one electron; below f₀ = φ/h, no single photon has sufficient energy. (2) Kinetic energy independent of intensity: classical theory predicts higher intensity should give electrons more energy. Photon model: intensity determines the number of photons per second (more electrons ejected), not each photon's energy; E_k = hf − φ depends only on frequency. (3) Instantaneous emission: classical theory predicts a time delay (energy must accumulate). Photon model: a single photon immediately transfers all its energy to one electron — no accumulation needed."
+      },
+      {
+        "question": "Light of wavelength 250 nm hits a metal surface with work function 3.5 eV. Calculate the maximum kinetic energy of emitted photoelectrons and the stopping potential. (h = 6.63 × 10⁻³⁴ J s, c = 3.0 × 10⁸ m s⁻¹)",
+        "markscheme": "Photon energy: E = hc/λ = (6.63 × 10⁻³⁴ × 3.0 × 10⁸)/(250 × 10⁻⁹) = 1.989 × 10⁻²⁵/2.50 × 10⁻⁷ = 7.956 × 10⁻¹⁹ J = 7.956 × 10⁻¹⁹/(1.6 × 10⁻¹⁹) eV = 4.97 eV. Work function φ = 3.5 eV. E_k(max) = hf − φ = 4.97 − 3.5 = 1.47 eV = 1.47 × 1.6 × 10⁻¹⁹ = 2.35 × 10⁻¹⁹ J. Stopping potential: eV_s = E_k(max) → V_s = 1.47 V ≈ 1.5 V."
+      },
+      {
+        "question": "Calculate the de Broglie wavelength of an electron accelerated through 100 V. (m_e = 9.11 × 10⁻³¹ kg, e = 1.6 × 10⁻¹⁹ C, h = 6.63 × 10⁻³⁴ J s)",
+        "markscheme": "Energy gained: E_k = eV = 1.6 × 10⁻¹⁹ × 100 = 1.6 × 10⁻¹⁷ J. Speed: v = √(2E_k/m) = √(2 × 1.6 × 10⁻¹⁷/9.11 × 10⁻³¹) = √(3.513 × 10¹³) = 5.927 × 10⁶ m s⁻¹. Momentum: p = mv = 9.11 × 10⁻³¹ × 5.927 × 10⁶ = 5.400 × 10⁻²⁴ kg m s⁻¹. de Broglie wavelength: λ = h/p = 6.63 × 10⁻³⁴/5.400 × 10⁻²⁴ = 1.228 × 10⁻¹⁰ m ≈ 0.12 nm. This is comparable to atomic spacings in crystals (~0.2 nm), explaining why electrons produce diffraction patterns with crystal targets."
+      },
+      {
+        "question": "State the Heisenberg uncertainty principle and apply it to estimate the minimum kinetic energy of an electron confined to a nucleus of diameter 10 fm.",
+        "markscheme": "Uncertainty principle: Δx Δp ≥ ħ/2 (ħ = h/(2π) = 1.055 × 10⁻³⁴ J s). If electron confined to Δx = 10 × 10⁻¹⁵ m = 10⁻¹⁴ m: Δp ≥ ħ/(2Δx) = 1.055 × 10⁻³⁴/(2 × 10⁻¹⁴) = 5.28 × 10⁻²¹ kg m s⁻¹. Minimum kinetic energy: E_k = (Δp)²/(2m_e) = (5.28 × 10⁻²¹)²/(2 × 9.11 × 10⁻³¹) = 2.79 × 10⁻⁴¹/1.82 × 10⁻³⁰ = 1.53 × 10⁻¹¹ J ≈ 95 MeV. This huge energy far exceeds what nuclear forces could provide, showing electrons cannot exist in the nucleus — validating the neutron model over the proton-electron nucleus model."
+      },
+      {
+        "question": "Describe the quantum tunnelling effect and explain how it enables alpha decay despite the alpha particle lacking sufficient energy to escape the nucleus classically.",
+        "markscheme": "Quantum tunnelling: a quantum particle (described by a wavefunction) can penetrate a potential energy barrier even when its total energy is less than the barrier height. The wavefunction does not drop to zero at the barrier; it decays exponentially inside but has a non-zero amplitude on the other side. The probability of transmission depends on the barrier height and width. In alpha decay: the alpha particle exists as a cluster within the nucleus, trapped by the strong nuclear force (attractive well) surrounded by a Coulomb repulsion barrier (the electrostatic repulsion between the alpha and remaining nucleus). Classically, the alpha cannot escape. Quantum mechanically, the wavefunction tunnels through the Coulomb barrier with a small but non-zero probability. Over time (half-life depends on tunnelling probability), the alpha particle escapes. Thin, low barriers give higher tunnelling probability and shorter half-lives; thick, high barriers give longer half-lives."
+      },
+      {
+        "question": "Describe the double-slit experiment performed with single electrons and explain what it implies about the nature of quantum objects.",
+        "markscheme": "In the electron double-slit experiment, a beam of electrons (or even individual electrons fired one at a time) passes through two narrow slits and lands on a detector screen. Individual electrons create single, localized flashes on the screen (particle-like). But after many electrons have been recorded, an interference pattern of alternating bands builds up — identical to that seen with light waves. Crucially, this pattern appears even when electrons are sent one at a time (ruling out electron–electron interaction). This means each electron must pass through both slits simultaneously as a wave (superposition of two paths) and interfere with itself. The probability of landing at any point is given by |ψ|², where ψ is the wavefunction. If a 'which-path' detector is placed at the slits, the interference pattern disappears — the act of measurement collapses the wavefunction. This illustrates wave–particle duality and the probabilistic, non-deterministic nature of quantum mechanics."
+      }
+    ]
+  },
+  {
+    "id": "E.3",
+    "unit": 5,
+    "title": "Radioactive decay",
+    "hl": "Some HL",
+    "objectives": [
+      "Describe the properties of alpha (α), beta-minus (β⁻), beta-plus (β⁺), and gamma (γ) radiations, including penetrating power and ionising ability.",
+      "Write balanced nuclear equations for alpha, beta-minus, beta-plus, and gamma decay.",
+      "Define the decay constant λ and apply the exponential decay law: N = N₀ e^(−λt) and A = A₀ e^(−λt).",
+      "Define half-life T½ and derive the relationship T½ = ln2/λ.",
+      "Explain radioactive decay series and describe safety precautions for handling radioactive sources.",
+      "Apply radioactive decay to carbon dating and other radiometric dating techniques."
+    ],
+    "summary": "Radioactive decay is the spontaneous and random disintegration of an unstable nucleus, emitting radiation. It cannot be influenced by temperature, pressure, or chemical state. Three principal types of radiation: alpha (α): two protons and two neutrons (helium-4 nucleus), charge +2e, stopped by a few centimetres of air or a sheet of paper, highly ionising. Beta-minus (β⁻): an electron emitted when a neutron converts to a proton (n → p + e⁻ + v̄_e), charge −e, stopped by a few mm of aluminium, moderately ionising. Beta-plus (β⁺): a positron emitted when a proton converts to a neutron (p → n + e⁺ + v_e), charge +e. Gamma (γ): high-energy electromagnetic radiation emitted after alpha or beta decay (nucleus de-excites), no charge or mass, stopped by many cm of lead or concrete, weakly ionising but deeply penetrating.\n\nNuclear equations conserve mass number (top) and charge number (bottom): alpha decay: ᴬ_ZX → ᴬ⁻⁴_(Z−2)Y + ⁴₂He; beta-minus: ᴬ_ZX → ᴬ_(Z+1)Y + e⁻ + v̄_e; beta-plus: ᴬ_ZX → ᴬ_(Z−1)Y + e⁺ + v_e; gamma emission does not change A or Z.\n\nThe exponential decay law arises because each nucleus has the same probability λ (decay constant, s⁻¹) of decaying per unit time, independent of age: dN/dt = −λN, giving N = N₀ e^(−λt). Activity A = λN = A₀ e^(−λt). Half-life T½ is the time for half the nuclei to decay: T½ = ln2/λ = 0.693/λ. After n half-lives, N = N₀(½)ⁿ. Activity A (becquerel, Bq = decays per second).\n\nRadioactive decay series: heavy nuclei (e.g. U-238) undergo a sequence of alpha and beta decays, terminating at a stable nucleus (e.g. Pb-206). Carbon-14 dating uses the known T½ of ¹⁴C (5730 years) and the constant ratio of ¹⁴C/¹²C in living organisms; once an organism dies, ¹⁴C decays and the ratio decreases — measuring the ratio gives the age. Other radiometric methods use potassium-40 (T½ = 1.3 Gy) for geological dating.",
+    "quiz": [
+      {
+        "question": "Compare alpha, beta, and gamma radiation in terms of charge, mass, ionising ability, and penetrating power.",
+        "markscheme": "Alpha (α): charge +2e, mass number 4 (helium nucleus), highest ionising ability (creates about 10 000 ion pairs per mm in air) but lowest penetrating power (stopped by ~5 cm of air or a sheet of paper). Beta (β⁻): charge −1e, mass ~1/2000 of proton, moderate ionisation, stopped by ~3 mm of aluminium. Gamma (γ): no charge, no mass, weakest ionisation but highest penetrating power (attenuated, never fully stopped, by many cm of lead or concrete). Alpha is most dangerous if source is inside the body; gamma is most dangerous from external sources."
+      },
+      {
+        "question": "Write balanced nuclear equations for (a) alpha decay of uranium-238 and (b) beta-minus decay of carbon-14.",
+        "markscheme": "(a) Alpha decay of ²³⁸₉₂U: ²³⁸₉₂U → ²³⁴₉₀Th + ⁴₂He. Check: A: 238 = 234 + 4 ✓; Z: 92 = 90 + 2 ✓. Thorium-234 is the daughter. (b) Beta-minus decay of ¹⁴₆C: ¹⁴₆C → ¹⁴₇N + ⁰₋₁e + v̄_e. Check: A: 14 = 14 + 0 ✓; Z: 6 = 7 − 1 ✓. Nitrogen-14 is the daughter. (The antineutrino v̄_e is also emitted but does not affect A or Z.)"
+      },
+      {
+        "question": "A radioactive source has an initial activity of 4000 Bq and a half-life of 8.0 days. Calculate the activity after 24 days and the decay constant.",
+        "markscheme": "Number of half-lives: n = t/T½ = 24/8.0 = 3. Activity after n half-lives: A = A₀ × (½)ⁿ = 4000 × (½)³ = 4000/8 = 500 Bq. Alternatively: λ = ln2/T½ = 0.693/(8.0 × 86 400) = 0.693/691 200 = 1.002 × 10⁻⁶ s⁻¹. A = A₀ e^(−λt) = 4000 × e^(−1.002 × 10⁻⁶ × 24 × 86 400) = 4000 × e^(−2.078) = 4000 × 0.125 = 500 Bq ✓."
+      },
+      {
+        "question": "Derive the relationship between half-life T½ and decay constant λ.",
+        "markscheme": "The decay law is N = N₀ e^(−λt). The half-life T½ is defined as the time when N = N₀/2. Substituting: N₀/2 = N₀ e^(−λT½). Dividing both sides by N₀: ½ = e^(−λT½). Taking natural log: ln(½) = −λT½ → −ln2 = −λT½ → T½ = ln2/λ = 0.693/λ. So λ = 0.693/T½. A larger decay constant means shorter half-life (faster decay); a smaller decay constant means longer half-life (slower decay)."
+      },
+      {
+        "question": "A wooden artefact has a ¹⁴C activity of 15% of that expected from a living tree. Estimate its age. (T½ of ¹⁴C = 5730 years)",
+        "markscheme": "Using A = A₀ e^(−λt) → 0.15 A₀ = A₀ e^(−λt) → 0.15 = e^(−λt). Taking ln: ln(0.15) = −λt → −1.897 = −λt. λ = 0.693/5730 = 1.21 × 10⁻⁴ yr⁻¹. t = 1.897/(1.21 × 10⁻⁴) = 15 677 yr ≈ 15 700 years. The artefact is approximately 15 700 years old. Note: carbon dating assumes the atmospheric ¹⁴C/¹²C ratio has been approximately constant, which requires calibration against tree rings (dendrochronology) for precision."
+      },
+      {
+        "question": "Explain why radioactive decay is described as 'random and spontaneous' and describe one safety precaution appropriate for handling a gamma source.",
+        "markscheme": "Random: it is impossible to predict which particular nucleus in a sample will decay next, or when. Each nucleus has the same probability of decaying per unit time (described by λ), regardless of its history — decay follows a Poisson distribution; the actual count rate fluctuates around the mean. Spontaneous: decay occurs without any external trigger; it is unaffected by temperature, pressure, chemical environment, or electromagnetic fields. Safety for gamma source: maximise distance from the source (intensity ∝ 1/d² — inverse square law; doubling distance reduces intensity by factor 4); minimize exposure time; use lead shielding (many cm of lead significantly attenuates gamma); use remote handling tools (tongs, not hands); monitor dose with a Geiger counter or dosimeter."
+      }
+    ]
+  },
+  {
+    "id": "E.4",
+    "unit": 5,
+    "title": "Fission",
+    "hl": "Some HL",
+    "objectives": [
+      "Describe nuclear fission and explain why heavy nuclei (A > ~90) can release energy by fission.",
+      "Explain the chain reaction in a fission reactor and the role of critical mass.",
+      "Describe the components of a nuclear fission reactor: fuel, moderator, control rods, coolant, and shielding.",
+      "Calculate the energy released in a fission reaction using E = mc² and binding energy per nucleon data.",
+      

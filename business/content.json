@@ -1,0 +1,1164 @@
+[
+  {
+    "id": "1.1",
+    "unit": 1,
+    "title": "What is a business?",
+    "hl": "SL",
+    "objectives": [
+      "Describe the nature of business.",
+      "Distinguish between the four economic sectors of activity, and explain the nature of business activity in each.",
+      "Examine the main issues around entrepreneurship.",
+      "Analyse the challenges and opportunities for starting up a business."
+    ],
+    "summary": "All businesses, from small start-ups to huge multinational conglomerates, are based on the same principles:\n- They combine resources (human, physical and financial) with enterprise (entrepreneurial skills to turn a business idea into a commercial reality): those are the inputs.\n- They produce (tangible) goods and/or (intangible) services for their customers: those are the outputs.\n- They are organized in four key business functions (human resources, finance and accounts, marketing, operations) that are interdependent.\n- They operate in at least one of the four economic sectors: primary, secondary, tertiary, quaternary; some organizations operate in several sectors. Sectoral change is possible through vertical integration; together with horizontal integration, it enables businesses to grow.\n\nAn essential element of business management is enterprise; this term can refer to one organization (an enterprise = a business venture) or to a skillset (also called entrepreneurship). Entrepreneurs are people who demonstrate enterprise and initiative to set up a new business. This may be for a range of reasons, such as finding a gap in the market, independence (being self-employed, as opposed to working for someone else) or personal interest and passion. Social entrepreneurs set up organizations in order to solve community-based problems, rather than to make profit for profit's sake. They are focused on their mission and the impact they want to have on society.\n\nThe process of setting up a new business differs from country to country, especially in terms of legislation, but certain features are usually present:\n- There must be a basic business idea (which can be market-driven or service-driven).\n- Planning is important; it may involve carrying out initial market research to ensure that the idea is commercially viable, i.e. that there is sufficient market demand (i.e. potential customers).\n- Establishing legal requirements: in most countries, all new businesses must be registered with the local authorities.\n- In many cases, the entrepreneur may need to raise funds to set up the business (start-up costs) and to write a comprehensive document (called a business plan) to attract funds and to support the launch of the new organization.\n- New enterprises may fail for a range of reasons, such as unreliable suppliers or underperforming workforce, inappropriate target market, cash flow management problems, inappropriate location.",
+    "quiz": [
+      {
+        "question": "Describe the nature of a business and the key principles that all businesses share.",
+        "markscheme": "A business combines resources (human, physical and financial) with enterprise to produce goods and/or services. It is organized around four interdependent business functions: human resources, finance and accounts, marketing, and operations. Businesses operate in at least one of the four economic sectors (primary, secondary, tertiary, quaternary). The inputs are resources and enterprise; the outputs are goods and/or services for customers."
+      },
+      {
+        "question": "Distinguish between the four economic sectors of economic activity.",
+        "markscheme": "The primary sector involves the extraction of natural resources (e.g. farming, mining). The secondary sector involves manufacturing and construction — transforming raw materials into finished goods. The tertiary sector involves services provided to consumers and businesses (e.g. retail, transport, hospitality). The quaternary sector involves knowledge-based and information services (e.g. IT, research, consultancy). Some businesses operate across multiple sectors through vertical integration."
+      },
+      {
+        "question": "Examine the main issues around entrepreneurship.",
+        "markscheme": "Entrepreneurship involves demonstrating enterprise and initiative to set up a new business. Key issues include identifying a gap in the market, assessing commercial viability through market research, meeting legal registration requirements, raising start-up finance, and writing a business plan. Social entrepreneurs focus on community impact rather than profit. New enterprises face challenges such as cash flow problems, unreliable suppliers, inappropriate location, and underperforming workforces."
+      },
+      {
+        "question": "Analyse the challenges and opportunities for starting up a business.",
+        "markscheme": "Opportunities include finding a gap in the market, achieving independence, and pursuing personal passion. Challenges include securing start-up finance, conducting market research to verify commercial viability, meeting legal requirements, managing cash flow, finding reliable suppliers, and identifying an appropriate target market and location. A well-prepared business plan can help attract funding and address these challenges, though failure rates for new enterprises remain high."
+      }
+    ]
+  },
+  {
+    "id": "1.2",
+    "unit": 1,
+    "title": "Types of business entities",
+    "hl": "SL",
+    "objectives": [
+      "Distinguish between private and public sector.",
+      "Discuss the main features of the following four types of for-profit (commercial) organizations: sole traders, partnerships, privately held companies, and publicly held companies.",
+      "Discuss the main features of the following three types of for-profit social enterprises: cooperatives, private sector companies, and public sector companies.",
+      "Discuss the main features of one type of non-profit social enterprise: non-governmental organizations (NGOs)."
+    ],
+    "summary": "The public sector refers to government-owned and government-operated organizations (for example public hospitals, the army or the police) whereas the private sector refers to organizations that are privately owned; they can be profit-making (to maximize dividends for their shareholders, i.e. their owners) or non-profit making (and their surplus is usually reinvested in their mission).\n\nThe four main types of for-profit (commercial) enterprises — sole traders, partnerships, privately held (owned) companies, and publicly held (owned) companies — have different legal status and are suitable for different types of businesses, according to factors such as size, ownership, liability and finance.\n\nA social enterprise is a business which has a social purpose; it can be profit-making (for example a housing cooperative) or non-profit (for example an NGO which uses its surplus to advance the social cause it is defending).\n\nTypes of business entities, their legal status and even their names vary a lot from country to country, but there are standard features that you must know about, as well as their respective advantages and disadvantages (for example, a sole trader has total control over all important decisions, but with unlimited liability in case of faults, debts or mistakes).",
+    "quiz": [
+      {
+        "question": "Distinguish between the private sector and the public sector.",
+        "markscheme": "The public sector consists of government-owned and government-operated organizations (e.g. public hospitals, the army). The private sector consists of privately owned organizations, which may be profit-making (aiming to maximize dividends for shareholders) or non-profit making (reinvesting surplus in their mission). The key distinction is ownership: public sector organizations are state-owned, while private sector organizations are privately owned."
+      },
+      {
+        "question": "Discuss the main features of sole traders, partnerships, privately held companies, and publicly held companies.",
+        "markscheme": "Sole traders are owned and run by one individual with unlimited liability and full control over decisions. Partnerships involve two or more owners sharing responsibility, often with unlimited liability. Privately held companies have limited liability and shares held by a small group (not publicly traded). Publicly held companies sell shares on a stock exchange, giving access to large amounts of capital but with greater public scrutiny. Each type differs in terms of size, ownership, liability, and ability to raise finance, with respective advantages and disadvantages."
+      },
+      {
+        "question": "Discuss the main features of cooperatives, private sector social enterprises, and public sector social enterprises as for-profit social enterprises.",
+        "markscheme": "Cooperatives are jointly owned and democratically controlled by their members, sharing profits among members (e.g. housing cooperatives). Private sector social enterprises operate with a social purpose within the private sector, balancing profit with social goals. Public sector social enterprises are government-backed organizations with a social mission. All three types aim to generate a profit while serving a social purpose, reinvesting surplus to advance their mission."
+      },
+      {
+        "question": "Describe the main features of a non-governmental organization (NGO) as a type of non-profit social enterprise.",
+        "markscheme": "NGOs are independent from national governments and operate with a humanitarian or social purpose (e.g. the Red Cross). They are non-profit making, reinvesting any surplus into their social mission. Although independent, NGOs often receive grants from governments and cooperate with them. They may also rely on donations, volunteers, and other funding sources to operate."
+      }
+    ]
+  },
+  {
+    "id": "1.3",
+    "unit": 1,
+    "title": "Business objectives",
+    "hl": "SL",
+    "objectives": [
+      "Distinguish between vision statement and mission statement, aims, objectives, strategies and tactics.",
+      "Explain common business objectives including growth, profit, protecting shareholder value, and ethical objectives.",
+      "Discuss the need for organizations to change strategic and tactical objectives in response to changes in internal and external environments.",
+      "Discuss the evolving role, nature, and importance of corporate social responsibility (CSR)."
+    ],
+    "summary": "Most organizations have a written mission statement, which describes what they do, or a vision statement, which is more forward-looking and aspirational, or both.\n\nAll businesses develop through setting and reaching objectives; these objectives can be strategic (long-term), tactical (short-term) or operational (day-to-day). The four most common objectives are: growth objectives (for example increasing market share or volume of production), profit objectives (for example increasing net profit or increasing profit margin), protecting shareholder value (through dividends), and ethical objectives (taking other stakeholders into account, such as the local community). Objectives are usually part of a wider organizational aim, which is linked to the organization's vision.\n\nWhy might businesses need to change objectives and strategies?\n- Because of changes in the internal environment, for example a new chief executive officer (CEO) who has her own ideas for the direction of the organization, or because the organization itself is changing, either radically (for example through a merger with another company) or gradually (and previous strategies written many years ago are not suitable anymore).\n- Because of changes in the external environment, for example new legislation regarding health and safety may mean that previous practices are not legal any longer, or customers may expect the organization to follow more ethical and sustainable principles.\n\nTwo main tools (models) are used to set business objectives:\n- The SWOT analysis framework, where the four business functions (human resources, finance and accounts, marketing, and operations) help to identify the internal strengths and weaknesses of an organization (whereas a STEEPLE analysis helps to identify the opportunities and threats coming from the external environment).\n- The Ansoff matrix, which considers both product and market, each time in terms of \"existing\" (also called \"current\") and \"new\": the four strategies are market penetration (existing product, existing market), product development (new product, existing market), market development (existing product, new market), and diversification (new product, new market).",
+    "quiz": [
+      {
+        "question": "Distinguish between a vision statement, a mission statement, aims, objectives, strategies and tactics.",
+        "markscheme": "A mission statement describes what the organization currently does. A vision statement is forward-looking and aspirational, describing where the organization wants to be. An aim is a broad, general goal linked to the vision. Objectives are specific, measurable targets — strategic (long-term), tactical (short-term) or operational (day-to-day). Strategies are long-term plans to achieve objectives; tactics are short-term actions to implement those strategies."
+      },
+      {
+        "question": "Explain the four common business objectives of growth, profit, protecting shareholder value, and ethical objectives.",
+        "markscheme": "Growth objectives aim to increase market share or volume of production. Profit objectives aim to increase net profit or profit margin. Protecting shareholder value involves paying dividends to shareholders. Ethical objectives involve taking other stakeholders (such as the local community) into account and acting responsibly. These objectives are usually part of a wider organizational aim linked to the organization's vision."
+      },
+      {
+        "question": "Discuss the need for organizations to change strategic and tactical objectives in response to changes in internal and external environments.",
+        "markscheme": "Internal changes — such as a new CEO with a different vision or a radical change like a merger — may make existing strategies unsuitable. External changes — such as new health and safety legislation or shifting customer expectations around ethics and sustainability — may also require updated objectives. Tools such as SWOT analysis and the Ansoff matrix help organizations identify when and how to adapt their objectives and strategies."
+      },
+      {
+        "question": "Discuss the evolving role, nature, and importance of corporate social responsibility (CSR).",
+        "markscheme": "CSR refers to an organization taking ethical objectives seriously by considering stakeholders beyond shareholders, such as the local community and the environment. The importance of CSR is growing as customers, employees, and regulators increasingly expect businesses to behave responsibly. Ethical objectives are becoming integral to all business functions. Many social enterprises are built around ethical objectives, and organizations that embrace CSR may gain competitive advantages such as improved brand image and customer loyalty."
+      }
+    ]
+  },
+  {
+    "id": "1.4",
+    "unit": 1,
+    "title": "Stakeholders",
+    "hl": "SL",
+    "objectives": [
+      "Identify the internal and external stakeholders of an organization.",
+      "Explain the interests of internal and external stakeholders.",
+      "Discuss possible areas of mutual benefit and conflict between stakeholders' interests."
+    ],
+    "summary": "The stakeholders are all the people who have an interest in the success of an organization because they are directly affected by its actions and performance. There is a difference between:\n- Internal stakeholders, such as employees, managers, shareholders.\n- External stakeholders, such as customers, suppliers, pressure groups or people in the local community.\n\nA stakeholder may be an individual (for example the CEO of an organization or its founder, the entrepreneur who first set it up) or a group (for example trade unions or the government or local authorities).\n\nStakeholders have different interests; they may occasionally have very different opinions and come into conflict with one another. For example, the CEO of a factory may want to increase production to meet customer demand; this could lead to an increase in employment, but local environmentalists and the local authorities could be concerned by the subsequent pollution.",
+    "quiz": [
+      {
+        "question": "Identify two internal and two external stakeholders of a typical business organization.",
+        "markscheme": "Internal stakeholders include employees, managers, and shareholders — those who work within or have ownership of the organization. External stakeholders include customers, suppliers, pressure groups, local community members, and government or local authorities — those outside the organization who are affected by its actions. A stakeholder can be an individual (e.g. the CEO) or a group (e.g. a trade union)."
+      },
+      {
+        "question": "Explain the interests of two internal and two external stakeholders of an organization.",
+        "markscheme": "Employees are interested in job security, fair pay, and good working conditions. Shareholders are interested in dividends and share value growth. Customers are interested in quality products and services at fair prices. Suppliers are interested in reliable orders and prompt payment. Each stakeholder group has distinct priorities that may sometimes align with, and sometimes conflict with, the interests of other groups."
+      },
+      {
+        "question": "Discuss possible areas of mutual benefit and conflict between stakeholders' interests.",
+        "markscheme": "Stakeholders can have aligned interests — for example, both shareholders and employees benefit when a business is profitable and growing. However, conflicts arise when interests diverge: a CEO seeking to increase production to meet customer demand may conflict with local environmentalists and authorities concerned about pollution. Similarly, shareholders seeking higher dividends may conflict with employees seeking higher wages, as both draw from the same profit pool. Balancing stakeholder interests is a key challenge in business management."
+      }
+    ]
+  },
+  {
+    "id": "1.5",
+    "unit": 1,
+    "title": "Growth and evolution",
+    "hl": "SL",
+    "objectives": [
+      "Explain internal and external economies of scale and diseconomies of scale.",
+      "Evaluate the reasons why businesses may decide to grow or to stay small.",
+      "Distinguish between internal growth and external growth.",
+      "Discuss the following five methods of external growth: mergers and acquisitions (M&As), takeovers, joint ventures, strategic alliances, and franchising."
+    ],
+    "summary": "Economies of scale are the reduction in average unit cost as a business increases in size. The opposite is diseconomies of scale: an increase in average unit cost as the business increases in size. Economies of scale are desirable; they may be due to internal factors (such as purchasing in bulk and getting discounts from suppliers) or external factors (such as concentration of customers in one area); likewise, diseconomies of scale may be due to internal factors (such as \"over-specialized\" managers) or external factors (such as a shortage of skilled workers meaning that the business may have to pay them higher wages to retain them).\n\nNot all businesses want to expand. Large organizations have many advantages (including economies of scale, higher status and increased market share); however small organizations have many advantages too (such as greater focus on customers and competitive advantage in small niche markets).\n\nInternal (organic) growth refers to the slow growth of a business occurring \"from within\", i.e. out of its existing operations; risks are limited, and expansion is often self-financed using retained profits. Example of internal growth: a successful hotel that purchases its neighbouring building to expand, or a large school that decides to offer the IBDP on top of its existing provision. External (fast-track) growth is quicker but riskier; it involves some arrangements to work with another existing business. The five main methods of external growth are:\n- Mergers and acquisitions (M&As), when the businesses are completely integrated.\n- When the acquisition is unwanted by the company being acquired, the term used is takeover or hostile takeover.\n- Joint venture, the creation of a separate business entity by the two \"parent\" companies, for a finite period of time; the two companies still exist separately (and are \"partners\" in the joint venture).\n- Strategic alliances, agreements by two (or more) companies to work together for mutual benefit; unlike a joint venture, no new business is created.\n- Franchising, a process whereby an original business (the franchisor) sells to another business (the franchisee) the right to use its business model, brand and products. Franchises have many advantages for the franchisor (for example no risk, but financial gains) and for the franchisee (as for example the product already exists and is usually well-known); however there are many disadvantages too (for example the franchisee has no control over what to sell, and the franchisor could see its image suffer if the franchise fails).",
+    "quiz": [
+      {
+        "question": "Explain the difference between internal economies of scale, external economies of scale, and diseconomies of scale.",
+        "markscheme": "Economies of scale refer to the reduction in average unit cost as a business grows. Internal economies of scale arise from within the firm (e.g. bulk purchasing discounts). External economies of scale arise from the industry or location (e.g. concentration of customers in one area). Diseconomies of scale are the opposite: an increase in average unit cost as the business grows, caused by internal factors (e.g. over-specialized managers) or external factors (e.g. a shortage of skilled workers driving up wages)."
+      },
+      {
+        "question": "Evaluate the reasons why some businesses choose to grow while others choose to remain small.",
+        "markscheme": "Large businesses benefit from economies of scale, higher market share, and greater status. However, small businesses also have significant advantages: they can focus more closely on customers, serve niche markets competitively, and maintain greater flexibility. Not all entrepreneurs wish to expand — personal goals such as maintaining control or serving a local community may lead businesses to deliberately stay small. The decision depends on objectives, market conditions, and the type of product or service offered."
+      },
+      {
+        "question": "Distinguish between internal growth and external growth.",
+        "markscheme": "Internal (organic) growth occurs from within the business using its own existing operations, is slower but carries limited risk, and is often self-financed through retained profits (e.g. a hotel expanding by purchasing a neighbouring building). External (fast-track) growth is quicker but riskier; it involves working with or acquiring another existing business through methods such as mergers, takeovers, joint ventures, strategic alliances, or franchising."
+      },
+      {
+        "question": "Discuss the five methods of external growth: mergers and acquisitions, takeovers, joint ventures, strategic alliances, and franchising.",
+        "markscheme": "Mergers and acquisitions (M&As) fully integrate two businesses. A takeover (hostile takeover) is an unwanted acquisition. A joint venture creates a separate new entity shared by two parent companies for a fixed period, with both companies remaining independent. A strategic alliance is an agreement to cooperate for mutual benefit without creating a new entity. Franchising allows a franchisee to use the franchisor's brand and business model; it benefits the franchisor (financial gains with limited risk) and the franchisee (established brand), but the franchisee loses control over products and the franchisor risks reputational damage if the franchise fails."
+      }
+    ]
+  },
+  {
+    "id": "1.6",
+    "unit": 1,
+    "title": "Multinational companies (MNCs)",
+    "hl": "SL",
+    "objectives": [
+      "Define the term globalization.",
+      "Explain the growth of MNCs.",
+      "Discuss the impact of MNCs on the host countries."
+    ],
+    "summary": "Globalization refers to the increasing flow of ideas, financial transactions, goods and services around the world.\n\nA wide range of international forces (such as the increasing social, cultural, technological and economic integration) influence business organizations — and, in turn, business organizations shape these forces, contributing to the greater integration and understanding of countries and their forces, directly or indirectly.\n\nIn the context of globalization, multinational companies (MNCs) that operate in more than one country have grown rapidly, thanks to improved communications, fewer trade barriers and market deregulation. MNCs have both positive and negative impacts on the countries where they operate: positive impacts such as economic growth (through employment opportunities) and possibly infrastructure projects, but also negative impacts such as profits being sent back to headquarters abroad and loss of market share for local businesses.",
+    "quiz": [
+      {
+        "question": "Define the term globalization.",
+        "markscheme": "Globalization refers to the increasing flow of ideas, financial transactions, goods and services around the world. It involves the growing social, cultural, technological and economic integration of countries, through which business organizations both influence and are influenced by international forces."
+      },
+      {
+        "question": "Explain the growth of multinational companies (MNCs).",
+        "markscheme": "MNCs are companies that operate in more than one country. Their growth has been driven by improved communications, the reduction of trade barriers, and market deregulation. These factors make it easier and more profitable to expand operations internationally. Additionally, globalization itself creates conditions favorable to MNC growth by increasing economic integration and market access across borders."
+      },
+      {
+        "question": "Discuss the impact of MNCs on their host countries.",
+        "markscheme": "MNCs can have positive impacts on host countries, including economic growth through the creation of employment opportunities and the potential development of infrastructure. However, negative impacts include profits being repatriated to headquarters abroad rather than reinvested locally, and loss of market share for local businesses that struggle to compete with large, well-resourced MNCs. The net impact depends on the specific context, the degree of local sourcing, and whether the MNC pays taxes locally."
+      }
+    ]
+  },
+  {
+    "id": "2.1",
+    "unit": 2,
+    "title": "Introduction to human resource management",
+    "hl": "SL",
+    "objectives": [
+      "Explain the role of human resource management.",
+      "Explain the main internal and external factors that influence human resource planning.",
+      "Explain reasons for resistance to change in the workplace.",
+      "Discuss human resource strategies for reducing the impact of change and resistance to change in organizations."
+    ],
+    "summary": "Human resource (HR) management includes workforce planning, specifying job responsibilities, recruiting staff, and setting their financial and non-financial rewards. It is essential for all organizations, irrespective of their size, of their legal status and of their sector of activity.\n\nNumerous factors can influence an organization's HR plan:\n- External factors such as demographic change, change in labour mobility and new communication technologies.\n- Internal factors such as changes in business organization (for example: restructure, streamlining) or changes in business strategy (for example: internal or external growth).\n\nThe following five aspects are particularly important:\n- Demographic changes, including retirement age, gender balance, birth rates, longevity etc.\n- Changes in labour mobility, domestically (within the same country) or internationally.\n- Immigration, temporarily or permanently.\n- The increase in flexitime, flexible work schedules allowing workers to adjust their starting and finishing times, giving them the flexibility to meet other demands (such as childcare requirements).\n- The development of a \"gig economy\" where many positions are temporary and organizations hire independent workers for short-term commitments.\n\nEmployers and employees are all affected by changes in work patterns, practices and preferences, such as teleworking and job sharing. Sometimes employees welcome changes in the workplace, but sometimes they are resistant, for a range of reasons, such as fear and discomfort, insufficient reward, lack of skills, mistrust, poor communication, poor timing or prior experience of change management. Organizations can adopt a range of human resource strategies to reduce the negative impacts of change and resistance to change, for example developing a vision for the change process and the desired outcomes, communicating it clearly to all employees and training them before the changes are implemented.",
+    "quiz": [
+      {
+        "question": "Explain the role of human resource management in an organization.",
+        "markscheme": "HR management encompasses workforce planning, specifying job responsibilities, recruiting staff, and setting financial and non-financial rewards. It is essential for all organizations regardless of size, legal status or sector. HR management ensures that the right people are in the right roles, supporting the organization's ability to meet its objectives and function effectively across all business areas."
+      },
+      {
+        "question": "Explain the main internal and external factors that influence human resource planning.",
+        "markscheme": "External factors include demographic changes (e.g. retirement age, birth rates), changes in labour mobility (domestic and international), immigration, the rise of flexitime, and the development of the gig economy. Internal factors include changes in business organization (e.g. restructuring, streamlining) and changes in business strategy (e.g. internal or external growth). Both sets of factors affect the availability of labour and the nature of the workforce an organization can attract and retain."
+      },
+      {
+        "question": "Explain the reasons why employees may resist change in the workplace.",
+        "markscheme": "Employees may resist change due to fear and discomfort with the unknown, insufficient reward for adapting, lack of the skills needed, mistrust of management, poor communication about the change, poor timing, or prior negative experiences with change management. These factors can lead to demotivation, lower productivity, and higher labour turnover if not addressed effectively by management."
+      },
+      {
+        "question": "Discuss human resource strategies for reducing resistance to change in organizations.",
+        "markscheme": "Organizations can reduce resistance to change by developing a clear vision for the change process and communicating it transparently to all employees. Involving employees early in the process, providing training before changes are implemented, offering sufficient rewards, and addressing concerns directly can all help. Timing changes well and building trust between management and employees are also important strategies. Proactive communication and preparation tend to reduce fear and increase employees' willingness to embrace change."
+      }
+    ]
+  },
+  {
+    "id": "2.2",
+    "unit": 2,
+    "title": "Organizational structure",
+    "hl": "SOME_HL",
+    "objectives": [
+      "Construct and interpret different types of organizational charts.",
+      "Distinguish between key terms about organizational structure.",
+      "Evaluate how changes in organizational structures may be appropriate.",
+      "Evaluate changes in organizational structures, for example project-based organization and Charles Handy's 'Shamrock Organization'."
+    ],
+    "summary": "An organizational chart is a diagram that shows the HR structure of an organization, outlining the formal roles, responsibilities and reporting lines.\n\nKey terms used to describe organizational structure:\n- Levels of hierarchy: the number of levels of responsibility and seniority in an organization, from the most senior to the most junior.\n- Chain of command: the formal route through which decisions travel downward.\n- Span of control: number of employees reporting to a given line manager.\n- Delegation: when a manager gives authority for a particular decision to someone else, yet still holds responsibility for the outcome.\n- Centralization: decisions are made by a small group in a senior position.\n- Decentralization: decisions are made by managers throughout the organization (though senior managers retain control of key strategic decisions).\n- Bureaucracy: rules and procedures within an organization.\n- De-layering: removing layers of (middle) managers, reducing the levels of hierarchy.\n- Matrix structure: structure combining organization by function (design, operations, finance, marketing, etc.) and organization by project.\n\nOrganizational structures can be flat (horizontal) or tall (vertical):\n- Taller organizational structures are characterized by many levels of hierarchy, narrow spans of control, centralized decision-making, longer chains of command and limited delegation.\n- Flatter organizational structures are characterized by fewer levels of hierarchy, wider spans of control, decentralized decision-making, shorter chains of command and increased delegation.\n\nDepartments are often organized by function (such as \"Marketing\" and \"Finance\"), though in some MNCs it may be more suitable to organize by region (by market) or by product (or families of product). There is not one \"correct\" form of structure: as organizations grow, the senior managers may decide to modify the structure and adopt a more appropriate one. Changes in organizational structure may be due to internal or external factors, for example the need to hire more staff including more managers, or the need to reconsider the entire structure after a merger.\n\nOther types of organizational structures include project-based organizations (typically with a matrix structure) and \"shamrock\" organizations with three types of employees: (1) core, (2) temporary, (3) contractual. The term \"shamrock\" organization was coined by HR expert Charles Handy, using the metaphor of a shamrock plant with its three leaves.",
+    "quiz": [
+      {
+        "question": "Construct and interpret an organizational chart, identifying key structural features.",
+        "markscheme": "An organizational chart is a diagram showing the HR structure of an organization, including formal roles, responsibilities and reporting lines. It illustrates levels of hierarchy, spans of control, and chains of command. A well-drawn chart will label each level and show clearly who reports to whom. Interpretation should reference whether the structure is tall or flat and what this implies for communication and decision-making."
+      },
+      {
+        "question": "Distinguish between the key terms used to describe organizational structure: levels of hierarchy, chain of command, span of control, delegation, centralization, decentralization, and de-layering.",
+        "markscheme": "Levels of hierarchy refers to the number of seniority levels in an organization. Chain of command is the formal downward route of decision-making. Span of control is the number of employees reporting to one manager. Delegation means giving authority for a task to someone else while retaining responsibility. Centralization concentrates decision-making at the top; decentralization distributes it throughout the organization. De-layering removes levels of middle management, creating a flatter structure."
+      },
+      {
+        "question": "Evaluate how changes in organizational structure — from tall to flat — may be appropriate for an organization.",
+        "markscheme": "A flatter structure reduces levels of hierarchy, shortens the chain of command, widens spans of control, and increases delegation and decentralization. Advantages include faster communication, greater employee empowerment, and cost savings from de-layering. Disadvantages include potential loss of control and increased workload for remaining managers. The appropriateness of such a change depends on the size of the organization, its culture, and its strategic objectives."
+      },
+      {
+        "question": "Evaluate the use of project-based organizations and Charles Handy's Shamrock Organization as alternative organizational structures.",
+        "markscheme": "Project-based organizations use a matrix structure where employees work in teams and report to multiple managers; this suits complex, temporary projects (e.g. in IT or construction) but can create role ambiguity. Handy's Shamrock Organization has three employee types: core (permanent, skilled), temporary, and contractual (outsourced). This model allows flexibility and cost reduction but may create inequalities and reduce organizational cohesion. Both structures suit dynamic environments but are more complex to manage than traditional hierarchies."
+      }
+    ]
+  },
+  {
+    "id": "2.3",
+    "unit": 2,
+    "title": "Leadership and management",
+    "hl": "SOME_HL",
+    "objectives": [
+      "Distinguish between management and leadership.",
+      "Explain the difference between scientific and intuitive thinking and management.",
+      "Discuss the following five leadership styles: autocratic, paternalistic, democratic, laissez-faire and situational."
+    ],
+    "summary": "Management and leadership are closely linked. Managers can be leaders, and vice versa, but the two are different. One usually distinguishes between \"leader\" and \"manager\":\n- The idea of \"manager\" and \"management\" is more about planning and organizing, setting and achieving goals by controlling situations. Managers are said to be \"task-orientated\".\n- The idea of \"leader\" and \"leadership\" is more about inspiring and motivating staff, and about having a strategic vision for the organization. Leaders are said to be \"relationship-orientated\".\n\nSome managers prefer more rational approaches based on evidence and quantitative data (known as \"scientific thinking\") whereas others prefer to follow their intuition and qualitative impressions.\n\nThere are numerous leadership styles, including the following five:\n- Autocratic style, which emphasizes authority and control.\n- Paternalistic, which places authority in a caring, family-like context.\n- Democratic, which involves employees in the decision-making process.\n- Laissez-faire, which gives employees more freedom and scope.\n- Situational, which stresses the need to adapt to the situation, the decision and the context.\n\nThese five styles are not exclusive: they may overlap, for example a paternalistic leader often displays features of the autocratic leadership style. They all have advantages and disadvantages; some are more appropriate than others in given situations.\n\nLeadership styles and management styles are influenced by many factors, such as the personality of the leader/manager, their values, the workers, their motivation, the work environment, as well as aspects of ethics and culture.",
+    "quiz": [
+      {
+        "question": "Distinguish between management and leadership.",
+        "markscheme": "Management is primarily about planning, organizing, and controlling — setting and achieving goals through task-oriented approaches. Leadership is about inspiring and motivating staff and providing a strategic vision — it is relationship-oriented. While managers and leaders can be the same person, management focuses on day-to-day operational control, while leadership focuses on long-term direction and inspiring commitment. A good leader may not always be a good manager, and vice versa."
+      },
+      {
+        "question": "Explain the difference between scientific and intuitive thinking in management.",
+        "markscheme": "Scientific thinking in management involves rational, evidence-based decision-making using quantitative data and systematic analysis. Intuitive thinking involves following qualitative impressions, instinct, and personal judgement rather than hard data. Some managers favour scientific approaches for consistency and accountability, while others rely on intuition — particularly useful in rapidly changing or ambiguous situations. Most effective managers combine both approaches depending on the context."
+      },
+      {
+        "question": "Discuss the five leadership styles: autocratic, paternalistic, democratic, laissez-faire, and situational.",
+        "markscheme": "Autocratic leadership emphasizes authority and control, with decisions made by the leader alone — effective in crises but can demotivate employees. Paternalistic leadership is caring and family-like, providing guidance while still retaining control. Democratic leadership involves employees in decision-making, improving motivation and buy-in but potentially slowing decisions. Laissez-faire gives employees significant freedom, suitable for highly skilled and self-motivated teams. Situational leadership adapts the style to the context, decision, and people involved. All styles have advantages and disadvantages; appropriateness depends on the organization, its culture, and the specific situation."
+      }
+    ]
+  },
+  {
+    "id": "2.4",
+    "unit": 2,
+    "title": "Motivation and demotivation",
+    "hl": "SOME_HL",
+    "objectives": [
+      "Discuss the motivation theories from Taylor, Maslow and Herzberg.",
+      "Distinguish between the seven types of financial rewards.",
+      "Distinguish between the six types of non-financial rewards.",
+      "Distinguish between the three forms of training.",
+      "Discuss the motivation theories from McClelland, Deci and Ryan, and the equity and expectancy theory.",
+      "Calculate and interpret labour turnover.",
+      "Compare and contrast the main methods of internal and external recruitment.",
+      "Explain the following types of appraisal: formative, summative, 360-degree feedback and self-appraisal."
+    ],
+    "summary": "Several motivation theories can help business managers understand the psychology behind workers' motivation (and demotivation):\n- Taylor's time and motion studies about efficiency and the standardization of working practices.\n- Maslow's pyramidal hierarchy of human needs (the more needs an employer can satisfy, the more motivated the employees will be).\n- Herzberg's basic \"hygiene needs\" (that must be satisfied) vs \"true motivators\".\n\nThere are seven types of financial rewards:\n1. Salary (usually paid monthly).\n2. Wages: time rates (possibly with overtime rates of pay) or piece rates.\n3. Commission (for example a flat fee or percentage for each item sold).\n4. Profit-related pay.\n5. PRP: Performance-related pay (usually a bonus).\n6. Employee share ownership schemes (payment in shares of the business, or savings plan).\n7. Fringe payments (perks) sometimes linked to the nature of business.\n\nThere are six types of non-financial rewards:\n1. Job enrichment (making the job more meaningful and rewarding).\n2. Job rotation (also common as a form of training).\n3. Job enlargement (which can include job enrichment and job rotation).\n4. Empowerment (giving employees control over how to do their job).\n5. Purpose (the opportunity to make a difference, socially or environmentally).\n6. Teamwork (working with colleagues to achieve a common goal).\n\nFinancial and non-financial rewards may affect job satisfaction, motivation and productivity in different cultures; all financial and non-financial rewards have different degrees of effectiveness in different countries and cultures. Managers must consider which rewards, or combination of rewards, are more suitable, depending upon the context.\n\nTraining is essential to ensure that employees receive appropriate professional development. There are different types of training, including: induction (at the beginning), on the job (through mentoring or shadowing) and off the job (external training).\n\nOther motivation theories include McClelland's acquired needs theory (achievement, affiliation, and power), Deci and Ryan's self-determination theory (autonomous vs. controlled motivation; needs of competence, relatedness, and autonomy), and the equity and expectancy theory (formulated by Adams, based on the balance between employees' inputs into the business and their outputs from it).\n\nLabour turnover refers to the movement of employees into and out of an organization over a given time period, usually a year. It is calculated as: (Number of staff leaving over a year ÷ Average number of staff employed in a year) × 100. A high labour turnover rate suggests labour problems such as employee dissatisfaction.\n\nRecruitment involves several steps: preparing the job description and person specification, the application process (internal or external recruitment), and selection of candidates. Internal recruitment promotes someone already in the organization; external recruitment brings in new employees from outside.\n\nThe four main methods of appraisal are: formative (ongoing, intended to improve performance), summative (formal, at fixed points, measuring performance), 360-degree (input from all categories of people including managers, colleagues and customers), and self-appraisal (employee evaluates their own performance).",
+    "quiz": [
+      {
+        "question": "Discuss the motivation theories of Taylor, Maslow, and Herzberg and their implications for managing employees.",
+        "markscheme": "Taylor's time and motion studies emphasized efficiency through standardization of working practices and financial incentives. Maslow's hierarchy of needs suggests that employers who satisfy higher-level needs (esteem, self-actualization) will achieve greater motivation; unsatisfied lower needs (physiological, safety) must be addressed first. Herzberg distinguished between hygiene factors (e.g. pay, working conditions) whose absence causes dissatisfaction, and true motivators (e.g. achievement, recognition) that drive motivation. Each theory offers different insights into how managers can increase employee productivity."
+      },
+      {
+        "question": "Distinguish between the seven types of financial rewards available to employees.",
+        "markscheme": "The seven types are: (1) salary — fixed monthly pay; (2) wages — time rates or piece rates; (3) commission — payment per item sold; (4) profit-related pay — linked to business profits; (5) performance-related pay (PRP/bonus) — linked to individual performance; (6) employee share ownership schemes — payment in shares or a savings plan; (7) fringe payments (perks) — additional benefits linked to the role. Each type has different motivational effects and is more or less appropriate depending on the role and context."
+      },
+      {
+        "question": "Distinguish between the six types of non-financial rewards.",
+        "markscheme": "The six types are: (1) job enrichment — making the role more meaningful; (2) job rotation — moving between tasks; (3) job enlargement — broadening the scope of the role; (4) empowerment — giving employees control over how they work; (5) purpose — the opportunity to make a social or environmental difference; (6) teamwork — collaborating with colleagues toward a shared goal. Non-financial rewards can be highly effective in cultures and contexts where intrinsic motivation is valued over monetary reward."
+      },
+      {
+        "question": "Distinguish between induction training, on-the-job training, and off-the-job training.",
+        "markscheme": "Induction training is given at the start of employment to familiarize new employees with the organization, its culture, and their role. On-the-job training occurs in the workplace through methods such as mentoring or shadowing, allowing employees to learn while working. Off-the-job training takes place externally (e.g. at a training centre) and may provide more specialist or formal qualifications. Each type has advantages and disadvantages in terms of cost, disruption to work, and effectiveness."
+      },
+      {
+        "question": "Discuss the motivation theories of McClelland, Deci and Ryan, and the equity and expectancy theory.",
+        "markscheme": "McClelland's acquired needs theory identifies three motivational drivers: achievement, affiliation, and power — which vary by individual and influence how employees respond to different management approaches. Deci and Ryan's self-determination theory distinguishes autonomous motivation (freely chosen) from controlled motivation (reward- or punishment-driven) and identifies competence, relatedness, and autonomy as the three core needs. Adams' equity theory states that employees are motivated when they perceive a fair balance between their inputs (effort, skills) and outputs (rewards); perceived inequity causes demotivation. Together these theories provide a richer picture of workplace motivation."
+      },
+      {
+        "question": "Calculate and interpret the labour turnover rate for a business.",
+        "markscheme": "Labour turnover = (Number of staff leaving over a year ÷ Average number of staff employed in a year) × 100. A high labour turnover rate (e.g. above industry average) indicates instability and suggests problems such as low employee satisfaction, poor working conditions, or inadequate pay. Some turnover may be positive (bringing in fresh talent), but excessive turnover increases recruitment and training costs and can damage morale and productivity."
+      },
+      {
+        "question": "Compare and contrast internal and external recruitment.",
+        "markscheme": "Internal recruitment involves promoting or transferring existing employees; it is faster, cheaper, and can motivate staff by providing career development opportunities, but limits the pool of candidates and may not bring fresh ideas. External recruitment involves hiring candidates from outside the organization; it brings new skills and perspectives but is more costly and time-consuming, and the new hire may take longer to adapt to the organizational culture. The best choice depends on the role, urgency, organizational needs, and available budget."
+      },
+      {
+        "question": "Explain the four types of employee appraisal: formative, summative, 360-degree feedback, and self-appraisal.",
+        "markscheme": "Formative appraisal is ongoing and continuous, aimed at improving performance through regular feedback. Summative appraisal is formal, conducted at fixed intervals (e.g. annually), and measures overall performance against set criteria. 360-degree appraisal collects feedback from all categories of people — line managers, colleagues, and sometimes customers or subordinates — providing a comprehensive view. Self-appraisal involves employees evaluating their own performance, encouraging reflection and ownership. Each method has different advantages in terms of objectivity, depth of insight, and cost."
+      }
+    ]
+  },
+  {
+    "id": "2.5",
+    "unit": 2,
+    "title": "Organizational (corporate) culture",
+    "hl": "HL",
+    "objectives": [
+      "Define the term 'organizational culture'.",
+      "Explain the elements that make up the culture of an organization.",
+      "Distinguish between types of organizational culture.",
+      "Discuss the reasons for, and consequences of, cultural clashes within organizations, for example when they grow, merge, and when leadership styles change."
+    ],
+    "summary": "The term organizational culture (sometimes called corporate culture) refers to the attitudes, experiences, beliefs and values of an organization — and the way all employees interact with one another, and with external stakeholders.\n\nThe culture of an organization is made up of many elements, such as its history and traditions, symbols and language used, norms and expectations. Many theorists have written about organizational culture, for example Handy's typology of \"power culture\", \"role culture\", \"task culture\" and \"person culture\". In his book Gods of Management: The Changing Work of Organizations (1995), Handy chose four Greek gods to symbolize those cultures: Zeus for \"power culture\", Apollo for \"role culture\", Athena for \"task culture\", and Dionysus for \"person culture\".\n\nThe culture of an organization could be described as conservative (traditional), international, entrepreneurial, innovative, etc. Organizational culture can change, rapidly or not; individuals (such as a new CEO) may influence the culture of the organization, just as the organizational culture influences all employees.\n\nCulture clashes happen for many reasons, such as different degrees of formality, different practices, different senses of time — and can lead to many problems, such as higher labour turnover, conflict and decreased productivity.",
+    "quiz": [
+      {
+        "question": "Define the term 'organizational culture'.",
+        "markscheme": "Organizational culture (also called corporate culture) refers to the attitudes, experiences, beliefs, and values of an organization, and the way all employees interact with one another and with external stakeholders. It encompasses the shared norms, expectations, symbols, language and history that shape how people behave within the organization."
+      },
+      {
+        "question": "Explain the elements that make up the culture of an organization.",
+        "markscheme": "The culture of an organization is shaped by its history and traditions, the symbols and language it uses, and its norms and expectations. It can also be described by its overall character — for example conservative, entrepreneurial, or innovative. Theorists such as Charles Handy have categorized culture into types: power culture (Zeus), role culture (Apollo), task culture (Athena), and person culture (Dionysus). Leadership style and key individuals also shape organizational culture."
+      },
+      {
+        "question": "Distinguish between Handy's four types of organizational culture: power, role, task, and person culture.",
+        "markscheme": "Power culture (Zeus) is centralized around a dominant individual or small group, with quick decision-making but risk of autocracy. Role culture (Apollo) is bureaucratic, based on defined roles and procedures — stable but inflexible. Task culture (Athena) is project- and team-focused, valuing expertise over hierarchy — flexible and creative. Person culture (Dionysus) centres on individuals who are the key asset (e.g. professionals in a firm) — difficult to manage collectively. Each type is more or less suited to different organizational contexts."
+      },
+      {
+        "question": "Discuss the reasons for and consequences of cultural clashes within organizations.",
+        "markscheme": "Cultural clashes occur when organizations with different cultures interact, for example during mergers, periods of growth, or changes in leadership style. Causes include different degrees of formality, different working practices, and different senses of time and priority. Consequences can include higher labour turnover, interpersonal conflict, decreased productivity, and difficulty integrating teams. Managing culture clashes requires deliberate communication, leadership sensitivity, and sometimes structural changes to align the new combined culture."
+      }
+    ]
+  },
+  {
+    "id": "2.6",
+    "unit": 2,
+    "title": "Communication",
+    "hl": "SL",
+    "objectives": [
+      "Evaluate formal and informal methods of communication for an organization in a given situation.",
+      "Explain barriers to communication."
+    ],
+    "summary": "Communication within organizations and with all their stakeholders, internal and external, comes in several forms: verbal communication, visual communication and written communication.\n\nFormal communication refers to the official and formally recognized methods of communication, such as meetings, memos, emails etc.\n\nInformal communication refers to the ways in which information is casually and unofficially disseminated, including rumours and gossip.\n\nMany barriers to communication exist: communication styles (including personal preferences), linguistic and/or cultural barriers, lack of transparency, mistrust, psychological barriers, structural barriers etc. They can be very costly to businesses.",
+    "quiz": [
+      {
+        "question": "Evaluate formal and informal methods of communication for an organization in a given situation.",
+        "markscheme": "Formal communication uses official, recognized channels (e.g. meetings, memos, emails) and provides clarity, accountability, and a written record, but can be slow and impersonal. Informal communication (e.g. conversations, rumours) is faster and more flexible but can be inaccurate, selective, or damaging. The most appropriate method depends on the context: formal communication suits important decisions and legal matters; informal communication can build relationships and spread information quickly. Organizations should manage both, especially to avoid misinformation."
+      },
+      {
+        "question": "Explain the main barriers to communication in an organization.",
+        "markscheme": "Barriers to communication include communication style differences and personal preferences, linguistic and cultural barriers (e.g. language differences between employees), lack of transparency or honesty in messages, mistrust between sender and receiver, psychological barriers (e.g. stress or preconceptions), and structural barriers (e.g. a tall hierarchy slowing down the flow of information). These barriers can lead to misunderstandings, decreased morale, and costly errors. They are particularly costly in large or international organizations where communication is complex."
+      }
+    ]
+  },
+  {
+    "id": "2.7",
+    "unit": 2,
+    "title": "Industrial / employee relations",
+    "hl": "HL",
+    "objectives": [
+      "Explain common sources of conflict at work.",
+      "Evaluate the main methods of industrial relations used by employers and by employees.",
+      "Discuss the main approaches to conflict resolution at work."
+    ],
+    "summary": "The relations between employers and employees (also called industrial relations) may sometimes be tense or difficult about the terms and conditions of employment, typically about pay, change taking place at work, different values and interests, insufficient resources and poor communication.\n\nIn larger organizations, employers and employees have representatives who are responsible for discussing and negotiating together in order to reach agreements and to avoid the creation and escalation of conflicts. These discussions are called collective bargaining. When collective bargaining is not successful:\n- Employees may go on strike, or may decide to \"go slow\", \"work-to-rule\" or refuse to work overtime.\n- Employers may threaten employees with redundancy, with change of contract, or could close the workplace and lock the employees out.\n\nThe main approaches to conflict resolution at work are:\n- Conciliation and arbitration, with the intervention of an independent third party.\n- Employee participation and industrial democracy, involving employees more directly in decision-making, consultation or communication.\n- No-strike agreement by the trade union, so work will not completely stop.\n- Single-union agreement, which means that the employer negotiates with only one trade union.",
+    "quiz": [
+      {
+        "question": "Explain the common sources of conflict between employers and employees in the workplace.",
+        "markscheme": "Common sources of conflict include disagreements over pay and terms of employment, changes taking place at work (e.g. restructuring, new technology), different values and interests between management and workers, insufficient resources, and poor communication. In larger organizations, these conflicts may escalate if not managed through collective bargaining or other mechanisms."
+      },
+      {
+        "question": "Evaluate the main methods of industrial action available to employees and employers when collective bargaining fails.",
+        "markscheme": "Employees may go on strike (most disruptive), work-to-rule (only doing the minimum required by contract), go slow, or refuse overtime — all reducing productivity and putting pressure on employers. Employers may respond by threatening redundancy, changing contracts, or locking employees out of the workplace. Each method has significant costs and risks: strikes can damage relationships and reputation; lockouts may escalate conflict. The appropriateness of each action depends on the severity of the dispute and the power balance between the parties."
+      },
+      {
+        "question": "Discuss the main approaches to conflict resolution in industrial/employee relations.",
+        "markscheme": "Conciliation and arbitration involve an independent third party helping to facilitate agreement — arbitration provides a binding decision, conciliation does not. Employee participation and industrial democracy involve engaging employees in decision-making to reduce conflict proactively. A no-strike agreement commits the trade union not to call a strike, ensuring continuity of operations. A single-union agreement simplifies negotiations by recognizing only one trade union. Each approach aims to resolve or prevent conflict, though their effectiveness depends on trust between the parties and the nature of the dispute."
+      }
+    ]
+  },
+  {
+    "id": "3.1",
+    "unit": 3,
+    "title": "Introduction to finance",
+    "hl": "SL",
+    "objectives": [
+      "Explain the role of finance for businesses.",
+      "Distinguish between capital expenditure and revenue expenditure."
+    ],
+    "summary": "All organizations need funding (finance): it could be to set up a business (\"start-up costs\"), to cover the day-to-day operations or for future growth and expansion.\n- Capital expenditure is long-term investment: money spent to acquire fixed assets in a business, such as machinery, equipment, vehicles, buildings.\n- Revenue expenditure is money used for the day-to-day operations of a business, for example purchasing raw materials, paying wages and energy bills.",
+    "quiz": [
+      {
+        "question": "Explain the role of finance for businesses.",
+        "markscheme": "Finance is essential for all organizations: it is needed to cover start-up costs when setting up a business, to fund day-to-day operations (revenue expenditure), and to invest in long-term assets for future growth and expansion (capital expenditure). Without adequate finance, a business cannot operate, grow, or meet its obligations to stakeholders."
+      },
+      {
+        "question": "Distinguish between capital expenditure and revenue expenditure.",
+        "markscheme": "Capital expenditure is money spent on long-term investment in fixed assets such as machinery, equipment, vehicles, and buildings — assets that will provide value over several years. Revenue expenditure is money used for the day-to-day running of the business, such as purchasing raw materials, paying wages, and energy bills. The key distinction is the time horizon: capital expenditure is long-term and appears on the balance sheet, while revenue expenditure is short-term and appears in the profit and loss account."
+      }
+    ]
+  },
+  {
+    "id": "3.2",
+    "unit": 3,
+    "title": "Sources of finance",
+    "hl": "SL",
+    "objectives": [
+      "Define short-term, medium-term and long-term finance.",
+      "Distinguish between the three internal sources of finance: personal funds (for sole traders), retained profit, and sale of assets.",
+      "Distinguish between the eight external sources of finance: share capital, loan capital, overdrafts, trade credit, crowdfunding, leasing, micro-finance provider, and business angels.",
+      "Discuss the appropriateness, advantages and disadvantages of sources of finance for a given situation."
+    ],
+    "summary": "Sources of finance can be categorized as internal or external.\n\nThere are three internal sources of finance:\n1. Personal funds: sole traders often use their own savings, sometimes with external sources of finance, for example to show a bank their personal commitment.\n2. Retained profit: for an existing business, this is what remains after payment of tax (to the government) and dividends (to the shareholders); it can be described as a form of reinvestment and is also called \"ploughed-back profit\".\n3. Sale of assets: when the business sells unwanted or unused assets (for example obsolete machinery or vehicles) to raise funds.\n\nThere are eight external sources of finance:\n1. Share capital (also known as \"equity capital\"): money raised from the sale of shares of a limited company; public limited companies sell their shares on the stock exchange.\n2. Loan capital (also known as \"debt capital\"): money from a financial institution, such as a bank; it is repaid in instalments with interest (at a fixed rate or at a variable rate).\n3. Overdrafts: when a lending institution allows a business to spend or withdraw more money than it has on its account, for a short, temporary period of time.\n4. Trade credit: an agreement between businesses that allows the buyer to pay the supplier a little later, such as one to three months.\n5. Crowdfunding: funding by a large number of people, each contributing a small amount of money (also called crowd-sourcing).\n6. Leasing: a source of finance that allows a firm to use an asset without purchasing it, but renting it, with periodic payment.\n7. Micro-finance providers: institutions that provide banking services to low income or unemployed individuals or groups who otherwise would not have access to financial services.\n8. Business angels: rich individuals who invest in start-up enterprises in return for part-ownership and some control in their strategic development.\n\nAll sources of finance have advantages and disadvantages; each will be more or less appropriate for a given situation. When choosing a source of finance, several factors must be taken into consideration, especially: duration (short term: within 12 months; medium term: 1–5 years; long term: more than 5 years), origin of funds (internal or external), amount required, level of flexibility, and purpose.",
+    "quiz": [
+      {
+        "question": "Define short-term, medium-term and long-term sources of finance.",
+        "markscheme": "Short-term finance involves repayment within 12 months (e.g. overdrafts, trade credit). Medium-term finance is repaid between 1 and 5 years (e.g. certain loans or leases). Long-term finance is repaid over more than 5 years (e.g. share capital, long-term loan capital). The appropriate time horizon depends on the purpose of the finance: short-term sources suit day-to-day needs, while long-term sources suit major investment in fixed assets."
+      },
+      {
+        "question": "Distinguish between the three internal sources of finance: personal funds, retained profit, and sale of assets.",
+        "markscheme": "Personal funds are savings contributed by the owner (common for sole traders) — they require no repayment but reduce personal wealth. Retained profit is the surplus left after tax and dividends have been paid, reinvested into the business — it is only available to existing businesses, not start-ups. Sale of assets involves selling unused or obsolete fixed assets to raise cash — it is limited to what assets are available and may reduce productive capacity."
+      },
+      {
+        "question": "Distinguish between the eight external sources of finance available to businesses.",
+        "markscheme": "Share capital is raised by selling shares — suitable for limited companies but dilutes ownership. Loan capital is borrowed from a bank and repaid with interest. Overdrafts allow temporary short-term borrowing beyond account balance. Trade credit delays payment to suppliers. Crowdfunding raises small amounts from many individuals. Leasing allows use of assets without ownership. Micro-finance providers support low-income individuals with limited access to traditional banking. Business angels are wealthy individuals who invest in start-ups in exchange for equity and strategic involvement. Each has distinct advantages and disadvantages regarding cost, control, and suitability."
+      },
+      {
+        "question": "Discuss the appropriateness of different sources of finance for a given business situation.",
+        "markscheme": "The most appropriate source of finance depends on: duration (short-, medium-, or long-term need), whether internal or external sources are preferred, the amount required, the level of flexibility needed, and the purpose (e.g. capital expenditure vs. working capital). For example, overdrafts suit short-term cash flow gaps but are costly for long-term use; leasing suits acquiring assets without large upfront capital; share capital suits long-term growth but requires the business to be a limited company. Retained profit is ideal for established businesses wishing to avoid external debt."
+      }
+    ]
+  },
+  {
+    "id": "3.3",
+    "unit": 3,
+    "title": "Costs and revenues",
+    "hl": "SL",
+    "objectives": [
+      "Distinguish between the different types of costs.",
+      "Explain how various revenue streams contribute to the total revenue of a business and therefore to its profit."
+    ],
+    "summary": "Costs can be:\n- Direct or indirect.\n- Fixed or variable.\n\nDirect costs are linked to the production of specific goods and services (examples: raw materials, direct labour, packaging costs). Indirect costs cannot be linked to the production of specific goods and services — also called \"overheads\" (examples: rent, general administrative expenses, insurance, maintenance, cleaning and security).\n\nFixed costs do not change with the amount of goods or services produced (examples: rent/mortgage, insurance, salaries, interest payments). Variable costs change with the amount of goods or services produced (examples: raw material costs, sales commission, packaging, energy usage costs).\n\nSome costs are composed of both fixed and variable elements; they are called \"semi-variable costs\" (or \"semi-fixed costs\" or \"mixed costs\") — for example in the case of a reward package composed of \"fixed salary + overtime\" or \"fixed salary + commission\".\n\nTotal costs (TC) = total of fixed costs (TFC) + total of variable costs (TVC).\n\nThe main revenue of a business is usually the income from its trading activities, i.e. the income gained from the sale of goods and services, also called \"sales revenue\", \"sales turnover\", or \"turnover\". It is calculated by multiplying the price per unit by the quantity of goods sold.\n\nThe total revenue of a business could have other streams (components):\n- Rental income (the income from renting its properties, maybe seasonally).\n- Sale of fixed assets (especially if they are unused or underused).\n- Dividends (if it owns shares in another business).\n- Donations, grants, subsidies.",
+    "quiz": [
+      {
+        "question": "Distinguish between direct costs, indirect costs, fixed costs, and variable costs.",
+        "markscheme": "Direct costs are linked to the production of specific goods or services (e.g. raw materials, direct labour). Indirect costs (overheads) cannot be linked to specific production (e.g. rent, insurance, administration). Fixed costs do not change with the level of output (e.g. salaries, mortgage). Variable costs change with the level of output (e.g. raw materials, packaging). Some costs are semi-variable, containing both fixed and variable elements (e.g. fixed salary + commission). Total costs = total fixed costs + total variable costs."
+      },
+      {
+        "question": "Explain how various revenue streams contribute to the total revenue and profit of a business.",
+        "markscheme": "The primary revenue stream is sales revenue (turnover), calculated as price per unit × quantity sold. Additional streams include rental income, proceeds from the sale of fixed assets, dividends from shareholdings in other businesses, and donations, grants or subsidies. Together these streams make up total revenue. Profit is total revenue minus total costs; therefore, increasing revenue streams (while controlling costs) directly improves profitability. Note that revenue and profit are different: a high revenue business may still be unprofitable if costs are very high."
+      }
+    ]
+  },
+  {
+    "id": "3.4",
+    "unit": 3,
+    "title": "Final accounts",
+    "hl": "SOME_HL",
+    "objectives": [
+      "Explain the purpose of accounts to different stakeholders.",
+      "Prepare and interpret the profit and loss account (P&L account) of a business.",
+      "Prepare and interpret the balance sheet of a business.",
+      "Distinguish between types of intangible assets.",
+      "Calculate depreciation using the straight line and units of production methods.",
+      "Evaluate the appropriateness of each depreciation method."
+    ],
+    "summary": "Numerous stakeholders need to know the financial statements of a business:\n- Shareholders, because the dividends they receive are calculated from the profit and loss account.\n- The government, because the profit and loss account helps to calculate the taxes that the business will have to pay.\n- Potential investors and financiers, because they will want to know about the creditworthiness and financial health of the business.\n- Managers, because final accounts help them monitor performance, compare results to previous years, and set budgets and strategies.\n- Employees, because a profitable business means that their job is secure, or that they could get a pay rise.\n\nThe profit and loss account (also called income statement) shows the records of income and expenditure over a period, typically a year. It includes data such as gross profit and net profit, and eventually indicates if the business has made a profit or a loss. In the case of a profit, it shows how this profit is distributed (e.g. payment of dividends to shareholders, or retained profit). For non-profit making organizations, the \"profit\" is called \"surplus\".\n\nThe balance sheet (also called statement of financial position) indicates the assets, liabilities and equity of a firm at a specific date.\n- Assets are what the company owns: fixed assets (long-term, such as buildings or vehicles) and current assets (lasting less than a year: stock/inventory, current cash, and money owed by debtors).\n- Liabilities are what the company owes: long-term liabilities (such as a bank loan) and current liabilities (short-term debts to be paid within a year, money owed to creditors, tax payable to the government).\n\nIn the context of a balance sheet, equity refers to the amount of money that would be returned to a business if all assets were liquidated. Working capital = total current assets − total current liabilities. Net assets = total assets − current liabilities − long-term liabilities.\n\nThe four main intangible assets are trademarks, patents, goodwill and copyright.\n\nDepreciation is the decrease in the value of a fixed asset over time, caused by wear and tear or obsolescence. It is recorded in the profit and loss account as an expense. The straight line method spreads the cost equally over the asset's lifetime: annual depreciation = (original cost − residual value) ÷ expected life of asset. The units of production method bases depreciation on usage rather than time: units of production rate = (original cost − salvage value) ÷ total units of production; depreciation expense = rate × units produced in a period. The straight line method is simpler but less accurate; the units of production method is more accurate but requires detailed usage data.",
+    "quiz": [
+      {
+        "question": "Explain the purpose of final accounts to different stakeholders.",
+        "markscheme": "Shareholders use final accounts to determine dividends. The government uses the profit and loss account to calculate tax owed. Potential investors and financiers assess the financial health and creditworthiness of the business. Managers use accounts to monitor performance, compare to previous years, and set future budgets and strategies. Employees use accounts as an indicator of job security and potential pay increases. Each stakeholder group interprets the accounts through the lens of their own interests."
+      },
+      {
+        "question": "Prepare and interpret a profit and loss account for a business.",
+        "markscheme": "The profit and loss account (income statement) records income and expenditure over a period (typically one year). It shows: sales revenue − cost of goods sold = gross profit; gross profit − expenses = net profit before interest and tax. It indicates whether the business is profitable or loss-making. The distribution of profit is also shown (dividends to shareholders and retained profit). For non-profit organizations, any surplus replaces profit. Interpretation requires comparing results across years and against industry benchmarks."
+      },
+      {
+        "question": "Prepare and interpret a balance sheet for a business.",
+        "markscheme": "The balance sheet (statement of financial position) shows assets, liabilities, and equity at a specific date. Fixed assets are long-term (buildings, machinery); current assets are short-term (cash, debtors, stock). Long-term liabilities include bank loans; current liabilities are debts due within a year. Working capital = current assets − current liabilities. Net assets = total assets − current liabilities − long-term liabilities. Equity = net assets = share capital + retained profit. Interpretation includes assessing liquidity and financial stability."
+      },
+      {
+        "question": "Distinguish between the four types of intangible assets.",
+        "markscheme": "Intangible assets are non-physical assets that add value to a business. Trademarks are registered symbols or names that legally protect a brand. Patents grant exclusive rights to use an invention for a set period. Goodwill represents the premium value of a business above its tangible assets, often linked to brand reputation and customer loyalty. Copyright protects original creative works from unauthorized reproduction. All four cannot easily be quantified but can be significant contributors to business value."
+      },
+      {
+        "question": "Calculate depreciation using the straight line method and the units of production method.",
+        "markscheme": "Straight line method: annual depreciation = (original cost − residual value) ÷ expected life of asset. The same amount is charged each year. Units of production method: rate = (original cost − salvage value) ÷ total units of production; depreciation expense = rate × units produced in a given period. For example, a 3D printer costing $30,000 with a salvage value of $6,000 over 4 years: straight line depreciation = ($30,000 − $6,000) ÷ 4 = $6,000 per year."
+      },
+      {
+        "question": "Evaluate the appropriateness of the straight line depreciation method compared to the units of production method.",
+        "markscheme": "The straight line method is simple to calculate and provides consistent annual charges, making budgeting predictable. However, it does not reflect actual usage and may be inaccurate if the asset is used unevenly. The units of production method is more accurate as it links depreciation to actual usage (wear and tear), but requires detailed production data that may be difficult to collect or predict in advance. The straight line method is best for assets with consistent usage; the units of production method suits assets whose wear depends heavily on how intensively they are used."
+      }
+    ]
+  },
+  {
+    "id": "3.5",
+    "unit": 3,
+    "title": "Profitability and liquidity ratio analysis",
+    "hl": "SL",
+    "objectives": [
+      "Calculate and interpret three profitability ratios: the gross profit margin, the profit margin, and the return on capital employed (ROCE).",
+      "Discuss possible strategies to improve the profitability ratios.",
+      "Calculate and interpret two liquidity ratios: current ratio and acid-test (quick) ratio.",
+      "Discuss possible strategies to improve the liquidity ratios."
+    ],
+    "summary": "The first two profitability ratios help assess the performance of a business based on its ability to generate profit. They use data from the profit and loss account.\n\nGross profit margin (GPM) = (gross profit ÷ sales revenue) × 100.\n\nProfit margin (PM), sometimes called net profit margin (NPM) = (net profit before interest and tax ÷ sales revenue) × 100.\n\nSeveral strategies may help improve GPM, for example increasing prices (to increase sales revenue) or trying to find cheaper suppliers (to decrease the cost of goods sold). To improve PM, the business could also try to reduce expenses (for example overheads).\n\nThe ratio ROCE helps measure how well a business utilizes its assets and liabilities. It uses data from the balance sheet to assess the returns a business is making from its capital employed. ROCE = (profit before interest and tax ÷ capital employed) × 100. Capital employed = long-term liabilities + share capital + retained profit. Strategies to improve ROCE include paying more dividends to shareholders, which reduces retained profit and thus increases ROCE.\n\nThe liquidity ratios measure the ability of a business to pay off its short-term debts, i.e. how quickly current assets could be converted into cash. They use data from the balance sheet.\n\nCurrent ratio = current assets ÷ current liabilities.\n\nAcid test (quick) ratio = (current assets − stock) ÷ current liabilities.\n\nAs a rule of thumb, these ratios should be around 1.5. Low ratios (under 1) mean that the business could struggle to pay off its debts. High ratios (above 2) should be avoided too, as they could mean that there is too much cash being held unnecessarily and not invested, or that there are too many debtors. These numbers vary across industries and are also linked to speed of stock turnover.\n\nSeveral strategies may help improve the liquidity ratios. The business could try to increase current assets and/or decrease current liabilities, or both. Selling off the stock at a discount is another possibility.",
+    "quiz": [
+      {
+        "question": "Calculate and interpret the gross profit margin, profit margin, and ROCE for a business.",
+        "markscheme": "Gross profit margin (GPM) = (gross profit ÷ sales revenue) × 100 — measures profitability after direct costs. Profit margin (PM) = (net profit before interest and tax ÷ sales revenue) × 100 — measures overall profitability after all operating expenses. ROCE = (profit before interest and tax ÷ capital employed) × 100, where capital employed = long-term liabilities + share capital + retained profit — measures how efficiently the business uses its capital. All three ratios must be interpreted in context: compared to previous years and industry averages to be meaningful."
+      },
+      {
+        "question": "Discuss possible strategies to improve the profitability ratios of a business.",
+        "markscheme": "To improve GPM, the business can increase prices (raising sales revenue) or find cheaper suppliers (reducing cost of goods sold). To improve PM, the business can additionally reduce overhead expenses. To improve ROCE, the business could pay more dividends, which reduces retained profit and thus lowers capital employed — increasing the ratio. However, each strategy involves trade-offs: higher prices may reduce sales volume; lower costs may affect quality; paying more dividends may reduce funds available for reinvestment."
+      },
+      {
+        "question": "Calculate and interpret the current ratio and acid-test ratio for a business.",
+        "markscheme": "Current ratio = current assets ÷ current liabilities — measures overall short-term liquidity. Acid-test (quick) ratio = (current assets − stock) ÷ current liabilities — excludes stock as it may not be easily converted to cash. A ratio of around 1.5 is considered healthy; below 1 suggests the business may struggle to meet short-term obligations; above 2 may indicate idle cash or excessive debtors. Both ratios vary by industry and should be interpreted alongside trends over time."
+      },
+      {
+        "question": "Discuss possible strategies to improve the liquidity ratios of a business.",
+        "markscheme": "To improve liquidity ratios, a business can increase current assets (e.g. by collecting debts faster or raising short-term finance) and/or decrease current liabilities (e.g. by repaying short-term debts or renegotiating payment terms with suppliers). Selling stock at a discount converts inventory into cash quickly, improving the current ratio. However, aggressive discounting may harm profitability, illustrating the trade-off between liquidity and profitability management."
+      }
+    ]
+  },
+  {
+    "id": "3.6",
+    "unit": 3,
+    "title": "Efficiency ratio analysis",
+    "hl": "HL",
+    "objectives": [
+      "Calculate and interpret four efficiency ratios: (1) the stock (inventory) turnover ratio, (2) the debtor (trade receivable) days ratio, (3) the creditor days ratio, (4) the gearing ratio.",
+      "Discuss possible strategies to improve these ratios.",
+      "Distinguish between insolvency and bankruptcy."
+    ],
+    "summary": "There are four other efficiency ratios that help assess how well a business uses its resources, assets and liabilities:\n\n1. The stock (inventory) turnover ratio measures how quickly the stock is sold and replaced. It may be calculated in two ways: how many times a year, or how many days it takes to replenish the stock:\n\n- Stock turnover (number of times) = cost of goods sold ÷ average stock\n- Stock turnover (number of days) = (average stock ÷ cost of goods sold) × 365\n\nThere are several strategies to improve stock turnover ratio, such as adopting a 'JIT' (Just in Time) production method.\n\n2. The debtor ('trade receivable', 'debt collection') days ratio measures the number of days it takes a business to collect its debts from customers who have paid on credit.\n\n- Debtor days ratio (number of days) = (debtors ÷ total sales revenue) × 365\n\nThere are several strategies to lower debtor days ratio, such as giving incentives to debtors to pay their debts early, or fining late payers.\n\n3. The creditor days ratio measures the number of days it takes a business to pay its own debts to its creditors (e.g. to its suppliers).\n\n- Creditor days ratio (number of days) = (creditors ÷ cost of goods sold) × 365\n\nPossible strategies to increase creditor days ratio include negotiating extra time with suppliers ('trade credit').\n\n4. The gearing ratio measures the extent to which the capital employed by a business is financed from loan capital. A 'highly geared' business (with a ratio of 50% or above) is seen as risky by current shareholders and potential investors.\n\n- Gearing ratio = (loan capital ÷ capital employed) × 100\n- Capital employed = loan capital (or long-term liabilities) + share capital + retained profit\n\nPossible strategies to reduce gearing ratio include seeking sources of finance other than a loan, for example issuing more shares.\n\nThe terms 'insolvency' and 'bankruptcy' are closely linked; however, there is a difference. Insolvency refers to the financial state of a person or a firm that cannot pay its debts on time: they are not 'solvent'. In many cases, formally declaring bankruptcy is the next stage: it is the start of a legal process which usually involves the sale of all the assets in order to pay off the debts. The aim is to 'liquidate' the assets, i.e. to convert them into cash as soon as possible.",
+    "quiz": [
+      {
+        "question": "Calculate and interpret the stock turnover ratio (in days), the debtor days ratio, the creditor days ratio, and the gearing ratio for a given business using its financial data.",
+        "markscheme": "- Stock turnover (days) = (average stock ÷ cost of goods sold) × 365; lower days indicate faster stock movement.\n- Debtor days = (debtors ÷ total sales revenue) × 365; lower days indicate faster debt collection.\n- Creditor days = (creditors ÷ cost of goods sold) × 365; higher days mean the business takes longer to pay suppliers.\n- Gearing ratio = (loan capital ÷ capital employed) × 100; a ratio of 50% or above indicates a highly geared, riskier business.\n- Each ratio should be interpreted in context (e.g. compared to industry norms or previous periods)."
+      },
+      {
+        "question": "Discuss possible strategies a business could use to improve its efficiency ratios, such as stock turnover, debtor days, creditor days, and gearing ratio.",
+        "markscheme": "- To improve stock turnover: adopt JIT (Just in Time) production to reduce average stock levels.\n- To lower debtor days: offer incentives for early payment or impose fines on late payers.\n- To increase creditor days: negotiate extended trade credit terms with suppliers.\n- To reduce gearing ratio: seek finance from sources other than loans, for example issuing more shares.\n- Answers should acknowledge that strategies depend on the specific ratio being targeted."
+      },
+      {
+        "question": "Distinguish between insolvency and bankruptcy.",
+        "markscheme": "- Insolvency is the financial state of a person or firm that cannot pay its debts on time (i.e. they are not 'solvent').\n- Bankruptcy is the formal legal process that follows insolvency, involving the sale of all assets to pay off debts.\n- Bankruptcy aims to 'liquidate' assets, converting them into cash as soon as possible.\n- Key distinction: insolvency is a financial state; bankruptcy is a legal process."
+      }
+    ]
+  },
+  {
+    "id": "3.7",
+    "unit": 3,
+    "title": "Cash flow",
+    "hl": "SL",
+    "objectives": [
+      "Distinguish between profit and cash flow.",
+      "Explain working capital and liquidity position.",
+      "Construct and interpret cash flow forecasts.",
+      "Analyse the relationship between investment, profit and cash flow.",
+      "Discuss strategies to deal with cash flow problems."
+    ],
+    "summary": "Profit is the positive difference between sales revenue and total costs; it includes both cash transactions and credit transactions.\n\nCash flow is money that flows in and out of a business over a given period of time; it only includes cash transactions, not credit transactions. Insolvency is when a business runs out of cash, even though it may still be profitable: it is a liquidity position without enough cash to run the day-to-day operations (i.e. to cover the revenue expenditure).\n\nThe working capital is calculated using data from the balance sheet: current assets minus current liabilities. It refers to money available straightaway to pay for revenue expenditure.\n\nA cash flow forecast is a financial document in the form of a table that shows the predicted cash inflows and cash outflows, usually month by month. Key components include:\n\n- Opening balance\n- Total cash inflows (e.g. cash sales revenue, tax refunds)\n- Total cash outflows (e.g. rent, wages, cost of sales)\n- Net cash flow = total inflows − total outflows\n- Closing balance = opening balance + net cash flow\n\nThe relationship between investment, profit and cash flow varies at different stages of a business. A new business usually requires a lot of investment but there is no profit yet, and cash flow is negative. An established business requires less investment, achieves more profit, and has a positive cash flow.\n\nThere are three main strategies to deal with cash flow problems:\n\n- Reducing cash outflows (for example delaying the purchase of some fixed assets, delaying payment of suppliers or sourcing cheaper suppliers).\n- Improving cash inflows (for example limiting delayed payment on credit).\n- Looking for additional finance (for example arranging a bank overdraft or selling some assets and leasing them back).\n\nCash flow forecasts have several advantages. Like budgets, they are useful planning tools, providing estimated projections. They cannot, however, take into account unexpected changes in the economy, in competitors' strategies, or in other external factors.",
+    "quiz": [
+      {
+        "question": "Distinguish between profit and cash flow.",
+        "markscheme": "- Profit is the positive difference between sales revenue and total costs; it includes both cash and credit transactions.\n- Cash flow is money that flows in and out of a business; it only includes cash transactions, not credit transactions.\n- A business can have a positive cash flow without making a profit (e.g. if the owner injects personal funds), and can be profitable yet insolvent if it runs out of cash."
+      },
+      {
+        "question": "Explain working capital and describe what a poor liquidity position means for a business.",
+        "markscheme": "- Working capital = current assets − current liabilities; it is money available immediately to pay for day-to-day (revenue) expenditure.\n- A poor liquidity position means the business does not have enough cash to cover its short-term obligations.\n- This can lead to insolvency even if the business is profitable overall."
+      },
+      {
+        "question": "Construct a fully labelled cash flow forecast for a given business scenario.",
+        "markscheme": "- Table must include: opening balance, total cash inflows (itemised), total cash outflows (itemised), net cash flow, and closing balance.\n- Net cash flow = total inflows − total outflows; closing balance = opening balance + net cash flow.\n- All figures correctly calculated from the given data; columns for each period (e.g. month) clearly labelled."
+      },
+      {
+        "question": "Analyse the relationship between investment, profit and cash flow at different stages of a business's life.",
+        "markscheme": "- A new business requires high investment (to purchase fixed assets) but generates no profit yet; cash flow is typically negative.\n- An established business requires less ongoing investment, generates more profit, and has a positive cash flow.\n- Investment, profit and cash flow therefore move in different directions depending on the stage of the business."
+      },
+      {
+        "question": "Discuss strategies a business could use to deal with cash flow problems.",
+        "markscheme": "- Reduce cash outflows: delay purchase of fixed assets, delay supplier payments, source cheaper suppliers.\n- Improve cash inflows: limit credit sales, encourage faster payment from debtors.\n- Seek additional finance: arrange a bank overdraft, sell assets and lease them back.\n- Each strategy should be evaluated in context: effectiveness may depend on the cause of the cash flow problem."
+      }
+    ]
+  },
+  {
+    "id": "3.8",
+    "unit": 3,
+    "title": "Investment appraisal",
+    "hl": "SOME_HL",
+    "objectives": [
+      "Calculate and evaluate investment opportunities using payback period and average rate of return (ARR).",
+      "Calculate and evaluate investment opportunities using net present value (NPV) (HL only)."
+    ],
+    "summary": "Investment is the act of spending money to purchase a fixed asset with the expectation of future earnings. Investment appraisals are techniques that can help with deciding the suitability of an investment opportunity: financially, can the expenditure be justified? These techniques are also useful to compare competing investment opportunities. They can be combined to help decision-making.\n\nThe payback period refers to the length of time required for an investment project to pay back its initial cost outlay. It is expressed in years and months:\n\n- Payback period = initial investment ÷ annual cash flow from investment\n\nThe payback period method has several advantages, especially the fact that it is simple and fast to calculate. It also has disadvantages, especially the fact that it ignores the overall profitability of an investment beyond its payback.\n\nThe average rate of return (ARR), also called 'accounting rate of return', measures the annual net return of an investment as a percentage of its capital cost:\n\n- ARR = [(total returns − capital cost) ÷ years of use] ÷ capital cost × 100\n\nThe ARR method has several advantages, such as the fact that it shows the profitability of an investment project over a given period of time, allowing comparisons with other investment projects. It has disadvantages too, such as the fact that it does not consider the timing of cash inflows.\n\nThe net present value (NPV) is the difference between the summation of present values of future cash inflows (returns), calculated using discount factors provided in a discount table, and the original cost of the investment:\n\n- NPV = Σ present values of returns − original cost\n\nThe NPV method has several advantages, such as the fact that it takes opportunity cost and time value of money into account. It has disadvantages too, such as the fact that it is based on discount rates that may not be well predicted.",
+    "quiz": [
+      {
+        "question": "Calculate the payback period and average rate of return (ARR) for a given investment project, and evaluate one advantage and one disadvantage of each method.",
+        "markscheme": "- Payback period = initial investment ÷ annual cash flow; expressed in years and months.\n- ARR = [(total returns − capital cost) ÷ years of use] ÷ capital cost × 100; expressed as a percentage.\n- Advantage of payback: simple and fast to calculate. Disadvantage: ignores profitability beyond the payback point.\n- Advantage of ARR: shows overall profitability and allows project comparisons. Disadvantage: does not consider the timing of cash inflows."
+      },
+      {
+        "question": "Calculate the net present value (NPV) of an investment using a given discount table, and evaluate one advantage and one disadvantage of the NPV method.",
+        "markscheme": "- NPV = (each year's cash inflow × relevant discount factor, summed across all years) − original investment cost.\n- A positive NPV indicates the investment adds value; a negative NPV indicates it does not.\n- Advantage: accounts for the time value of money and opportunity cost.\n- Disadvantage: relies on discount rates that may be difficult to predict accurately, so results may be unreliable if the chosen rate is wrong."
+      }
+    ]
+  },
+  {
+    "id": "3.9",
+    "unit": 3,
+    "title": "Budgets",
+    "hl": "HL",
+    "objectives": [
+      "Distinguish between cost centres and profit centres.",
+      "Explain the role of cost centres and profit centres.",
+      "Construct a budget.",
+      "Interpret variances in a budget.",
+      "Analyse the role of budgets and variances in decision making."
+    ],
+    "summary": "**Budget**\n\nA budget is a quantitative financial plan that estimates the revenue and expenditure over a future time period. The budget holder is the person responsible for the formulation and achievement of a budget. Budgets are important for many reasons: they help in planning and setting targets, in allocating resources, in motivating budget holders, and in controlling how funds have been spent.\n\n**Cost and profit centres**\n\nCost centres are the sections of a business where costs are incurred and recorded, for example by item (wages, electricity, insurance), by department (marketing, production), by project, or by product. Profit centres are the sections of a business where both costs and revenues are incurred and recorded, usually by product line or product. Businesses can then calculate how much profit each centre makes.\n\nCost centres and profit centres have several roles: they provide information that can aid decision-making, improving accountability, tracking problem areas and benchmarking. Comparison between profit centres is not always easy and could lead to problems such as conflicts or staff stress, as the pressure of managing a budget may be high.\n\n**Variances**\n\nIn budgeting, variance is the difference between the budgeted figure and the actual figure. It is calculated at the end of the budget period; it can be 'favourable' (when the difference is financially beneficial to the firm, for example spending less than anticipated) or 'adverse' (when the difference is financially costly to the firm, for example spending more than planned).\n\n**Decision making**\n\nBudgets and variance analysis play several roles in decision making, especially for strategic planning. They help control revenue and expenditure, setting targets in line with the organization's strategic objectives. They also have limitations, as setting budgets without involving some stakeholders could result in their resentment and affect their motivation levels.",
+    "quiz": [
+      {
+        "question": "Distinguish between a cost centre and a profit centre.",
+        "markscheme": "- A cost centre is a section of a business where only costs are incurred and recorded (e.g. by department or by project).\n- A profit centre is a section where both costs and revenues are recorded, allowing the profit of each centre to be calculated.\n- The key difference is that profit centres track both revenue and costs, whereas cost centres track only costs."
+      },
+      {
+        "question": "Explain the roles of cost centres and profit centres in a business organization.",
+        "markscheme": "- They provide information to aid decision-making.\n- They improve accountability by assigning financial responsibility to specific areas.\n- They help track problem areas and enable benchmarking between centres.\n- Potential drawback: comparisons between profit centres can cause conflicts or increase staff stress."
+      },
+      {
+        "question": "Construct a budget table showing budgeted figures, actual figures, and variances, identifying each variance as favourable or adverse.",
+        "markscheme": "- Variance = actual figure − budgeted figure (or budgeted − actual, depending on context).\n- Favourable variance: financially beneficial (e.g. lower costs or higher revenue than budgeted).\n- Adverse variance: financially costly (e.g. higher costs or lower revenue than budgeted).\n- Table should clearly show all three columns: budgeted figure, actual figure, variance (F or A)."
+      },
+      {
+        "question": "Interpret the variances shown in a budget and explain what they indicate about business performance.",
+        "markscheme": "- Favourable variances (e.g. lower spending than planned) indicate efficient use of resources.\n- Adverse variances (e.g. higher costs or lower revenue than planned) signal potential problems requiring management action.\n- Variances must be interpreted in context — an adverse variance in one area may be acceptable if performance is strong elsewhere."
+      },
+      {
+        "question": "Analyse the role of budgets and variance analysis in decision making, including their limitations.",
+        "markscheme": "- Budgets help set targets aligned with strategic objectives and control revenue and expenditure.\n- Variance analysis identifies where actual performance deviates from the plan, informing corrective action.\n- Limitation: budgets cannot account for unforeseen external changes (e.g. rising raw material costs).\n- Limitation: setting budgets without stakeholder involvement may cause resentment and reduce motivation."
+      }
+    ]
+  },
+  {
+    "id": "4.1",
+    "unit": 4,
+    "title": "Introduction to marketing",
+    "hl": "SOME_HL",
+    "objectives": [
+      "Define marketing and its relationship to the other business functions.",
+      "Distinguish between 'market orientation' and 'product orientation'.",
+      "Calculate and interpret market share and market growth.",
+      "Discuss the importance of market share and market leadership (HL only)."
+    ],
+    "summary": "Marketing may be defined in many ways: it is about identifying and satisfying customers' needs; it is about getting the right product to the right customers at the right price at the right time.\n\nA market orientation starts with market research first, in order to identify a market and its needs; a product will then be conceived and sold to this specific market to respond to a particular demand. This is the foundation of marketing practices. This is the opposite of product orientation, which focuses first on the product.\n\nA market can be described in different ways:\n\n- By size, either in volume (units) or in value (revenue).\n- By growth rate (the percentage change in total market size over a period of time; it can be positive or negative).\n\nMarket share is the percentage of one company's share of the total sales in the market:\n\n- Market share = (company's sales ÷ total sales in the market) × 100\n\nMarket share can be measured by value (revenue) or volume (units); it is always expressed as a percentage. It makes it possible to identify the market leader, the company with the highest market share. Being the market leader has several benefits: the market leader often has 'first-mover advantages' in new markets, with an established brand name and the possibility to gain economies of scale. Market leaders need to be careful though, as they could be subject to lawsuits if they become too dominant in certain markets.",
+    "quiz": [
+      {
+        "question": "Define marketing and explain its relationship to the other business functions.",
+        "markscheme": "- Marketing is about identifying and satisfying customers' needs, getting the right product to the right customers at the right price at the right time.\n- It is linked to operations (which produces the goods and services being marketed), HR (which provides the people to deliver marketing activities), and finance (which funds marketing campaigns and tracks revenue)."
+      },
+      {
+        "question": "Distinguish between market orientation and product orientation.",
+        "markscheme": "- Market orientation starts with market research to identify customer needs, then creates a product to meet those needs.\n- Product orientation focuses first on the product, then seeks customers for it.\n- Market orientation is generally considered more customer-led and responsive to demand."
+      },
+      {
+        "question": "Calculate market share and market growth for a given scenario, and explain what the results indicate.",
+        "markscheme": "- Market share (%) = (company's sales ÷ total market sales) × 100.\n- Market growth (%) = [(new market size − old market size) ÷ old market size] × 100.\n- Results should include the % sign; interpretation should consider what the figures mean for the company's competitive position."
+      },
+      {
+        "question": "Discuss the importance of market share and market leadership for a business.",
+        "markscheme": "- High market share identifies a business as market leader, conferring first-mover advantages in new markets.\n- Market leaders benefit from established brand recognition and opportunities to achieve economies of scale.\n- However, dominant market share can attract legal scrutiny (antitrust/competition law) if the company becomes too dominant.\n- Market leadership must therefore be pursued and maintained carefully."
+      }
+    ]
+  },
+  {
+    "id": "4.2",
+    "unit": 4,
+    "title": "Marketing planning",
+    "hl": "SL",
+    "objectives": [
+      "Explain the role of marketing planning.",
+      "Explain the principles of market segmentation to reach a target market.",
+      "Construct and interpret a position map.",
+      "Distinguish between niche market and mass market.",
+      "Explain the importance of having a unique selling point/proposition (USP).",
+      "Discuss how organizations can differentiate themselves and their products from competitors."
+    ],
+    "summary": "A marketing plan is a detailed document which includes marketing objectives and marketing strategies, as well as marketing activities (for example promotional campaigns) and the budget allocated to them. Marketing planning is the process of setting marketing objectives and devising strategies and tactics to meet these objectives. It has several advantages; for example sharing the marketing plan with other departments and ensuring that the whole organization knows those marketing objectives. Marketing plans can however be rapidly outdated.\n\nMarket segmentation is the process of dividing a market into small groups, called market segments: sub-groups of consumers with similar characteristics. Markets can be segmented in different ways, using factors such as demographics (age, gender, religion, family characteristics, sexual orientation), geography (country, region, rural/urban) or psychographics (social and economic status, values).\n\nMarket segmentation helps businesses to identify the target markets they want to sell to, and to differentiate products and marketing activities according to these target markets. A niche market is a small and narrow market segment, whereas a mass market is a large, broad market segment. Niche marketing (also called concentrated marketing) is a strategy that only targets a specific niche market, whereas mass marketing (also called undifferentiated marketing) targets the entire market.\n\nProduct positioning is the analysis of how consumers perceive a product, compared to its competitors. It is usually represented with a diagram called a position map (or perception map) where the vertical and horizontal axes represent two variables, usually price and quality. Position maps are also useful to help identify gaps or opportunities in the market.\n\nThe USP (unique selling point, unique selling proposition) is what differentiates a product. Having a USP is essential to get competitive advantage and to ensure consumer loyalty.\n\nOrganizations can differentiate themselves from their competitors in different ways:\n\n- Product differentiation (features such as durability, performance or reliability, though competitors can copy or even improve the product)\n- Service differentiation (customer service, delivery, installation, after-sales service)\n- Price differentiation (charging different customer segments different prices for the same product or service)\n- Distribution differentiation (focusing on channels of distribution such as retailers)\n- Relationship differentiation (focusing on personal relationships between staff and customers)\n- Image/reputation differentiation (difficult for new entrants, i.e. businesses entering a new market).",
+    "quiz": [
+      {
+        "question": "Explain the role of marketing planning for a business organization.",
+        "markscheme": "- A marketing plan sets marketing objectives and outlines strategies and tactics to meet them.\n- It includes a budget for marketing activities and helps align all departments with marketing goals.\n- Limitation: marketing plans can become rapidly outdated as market conditions change."
+      },
+      {
+        "question": "Explain the principles of market segmentation and how it helps a business reach its target market.",
+        "markscheme": "- Market segmentation divides a market into sub-groups (segments) of consumers with similar characteristics.\n- Bases for segmentation include demographics, geography, and psychographics.\n- Segmentation helps identify target markets and allows businesses to tailor products and marketing activities to specific consumer groups."
+      },
+      {
+        "question": "Construct and interpret a position map for a set of competing products using given data on price and quality.",
+        "markscheme": "- Draw two axes (e.g. price on the vertical axis, quality on the horizontal axis) and label them clearly.\n- Plot each company/product at the correct position based on the data provided.\n- Interpret by identifying gaps in the market (areas with no competitors) and how each product is positioned relative to rivals."
+      },
+      {
+        "question": "Distinguish between a niche market and a mass market.",
+        "markscheme": "- A niche market is a small, narrow market segment where consumers share specific needs or characteristics.\n- A mass market is a large, broad market segment; mass marketing targets the entire market without differentiation.\n- Niche marketing (concentrated marketing) is more focused but reaches fewer customers; mass marketing reaches more customers but is less tailored."
+      },
+      {
+        "question": "Explain the importance of having a unique selling point/proposition (USP) for a business.",
+        "markscheme": "- A USP is what differentiates a product from its competitors.\n- It is essential for gaining competitive advantage in the market.\n- A strong USP helps ensure consumer loyalty and can justify a premium price."
+      },
+      {
+        "question": "Discuss how organizations can differentiate themselves and their products from competitors.",
+        "markscheme": "- Product differentiation: unique features such as durability or performance (though competitors may copy these).\n- Service differentiation: superior customer service, delivery, or after-sales support.\n- Price differentiation: charging different segments different prices.\n- Distribution, relationship, and image/reputation differentiation are also valid strategies.\n- Each approach has advantages and disadvantages; businesses often combine several strategies."
+      }
+    ]
+  },
+  {
+    "id": "4.3",
+    "unit": 4,
+    "title": "Sales forecasting",
+    "hl": "HL",
+    "objectives": [
+      "Define sales forecasting.",
+      "Explain the terminology of sales forecasting (for example time series analysis).",
+      "Discuss the benefits and limitations of sales forecasting."
+    ],
+    "summary": "Sales forecasting is the process of predicting the future sales of a product. It is important for several reasons: it aids the management of stock and cash flow, and it helps make informed marketing decisions about pricing and promotion.\n\nTime series analysis is a quantitative sales forecasting method that predicts future sales levels from past sales levels, identifying trends, patterns and variations. These variations can be:\n\n- Seasonal — regular changes in demand at different times of the year (for example with a peak before Christmas).\n- Cyclical — linked to the business cycle in the country's economy (for example with a recession).\n- Random — unpredictable changes as anomalies in the time series (for example a very mild winter resulting in unusual demand for ice cream).\n\nCalculating moving averages is a sales forecasting method that identifies and emphasizes the direction of a trend; it helps smooth out fluctuations from sales data by mapping trends over several years. It is then possible to extrapolate future trends. A three-year moving average simply means calculating the mean sales over groups of three years and plotting the results on a chart.\n\nVariations are the difference between actual sales and the trend values.\n\nSales forecasting helps marketing planning and workforce planning, but it has several limitations, especially the fact that it ignores external factors, such as changes in consumer tastes and preferences. It cannot take into account competitors' marketing actions, nor the arrival of new competitors in the market. It is also time-consuming because of its complex nature.",
+    "quiz": [
+      {
+        "question": "Define sales forecasting and explain why it is important for a business.",
+        "markscheme": "- Sales forecasting is the process of predicting the future sales of a product.\n- It aids stock management and cash flow planning.\n- It helps managers make informed marketing decisions about pricing and promotion."
+      },
+      {
+        "question": "Explain the key terminology used in sales forecasting, including time series analysis, moving averages, and the types of variation.",
+        "markscheme": "- Time series analysis predicts future sales from past sales data by identifying trends and variations.\n- Moving averages smooth out fluctuations to highlight the direction of a trend; a three-year moving average averages sales over rolling three-year groups.\n- Seasonal variations: regular demand changes at certain times of year.\n- Cyclical variations: linked to the economic business cycle.\n- Random variations: unpredictable anomalies in the data.\n- Variations = actual sales − trend values."
+      },
+      {
+        "question": "Discuss the benefits and limitations of sales forecasting for a business.",
+        "markscheme": "- Benefits: aids marketing planning, workforce planning, stock management and cash flow forecasting; helps managers make more informed decisions.\n- Limitation: ignores external factors such as changes in consumer tastes.\n- Limitation: cannot account for competitors' actions or new market entrants.\n- Limitation: time-consuming due to the complexity of calculating trends and seasonal variations."
+      }
+    ]
+  },
+  {
+    "id": "4.4",
+    "unit": 4,
+    "title": "Market research",
+    "hl": "SL",
+    "objectives": [
+      "Discuss why and how organizations carry out market research.",
+      "Explain the main methods of primary market research and the main methods of secondary market research.",
+      "Distinguish between qualitative and quantitative research and between different methods of sampling."
+    ],
+    "summary": "Market research is the process of collecting, analysing and reporting data related to a particular market. It has several purposes: it can help identify consumers' needs and wants, it can help measure customers' satisfaction and perception of a product, and it also enables organizations to make well-informed marketing decisions.\n\nMarket research can be carried out:\n\n- Through primary research (also called 'field research') to collect first-hand information, using methods such as surveys (through questionnaires), interviews, focus groups, and observations.\n- Through secondary research (also called 'desk research') to collect data that already exists, using methods such as market analyses (market intelligence reports), academic journals, government publications, media articles and online content.\n\nQuantitative research collects numerical data (aims to answer 'how many?'), is objective, and typically uses surveys with closed questions. Qualitative research collects data about opinions, attitudes and beliefs (aims to answer 'why?'), is subjective, and typically uses surveys with open questions, interviews, or focus groups.\n\nSampling is the process of selecting a group of people to represent the entire group of customers. Three sampling techniques are used in marketing:\n\n1. Quota sampling — targets based on proportions; findings are usually reliable because the sample is representative, but the interviewer may be biased in selecting who to interview.\n2. Random sampling — each person has an equal chance of being chosen; less bias, but may not be representative.\n3. Convenience sampling (opportunity sampling) — based on easy access and proximity; easy to do, but prone to bias and may not be representative.\n\nPrimary methods also have relative advantages and disadvantages: surveys can collect large amounts of data rapidly but respondents may misunderstand questions; interviews achieve high response rates but are time-consuming and costly; focus groups encourage engagement through interaction but some members may dominate; observation shows real behaviour but provides only partial information.",
+    "quiz": [
+      {
+        "question": "Discuss why and how organizations carry out market research.",
+        "markscheme": "- Market research helps identify consumers' needs and wants, measure customer satisfaction, and inform marketing decisions.\n- Organizations use primary research (surveys, interviews, focus groups, observation) to collect first-hand data.\n- Organizations use secondary research (market analyses, academic journals, government publications, online content) to access existing data.\n- The choice of method depends on budget, time, and the type of information needed."
+      },
+      {
+        "question": "Explain one advantage and one disadvantage of a named method of primary market research and one advantage and one disadvantage of a named method of secondary market research.",
+        "markscheme": "- Primary example (survey): advantage — can collect large amounts of data rapidly; disadvantage — respondents may misunderstand questions.\n- Primary example (focus group): advantage — participants may actively engage due to group interaction; disadvantage — some members may dominate.\n- Secondary example (government publications): advantage — trustworthy, large-scale demographic data; disadvantage — may not be up to date.\n- Secondary example (market analyses): advantage — detailed, high-quality reports; disadvantage — usually expensive."
+      },
+      {
+        "question": "Distinguish between qualitative and quantitative research, and between quota, random, and convenience sampling methods.",
+        "markscheme": "- Quantitative research collects numerical data ('how many?'), is objective, and uses closed-question surveys.\n- Qualitative research collects opinions and attitudes ('why?'), is subjective, and uses open questions, interviews, or focus groups.\n- Quota sampling: representative sample by proportion; reliable but may be interviewer-biased.\n- Random sampling: everyone has equal chance of selection; less biased but may be unrepresentative.\n- Convenience sampling: based on easy access; quick and cheap but prone to bias and unrepresentative results."
+      }
+    ]
+  },
+  {
+    "id": "4.5",
+    "unit": 4,
+    "title": "The seven Ps of the marketing mix",
+    "hl": "SOME_HL",
+    "objectives": [
+      "Explain the stages in a product life cycle.",
+      "Examine various extension strategies that could be used by firms.",
+      "Analyse the relationship between the product life cycle, product portfolio and the marketing mix.",
+      "Comment on the relationship between the product life cycle, investment, profit and cash flow.",
+      "Explain the main aspects of branding (such as brand loyalty).",
+      "Comment on the importance of branding.",
+      "Define the different pricing methods, such as penetration pricing and premium pricing.",
+      "Justify the appropriateness of using different pricing methods.",
+      "Explain the main forms of promotion (such as above the line promotion and below the line promotion).",
+      "Discuss the role of social media marketing as a promotional strategy.",
+      "Examine the importance of different types of distribution channel.",
+      "Discuss the importance of employee–customer relationships in marketing a service and cultural variation in these relationships.",
+      "Evaluate the importance of delivery processes in marketing a service and changes in these processes.",
+      "Examine the importance of tangible physical evidence in marketing a service.",
+      "Evaluate the appropriate marketing mixes for particular products or businesses."
+    ],
+    "summary": "**Product**\n\nThe product life cycle model shows the five stages that a product goes through: Introduction, Growth, Maturity, Saturation, and Decline.\n\nThe product life cycle is closely linked to the marketing mix because different marketing actions will take place at different stages. For example, informative advertising is more necessary in the introduction phase, and pricing strategies may change over time. The product life cycle is also linked to investment, profit and cash flow. Investing in promotion is needed in the introductory phase, when there is no profit and cash flow is negative, whereas in the maturity phase investment is much lower, profit reaches its peak and cash flow is positive.\n\nExtension strategies are implemented at the maturity or saturation stages in order to avoid decline. The main extension strategies are market development, new packaging and new promotional strategies.\n\nA brand is a name, symbol, sign or design that differentiates the products of one company from its competitors. The main aspects of branding are brand awareness (the ability of consumers to recognize the existence and availability of a product), brand development (improving or strengthening the image of a product), brand loyalty (when consumers become committed to a brand and buy it repeatedly) and brand value (how much a brand is worth in terms of reputation and potential income). Packaging also plays several roles: it protects the product, aids branding, provides information, and can add security.\n\n**Price**\n\nThe main pricing strategies are:\n\n- Cost-plus pricing: adding a mark-up percentage to the cost of production.\n- Penetration pricing: low initial price to enter a market or launch a new product.\n- Loss leader pricing: charging a low price for one product to attract consumers to buy other higher-priced ones.\n- Predatory pricing: charging very low prices to drive out competitors (illegal in some countries).\n- Premium pricing: setting a very high price to convey exceptional quality or exclusivity.\n- (HL) Dynamic pricing, competitive pricing, contribution pricing, and price elasticity of demand (PED) are also relevant.\n\n**Promotion**\n\nThe aim of promotion is to obtain new customers or retain existing ones by communicating information about the product. This can be done through:\n\n- Above the line promotion: paid advertising in independent mass media (television, radio, newspapers).\n- Below the line promotion: direct mail, trade shows, public relations and sales promotion; cheaper and more focused.\n- Through the line promotion: combining both approaches.\n\nSocial media marketing (SMM) uses social networking platforms to market products. It has advantages such as wide reach and cost savings, but also disadvantages such as accessibility problems.\n\n**Place**\n\nPlace is about how the product reaches its customers, i.e. distribution channels, ranging from zero intermediary (direct: producer to consumer) to several intermediaries (agents, wholesalers, retailers).\n\n**People, Process, Physical evidence**...",
+    "quiz": [
+      {
+        "question": "Explain the five stages of the product life cycle.",
+        "markscheme": "- Introduction: product launched; low sales, high promotion costs, negative cash flow.\n- Growth: sales rise rapidly; profit begins.\n- Maturity: sales peak; profit is highest; investment is lower.\n- Saturation: market becomes full; sales plateau or begin to fall.\n- Decline: sales fall; product may be withdrawn or extension strategies applied."
+      },
+      {
+        "question": "Examine two extension strategies a firm could use to prolong the life of a product at the saturation stage.",
+        "markscheme": "- Market development: entering new markets (e.g. new geographic regions) with the existing product.\n- New packaging: updating the appearance to refresh interest among consumers.\n- New promotional strategies: revising advertising and promotion to re-engage existing or new customers.\n- Each strategy should be explained and linked to avoiding decline."
+      },
+      {
+        "question": "Analyse the relationship between the product life cycle, product portfolio and the marketing mix.",
+        "markscheme": "- Different stages of the product life cycle require different marketing mix strategies (e.g. informative advertising in introduction; price reductions in decline).\n- A product portfolio spanning multiple life cycle stages means a business can apply different marketing mixes simultaneously.\n- Changes in one stage affect decisions across all 7 Ps."
+      },
+      {
+        "question": "Comment on the relationship between the product life cycle, investment, profit and cash flow.",
+        "markscheme": "- Introduction: high investment in promotion; no profit; negative cash flow.\n- Growth: investment continues; profit begins to emerge; cash flow improves.\n- Maturity: lower investment; profit at peak; positive cash flow.\n- Decline: minimal investment; profit and cash flow fall."
+      },
+      {
+        "question": "Explain the main aspects of branding, including brand loyalty.",
+        "markscheme": "- Brand awareness: ability of consumers to recognise a product's existence.\n- Brand development: improving or strengthening the brand image through campaigns.\n- Brand loyalty: consumers repeatedly purchasing the same brand.\n- Brand value: worth of the brand in terms of reputation and potential income."
+      },
+      {
+        "question": "Comment on the importance of branding for a business.",
+        "markscheme": "- A strong brand differentiates a product from competitors and can command a price premium.\n- It builds customer loyalty, generating repeat purchases and stable revenue.\n- It can attract employees who share the brand's values and suppliers/investors who want to be associated with it.\n- A positive brand image supports market share and long-term profitability."
+      },
+      {
+        "question": "Define penetration pricing and premium pricing, and explain when each would be appropriate.",
+        "markscheme": "- Penetration pricing: setting a low initial price to enter a market or launch a new product, attracting buyers quickly. Appropriate when entering a competitive market or building market share quickly.\n- Premium pricing: setting a very high price to convey exceptional quality or exclusivity. Appropriate for luxury brands or products with a strong USP that justifies the higher cost."
+      },
+      {
+        "question": "Justify the use of two different pricing strategies for a given business scenario.",
+        "markscheme": "- Identify the relevant pricing strategies (e.g. cost-plus, penetration, loss leader, predatory, premium).\n- Link each strategy to the specific context (e.g. level of competition, stage of product life cycle, target market).\n- Explain why each strategy is appropriate, referring to the business's objectives and market conditions."
+      },
+      {
+        "question": "Explain the main forms of promotion, distinguishing between above the line and below the line promotion.",
+        "markscheme": "- Above the line promotion: paid advertising in independent mass media (TV, radio, newspapers); wide reach but expensive.\n- Below the line promotion: direct mail, trade shows, public relations, sales promotions; cheaper and more targeted.\n- Through the line: combines both approaches."
+      },
+      {
+        "question": "Discuss the role of social media marketing (SMM) as a promotional strategy.",
+        "markscheme": "- SMM uses social networking platforms (e.g. Instagram, Facebook, LinkedIn) to promote products.\n- Advantages: wide reach, cost savings compared to traditional media, ability to target specific audiences.\n- Disadvantages: accessibility issues, potential for negative viral feedback, difficulty controlling brand message.\n- SMM can be a form of below the line or through the line promotion."
+      },
+      {
+        "question": "Examine the importance of different types of distribution channel for a business.",
+        "markscheme": "- Distribution channels range from direct (producer to consumer, zero intermediaries) to multi-stage (using agents, wholesalers, and/or retailers).\n- The choice of channel affects cost, reach, and control over the product's presentation to the customer.\n- E-commerce enables direct distribution at scale, reducing reliance on physical intermediaries."
+      },
+      {
+        "question": "Discuss the importance of employee–customer relationships in marketing a service, including cultural variation.",
+        "markscheme": "- Customer-fronting employees (e.g. hotel receptionists) are the face of the organization and form the transactional link with customers.\n- Staff are trained in CRM (Customer Relationship Management) to deliver good customer service.\n- Cultural variation means that staff must adapt their behaviour and communication style to different customers' cultural expectations."
+      },
+      {
+        "question": "Evaluate the importance of delivery processes in marketing a service and the impact of changes to these processes.",
+        "markscheme": "- Processes refer to the procedures ensuring access to the service (e.g. online booking, payment methods).\n- Efficient processes improve customer satisfaction and loyalty, especially in e-commerce.\n- Changes (e.g. introducing online payment or faster delivery) can be a source of competitive advantage.\n- However, changes can be costly to implement and may cause disruption if poorly managed."
+      },
+      {
+        "question": "Examine the importance of tangible physical evidence in marketing a service.",
+        "markscheme": "- Physical evidence refers to the visible aspects a customer encounters (e.g. the appearance of a hotel lobby).\n- Because services are intangible, customers use physical evidence as a proxy for quality before purchasing.\n- A well-maintained and appealing physical environment can reassure customers and influence their purchase decision."
+      },
+      {
+        "question": "Evaluate what makes a marketing mix appropriate for a particular product or business.",
+        "markscheme": "- An appropriate marketing mix must be coherent: all 7 Ps must complement each other logically.\n- It must target the right customers, meeting their needs and wants.\n- The right product at the right price, available in the right place, communicated through the right promotion, supported by the right people, processes, and physical evidence.\n- Appropriateness depends on the type of product (good vs. service), the target market, and the business's objectives."
+      }
+    ]
+  },
+  {
+    "id": "4.6",
+    "unit": 4,
+    "title": "International marketing",
+    "hl": "HL",
+    "objectives": [
+      "Analyse how businesses enter international markets.",
+      "Examine the opportunities and threats posed by entry into international markets."
+    ],
+    "summary": "International marketing refers to the marketing of goods and services across national boundaries. There is a difference between global marketing (where firms use a standardized approach to market their products in other countries) and international marketing (where firms adapt their 7 Ps and their marketing approach to suit the culture and expectations of their new customers in different countries). Increasing worldwide competition and globalization are the main cause of the rise in international marketing.\n\nThe main methods of entry into international markets are:\n\n- E-commerce: trading over the internet.\n- Exporting: directly or indirectly, through an agent or by 'piggybacking' (using the distribution channels of another company already present in foreign markets).\n- Foreign direct investment: setting up a production plant (factory) in another country.\n- International joint venture: setting up a new company in partnership with a local one.\n- International franchising: granting a franchise to a franchisee in another country.\n\nEntry into international markets provides many opportunities, such as market development, enhanced brand image and economies of scale. It also poses many threats, economically (for example fluctuating exchange rates), politically (as some countries are less stable), legally (as some countries have protectionist barriers, making it difficult to export there) and linguistically (notably when trading with countries that speak different languages).",
+    "quiz": [
+      {
+        "question": "Analyse the main methods by which a business can enter international markets.",
+        "markscheme": "- E-commerce: trading over the internet, enabling direct access to foreign consumers.\n- Exporting: selling goods abroad directly or through agents/piggybacking.\n- Foreign direct investment: establishing a production plant in another country.\n- International joint venture: partnering with a local company to set up a new business.\n- International franchising: granting a franchise to a local operator in another country.\n- Each method should be evaluated in terms of cost, control, and risk."
+      },
+      {
+        "question": "Examine the opportunities and threats posed by entry into international markets.",
+        "markscheme": "- Opportunities: market development (access to new customers), enhanced brand image, and economies of scale.\n- Economic threats: fluctuating exchange rates affecting revenues and costs.\n- Political threats: instability in some countries makes business difficult.\n- Legal threats: protectionist barriers (e.g. tariffs, quotas) restrict exports.\n- Linguistic threats: language differences create communication challenges.\n- A balanced answer should weigh at least two opportunities against at least two threats."
+      }
+    ]
+  },
+  {
+    "id": "5.1",
+    "unit": 5,
+    "title": "Introduction to operations management",
+    "hl": "SL",
+    "objectives": [
+      "Define operations and outline their relationship to other business functions.",
+      "Explain the role of operations management."
+    ],
+    "summary": "Operations are the fundamental activities of all organizations. The term can be defined as 'what they do and deliver'; another word for it is 'production'. The three other business functions support and enable operations:\n\n- Human resources — because operations are done by people.\n- Accounts and finance — because operations generate revenue but they need to be properly funded.\n- Marketing — because operations produce goods and services that must be promoted, marketed and sold.\n\nOperations management is the business function that manages production, i.e. the creation of goods and services. It is central to the purpose of any organization, as it determines what is produced, how it is produced, and how efficiently resources are used.",
+    "quiz": [
+      {
+        "question": "Define operations and outline their relationship to the other three business functions.",
+        "markscheme": "- Operations = the fundamental activities of an organization; what it does and delivers (also called 'production').\n- HR: operations require people to carry them out.\n- Finance: operations need funding and in turn generate revenue.\n- Marketing: operations produce goods and services that marketing promotes and sells."
+      },
+      {
+        "question": "Explain the role of operations management in a business organization.",
+        "markscheme": "- Operations management oversees the production of goods and services.\n- It ensures that resources (people, equipment, materials) are used efficiently.\n- It is central to the organization's purpose: without effective operations management, the business cannot deliver its products to customers."
+      }
+    ]
+  },
+  {
+    "id": "5.2",
+    "unit": 5,
+    "title": "Operations methods",
+    "hl": "SL",
+    "objectives": [
+      "Distinguish between the following methods of production: job production, batch production, mass production, and mass customization.",
+      "Recommend the most appropriate method of production for a given situation."
+    ],
+    "summary": "There are four methods of production:\n\n- Job production (also called 'customized production') is the most market-oriented: customers decide exactly what the product should be, for example a personalized birthday cake with your name on it.\n- Batch production is suitable for identical products made in groups ('batches'), for example a dozen cakes with the same flavour.\n- Mass production (also called 'flow production', 'standardized production' or 'process production') creates a high volume of standardized products (for example identical loaves of bread).\n- Mass customization (sometimes called 'mass individualized customization') combines mass production with the personalization of custom-made products. Customers can personalize the goods they order and make them unique.\n\nThey each have advantages and disadvantages. Mass production, for example, can achieve economies of scale, unlike job production; however, it is based on the principle of 'product orientation' which, in marketing terms, is not always suitable as it is not market-led. Mass customization shares most features of mass production, the main difference being that finished stock cannot be prepared in advance, though it is rapidly finalized.\n\nIn each situation, one method may be more appropriate than others, depending on several factors, such as the target market, the state of technology and the availability of resources.",
+    "quiz": [
+      {
+        "question": "Distinguish between job production, batch production, mass production, and mass customization.",
+        "markscheme": "- Job production: one-off, fully customized product made to individual customer specifications (e.g. personalized cake).\n- Batch production: identical products made in groups; flexible between batches.\n- Mass production: high volume of standardized, identical products; achieves economies of scale but is product-oriented.\n- Mass customization: combines mass production with personalization; customers choose product features, but finished stock cannot be prepared in advance."
+      },
+      {
+        "question": "Recommend the most appropriate method of production for a given business scenario, justifying your choice.",
+        "markscheme": "- Consider the target market (e.g. bespoke vs. mass-market customers).\n- Consider available technology and resources.\n- Job production suits small-scale, highly customized orders; batch production suits moderate runs of similar products; mass production suits high-volume standardized goods; mass customization suits businesses where customers want personalization at scale.\n- Recommendation must be justified with reference to the scenario's specific context."
+      }
+    ]
+  },
+  {
+    "id": "5.3",
+    "unit": 5,
+    "title": "Lean production and quality management",
+    "hl": "HL",
+    "objectives": [
+      "Define lean production and describe its main features.",
+      "Explain the main methods of lean production.",
+      "Explain the features of 'cradle to cradle' design and manufacturing.",
+      "Distinguish between quality control and quality assurance.",
+      "Explain the following methods of managing quality: quality circle, benchmarking, and total quality management (TQM).",
+      "Evaluate the impact of lean production and TQM on an organization.",
+      "Explain the importance of national and international quality standards."
+    ],
+    "summary": "Operations management is increasingly using principles of lean production in order to cut waste, be more efficient, save money and be more sustainable.\n\nLean production uses several methods including:\n\n- Kaizen: a Japanese term that refers to continuous improvement and continuous changes at all levels of the organization in order to improve processes.\n- Just-in-time (JIT): to reduce the stocks of both raw materials and finished products.\n\nCradle to cradle (C2C) design and manufacturing is a recent model of sustainability stating that once a product is used, it should be recycled in order to recreate the same product.\n\nQuality control and quality assurance should ensure that all products are safe, reliable and offer value for money. Quality control means inspecting finished products to check that they meet the desired level of quality, whereas quality assurance monitors quality standards across the entire production process.\n\nManaging quality can be done in several ways, such as:\n\n- Quality circles: groups of volunteers who meet to discuss ways of improving quality.\n- Benchmarking: comparing products against competitors' products.\n- Total quality management (TQM): an approach to improving quality across the organization, combining several quality tools such as quality chains (involving suppliers) and SPC (Statistical Process Control) data.\n\nLean production and TQM are closely linked; they have many advantages, such as the fact that they can reduce costs (especially in the long term), but also disadvantages, such as the fact that it may take time to change the culture and practices of an organization.\n\nNational and international quality standards are increasingly important in all industries. Meeting recognized standards can help businesses that want to export, giving a competitive edge and reassuring potential customers.",
+    "quiz": [
+      {
+        "question": "Define lean production and describe its main features.",
+        "markscheme": "- Lean production is a production philosophy focused on cutting waste, improving efficiency, saving money, and increasing sustainability.\n- Main features include the elimination of waste (e.g. overproduction, excess stock, defects), continuous improvement (kaizen), and the use of JIT stock management."
+      },
+      {
+        "question": "Explain the main methods of lean production.",
+        "markscheme": "- Kaizen: a Japanese philosophy of continuous, incremental improvement at all organizational levels.\n- Just-in-time (JIT): raw materials are supplied only when needed and goods are produced only when ordered, minimizing stock holdings."
+      },
+      {
+        "question": "Explain the features of 'cradle to cradle' (C2C) design and manufacturing.",
+        "markscheme": "- C2C is a sustainability model stating that once a product is used, it should be recycled to recreate the same product.\n- This creates a closed-loop system with no waste, contrasting with traditional 'cradle to grave' production where products end in landfill."
+      },
+      {
+        "question": "Distinguish between quality control and quality assurance.",
+        "markscheme": "- Quality control: inspecting finished products at the end of the production process to check they meet the required standard.\n- Quality assurance: monitoring quality standards throughout the entire production process, not just at the end.\n- Quality assurance is generally considered more proactive, preventing defects, whereas quality control identifies defects after production."
+      },
+      {
+        "question": "Explain the methods of managing quality: quality circles, benchmarking, and TQM.",
+        "markscheme": "- Quality circles: voluntary groups of employees who meet regularly to identify and discuss ways to improve quality.\n- Benchmarking: comparing the organization's products or processes against those of competitors or industry leaders.\n- TQM (Total Quality Management): an organization-wide approach combining tools such as quality chains (involving suppliers) and SPC to continuously improve quality at every stage."
+      },
+      {
+        "question": "Evaluate the impact of lean production and TQM on an organization.",
+        "markscheme": "- Advantages: reduced costs (especially long-term through waste elimination), improved product quality, enhanced reputation, and greater sustainability.\n- Disadvantages: cultural change is difficult and time-consuming; JIT increases vulnerability to supply chain disruptions; TQM requires significant investment in training.\n- Overall impact depends on the organization's commitment and the effectiveness of implementation."
+      },
+      {
+        "question": "Explain the importance of national and international quality standards for a business.",
+        "markscheme": "- Recognized quality standards (e.g. ISO certification) reassure customers that products meet minimum safety and reliability requirements.\n- Meeting international standards gives businesses a competitive edge when exporting.\n- Standards can open new markets and build trust with international buyers and partners."
+      }
+    ]
+  },
+  {
+    "id": "5.4",
+    "unit": 5,
+    "title": "Location",
+    "hl": "SL",
+    "objectives": [
+      "Analyse the reasons for the choice of location of production.",
+      "Evaluate the following ways of reorganizing production, both nationally and internationally: outsourcing/subcontracting, offshoring, insourcing, and reshoring."
+    ],
+    "summary": "One of the most important decisions that a business has to make is where it will locate (or relocate) production. Numerous factors influence the choice of location or relocation of a production facility, such as cost (of land, labour and transport), competition, available infrastructure and transport/logistics networks, land, labour pool (human resources nearby), government (and local authorities), proximity to suppliers, familiarity with the area, and so on.\n\nOutsourcing (subcontracting) is the practice of using another business (as a 'third party') to complete some parts of the work ('peripheral activities'); the organization can then focus on its core activity. Offshoring is an extension of outsourcing: it means outsourcing to another country ('offshore' = overseas, abroad). Insourcing (in-housing) is the opposite: it is the practice of performing peripheral activities internally, for example to be able to control costs or quality. Reshoring is the process of bringing these activities back into the home country.\n\nWhen considering relocating (including offshoring), it is helpful to distinguish between 'pull factors' and 'push factors'. 'Pull factors' attract a business to a particular place or country (for example better infrastructure, proximity to raw materials, access to a wider labour pool, tax incentives) whereas 'push factors' are reasons to move away from the current location (for example a negative economic climate and increases in energy costs).",
+    "quiz": [
+      {
+        "question": "Analyse the reasons a business might consider when choosing the location of its production facility.",
+        "markscheme": "- Cost factors: price of land, labour costs, transport costs.\n- Access to resources: proximity to suppliers, available labour pool, raw materials.\n- Infrastructure: quality of transport/logistics networks.\n- Government incentives: grants, tax breaks from local or national authorities.\n- Competition and market proximity: closeness to customers or competitors.\n- Pull factors attract a business to a location; push factors drive it away from its current one."
+      },
+      {
+        "question": "Evaluate the use of outsourcing, offshoring, insourcing, and reshoring as ways of reorganizing production.",
+        "markscheme": "- Outsourcing: using a third party for peripheral activities, freeing the firm to focus on core activities; risk of losing quality control.\n- Offshoring: outsourcing to another country; potential cost savings but adds complexity (language, regulation, logistics).\n- Insourcing: bringing activities back in-house; improves control over costs and quality but increases internal complexity.\n- Reshoring: returning production to the home country; can improve sustainability and quality but may increase costs.\n- Each approach involves trade-offs between cost, control, quality, and flexibility."
+      }
+    ]
+  },
+  {
+    "id": "5.5",
+    "unit": 5,
+    "title": "Break-even analysis",
+    "hl": "SL",
+    "objectives": [
+      "Distinguish between 'contribution per unit' and 'total contribution'.",
+      "Construct a break-even chart with the break-even quantity/point (BEQ/BEP).",
+      "Calculate the break-even quantity, profit (or loss), margin of safety, target profit output, target profit and target price.",
+      "Explain the effects of changes in price or cost on the break-even analysis, profit and margin of safety, using graphical and quantitative methods.",
+      "Discuss the benefits and limitations of break-even analysis."
+    ],
+    "summary": "The contribution shows how much a product contributes to the fixed costs and thus to the overall profit of a business, after deducting the variable costs:\n\n- Contribution per unit = price per unit − variable cost per unit\n- Total contribution = total revenue − total variable costs\n  (also: total contribution = contribution per unit × number of units sold)\n- Profit = total contribution − total fixed costs\n  (equivalently: profit = total revenue − total costs)\n\nThe break-even quantity (BEQ) is the minimum number of units that must be sold so that all costs are covered by revenues. At the break-even point (BEP) there is no loss, but no profit either. It can be calculated:\n\n- BEQ = fixed costs ÷ contribution per unit\n- Or using the 'total costs = total revenue' method.\n\nOnce the break-even point is reached, the company starts making profit. Before the BEP, there is a loss. The margin of safety is the output amount that exceeds the break-even quantity:\n\n- Margin of safety = current output − break-even output\n\nFurther calculations based on the BEQ formula:\n\n- Target profit output = (fixed costs + target profit) ÷ contribution per unit\n- Break-even revenue = (fixed costs ÷ contribution per unit) × price per unit\n\nOn a break-even chart, an increase in fixed costs or variable costs pushes the BEQ higher, with a decrease in the margin of safety.\n\nBreak-even analysis has several advantages (for example the chart is easy to use and interpret) but also disadvantages (for example it assumes that all costs and revenues are linear, which is not always the case, for example with price reductions or discounts).",
+    "quiz": [
+      {
+        "question": "Distinguish between contribution per unit and total contribution.",
+        "markscheme": "- Contribution per unit = price per unit − variable cost per unit; it shows how much each unit sold contributes towards fixed costs and profit.\n- Total contribution = total revenue − total variable costs (or contribution per unit × units sold); it shows the overall contribution from all units sold.\n- Total contribution is used to calculate profit: profit = total contribution − total fixed costs."
+      },
+      {
+        "question": "Construct a fully labelled break-even chart to scale for a given scenario.",
+        "markscheme": "- Draw and label both axes: y-axis = cost/revenue ($), x-axis = output/sales (units).\n- Plot the fixed cost line (horizontal), the total cost line (starts at fixed cost, slopes upward), and the total revenue line (starts at origin, slopes upward).\n- Mark the break-even point where total revenue = total cost.\n- Indicate the margin of safety if current output exceeds BEQ.\n- All lines and key points must be labelled."
+      },
+      {
+        "question": "Calculate the break-even quantity, profit (or loss), margin of safety, and target profit output for a given scenario.",
+        "markscheme": "- BEQ = fixed costs ÷ contribution per unit.\n- Profit = (contribution per unit × units sold) − fixed costs.\n- Margin of safety = current output − BEQ.\n- Target profit output = (fixed costs + target profit) ÷ contribution per unit.\n- All calculations must show working and include appropriate units."
+      },
+      {
+        "question": "Explain the effects of changes in price or cost on the break-even point and margin of safety, using graphical and/or quantitative methods.",
+        "markscheme": "- An increase in fixed costs raises the total cost line, increasing BEQ and reducing the margin of safety.\n- An increase in variable costs steepens the total cost line, again increasing BEQ and reducing margin of safety.\n- A price increase steepens the total revenue line, reducing BEQ and increasing margin of safety.\n- Changes can be shown on the break-even chart by redrawing the relevant lines."
+      },
+      {
+        "question": "Discuss the benefits and limitations of break-even analysis.",
+        "markscheme": "- Benefits: the break-even chart is easy to construct and interpret; it clearly shows the minimum output needed to cover costs; it enables 'what-if' scenario planning.\n- Limitation: assumes linear costs and revenues, which is unrealistic (e.g. bulk discounts change variable costs; price reductions affect revenue).\n- Limitation: based on predicted figures that may not reflect actual results; ignores external factors such as changes in demand."
+      }
+    ]
+  },
+  {
+    "id": "5.6",
+    "unit": 5,
+    "title": "Production planning",
+    "hl": "HL",
+    "objectives": [
+      "Explain the local and global supply chain process.",
+      "Contrast just-in-case (JIC) and just-in-time (JIT).",
+      "Construct and interpret stock control charts based on lead time, buffer stock, re-order level and re-order quantity.",
+      "Calculate and interpret: capacity utilization rate, labour productivity, productivity rate, cost to buy (CTB), cost to make (CTM), defect rate, capital productivity, and operating leverage."
+    ],
+    "summary": "The supply chain is the system of connected organizations, information, logistics, resources, and activities that a business needs to reach its customers. It includes several external stakeholders: the suppliers, distributors and retailers. Supply chains can be short and local (which is more sustainable) or long and international, involving exports and imports (which is less sustainable).\n\nThe two methods of stock control are:\n\n- Just-in-case (JIC): a traditional method where stock levels of raw materials and finished products are kept high, in case of a sudden increase in demand.\n- Just-in-time (JIT): a more modern method where raw materials are supplied only when necessary, and goods are produced only when there is an order, without stock of finished products.\n\nJIC and JIT both have advantages and disadvantages — for example JIC may reduce costs by buying in bulk and getting discounts from suppliers, but JIT does not require storage space.\n\nKey stock control concepts include: maximum stock level, minimum stock level (buffer stock), lead time (between ordering and receiving new stock), optimal stock level, re-order level, re-order quantity, and the nature of stock (may be perishable).\n\nProduction managers can calculate the capacity utilization rate:\n\n- Capacity utilization rate = (actual output ÷ maximum productive capacity) × 100\n\n- Productivity rate = (total output ÷ total input) × 100\n- Defect rate = (number of defective units ÷ total output) × 100\n- Labour productivity = total output ÷ total hours worked\n- Working capital productivity = sales revenue ÷ (current assets − current liabilities)\n- Operating leverage = [quantity × (price − variable cost per unit)] ÷ [quantity × (price − variable cost per unit) − fixed costs]\n- CTB (cost to buy) = Price × Quantity\n- CTM (cost to make) = (Variable Costs × Quantity) + Fixed Costs",
+    "quiz": [
+      {
+        "question": "Explain the local and global supply chain process, including the roles of suppliers, distributors and retailers.",
+        "markscheme": "- The supply chain is the system of organizations, information, logistics, and activities a business needs to deliver products to customers.\n- It includes suppliers (provide raw materials), distributors (move goods), and retailers (sell to end customers).\n- Short/local supply chains are more sustainable; long/international chains involve exports and imports but are less sustainable."
+      },
+      {
+        "question": "Contrast just-in-case (JIC) and just-in-time (JIT) stock control methods.",
+        "markscheme": "- JIC: high stock levels maintained as a buffer against unexpected demand surges; may reduce costs through bulk purchasing but requires storage space and ties up capital.\n- JIT: stock ordered and delivered only when needed; no finished goods stockpile; reduces storage costs and waste but increases vulnerability to supply disruptions.\n- JIT is more aligned with lean production principles; JIC provides greater security against demand fluctuations."
+      },
+      {
+        "question": "Construct and interpret a stock control chart, identifying buffer stock, lead time, re-order level and re-order quantity.",
+        "markscheme": "- Buffer stock (minimum stock level): the minimum quantity held to prevent running out.\n- Lead time: the period between placing an order and receiving the stock.\n- Re-order level: the stock level at which a new order must be placed to replenish before reaching buffer stock.\n- Re-order quantity: the amount ordered each time.\n- Chart should show a sawtooth pattern with stock falling to the re-order level, then rising after delivery."
+      },
+      {
+        "question": "Calculate and interpret the capacity utilization rate, labour productivity, and defect rate for a given production scenario.",
+        "markscheme": "- Capacity utilization rate (%) = (actual output ÷ maximum productive capacity) × 100; a higher rate indicates more efficient use of capacity.\n- Labour productivity = total output ÷ total hours worked; higher values indicate more efficient workers.\n- Defect rate (%) = (number of defective units ÷ total output) × 100; a lower defect rate indicates higher quality.\n- All answers must include appropriate units and the % sign where required."
+      }
+    ]
+  },
+  {
+    "id": "5.7",
+    "unit": 5,
+    "title": "Crisis management and contingency planning",
+    "hl": "HL",
+    "objectives": [
+      "Distinguish between crisis management and contingency planning.",
+      "Analyse factors that affect effective crisis management.",
+      "Analyse the impact of contingency planning for a given organization or situation."
+    ],
+    "summary": "Crisis management is a direct response to a specific, unpredictable event, whereas contingency planning refers to an organization's efforts to minimize the effects of a potential crisis.\n\nThe main factors that affect crisis management are:\n\n- Communication from senior managers.\n- Transparency: telling stakeholders the truth.\n- Speed: in both actions and communication.\n- Control of the impacts.\n\nNot every crisis can be anticipated, but contingency planning is about being prepared in advance, just in case. Four impacts are important for contingency planning:\n\n- Risks: what risks, to whom, and how likely are they? (This is called 'risk assessment' and organizations may prepare a 'risk assessment register'.)\n- Cost: contingency planning may be costly, but less so than dealing with the crisis itself.\n- Time: contingency planning takes time, especially for preparation.\n- Safety: contingency planning must put safety first.",
+    "quiz": [
+      {
+        "question": "Distinguish between crisis management and contingency planning.",
+        "markscheme": "- Crisis management is a direct, reactive response to a specific unpredictable event that has already occurred.\n- Contingency planning is a proactive process of preparing in advance to minimize the effects of a potential future crisis.\n- Key distinction: crisis management is reactive; contingency planning is proactive."
+      },
+      {
+        "question": "Analyse the factors that affect effective crisis management.",
+        "markscheme": "- Communication: clear, timely communication from senior managers informs and reassures all stakeholders.\n- Transparency: telling stakeholders the truth builds trust and prevents rumour.\n- Speed: fast action and communication limit the spread and severity of the crisis.\n- Control of impacts: actively managing consequences (e.g. financial, reputational) reduces long-term damage.\n- Effective crisis management depends on having all four factors in place."
+      },
+      {
+        "question": "Analyse the impact of contingency planning for a given organization or situation.",
+        "markscheme": "- Positive impact: reduces the severity of a crisis if it occurs, protecting the organization's reputation, finances, and stakeholders.\n- Cost: contingency planning requires investment in time and money, but this is generally less than the cost of an unmanaged crisis.\n- Risk assessment (and risk registers) help prioritize planning efforts.\n- Safety: contingency plans prioritize protecting people, which is both an ethical obligation and a legal requirement in many countries."
+      }
+    ]
+  },
+  {
+    "id": "5.8",
+    "unit": 5,
+    "title": "Research and development",
+    "hl": "HL",
+    "objectives": [
+      "Discuss the importance of research and development (R&D) for a business.",
+      "Explain the importance of developing goods and services that address customers' unmet needs.",
+      "Explain intellectual property protection, patents, copyrights and trademarks.",
+      "Explain the difference between incremental innovation and disruptive innovation."
+    ],
+    "summary": "Research and development (R&D) is important in all industries. Large businesses often have dedicated R&D departments, but innovation occurs in all sectors and organizations: even a small local bakery can be innovative. R&D is not just about technology: all companies engage in R&D in their own way.\n\nThe aim is to develop goods and services that address customers' unmet needs. Successful R&D has many advantages for a business, such as enhancing the company's image and motivating the workforce; there are disadvantages too, such as opportunity costs — investing in R&D means not investing in other areas such as promotion and professional development (staff upskilling).\n\nIntellectual property rights (IP rights) are defined by the WTO as 'the rights given to persons over the creations of their minds'. It is helpful to distinguish between:\n\n- Copyrights: protection given to the author from the unlawful copying of material they created.\n- A patent: an exclusive right granted for an invention, excluding competitors from copying and commercializing the exact same product.\n- A trademark: a form of IP rights typically for logos, slogans, designs, and phrases that help customers recognize a brand.\n\nInnovation is an essential part of R&D. There are several types:\n\n- Incremental innovation: slight, gradual change to a product or service (as opposed to 'radical innovation').\n- Disruptive innovation: so strong and impactful that it changes the whole industry.\n\nNumerous factors may influence R&D in an organization, such as organizational culture, technology, resources and past experience.",
+    "quiz": [
+      {
+        "question": "Discuss the importance of research and development (R&D) for a business.",
+        "markscheme": "- R&D enables businesses to develop new products and improve existing ones, keeping them competitive.\n- It can enhance the company's image and motivate the workforce.\n- R&D involves opportunity costs: funds invested in R&D cannot be spent on promotion or staff development.\n- R&D is relevant to businesses of all sizes and sectors, not just large technology firms."
+      },
+      {
+        "question": "Explain the importance of developing goods and services that address customers' unmet needs.",
+        "markscheme": "- Identifying and addressing unmet needs gives a business a competitive advantage.\n- Products that meet unmet needs can generate new revenue streams and expand the customer base.\n- It aligns with a market orientation approach, ensuring the product has existing demand."
+      },
+      {
+        "question": "Explain intellectual property protection, distinguishing between patents, copyrights and trademarks.",
+        "markscheme": "- IP rights are rights given to persons over the creations of their minds (WTO definition).\n- Copyright: protects authors/creators from unlawful copying of their work.\n- Patent: exclusive right for an invention, preventing competitors from copying and commercializing the same product.\n- Trademark: protects logos, slogans, designs, and phrases that identify a brand."
+      },
+      {
+        "question": "Explain the difference between incremental innovation and disruptive innovation.",
+        "markscheme": "- Incremental innovation: small, gradual improvements to an existing product or service (e.g. a new version of a smartphone with a better camera).\n- Disruptive innovation: a radical change so significant that it transforms or overturns an entire industry (e.g. the introduction of streaming services disrupting traditional broadcasting).\n- Incremental innovation is lower risk; disruptive innovation carries higher risk but potentially much greater reward."
+      }
+    ]
+  },
+  {
+    "id": "5.9",
+    "unit": 5,
+    "title": "Management information systems",
+    "hl": "HL",
+    "objectives": [
+      "Define key terms related to information systems management: database, data mining and data analytics.",
+      "Examine how companies use data mining and data analytics to inform decision-making, create customer loyalty programmes, and monitor their employees.",
+      "Define cybercrime and cybersecurity.",
+      "Analyse some of the critical infrastructures that are part of advanced computer technologies: artificial neural networks, data centres and cloud computing.",
+      "Distinguish between big data, virtual reality, the internet of things and artificial intelligence.",
+      "Evaluate the benefits, risks and ethical implications of advanced computer technologies and technological innovation on business decision-making and stakeholders."
+    ],
+    "summary": "An information system (IS) is composed of digital databases that record information. Advanced information systems enable two related practices: data mining and data analytics. Data mining is the process of finding trends, patterns, and correlations within large datasets. Data analytics is the process of inspecting and modelling data in order to discover information; unlike data mining, it does not seek hidden patterns or test hypotheses, but draws conclusions from the analysis of raw data collected.\n\nData mining and data analytics have many functions:\n\n- In marketing, they can help managers make informed decisions, for example through market research and customer loyalty programmes that record all purchases.\n- In HRM, they can help monitor employees by recording who does what and when. This use of digital technology to monitor workers is called Digital Taylorism.\n\nOrganizations increasingly make use of advanced computer technologies, such as cloud computing (the delivery of services via the internet, e.g. data storage, networking and software) hosted in data centres (buildings designed to house computer systems and their components). These technologies have supported the growth of e-commerce in all its forms (B2B, B2C, C2C).\n\nSome areas are in the growth phase of their lifecycle, for example the use of big data (extremely large databases that can be analysed to show trends and patterns) and the internet of things (IoT, the network of connected devices that transmit data to one another without human involvement). Others are still in their developmental phase, such as virtual reality (VR, the creation of simulated three-dimensional environments for commercial purposes), artificial neural networks (ANN, a computing system designed to simulate how the human brain analyses and processes information), and artificial intelligence (AI, the ability of computers and robots to mimic humans, especially how humans think and process information).\n\nWith the increasing use of these innovations, many risks are present, such as cybercrime and breaches of cybersecurity (the practice of defending IT systems against malicious attacks), as well as ethical issues of privacy, confidentiality and anonymity.",
+    "quiz": [
+      {
+        "question": "Define database, data mining and data analytics as they relate to information systems management.",
+        "markscheme": "- Database: a structured digital system that records and stores information.\n- Data mining: the process of finding trends, patterns, and correlations within large datasets.\n- Data analytics: the process of inspecting and modelling data to discover information and draw conclusions from raw data (without necessarily seeking hidden patterns or testing hypotheses as in data mining)."
+      },
+      {
+        "question": "Examine how companies use data mining and data analytics to inform decision-making, create customer loyalty programmes, and monitor employees.",
+        "markscheme": "- Decision-making: data analytics provides insights into market trends and customer behaviour, enabling more informed managerial decisions.\n- Customer loyalty programmes: loyalty schemes record purchase data, enabling targeted promotions and personalized marketing.\n- Employee monitoring: Digital Taylorism uses technology to track employee activities (who does what and when), enabling performance management but raising ethical concerns."
+      },
+      {
+        "question": "Define cybercrime and cybersecurity.",
+        "markscheme": "- Cybercrime: criminal activities conducted via the internet or targeting IT systems (e.g. hacking, data theft, ransomware attacks).\n- Cybersecurity: the practice of defending IT systems, networks, and data against malicious attacks and unauthorized access."
+      },
+      {
+        "question": "Analyse the role of artificial neural networks, data centres and cloud computing as critical infrastructures in advanced computer technologies.",
+        "markscheme": "- Artificial neural networks (ANN): computing systems designed to simulate how the human brain analyses and processes information; used in AI applications.\n- Data centres: purpose-built buildings that house computer systems and components; they underpin cloud services and large-scale data storage.\n- Cloud computing: delivery of services (storage, networking, software) via the internet; enables businesses to scale operations without large capital investment in hardware."
+      },
+      {
+        "question": "Distinguish between big data, virtual reality, the internet of things and artificial intelligence.",
+        "markscheme": "- Big data: extremely large datasets analysed to reveal trends and patterns.\n- Virtual reality (VR): creation of simulated three-dimensional environments for commercial or other purposes.\n- Internet of things (IoT): network of connected devices that transmit data to one another without human involvement.\n- Artificial intelligence (AI): the ability of computers and robots to mimic human thinking and information processing."
+      },
+      {
+        "question": "Evaluate the benefits, risks and ethical implications of advanced computer technologies on business decision-making and stakeholders.",
+        "markscheme": "- Benefits: improved decision-making through data analytics, growth of e-commerce, enhanced customer loyalty, and operational efficiency.\n- Risks: cybercrime and cybersecurity breaches can disrupt operations and damage reputation.\n- Ethical implications: privacy concerns (data collected without clear consent), confidentiality (risk of data leaks), and the ethics of Digital Taylorism (employee monitoring).\n- A balanced evaluation should consider the perspectives of multiple stakeholders: customers, employees, managers, and shareholders."
+      }
+    ]
+  }
+]

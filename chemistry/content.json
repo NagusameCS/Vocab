@@ -1,0 +1,733 @@
+[
+  {
+    "id": "S1.1",
+    "unit": 1,
+    "title": "Introduction to the particulate nature of matter",
+    "hl": "SL",
+    "objectives": [
+      "Distinguish between the properties of elements, compounds and mixtures.",
+      "Distinguish between the different states of matter.",
+      "Use state symbols (s, l, g and aq) in chemical equations.",
+      "Interpret observable changes in physical properties and temperature during changes of state.",
+      "Convert between values in the Celsius and Kelvin scales."
+    ],
+    "summary": "All matter is made up of particles — atoms, molecules, or ions — and chemistry is the study of how these particles interact and transform. The most fundamental classification of matter is into elements, compounds, and mixtures. Elements are pure substances composed of only one type of atom and cannot be chemically broken down further. Compounds are pure substances formed when atoms of two or more different elements bond together in a fixed ratio; they can only be separated by chemical reactions, not by physical means. Mixtures contain two or more substances in no fixed ratio, and crucially, the components are not chemically bonded, so they can be separated by physical techniques such as filtration, distillation, evaporation, recrystallisation, or chromatography.\n\nMatter exists in three common states: solid, liquid, and gas. In solids, particles are arranged in fixed, ordered positions and can only vibrate — this gives solids definite shape and volume. In liquids, particles are close together but can move past one another, giving liquids a definite volume but no fixed shape. In gases, particles move rapidly and randomly with negligible intermolecular forces, so gases have neither fixed shape nor fixed volume. The kinetic molecular theory models these states by relating the behaviour of particles to their kinetic energy.\n\nTemperature is a measure of the average kinetic energy of the particles in a substance. The Kelvin scale is an absolute scale of temperature where 0 K (absolute zero) represents the point at which particles have their minimum possible kinetic energy. The relationship between Celsius and Kelvin is: $T(\\text{K}) = T(°\\text{C}) + 273.15$. Many calculations in chemistry require the use of kelvin.\n\nChanges of state occur when energy is transferred between a substance and its surroundings. When matter absorbs energy and moves from a more condensed state to a less condensed state (e.g. melting or boiling), the process is endothermic and the temperature of the surroundings decreases. When matter releases energy and moves to a more condensed state (e.g. condensation or freezing), the process is exothermic. During a change of state, the temperature of the substance remains constant because all the absorbed or released energy is used to overcome or establish intermolecular attractions, not to change kinetic energy.\n\nChemical equations are used to represent reactions, showing reactants on the left and products on the right, separated by a reaction arrow. The stoichiometric coefficients in a balanced equation give the ratio in which chemical species react. State symbols are used to indicate the physical state of each species: (s) for solid, (l) for liquid, (g) for gas, and (aq) for a substance dissolved in water (aqueous solution). Note that water in liquid form carries the state symbol (l), not (aq). Equations must always be balanced — the number of each type of atom must be the same on both sides — by adjusting stoichiometric coefficients, never by changing chemical formulas.",
+    "quiz": [
+      {
+        "question": "Distinguish between an element, a compound, and a mixture, giving one example of each.",
+        "markscheme": "An element is a pure substance containing only one type of atom that cannot be chemically decomposed (e.g. iron, Fe). A compound is a pure substance formed from two or more elements chemically bonded in a fixed ratio (e.g. water, $\\mathrm{H_2O}$). A mixture contains two or more substances in no fixed ratio that are not chemically bonded and can be separated by physical methods (e.g. seawater, a mixture of water and dissolved salts). Key distinction: compounds have fixed composition and properties different from their elements; mixtures have variable composition and retain properties of their components."
+      },
+      {
+        "question": "Describe the arrangement and movement of particles in solids, liquids, and gases.",
+        "markscheme": "Solid: particles in fixed, ordered positions; movement limited to vibration; definite shape and volume. Liquid: particles close together but not in fixed positions; particles can move past one another; definite volume but no fixed shape. Gas: particles far apart, moving randomly at high speed; negligible intermolecular forces; no fixed shape or volume. Temperature is a measure of the average kinetic energy of the particles; higher temperature means greater average kinetic energy."
+      },
+      {
+        "question": "Use state symbols correctly in a balanced chemical equation for the reaction of solid calcium carbonate with dilute hydrochloric acid solution to produce calcium chloride solution, carbon dioxide gas and liquid water.",
+        "markscheme": "$\\mathrm{CaCO_3}$(s) + $2\\mathrm{HCl}$(aq) → $\\mathrm{CaCl_2}$(aq) + $\\mathrm{CO_2}$(g) + $\\mathrm{H_2O}$(l). Award marks for: correct formulas; balanced equation (2 $\\mathrm{HCl}$, 1 $\\mathrm{CaCO_3}$, 1 $\\mathrm{CaCl_2}$, 1 $\\mathrm{CO_2}$, 1 $\\mathrm{H_2O}$); all four state symbols correct; water given (l) not (aq)."
+      },
+      {
+        "question": "Interpret the temperature–time graph of a pure substance being heated from below its melting point to above its boiling point, identifying the changes of state.",
+        "markscheme": "The graph shows two flat horizontal regions (plateaus) where temperature is constant despite continued heating. The first plateau corresponds to melting (solid → liquid); energy is absorbed to overcome intermolecular forces without increasing kinetic energy. The second plateau corresponds to boiling (liquid → gas). The rising sections between plateaus represent increasing average kinetic energy (temperature) within each state. Melting is endothermic; the substance absorbs energy from its surroundings."
+      },
+      {
+        "question": "Convert 25°C to kelvin and explain why the Kelvin scale is used in chemical calculations.",
+        "markscheme": "25°C + 273.15 = 298.15 K (accept 298 K). The Kelvin scale is used because it is an absolute scale: 0 K represents the lowest possible temperature (absolute zero), at which particles have minimum kinetic energy. Kelvin values are always positive, which is essential for calculations such as the ideal gas equation ($pV = nRT$), where a negative temperature would give nonsensical results."
+      }
+    ]
+  },
+  {
+    "id": "S1.2",
+    "unit": 1,
+    "title": "The nuclear atom",
+    "hl": "Some HL",
+    "objectives": [
+      "Use the nuclear symbol to deduce the number of protons, neutrons and electrons in atoms and ions.",
+      "Perform calculations involving non-integer relative atomic masses and abundance of isotopes from given data.",
+      "Interpret mass spectra in terms of identity and relative abundance of isotopes (Additional HL)."
+    ],
+    "summary": "Every chemical reaction can be understood in terms of atoms. An atom consists of a dense, positively charged nucleus containing protons and neutrons (collectively called nucleons), surrounded by negatively charged electrons that occupy the space outside the nucleus. Protons have a relative charge of +1 and a relative mass of 1; neutrons have no charge and a relative mass of 1; electrons have a relative charge of -1 and negligible mass (approximately 1/1836 of a proton's mass). Because electrons have negligible mass, the mass of an atom is effectively concentrated in its nucleus.\n\nThe identity of an element is determined by its atomic number, Z, which equals the number of protons in the nucleus. All atoms of the same element have the same Z. The mass number, A, is the total number of nucleons (protons + neutrons), so the number of neutrons equals A - Z. In a neutral atom, the number of electrons equals the number of protons. For ions, the charge indicates the difference: a positive ion has lost electrons (fewer electrons than protons), while a negative ion has gained electrons (more electrons than protons). The nuclear symbol for an element X is written as (A on top, Z below)X, allowing all three quantities to be deduced.\n\nIsotopes are atoms of the same element with the same number of protons but different numbers of neutrons, hence different mass numbers. Because chemical properties depend on electron configuration (and thus on the number of protons), isotopes of the same element have identical chemical properties. However, because their masses differ, their physical properties — such as density, melting point, and boiling point — are slightly different.\n\nThe relative atomic mass ($A_r$) of an element is not a whole number because it is the weighted average of the masses of all naturally occurring isotopes, relative to one-twelfth of the mass of a carbon-12 atom. If an element has isotopes of mass m1 and m2 with fractional abundances a1 and a2 (where $a_1 + a_2 = 1$), then $A_r = a_1 \\times m_1 + a_2 \\times m_2$. The unified atomic mass unit (u) is defined as exactly one-twelfth of the mass of a carbon-12 atom.\n\nAt the Additional Higher Level, a mass spectrometer is used to determine the isotopic composition of elements. In a mass spectrometer, a sample is vaporised and ionised, and the resulting ions are accelerated and deflected by a magnetic field according to their mass-to-charge ratio (m/z). The resulting mass spectrum shows peaks at each m/z value, with the height of each peak proportional to the relative abundance of that isotope. This data can be used to calculate the relative atomic mass of the element with high precision.",
+    "quiz": [
+      {
+        "question": "Deduce the number of protons, neutrons, and electrons in the species 32$\\mathrm{S^{2-}}$ and 63$\\mathrm{Cu^+}$.",
+        "markscheme": "32$\\mathrm{S^{2-}}$: Z = 16, so 16 protons; A = 32, so 32 - 16 = 16 neutrons; charge = 2-, so electrons = 16 + 2 = 18. \n63$\\mathrm{Cu^+}$: Z = 29, so 29 protons; A = 63, so 63 - 29 = 34 neutrons; charge = 1+, so electrons = 29 - 1 = 28."
+      },
+      {
+        "question": "Calculate the relative atomic mass of chlorine given that it consists of 75.77% 35Cl (mass 34.97 u) and 24.23% 37Cl (mass 36.97 u).",
+        "markscheme": "$A_r$ = (0.7577 × 34.97) + (0.2423 × 36.97) = 26.50 + 8.96 = 35.46. The relative atomic mass has no units because it is a ratio. This non-integer value reflects the weighted average of both isotopes according to their natural abundances."
+      },
+      {
+        "question": "Explain why isotopes of the same element have identical chemical properties but slightly different physical properties.",
+        "markscheme": "Chemical properties depend on the number and arrangement of electrons, which is the same for all isotopes of a given element (same number of protons, therefore same number of electrons in a neutral atom). Physical properties such as density, melting point, and boiling point depend on mass: isotopes have different numbers of neutrons and therefore different masses, leading to slightly different physical properties. For example, heavy water ($\\mathrm{D_2O}$, where D = 2H) has a higher boiling point and density than ordinary water ($\\mathrm{H_2O}$)."
+      }
+    ]
+  },
+  {
+    "id": "S1.3",
+    "unit": 1,
+    "title": "Electron configurations",
+    "hl": "Some HL",
+    "objectives": [
+      "Qualitatively describe the relationship between colour, wavelength, frequency and energy across the electromagnetic spectrum.",
+      "Distinguish between a continuous spectrum and a line spectrum.",
+      "Describe the emission spectrum of the hydrogen atom, including relationships between lines and energy transitions.",
+      "Deduce the maximum number of electrons that can occupy each energy level.",
+      "Recognize the shape and orientation of s and p atomic orbitals.",
+      "Apply the Aufbau principle, Hund's rule and the Pauli exclusion principle to deduce electron configurations for atoms and ions up to Z = 36.",
+      "Explain trends and discontinuities in first ionization energy across a period and down a group (Additional HL).",
+      "Calculate the first ionization energy from spectral convergence data (Additional HL).",
+      "Deduce the group of an element from its successive ionization data (Additional HL)."
+    ],
+    "summary": "Atoms absorb and emit electromagnetic radiation in quantised amounts. Electromagnetic radiation spans a continuous spectrum from low-frequency radio waves (low energy, long wavelength) to high-frequency gamma rays (high energy, short wavelength). The energy E of a photon is related to its frequency f by $E = hf$, and its wavelength by $c = \\lambda f$, where h is the Planck constant ($6.63 \\times 10^{-34}$ J s) and c is the speed of light ($3.00 \\times 10^{8}$ m s-1). Therefore, energy is inversely proportional to wavelength: shorter wavelengths correspond to higher energy photons.\n\nWhen white light passes through a prism, it produces a continuous spectrum of all wavelengths. In contrast, when electrons in excited atoms fall from higher to lower energy levels, they emit photons of specific wavelengths, producing a line emission spectrum — a series of coloured lines against a dark background. The wavelengths in the hydrogen emission spectrum correspond to transitions of the electron between specific energy levels: transitions to the $n = 2$ level produce visible light (the Balmer series), transitions to $n = 1$ produce ultraviolet light, and transitions to $n = 3$ produce infrared light.\n\nThe main energy levels are assigned integer numbers $n = 1$, 2, 3, ... and each can hold a maximum of $2n^2$ electrons. Each main energy level is subdivided into sublevels labelled s, p, d, and f, of successively higher energy within the same level. An atomic orbital is a region of space with a high probability of finding an electron. The s sublevel contains one spherical orbital; the p sublevel contains three dumbbell-shaped orbitals at right angles to each other. Each orbital holds a maximum of two electrons with opposite spins.\n\nElectron configurations are written by assigning electrons to sublevels following three principles. The Aufbau principle states that electrons occupy the lowest available energy orbital first. Hund's rule of maximum multiplicity states that electrons fill degenerate orbitals singly before pairing. The Pauli exclusion principle states that no orbital can hold more than two electrons, and those two electrons must have opposite spins. In transition metals, electrons are first removed from the outermost energy level (highest n) when forming cations — so $\\mathrm{Fe^{2+}}$ has the configuration $[\\mathrm{Ar}]3d^6$, not $[\\mathrm{Ar}]3d^44s^2$.\n\nAt the Additional Higher Level, successive ionization energies reveal the shell structure of atoms. The first ionization energy (IE1) is the energy required to remove one mole of electrons from one mole of gaseous atoms in their ground state. Large jumps in successive ionization energies indicate that an electron is being removed from a lower energy level. Across a period, IE1 generally increases because of increasing nuclear charge and decreasing atomic radius, but discontinuities occur between groups 2 and 13 (the 3p electron is easier to remove than a paired 3s electron) and between groups 15 and 16 (the paired p electron is easier to remove than a singly occupied one). The convergence limit of a spectral series at high frequency corresponds to the ionization energy of the atom.",
+    "quiz": [
+      {
+        "question": "Describe the relationship between wavelength, frequency and energy for electromagnetic radiation.",
+        "markscheme": "Frequency and wavelength are inversely related: $c = \\lambda f$, where c = $3.00 \\times 10^{8}$ m/s. Energy and frequency are directly proportional: $E = hf$. Therefore energy and wavelength are inversely proportional. Short wavelength = high frequency = high energy photons (e.g. gamma rays, X-rays). Long wavelength = low frequency = low energy photons (e.g. radio waves, infrared). Visible light is in the range approximately 400–700 nm."
+      },
+      {
+        "question": "Distinguish between a continuous spectrum and a line emission spectrum, and explain what a line emission spectrum reveals about atomic energy levels.",
+        "markscheme": "A continuous spectrum contains all wavelengths/colours across a range (e.g. white light through a prism). A line emission spectrum consists of discrete lines at specific wavelengths against a dark background, produced when electrons fall from higher to lower energy levels and emit photons. The specific wavelengths prove that electrons can only exist in discrete (quantised) energy levels; each line corresponds to a specific transition. The hydrogen emission spectrum in the visible region (Balmer series) arises from transitions to $n = 2$."
+      },
+      {
+        "question": "Deduce the maximum number of electrons in each of the first four main energy levels.",
+        "markscheme": "Using $2n^2$: $n = 1$: $2(1)^2$ = 2 electrons; $n = 2$: $2(2)^2$ = 8 electrons; $n = 3$: $2(3)^2$ = 18 electrons; $n = 4$: $2(4)^2$ = 32 electrons. These limits arise from the number of sublevels and orbitals in each level: level 1 has only 1s (1 orbital); level 2 has 2s + 2p (4 orbitals); level 3 has 3s + 3p + 3d (9 orbitals); each orbital holds 2 electrons."
+      },
+      {
+        "question": "Apply the Aufbau principle, Hund's rule and the Pauli exclusion principle to write the full electron configurations of Fe and $\\mathrm{Fe^{3+}}$.",
+        "markscheme": "Fe (Z = 26): $1s^{2}2s^{2}2p^{6}3s^{2}3p^{6}3d^{6}4s^{2}$ or $[\\mathrm{Ar}]3d^{6}4s^{2}$. $\\mathrm{Fe^{3+}}$: electrons are removed from the highest n sublevel first, so remove 2 from 4s then 1 from 3d: $[\\mathrm{Ar}]3d^{5}$. Hund's rule: the $3d^{5}$ configuration in $\\mathrm{Fe^{3+}}$ has one electron in each d orbital (maximum multiplicity, half-filled d subshell), making it particularly stable. Pauli exclusion principle: any two electrons in the same orbital must have opposite spins."
+      },
+      {
+        "question": "Explain, with reference to electron configuration, why the first ionization energy of aluminium is lower than that of magnesium, despite aluminium having a higher nuclear charge.",
+        "markscheme": "Magnesium (Mg): electron configuration $[\\mathrm{Ne}]3s^{2}$. The outermost electron is in the 3s subshell. Aluminium (Al): electron configuration $[\\mathrm{Ne}]3s^{2}3p^{1}$. The outermost electron is in the 3p subshell, which is at a higher energy than 3s and is slightly shielded by the $3s^{2}$ electrons. Therefore less energy is needed to remove this 3p electron despite the higher nuclear charge, so IE1(Al) < IE1(Mg)."
+      }
+    ]
+  },
+  {
+    "id": "S1.4",
+    "unit": 1,
+    "title": "Counting particles by mass: The mole",
+    "hl": "SL",
+    "objectives": [
+      "Convert the amount of substance n to the number of specified elementary entities.",
+      "Determine the relative formula mass from relative atomic masses.",
+      "Solve problems involving the relationships between number of particles, amount of substance in moles and mass in grams.",
+      "Interconvert the percentage composition by mass and the empirical formula.",
+      "Determine the molecular formula of a compound from its empirical formula and molar mass.",
+      "Solve problems involving molar concentration, amount of solute and volume of solution.",
+      "Solve problems involving the mole ratio of reactants and/or products and the volume of gases."
+    ],
+    "summary": "Because individual atoms and molecules are immeasurably small, chemists use a counting unit called the mole (abbreviated mol) to work with macroscopic quantities. The mole is the SI unit of amount of substance (n). One mole contains exactly $6.02 \\times 10^{23}$ elementary entities (atoms, molecules, ions, or electrons). This number is the Avogadro constant, $N_A$. It is fixed by definition, so 1 mol of any substance always contains the same number of particles.\n\nThe masses of atoms are compared on a scale relative to the mass of the carbon-12 isotope, which is defined as exactly 12.00 on the relative scale. The relative atomic mass ($A_r$) of an element is the ratio of the average mass of an atom of that element to one-twelfth of the mass of a carbon-12 atom; it has no units. For molecules and ionic compounds, the relative formula mass ($M_r$) is the sum of the relative atomic masses of all atoms in the formula. Molar mass (M) is the mass per mole of substance, expressed in g mol-1, and numerically equal to the relative formula mass.\n\nThe core relationship is: n (mol) = m (g) / M (g mol-1). This allows conversion between mass and amount, and, combined with the Avogadro constant, between mass and number of particles. In calculations, it is best practice to retain full relative atomic masses to two decimal places (as in the IB data booklet) to avoid rounding errors.\n\nThe empirical formula of a compound gives the simplest whole-number ratio of atoms of each element. To find it from percentage composition, divide each percentage by the element's relative atomic mass to obtain the molar ratio, then divide by the smallest value and round to integers. If a subscript is 0.5, multiply all by 2; if 0.33, multiply by 3. The molecular formula gives the actual number of atoms in one molecule; it is a whole-number multiple of the empirical formula. The multiple is found by dividing the molar mass by the empirical formula mass.\n\nMolar concentration (c) of a solution is defined as the amount of solute (in mol) per unit volume of solution (in dm³), with units of mol dm-3. The relationship is c = n / V, where V is in dm³. Avogadro's law states that equal volumes of all ideal gases, measured at the same temperature and pressure, contain equal numbers of molecules. This means gas volumes can be compared directly via mole ratios from a balanced equation.",
+    "quiz": [
+      {
+        "question": "Calculate the number of molecules in 2.50 mol of water.",
+        "markscheme": "Number of molecules = $n \\times N_A$ = 2.50 mol × $6.02 \\times 10^{23}$ mol⁻¹ = $1.51 \\times 10^{24}$ molecules."
+      },
+      {
+        "question": "Determine the relative formula mass of ammonium sulfate, ($\\mathrm{NH_4}$)$2\\mathrm{SO_4}$.",
+        "markscheme": "N: 2 × 14.01 = 28.02; H: 8 × 1.01 = 8.08; S: 1 × 32.07 = 32.07; O: 4 × 16.00 = 64.00. $M_r$ = 28.02 + 8.08 + 32.07 + 64.00 = 132.17. No units (it is a relative quantity). Molar mass M = 132.17 g mol⁻¹."
+      },
+      {
+        "question": "Calculate the mass of 0.250 mol of glucose, $\\mathrm{C_6H_{12}O_6}$.",
+        "markscheme": "M($\\mathrm{C_6H_{12}O_6}$) = 6(12.01) + 12(1.01) + 6(16.00) = 72.06 + 12.12 + 96.00 = 180.18 g mol⁻¹. m = n × M = 0.250 mol × 180.18 g mol⁻¹ = 45.05 g ≈ 45.0 g (3 s.f.)."
+      },
+      {
+        "question": "A compound contains 40.0% C, 6.7% H and 53.3% O by mass. Determine its empirical formula.",
+        "markscheme": "Divide by $A_r$: C: 40.0/12.01 = 3.33; H: 6.7/1.01 = 6.63; O: 53.3/16.00 = 3.33. Divide by smallest (3.33): C: 1.00; H: 1.99 ≈ 2; O: 1.00. Empirical formula: C$\\mathrm{H_2O}$ (formaldehyde repeating unit; also found in glucose, acetic acid, etc.)."
+      },
+      {
+        "question": "Calculate the molar concentration of a solution prepared by dissolving 5.85 g of $\\mathrm{NaCl}$ (M = 58.44 g mol⁻¹) in enough water to make 500 cm³ of solution.",
+        "markscheme": "n($\\mathrm{NaCl}$) = m/M = 5.85/58.44 = 0.1001 mol. V = 500 cm³ = 0.500 dm³. $c = \\tfrac{n}{V}$ = 0.1001/0.500 = 0.200 mol dm⁻³."
+      },
+      {
+        "question": "Calculate the volume of $\\mathrm{CO_2}$(g), in dm³ at STP, produced when 10.0 g of $\\mathrm{CaCO_3}$(s) reacts completely with excess $\\mathrm{HCl}$(aq). The molar volume at STP is 22.7 dm³ mol⁻¹.",
+        "markscheme": "M($\\mathrm{CaCO_3}$) = 100.09 g mol⁻¹. n($\\mathrm{CaCO_3}$) = 10.0/100.09 = 0.0999 mol. Equation: $\\mathrm{CaCO_3}$ + $2\\mathrm{HCl}$ → $\\mathrm{CaCl_2}$ + $\\mathrm{CO_2}$ + $\\mathrm{H_2O}$. Mole ratio 1:1, so n($\\mathrm{CO_2}$) = 0.0999 mol. V($\\mathrm{CO_2}$) = 0.0999 × 22.7 = 2.27 dm³."
+      }
+    ]
+  },
+  {
+    "id": "S1.5",
+    "unit": 1,
+    "title": "Ideal gases",
+    "hl": "SL",
+    "objectives": [
+      "Recognize the key assumptions of the ideal gas model.",
+      "Explain the limitations of the ideal gas model.",
+      "Investigate the relationship between temperature, pressure and volume for a fixed mass of an ideal gas and analyse graphs relating these variables.",
+      "Solve problems relating to the ideal gas equation."
+    ],
+    "summary": "The ideal gas model is a simplified description of gas behaviour that provides excellent predictions under most practical conditions. The key assumptions are: gas molecules are in constant, random motion; all collisions between gas molecules and between molecules and the container walls are perfectly elastic (no kinetic energy is lost); the volume of gas molecules is negligible compared with the total volume of the container; intermolecular forces between gas molecules are negligible; and the average kinetic energy of gas molecules is directly proportional to the absolute temperature in kelvin.\n\nThree fundamental gas laws describe how the macroscopic properties of an ideal gas (pressure p, volume V, and temperature T) are related for a fixed amount of gas. Boyle's law states that at constant temperature, pressure is inversely proportional to volume: p ∝ 1/V (or pV = constant). Charles's law states that at constant pressure, volume is directly proportional to absolute temperature: V ∝ T. Gay-Lussac's law states that at constant volume, pressure is directly proportional to absolute temperature: p ∝ T. These three laws are combined into the combined gas law: p1V1/T1 = p2V2/T2.\n\nCombining these laws with Avogadro's law — which states that equal volumes of all gases at the same temperature and pressure contain equal numbers of molecules — gives the ideal gas equation: $pV = nRT$, where p is pressure (in Pa), V is volume (in m³), n is the amount of gas (in mol), R is the ideal gas constant ($8.31\\ \\text{J K}^{-1}\\ \\text{mol}^{-1}$), and T is temperature (in K). At standard temperature and pressure (STP: T = 273.15 K, p = 100 kPa), the molar volume of an ideal gas is $22.7\\ \\text{dm}^3\\ \\text{mol}^{-1}$.\n\nReal gases deviate from ideal behaviour particularly at high pressures and low temperatures. At high pressures, the volume of gas molecules is no longer negligible compared with the container volume, so the actual volume is larger than predicted by the ideal gas model. At low temperatures, the kinetic energy of molecules is insufficient to overcome the intermolecular forces of attraction, so the actual volume is smaller than predicted. Ideal gas behaviour is best approximated at low pressures and high temperatures, conditions under which molecules are far apart and moving rapidly.",
+    "quiz": [
+      {
+        "question": "State the key assumptions of the ideal gas model.",
+        "markscheme": "Gas molecules are in constant random motion. Collisions are perfectly elastic (no kinetic energy lost). Volume of gas molecules is negligible compared to the volume of the container. Intermolecular forces between gas molecules are negligible. Average kinetic energy of gas molecules is directly proportional to absolute temperature (in K). Any four of these earn full credit."
+      },
+      {
+        "question": "Explain why real gases deviate from ideal behaviour at high pressures and low temperatures.",
+        "markscheme": "At high pressures: molecules are forced closer together, so the volume of the molecules themselves is no longer negligible compared to the container volume — the real gas occupies more volume than predicted. At low temperatures: molecules move more slowly, so kinetic energy may be insufficient to overcome intermolecular attractions — the real gas is more compressed than predicted and occupies less volume. Ideal gas assumptions break down in both cases."
+      },
+      {
+        "question": "Describe how to investigate Boyle's law and sketch the expected graph of pressure against volume at constant temperature for an ideal gas.",
+        "markscheme": "Procedure: trap a fixed mass of gas in a sealed container; vary the volume (e.g. using a piston) while keeping temperature constant; measure the pressure at each volume. The graph of p against V is a hyperbola (inverse relationship). A graph of p against 1/V gives a straight line through the origin, confirming p ∝ 1/V. A graph of pV against p gives a horizontal straight line (pV = constant)."
+      },
+      {
+        "question": "Calculate the pressure, in kPa, of 0.500 mol of an ideal gas in a 10.0 dm³ container at 25°C.",
+        "markscheme": "$pV = nRT$. T = 25 + 273 = 298 K. V = 10.0 dm³ = 10.0 × 10⁻³ m³ = 0.0100 m³. p = nRT/V = (0.500 × 8.31 × 298) / 0.0100 = 1238 / 0.0100 = 123800 Pa = 124 kPa (3 s.f.)."
+      }
+    ]
+  },
+  {
+    "id": "S2.1",
+    "unit": 2,
+    "title": "The ionic model",
+    "hl": "SL",
+    "objectives": [
+      "Predict the charge of an ion from the electron configuration of the atom.",
+      "Deduce the formula and name of an ionic compound from its component ions, including polyatomic ions.",
+      "Interconvert names and formulas of binary ionic compounds.",
+      "Explain the physical properties of ionic compounds including volatility, electrical conductivity and solubility."
+    ],
+    "summary": "When atoms lose or gain electrons, they become charged species called ions. Atoms that lose electrons form positive ions called cations; atoms that gain electrons form negative ions called anions. The tendency of atoms to gain, lose, or share electrons to achieve a full outer energy level (typically 8 electrons, the octet) drives ion formation in many cases.\n\nFor main-group elements, the charge on the ion can be predicted from the group number. Elements in groups 1, 2, and 13 typically lose 1, 2, and 3 electrons respectively to form cations with charges +1, +2, and +3. Elements in groups 15, 16, and 17 typically gain 3, 2, and 1 electrons respectively to form anions with charges 3-, 2-, and 1-. Transition elements exhibit variable oxidation states because their successive ionization energies are close in value. In addition to monatomic ions, polyatomic ions such as sulfate ($\\mathrm{SO_4^{2-}}$), nitrate ($\\mathrm{NO_3^-}$), carbonate ($\\mathrm{CO_3^{2-}}$), hydroxide ($\\mathrm{OH^-}$), and ammonium ($\\mathrm{NH_4^+}$) are important species in ionic chemistry.\n\nAn ionic bond is the electrostatic attraction between oppositely charged ions. In the solid state, ionic compounds consist of three-dimensional crystal lattices in which cations and anions alternate in regular patterns to maximise attractive forces while minimising repulsive forces. The empirical formula of an ionic compound represents the simplest whole-number ratio of cations to anions that gives overall electrical neutrality.\n\nNomenclature of binary ionic compounds follows a systematic pattern: the cation is named first (keeping the element name), followed by the anion (with the suffix \"-ide\"). For example, $\\mathrm{NaCl}$ is sodium chloride, $\\mathrm{CaBr_2}$ is calcium bromide. When a metal can form ions of different charges (common with transition metals), Roman numerals are used: $\\mathrm{FeCl_2}$ is iron(II) chloride and $\\mathrm{FeCl_3}$ is iron(III) chloride.\n\nThe physical properties of ionic compounds can be explained by the strength and nature of the ionic lattice. Ionic compounds have high melting and boiling points because a large amount of energy is required to overcome the strong electrostatic attractions in the lattice. They are generally low in volatility. In the solid state, ions are fixed in the lattice and cannot move, so solid ionic compounds do not conduct electricity. However, when melted or dissolved in water, the ions become free to move and carry charge, allowing electrical conduction. Many ionic compounds dissolve in water because polar water molecules can stabilise the separated ions by surrounding them (hydration).",
+    "quiz": [
+      {
+        "question": "Predict the charges of the ions formed by magnesium, nitrogen, and iron when it forms its two common ions.",
+        "markscheme": "Magnesium (group 2): loses 2 electrons → $\\mathrm{Mg^{2+}}$. Nitrogen (group 15): gains 3 electrons → $\\mathrm{N^{3-}}$. Iron: variable oxidation states due to similar successive ionisation energies → $\\mathrm{Fe^{2+}}$ (iron(II)) and $\\mathrm{Fe^{3+}}$ (iron(III))."
+      },
+      {
+        "question": "Deduce the formula of aluminium sulfate and name the compound.",
+        "markscheme": "$\\mathrm{Al^{3+}}$ and $\\mathrm{SO_4^{2-}}$. To balance charges: 2 × $\\mathrm{Al^{3+}}$ (+6) and 3 × $\\mathrm{SO_4^{2-}}$ (-6). Formula: $\\mathrm{Al_2(SO_4)_3}$. Name: aluminium sulfate. The polyatomic ion $\\mathrm{SO_4^{2-}}$ takes brackets when more than one is present."
+      },
+      {
+        "question": "Explain why ionic compounds conduct electricity when dissolved in water but not in the solid state.",
+        "markscheme": "In the solid state, ions are held in fixed positions in the crystal lattice and cannot move, so charge cannot be carried — no electrical conduction. When dissolved in water or when melted, the lattice is disrupted and ions become free to move through the solution/melt. Moving charged particles (ions) can carry electrical current. The solubility arises because polar water molecules surround and stabilise the separated ions (hydration/solvation)."
+      },
+      {
+        "question": "Explain why ionic compounds typically have high melting points.",
+        "markscheme": "Ionic compounds consist of three-dimensional lattices of oppositely charged ions held together by strong electrostatic attractions. To melt an ionic compound, sufficient thermal energy must be provided to overcome these strong electrostatic forces and disrupt the lattice. Because these forces are strong and act in all directions throughout the lattice, a large amount of energy is required, resulting in high melting points. Larger ionic charges and smaller ionic radii lead to stronger attractions and higher melting points."
+      }
+    ]
+  },
+  {
+    "id": "S2.2",
+    "unit": 2,
+    "title": "The covalent model",
+    "hl": "Some HL",
+    "objectives": [
+      "Deduce the Lewis formulas of molecules and ions for up to four electron pairs on each atom.",
+      "Explain the relationship between number of bonds, bond length and bond strength.",
+      "Predict electron domain geometry and molecular geometry for species with up to four electron domains using VSEPR.",
+      "Deduce the polar nature of a covalent bond from electronegativity values.",
+      "Deduce the net dipole moment of a molecule by considering bond polarity and molecular geometry.",
+      "Describe the structures and explain the properties of silicon, silicon dioxide and allotropes of carbon.",
+      "Deduce the types of intermolecular force present from structural features of covalent molecules.",
+      "Explain the physical properties of covalent substances in terms of their structure.",
+      "Deduce resonance structures of molecules and ions (Additional HL).",
+      "Apply VSEPR to five and six electron domain species (Additional HL)."
+    ],
+    "summary": "Covalent bonding results from the electrostatic attraction between atomic nuclei and one or more shared pairs of electrons. A single covalent bond involves one shared pair of electrons, a double bond involves two shared pairs, and a triple bond involves three shared pairs. The octet rule describes the tendency of atoms to achieve a full outer electron shell (8 electrons) by sharing electrons. Lewis formulas (electron dot diagrams) show all valence electrons, including bonding pairs and non-bonding (lone) pairs.\n\nAs the number of shared pairs between two atoms increases, the bond becomes shorter and stronger. Triple bonds are shorter and stronger than double bonds, which are shorter and stronger than single bonds between the same two elements. A coordination (dative) bond is a covalent bond in which both bonding electrons originate from one atom; it is otherwise identical to other covalent bonds.\n\nThe valence shell electron pair repulsion (VSEPR) model predicts molecular geometry by assuming that electron domains (bonding pairs and lone pairs) arrange themselves to minimise repulsion. Lone pairs repel more strongly than bonding pairs. A species with two bonding domains is linear (180°); three bonding domains give trigonal planar (120°); four domains give tetrahedral (109.5°); four domains with one lone pair give trigonal pyramidal (~107°); four domains with two lone pairs give bent (~104.5°).\n\nBond polarity arises from a difference in electronegativity between bonded atoms. Electronegativity increases across a period and decreases down a group. If two atoms have different electronegativities, the shared electrons are pulled towards the more electronegative atom, creating a partial negative charge (δ-) on that atom and a partial positive charge (δ+) on the other. The overall molecular polarity (net dipole moment) depends on both bond polarity and molecular geometry. A molecule with polar bonds may be non-polar overall if its geometry is symmetrical (e.g. $\\mathrm{CO_2}$, $\\mathrm{CCl_4}$, $\\mathrm{BF_3}$).\n\nCarbon and silicon form covalent network structures. Diamond has a giant covalent lattice where each carbon is tetrahedrally bonded to four others — it is the hardest natural substance and does not conduct electricity. Graphite has layers of hexagonally arranged carbon atoms; delocalized electrons within each layer allow electrical conduction, and weak London dispersion forces between layers make it a lubricant. Fullerenes (e.g. C60) and graphene (a single graphite layer) are other carbon allotropes. Silicon dioxide ($\\mathrm{SiO_2}$) is also a giant covalent network solid with a high melting point.\n\nIntermolecular forces determine the physical properties of molecular covalent substances. London (dispersion) forces arise from temporary dipoles and are present in all molecules; they increase with molar mass. Dipole-dipole forces act between polar molecules. Hydrogen bonding is a particularly strong dipole-dipole interaction that occurs when H is bonded to N, O, or F. Given comparable molar masses, the order of strength is: London forces < dipole-dipole forces < hydrogen bonding. Stronger intermolecular forces lead to higher boiling points and greater viscosity.",
+    "quiz": [
+      {
+        "question": "Draw the Lewis formula for sulfur dioxide, $\\mathrm{SO_2}$, and deduce its molecular geometry using VSEPR.",
+        "markscheme": "$\\mathrm{SO_2}$ has 18 valence electrons. The central S has one double bond to each O (or one single and one double with a lone pair and resonance), plus one lone pair on S. Electron domains around S: 3 (two bonding groups + one lone pair) → electron domain geometry: trigonal planar; molecular geometry: bent (~119°). The lone pair on sulfur compresses the bond angle slightly below 120°. Accept either one double and one single bond (with formal charges) or two equivalent bonds via resonance."
+      },
+      {
+        "question": "Explain the relationship between bond order, bond length and bond energy for the C=C and C-C bonds.",
+        "markscheme": "C=C (double bond, bond order 2) is shorter (~134 pm) and stronger (~614 kJ mol⁻¹) than C-C (single bond, bond order 1, ~154 pm, ~346 kJ mol⁻¹). Greater overlap of electron density between nuclei in a double bond increases electrostatic attraction, requiring more energy to break and pulling nuclei closer together. A triple bond (C≡C) is shorter and stronger still (~120 pm, ~839 kJ mol⁻¹)."
+      },
+      {
+        "question": "Explain why $\\mathrm{CO_2}$ is a non-polar molecule despite having polar C=O bonds.",
+        "markscheme": "Each C=O bond is polar because oxygen is more electronegative than carbon (δ-O=C=O δ- from each side). However, $\\mathrm{CO_2}$ is linear (VSEPR: two bonding domains, no lone pairs on carbon). The two bond dipoles point in opposite directions and are equal in magnitude, so they cancel to give a net dipole moment of zero. Therefore $\\mathrm{CO_2}$ is non-polar overall. This contrasts with $\\mathrm{H_2O}$, which has two O-H bond dipoles that do not cancel due to its bent geometry."
+      },
+      {
+        "question": "Compare and explain the boiling points of methane ($\\mathrm{CH_4}$), hydrogen chloride ($\\mathrm{HCl}$), and water ($\\mathrm{H_2O}$).",
+        "markscheme": "Methane (bp –161°C): non-polar molecule; only London dispersion forces (weak, due to low molar mass). $\\mathrm{HCl}$ (bp –85°C): polar molecule; London dispersion forces + dipole-dipole interactions → higher bp than $\\mathrm{CH_4}$. Water (bp 100°C): polar molecule with H bonded to O; strong hydrogen bonding ($\\mathrm{H_2O}$ has two H-bond donors and two lone pairs as acceptors) → very high bp relative to molar mass. Order: $\\mathrm{CH_4}$ < $\\mathrm{HCl}$ << $\\mathrm{H_2O}$, reflecting increasing intermolecular force strength."
+      },
+      {
+        "question": "Describe the structure of diamond and explain its physical properties.",
+        "markscheme": "Diamond is a giant covalent network solid in which each carbon atom is sp³ hybridised and tetrahedrally bonded to four other carbon atoms by strong covalent bonds, forming a three-dimensional lattice. Properties: very high melting point (requires breaking many strong covalent bonds throughout the lattice); extreme hardness (no planes of weakness, all bonds are strong and directional); non-conductor of electricity (no free electrons or mobile ions — all electrons are localised in C-C bonds); insoluble in all solvents."
+      }
+    ]
+  },
+  {
+    "id": "S2.3",
+    "unit": 2,
+    "title": "The metallic model",
+    "hl": "Some HL",
+    "objectives": [
+      "Explain the electrical conductivity, thermal conductivity and malleability of metals.",
+      "Explain trends in melting points of s- and p-block metals.",
+      "Explain the high melting point and electrical conductivity of transition elements (Additional HL)."
+    ],
+    "summary": "Metallic bonding occurs in pure metals and alloys. Metal atoms release their outer electrons into a collective 'sea' of delocalized electrons, leaving behind a regular lattice of positive metal cations. Metallic bonding is the non-directional electrostatic attraction between this lattice of cations and the surrounding sea of mobile electrons. Because there are no discrete bonds pointing in specific directions, the lattice is flexible.\n\nThe physical properties of metals can be explained by their structure. Electrical conductivity: the delocalized electrons are free to move throughout the entire metallic lattice; when a potential difference is applied, electrons flow towards the positive terminal, constituting an electrical current. This conductivity applies in both solid and liquid states. Thermal conductivity: delocalized electrons can absorb thermal energy (increasing their kinetic energy) and quickly transfer it to other parts of the metal by moving through the lattice, making metals excellent conductors of heat. Malleability and ductility: because metallic bonding is non-directional and uniform throughout the lattice, layers of cations can slide over one another when a stress is applied without breaking the overall metallic structure. This allows metals to be hammered into sheets (malleability) or drawn into wires (ductility).\n\nThe strength of metallic bonding — and therefore the melting point — depends on the charge of the metal cation, the number of delocalized electrons per atom, and the ionic radius. Across a period (e.g. Na, Mg, Al), both the ionic charge and number of valence electrons increase, leading to stronger metallic bonding and higher melting points. Down a group, ionic radii increase, weakening the attraction between the cations and the delocalized electrons, so melting points generally decrease.\n\nAt the Additional Higher Level, transition elements (d-block) have particularly high melting points and exceptional electrical conductivity because d-electrons can also be delocalized in addition to s-electrons, greatly increasing the strength of the metallic bonding. Variable oxidation states, catalytic activity, formation of coloured compounds, and the ability to form complex ions with ligands are all characteristic properties of transition metals arising from their incompletely filled d subshell.",
+    "quiz": [
+      {
+        "question": "Explain why metals are good conductors of electricity.",
+        "markscheme": "In metals, the valence electrons are delocalized — they are not associated with any specific nucleus but are free to move throughout the entire crystal lattice. When a potential difference is applied, these mobile electrons flow towards the positive terminal, creating an electric current. This mechanism operates in both the solid and liquid states, making metals excellent electrical conductors. Non-metals generally lack delocalized electrons and therefore do not conduct electricity."
+      },
+      {
+        "question": "Explain why the melting point of magnesium is higher than that of sodium.",
+        "markscheme": "Both Na and Mg are s-block metals. Na has one valence electron (forming $\\mathrm{Na^+}$) while Mg has two (forming $\\mathrm{Mg^{2+}}$). $\\mathrm{Mg^{2+}}$ has a higher charge and a smaller ionic radius than $\\mathrm{Na^+}$. The stronger electrostatic attraction between $\\mathrm{Mg^{2+}}$ cations and the greater electron density in the sea of delocalized electrons makes metallic bonding in Mg stronger than in Na. More energy is required to overcome these stronger attractions, so Mg has a higher melting point."
+      },
+      {
+        "question": "Explain the malleability of metals in terms of their bonding model.",
+        "markscheme": "Metallic bonding is non-directional — the electrostatic attraction between cations and delocalized electrons acts uniformly in all directions. When a mechanical force is applied, layers of cations can slide past one another. Unlike in ionic lattices (where sliding would bring same-charge ions next to each other, causing repulsion) or covalent network solids (where specific directional bonds must be broken), the delocalized electron sea simply rearranges to maintain the metallic bond throughout the lattice. This allows the metal to be deformed without fracturing, making it malleable and ductile."
+      }
+    ]
+  },
+  {
+    "id": "S2.4",
+    "unit": 2,
+    "title": "From models to materials",
+    "hl": "Some HL",
+    "objectives": [
+      "Use bonding models to explain the properties of a material.",
+      "Determine the position of a compound in the bonding triangle from electronegativity data.",
+      "Predict the properties of a compound based on its position in the bonding triangle.",
+      "Explain the properties of alloys in terms of non-directional bonding.",
+      "Describe the common properties of plastics in terms of their structure.",
+      "Represent the repeating unit of an addition polymer from given monomer structures.",
+      "Represent the repeating unit of polyamides and polyesters from given monomer structures (Additional HL)."
+    ],
+    "summary": "Real chemical bonding is best described as a continuum between the three idealised models: ionic, covalent, and metallic. The van Arkel-Ketelaar triangle (bonding triangle) represents this continuum. The three corners represent pure metallic bonding (between identical metal atoms), pure covalent bonding (between identical non-metal atoms), and pure ionic bonding (between atoms with maximum electronegativity difference). Most real compounds lie within the triangle: polar covalent bonds are intermediate between covalent and ionic, metalloid bonding is intermediate between covalent and metallic, and intermetallic compounds are intermediate between metallic and ionic.\n\nThe position of a compound in the bonding triangle can be estimated from the electronegativity difference ($\\Delta\\chi$) between bonded atoms and the average electronegativity. Large $\\Delta\\chi$ places the compound towards the ionic corner; small $\\Delta\\chi$ combined with high average electronegativity places it towards the covalent corner; low average electronegativity with small $\\Delta\\chi$ places it towards the metallic corner.\n\nAlloys are homogeneous mixtures of a metal with one or more other metals or non-metals. Because metallic bonding is non-directional, adding atoms of a different size disrupts the regular lattice, making it harder for planes to slide — this increases hardness and strength. For example, steel (iron with carbon) is much stronger than pure iron. Bronze (copper and tin) and brass (copper and zinc) are classical examples of alloys with superior properties.\n\nPolymers are large molecules (macromolecules) made from many repeating subunits called monomers. In addition polymers, the double bond in each alkene monomer breaks and the molecules join end-to-end with no atoms lost. The repeating unit has the same empirical composition as the monomer. Common examples include poly(ethene) and poly(propene). Plastics derived from addition polymers have properties determined by the repeating unit, chain length, and degree of branching: they are generally good thermal and electrical insulators, chemically inert, and moulded easily when heated.\n\nAt the Additional Higher Level, condensation polymers form when functional groups in monomers react with the release of a small molecule, usually water. Polyesters form from a diol and a dicarboxylic acid (releasing $\\mathrm{H_2O}$ at each join), while polyamides form from a diamine and a dicarboxylic acid (also releasing $\\mathrm{H_2O}$). The repeating unit includes the link formed: an ester linkage (-COO-) or an amide linkage (-CONH-). Calculating atom economy highlights the inefficiency of condensation polymerisation compared to addition polymerisation.",
+    "quiz": [
+      {
+        "question": "Explain why alloys are generally harder and stronger than their component pure metals.",
+        "markscheme": "In a pure metal, layers of atoms are the same size and can slide easily past one another (metallic bonding is non-directional). In an alloy, atoms of a different element (different size) are introduced into the lattice, distorting it and creating irregularities. These irregularities impede the movement of dislocations (defect lines in the lattice), preventing layers from sliding as easily. The material therefore resists deformation — it is harder and stronger. Steel (iron + carbon) and bronze (copper + tin) are common examples."
+      },
+      {
+        "question": "Draw the repeating unit of the addition polymer formed from the monomer but-1-ene, $\\mathrm{CH_{2}{=}CHCH_{2}CH_{3}}$.",
+        "markscheme": "But-1-ene: $\\mathrm{CH_{2}{=}CHCH_{2}CH_{3}}$. In addition polymerisation, the C=C double bond opens and molecules link together. Repeating unit: –[CH2–CH(CH2CH3)]–n (a chain where each carbon alternately has no substituent and an ethyl group substituent). The brackets show one repeating unit with the bond continuing at each end. No atoms are lost: the formula of the repeating unit is $\\mathrm{C_4H_8}$, the same as the monomer."
+      },
+      {
+        "question": "Describe how the position of a compound in the bonding triangle is determined from electronegativity data.",
+        "markscheme": "The bonding triangle uses two axes: the electronegativity difference ($\\Delta\\chi$ = |χA - χB|) and the average electronegativity (χavg = (χA + χB)/2). Large $\\Delta\\chi$ → more ionic character (toward ionic corner). Large χavg with small $\\Delta\\chi$ → more covalent character (toward non-polar covalent corner). Small $\\Delta\\chi$ and small χavg → more metallic character. For example, $\\mathrm{NaCl}$: $\\Delta\\chi$ = 3.0 - 0.9 = 2.1 (large), low average, so it plots near the ionic corner."
+      },
+      {
+        "question": "Explain the common physical properties of plastics in terms of their polymer structure.",
+        "markscheme": "Plastics are composed of long-chain addition polymers. The chains are held to each other by weak intermolecular forces (London dispersion forces in non-polar chains like polyethene), so plastics have relatively low melting points and can be moulded when heated. All electrons are in covalent bonds (no delocalized electrons) so plastics are electrical and thermal insulators. They are generally chemically inert because the C-C and C-H bonds in the backbone are strong and non-polar. Degree of branching affects properties: branched polymers have weaker intermolecular forces (chains can't pack closely), giving lower melting points and lower density."
+      }
+    ]
+  },
+  {
+    "id": "S3.1",
+    "unit": 3,
+    "title": "The periodic table: Classification of elements",
+    "hl": "Some HL",
+    "objectives": [
+      "Identify the positions of metals, metalloids and non-metals in the periodic table.",
+      "Deduce the electron configuration of an atom up to Z = 36 from its position in the periodic table.",
+      "Explain the periodicity of atomic radius, ionic radius, ionization energy, electron affinity and electronegativity.",
+      "Describe and explain the reactions of group 1 metals with water and of group 17 elements with halide ions.",
+      "Deduce equations for reactions of group 1 and group 2 metal oxides, carbon and sulfur oxides with water.",
+      "Deduce oxidation states of an atom in an ion or compound.",
+      "Recognize properties of transition elements including variable oxidation states and complex ion formation (Additional HL)."
+    ],
+    "summary": "The periodic table organises elements according to the periodic law: chemical and physical properties recur periodically when elements are arranged in order of increasing atomic number. The table consists of periods (horizontal rows, numbered 1–7) and groups (vertical columns, numbered 1–18 or using older group numbering). All elements in a period have valence electrons in the same main energy level; all elements in a group have the same number of valence electrons and thus similar chemical properties. The table is divided into s-, p-, d-, and f-blocks according to which subshell contains the highest-energy electrons.\n\nMetals occupy the left and lower parts of the periodic table; they are generally shiny, malleable, ductile, and conduct electricity. Non-metals occupy the upper right; they are generally poor conductors with varied physical states at room temperature. Metalloids (e.g. silicon, germanium) occupy the diagonal boundary between metals and non-metals and show properties of both.\n\nPeriodic trends arise from systematic changes in atomic structure. Atomic radius decreases across a period (increasing nuclear charge pulling electrons closer with little change in shielding) and increases down a group (additional energy levels). Ionization energy generally increases across a period and decreases down a group. Electronegativity increases across a period and decreases down a group (the Pauling scale is commonly used).\n\nGroup 1 metals (alkali metals) react vigorously with water to produce metal hydroxides and hydrogen gas: 2M(s) + $2\\mathrm{H_2O}$(l) → 2MOH(aq) + $\\mathrm{H_2}$(g). Reactivity increases down the group as the outer electron is increasingly distant from the nucleus and more easily lost. Group 17 elements (halogens) displace less reactive halide ions from solution: a more reactive halogen displaces the ions of a less reactive one (e.g. $\\mathrm{Cl_2}$ + $2\\mathrm{Br^-}$ → $2\\mathrm{Cl^-}$ + $\\mathrm{Br_2}$). Reactivity decreases down group 17.\n\nOxidation state is a formal bookkeeping tool indicating the charge an atom would have if all bonds were fully ionic. Rules: free elements have oxidation state 0; hydrogen is +1 (except in metal hydrides where it is -1); oxygen is -2 (except in peroxides, -1, or when bonded to F). Metal oxides (basic), non-metal oxides (acidic), and some oxides (amphoteric, e.g. $\\mathrm{Al_2O_3}$) react with water: $\\mathrm{Na_2O}$(s) + $\\mathrm{H_2O}$(l) → $2\\mathrm{NaOH}$(aq); $\\mathrm{SO_3}(\\text{g}) + \\mathrm{H_2O}(\\text{l}) \\rightarrow \\mathrm{H_2SO_4}(\\text{aq})$.",
+    "quiz": [
+      {
+        "question": "Explain the trend in atomic radius across period 3 and down group 1.",
+        "markscheme": "Across period 3 (Na → Ar): atomic radius decreases. Nuclear charge (Z) increases from 11 to 18, but electrons are added to the same principal energy level ($n = 3$) so shielding increases only slightly. The greater nuclear charge pulls valence electrons closer to the nucleus, reducing atomic radius. Down group 1 (Li → Cs): atomic radius increases. Each successive element has one more principal energy level, placing valence electrons further from the nucleus. Although nuclear charge increases, the additional inner electron shells provide significantly more shielding, so the net attraction on the outer electron decreases."
+      },
+      {
+        "question": "Describe the reaction of potassium with water and write a balanced equation. Explain why potassium reacts more vigorously than lithium.",
+        "markscheme": "Equation: 2K(s) + $2\\mathrm{H_2O}$(l) → $2\\mathrm{KOH}$(aq) + $\\mathrm{H_2}$(g). Potassium reacts more vigorously than lithium because: down group 1, atomic radius increases and the outer (valence) electron is further from the nucleus; shielding by inner electrons increases; ionization energy decreases. Therefore the outer electron is more easily lost (lower IE1), making potassium a stronger reducing agent. The reaction with water produces heat; with potassium enough heat is produced to ignite the hydrogen gas, giving a lilac flame."
+      },
+      {
+        "question": "Deduce the oxidation state of manganese in $\\mathrm{KMnO_4}$ and in $\\mathrm{MnO_2}$.",
+        "markscheme": "$\\mathrm{KMnO_4}$: K is +1; each O is -2; sum must equal 0. +1 + Mn + 4(-2) = 0 → Mn = +7. $\\mathrm{MnO_2}$: each O is -2; sum equals 0. Mn + 2(-2) = 0 → Mn = +4. Manganese is in oxidation state +7 in potassium permanganate and +4 in manganese dioxide. This variable oxidation state is characteristic of transition metals."
+      },
+      {
+        "question": "Explain why chlorine water can bleach damp litmus, but dry chlorine cannot.",
+        "markscheme": "Chlorine gas itself is not the bleaching agent. When chlorine dissolves in water, it undergoes disproportionation: $\\mathrm{Cl_2}(\\text{aq}) + \\mathrm{H_2O}(\\text{l}) \\rightarrow \\mathrm{HCl}(\\text{aq}) + \\mathrm{HOCl}(\\text{aq}). Hypochlorous acid (\\mathrm{HOCl}$) is the active bleaching agent; it is an oxidising agent that destroys the chromophore in the dye molecules. Dry litmus (no water present) cannot undergo this reaction, so dry chlorine has no bleaching action."
+      }
+    ]
+  },
+  {
+    "id": "S3.2",
+    "unit": 3,
+    "title": "Functional groups: Classification of organic compounds",
+    "hl": "Some HL",
+    "objectives": [
+      "Identify different formulas and interconvert molecular, skeletal and structural formulas.",
+      "Identify functional groups: halogeno, hydroxyl, carbonyl, carboxyl, alkoxy, amino, amido, ester, phenyl.",
+      "Identify homologous series: alkanes, alkenes, alkynes, halogenoalkanes, alcohols, aldehydes, ketones, carboxylic acids, ethers, amines, amides and esters.",
+      "Describe and explain trends in melting and boiling points within a homologous series.",
+      "Apply IUPAC nomenclature to saturated and mono-unsaturated compounds up to six carbons with specified functional groups.",
+      "Recognize structural isomers including branched, straight-chain, position and functional group isomers.",
+      "Describe and explain stereoisomerism: optical isomers and cis-trans isomers (Additional HL)."
+    ],
+    "summary": "Organic chemistry is the chemistry of carbon compounds (excluding CO, $\\mathrm{CO_2}$, carbonates, carbides, and cyanides). Carbon atoms can form four covalent bonds, allowing the construction of chains, branches, rings, and multiple bonds, giving rise to an enormous diversity of compounds. Organic compounds can be represented by different types of formula: the molecular formula shows the actual numbers of each type of atom; the empirical formula shows the simplest ratio; the structural formula shows the connectivity of atoms; the condensed structural formula groups atoms around each carbon; and the skeletal formula uses line segments for carbon chains (each vertex or endpoint represents a carbon, with hydrogens implied).\n\nFunctional groups are specific groups of atoms that confer characteristic chemical and physical properties on organic molecules. Key functional groups include: halogeno (-X, where X = F, Cl, Br, I), hydroxyl (-OH), carbonyl (C=O in aldehydes: -CHO and ketones: C=O with two carbon substituents), carboxyl (-COOH), alkoxy (-OR), amino (-NH2), amido (-CONH-), ester (-COO-), and phenyl ($\\mathrm{C_{6}H_{5}-}$).\n\nA homologous series is a family of organic compounds with the same functional group and general formula, where adjacent members differ by a CH2 unit. Within a homologous series, properties change gradually: boiling points increase with chain length because larger molecules have greater London dispersion forces between them. Branching reduces boiling points because branched molecules cannot pack as closely, reducing surface contact area and thus dispersion forces.\n\nIUPAC nomenclature provides a systematic way to name organic compounds. The longest carbon chain containing the principal functional group provides the parent name (meth-, eth-, prop-, but-, pent-, hex- for C1–C6). Prefixes (e.g. chloro-, bromo-, methyl-, ethyl-) are used for substituents, numbered from the end closest to the principal group. Unsaturation is indicated by -ene (double bond) or -yne (triple bond).\n\nStructural isomers have the same molecular formula but different structural arrangements. Types include chain isomers (different carbon skeleton), position isomers (same functional group at different positions), and functional group isomers (different functional groups, e.g. an alcohol and an ether). At the Additional Higher Level, stereoisomers have the same connectivity but different spatial arrangements: cis-trans isomers arise from restricted rotation around a C=C double bond, and optical isomers (enantiomers) arise when a carbon is bonded to four different groups (a chiral centre). Enantiomers are non-superimposable mirror images and rotate plane-polarized light in opposite directions.",
+    "quiz": [
+      {
+        "question": "Identify the functional groups present in the molecule $\\mathrm{CH_{3}CH(OH)CH_{2}COOH}$.",
+        "markscheme": "The molecule contains two functional groups: a hydroxyl group (-OH) on carbon 2, making that portion an alcohol; and a carboxyl group (-COOH) at the end of the chain (carbon 4), making the molecule a hydroxy acid (specifically 3-hydroxybutanoic acid). The rest of the molecule is an alkyl chain (no other functional groups)."
+      },
+      {
+        "question": "Explain the trend in boiling points of the straight-chain alkanes from methane to hexane.",
+        "markscheme": "Alkanes are non-polar molecules; the only intermolecular forces between them are London (dispersion) forces. As molar mass increases from methane ($\\mathrm{CH_4}$, M = 16 g/mol) to hexane ($\\mathrm{C_6H_{14}}$, M = 86 g/mol), there are more electrons per molecule and a larger surface area for temporary dipoles to form. This increases the strength of London dispersion forces, requiring more energy to separate the molecules during boiling. Therefore boiling points increase along the series: methane (-161°C) < ethane (-89°C) < propane (-42°C) < butane (-1°C) < pentane (36°C) < hexane (69°C)."
+      },
+      {
+        "question": "Draw and name the structural isomers with molecular formula $\\mathrm{C_4H_{10}}$.",
+        "markscheme": "There are two structural isomers of $\\mathrm{C_4H_{10}}$: (1) Butane (n-butane): $\\mathrm{CH_{3}CH_{2}CH_{2}CH_{3}}$ — straight chain, four carbons. (2) 2-methylpropane (isobutane): $\\mathrm{(CH_{3})2CHCH_{3}}$ — three-carbon chain with a methyl branch on carbon 2. Both have the same molecular formula but different carbon skeletons, so they are chain isomers. Butane has a higher boiling point (-1°C) than 2-methylpropane (-12°C) because it has a longer straight chain allowing greater London dispersion forces."
+      },
+      {
+        "question": "Describe the conditions that give rise to cis-trans isomerism in alkenes and draw the cis and trans isomers of but-2-ene.",
+        "markscheme": "Cis-trans isomerism requires: (1) a C=C double bond (restricted rotation); (2) each carbon of the double bond must bear two different groups. But-2-ene: $\\mathrm{CH_{3}CH{=}CHCH_{3}}$. The two carbons of the double bond each bear H and CH3. Cis-but-2-ene: both CH3 groups on the same side of the double bond (bp 3.7°C). Trans-but-2-ene: CH3 groups on opposite sides (bp 0.9°C). Trans isomer has a higher melting point because molecules pack more efficiently; cis isomer has a higher dipole moment due to asymmetry."
+      }
+    ]
+  },
+  {
+    "id": "R1.1",
+    "unit": 4,
+    "title": "Measuring enthalpy changes",
+    "hl": "SL",
+    "objectives": [
+      "Understand the difference between heat and temperature.",
+      "Understand the temperature change that accompanies endothermic and exothermic reactions.",
+      "Sketch and interpret energy profiles for endothermic and exothermic reactions.",
+      "Apply the equations $Q = mc\\Delta T$ and $\\Delta H = -Q/n$ in the calculation of the enthalpy change of a reaction."
+    ],
+    "summary": "Thermochemistry studies the heat changes that accompany chemical and physical processes. At constant pressure, the heat absorbed or released in a chemical reaction equals the enthalpy change, $\\Delta H$, of that reaction. Heat (Q) is a form of energy (SI unit: joule, J), while temperature (T) is a measure of the average kinetic energy of particles (SI unit: kelvin, K). These are distinct quantities: transferring the same amount of heat to two different substances produces different temperature changes depending on their specific heat capacities.\n\nThe specific heat capacity (c) of a substance is the amount of heat required to raise the temperature of 1 g of that substance by 1 K. The relationship between heat transferred, mass, specific heat capacity, and temperature change is: $Q = mc\\Delta T$. For water, c = $4.18\\ \\text{J g}^{-1}\\ \\text{K}^{-1}$. This equation allows calculation of the heat transferred during a reaction by measuring the temperature change of the surrounding water (or solution) in a calorimeter.\n\nA reaction is described as exothermic if it releases heat to the surroundings ($\\Delta H < 0$; temperature of surroundings increases). Common examples include combustion, neutralisation, and respiration. A reaction is described as endothermic if it absorbs heat from the surroundings ($\\Delta H > 0$; temperature of surroundings decreases). Examples include thermal decomposition and photosynthesis. In an energy profile (reaction coordinate diagram), an exothermic reaction shows reactants at higher energy than products, with $\\Delta H$ shown as a negative energy gap. An endothermic reaction shows products at higher energy than reactants, with $\\Delta H$ positive. The peak of the energy profile represents the transition state, and the height of the peak above the reactants is the activation energy, $E_a$.\n\nThe standard enthalpy change of a reaction ($\\Delta H^\\circ$) is the heat transferred per mole of a specified reactant or product at standard conditions (298 K, 100 kPa) with all substances in their standard states. The enthalpy change measured in a calorimetry experiment can be calculated as: $\\Delta H = -Q / n = -mc\\Delta T / n$, where n is the number of moles of the reactant or product specified in the equation. The negative sign ensures that when the surroundings gain heat ($\\Delta T$ positive, exothermic reaction), $\\Delta H$ is negative.",
+    "quiz": [
+      {
+        "question": "Distinguish between heat and temperature, giving an example that illustrates the difference.",
+        "markscheme": "Heat (Q) is a form of energy (unit: joule) that flows between objects at different temperatures; it is a measure of the total thermal energy transferred. Temperature (T) is a measure of the average kinetic energy of particles in a substance (unit: kelvin or Celsius). Example: adding 1000 J of heat to 100 g of water (c = $4.18\\ \\text{J g}^{-1}\\ \\text{K}^{-1}$) produces a temperature rise of $\\Delta T = Q/mc$ = 1000/(100 × 4.18) = 2.39 K. Adding the same 1000 J to 100 g of copper (c = 0.385 J/gK) produces $\\Delta T$ = 26 K. Same heat transferred, very different temperature changes."
+      },
+      {
+        "question": "Sketch and compare energy profile diagrams for an exothermic and an endothermic reaction, labelling reactants, products, activation energy and $\\Delta H$.",
+        "markscheme": "Exothermic: reactants at higher energy level than products; curve rises to a peak (transition state) then descends below starting level. $E_a$ = height of peak above reactants; $\\Delta H$ is negative (drop from reactants to products). Endothermic: products at higher energy level than reactants; curve rises to a peak then descends to a level above starting point. $E_a$ = height of peak above reactants; $\\Delta H$ is positive (rise from reactants to products). Both diagrams must show: labelled x-axis (reaction coordinate/progress of reaction), labelled y-axis (energy), transition state at the peak."
+      },
+      {
+        "question": "In a neutralisation experiment, 50.0 cm³ of 1.00 mol dm⁻³ $\\mathrm{HCl}$(aq) was mixed with 50.0 cm³ of 1.00 mol dm⁻³ $\\mathrm{NaOH}$(aq). The temperature rose by 6.85°C. Calculate $\\Delta H$ for the neutralisation reaction in kJ mol⁻¹.",
+        "markscheme": "Total volume = 100 cm³ = 100 g (assuming density = 1.00 g/cm³). $Q = mc\\Delta T = 100 \\times 4.18 \\times 6.85$ = 2863 J = 2.863 kJ. n($\\mathrm{HCl}$) = n($\\mathrm{NaOH}$) = 0.0500 L × 1.00 mol/L = 0.0500 mol. $\\Delta H = -Q/n = -2.863/0.0500 = -57.3\\ \\text{kJ mol}^{-1}$. The negative sign indicates an exothermic reaction. (Accept -57.2 to -57.4 kJ mol⁻¹.)"
+      },
+      {
+        "question": "Identify two sources of systematic error in a simple calorimetry experiment and suggest how each could be minimized.",
+        "markscheme": "1. Heat loss to the surroundings: the calorimeter is not perfectly insulated, so some heat escapes before the temperature measurement is taken. Minimise by using an insulated calorimeter (e.g. polystyrene cup) and a lid, or by extrapolating the temperature-time graph back to the time of mixing. 2. Specific heat capacity of the calorimeter: the container itself absorbs some heat, which is not accounted for in $Q = mc\\Delta T$. Minimise by using a calorimeter with low heat capacity (e.g. polystyrene) or by calibrating the calorimeter. Other valid answers: incomplete reaction, evaporation of solution."
+      }
+    ]
+  },
+  {
+    "id": "R1.2",
+    "unit": 4,
+    "title": "Energy cycles in reactions",
+    "hl": "Some HL",
+    "objectives": [
+      "Calculate the enthalpy change of a reaction from given average bond enthalpy data.",
+      "Apply Hess's law to calculate enthalpy changes in multistep reactions.",
+      "Deduce equations and solve problems involving standard enthalpies of formation and combustion (Additional HL).",
+      "Interpret and determine values from a Born-Haber cycle for univalent and divalent ions (Additional HL)."
+    ],
+    "summary": "Energy is absorbed when chemical bonds are broken and released when chemical bonds are formed. The net enthalpy change of a reaction is therefore the difference between the total energy needed to break all bonds in the reactants and the total energy released when all bonds in the products form: $\\Delta H^\\circ = \\Sigma(\\text{BE bonds broken}) - \\Sigma(\\text{BE bonds formed})$. Bond enthalpy (BE) values represent the average energy required to break one mole of a particular type of covalent bond in the gaseous state. Because these are average values, enthalpy changes calculated by this method may differ slightly from measured values, especially if liquids or solids are involved.\n\nHess's law states that the total enthalpy change for a chemical reaction is independent of the pathway taken between the initial and final states, provided the conditions (temperature and pressure) are the same. This is a consequence of the first law of thermodynamics (conservation of energy). Hess's law allows enthalpy changes for reactions that cannot be measured directly to be calculated from the enthalpy changes of other reactions. Hess's law cycles can be drawn using combinations of formation equations, combustion equations, or any other thermochemical data.\n\nThe standard enthalpy of formation ($\\Delta H^\\circ_f$) of a compound is the enthalpy change when one mole of the compound is formed from its elements in their standard states under standard conditions. The standard enthalpy of combustion ($\\Delta H^\\circ_c$) is the enthalpy change when one mole of a substance completely burns in excess oxygen under standard conditions. These values allow calculation of $\\Delta H^\\circ$ for any reaction via Hess's law: $\\Delta H^\\circ_{\\text{reaction}} = \\Sigma \\Delta H^\\circ_f(\\text{products}) - \\Sigma \\Delta H^\\circ_f(\\text{reactants})$.\n\nAt the Additional Higher Level, the Born-Haber cycle is an energy cycle that applies Hess's law specifically to the formation of ionic compounds from their elements. It includes steps for atomisation of metals and non-metals, ionisation energies of metals, electron affinities of non-metals, and the lattice enthalpy of the ionic compound. Lattice enthalpy ($\\Delta H_{\\text{latt}}$) is the enthalpy change for the formation of gaseous ions from one mole of the crystalline ionic compound (endothermic). The Born-Haber cycle allows lattice enthalpies — which cannot be measured directly — to be determined indirectly.",
+    "quiz": [
+      {
+        "question": "Calculate the standard enthalpy change for the reaction $\\mathrm{H_2(g) + Cl_2(g) \\rightarrow 2HCl(g)}$, using bond enthalpies: BE(H-H) = 436 $\\text{kJ mol}^{-1}$, BE(Cl-Cl) = 242 $\\text{kJ mol}^{-1}$, BE(H-Cl) = 431 $\\text{kJ mol}^{-1}$.",
+        "markscheme": "Bonds broken: 1 mol H-H and 1 mol Cl-Cl → energy absorbed = 436 + 242 = 678 kJ. Bonds formed: 2 mol H-Cl → energy released = 2 × 431 = 862 kJ. $\\Delta H^\\circ$ = $\\Sigma\\text{BE(broken)} - \\Sigma\\text{BE(formed)}$ = 678 - 862 = -184 $\\text{kJ mol}^{-1}$. The negative value indicates an exothermic reaction. (Note: the -184 $\\text{kJ mol}^{-1}$ is per mole of reaction as written, forming 2 mol $\\mathrm{HCl}$.)"
+      },
+      {
+        "question": "Use Hess's law to calculate $\\Delta H$ for the reaction $\\mathrm{C(s) + 2H_2(g) \\rightarrow CH_4(g)}$, given: (1) $\\mathrm{C(s) + O_2(g) \\rightarrow CO_2(g)}$, $\\Delta H_1$ = -394 $\\text{kJ mol}^{-1}$; (2) $\\mathrm{H_2(g) + \\tfrac{1}{2}O_2(g) \\rightarrow H_2O(l)}$, $\\Delta H_2$ = -286 $\\text{kJ mol}^{-1}$; (3) $\\mathrm{CH_4(g) + 2O_2(g) \\rightarrow CO_2(g) + 2H_2O(l)}$, $\\Delta H_3$ = -890 $\\text{kJ mol}^{-1}$.",
+        "markscheme": "The target reaction is C + 2$\\mathrm{H_2}$ → $\\mathrm{CH_4}$. Use: (1) + 2×(2) - (3). $\\Delta H = \\Delta H_1 + 2\\Delta H_2 - \\Delta H_3$ = -394 + 2(-286) - (-890) = -394 - 572 + 890 = -76 $\\text{kJ mol}^{-1}$. This is the standard enthalpy of formation of methane. Hess's law: the enthalpy change is the same regardless of the route taken; only the initial and final states matter."
+      },
+      {
+        "question": "Explain why bond enthalpy calculations give only approximate values for $\\Delta H$ when reactants or products are in liquid or solid states.",
+        "markscheme": "Bond enthalpy values are average values determined from gaseous species. The same type of bond (e.g. C-H) has slightly different energy in different molecular environments. Furthermore, when substances are in liquid or solid states, additional energy changes occur for phase transitions (enthalpy of vaporisation or sublimation), which are not accounted for in a simple bond enthalpy calculation. For example, calculating the combustion of liquid ethanol requires accounting for the enthalpy of vaporisation of ethanol and of liquid water produced. Using bond enthalpies for liquid/solid species introduces error because the starting assumption (all species are gaseous) is violated."
+      }
+    ]
+  },
+  {
+    "id": "R1.3",
+    "unit": 4,
+    "title": "Energy from fuels",
+    "hl": "SL",
+    "objectives": [
+      "Deduce equations for combustion reactions including hydrocarbons and alcohols.",
+      "Deduce equations for incomplete combustion of hydrocarbons and alcohols.",
+      "Evaluate the amount of $\\mathrm{CO_2}$ added to the atmosphere when different fuels burn.",
+      "Understand the link between carbon dioxide levels and the greenhouse effect.",
+      "Understand the difference between renewable and non-renewable energy sources.",
+      "Consider the advantages and disadvantages of biofuels.",
+      "Deduce half-equations for electrode reactions in a fuel cell."
+    ],
+    "summary": "Combustion reactions release energy and are central to power generation, transportation, and industry. In complete combustion, a fuel reacts with excess oxygen to produce the most oxidised products: carbon-containing fuels produce $\\mathrm{CO_2}$ and $\\mathrm{H_2O}$. For example: $\\mathrm{C_3H_8(g) + 5O_2(g) \\rightarrow 3CO_2(g) + 4H_2O(l)}$. Alcohols follow the same pattern: $\\mathrm{C_2H_5OH(l) + 3O_2(g) \\rightarrow 2CO_2(g) + 3H_2O(l)}$. When oxygen is limited (incomplete combustion), carbon monoxide (CO) and/or carbon (soot, C) are also produced.\n\nFossil fuels — coal, crude oil (petroleum), and natural gas — formed over millions of years from biological matter. Natural gas is mainly methane; petroleum is a complex mixture of hydrocarbons separated by fractional distillation into fractions (gasoline, kerosene, diesel, etc.) based on boiling point. Fossil fuels are non-renewable: they take far longer to form than the rate at which they are consumed. Their combustion releases $\\mathrm{CO_2}$ that was fixed millions of years ago, increasing atmospheric $\\mathrm{CO_2}$ concentrations.\n\nCarbon dioxide is a greenhouse gas: it absorbs infrared radiation emitted from the Earth's surface and re-emits it in all directions, trapping heat in the atmosphere. Enhanced greenhouse effect from elevated $\\mathrm{CO_2}$ contributes to global warming and climate change. The carbon content per unit energy varies between fuels: natural gas produces less $\\mathrm{CO_2}$ per kJ than coal (a higher H/C ratio means more energy from C-H bonds and less from C-C bonds). Comparing the moles of $\\mathrm{CO_2}$ produced per mole of fuel, or per kJ released, allows evaluation of different fuels' environmental impact.\n\nBiofuels (e.g. bioethanol from fermentation, biodiesel from plant oils) are produced from recently living material and are considered renewable because the $\\mathrm{CO_2}$ released was recently absorbed from the atmosphere during photosynthesis, giving a lower net $\\mathrm{CO_2}$ emission. However, biofuels require agricultural land, water, and energy input for production, which may have other environmental impacts. They provide a liquid fuel compatible with existing infrastructure but typically have lower energy density than petrol.\n\nA fuel cell converts chemical energy directly to electrical energy with high efficiency. In a hydrogen-oxygen fuel cell under alkaline conditions: at the anode (oxidation): $\\mathrm{H_2(g) + 2OH^-(aq) \\rightarrow 2H_2O(l) + 2e^-}$; at the cathode (reduction): $\\mathrm{O_2(g) + 2H_2O(l) + 4e^- \\rightarrow 4OH^-(aq)}$. The only product is water, making fuel cells very clean. The overall efficiency is higher than combustion because energy conversion does not pass through a thermal step limited by Carnot efficiency.",
+    "quiz": [
+      {
+        "question": "Deduce the balanced equation for the complete combustion of octane, $\\mathrm{C_8H_{18}}$, and calculate the mass of $\\mathrm{CO_2}$ produced per gram of octane burned.",
+        "markscheme": "$\\mathrm{C_8H_{18}(l) + 12.5O_2(g) \\rightarrow 8CO_2(g) + 9H_2O(l)}$ (or $\\mathrm{2C_8H_{18} + 25O_2 \\rightarrow 16CO_2 + 18H_2O}$). M($\\mathrm{C_8H_{18}}$) = 114.26 $\\text{g mol}^{-1}$; M($\\mathrm{CO_2}$) = 44.01 $\\text{g mol}^{-1}$. Per mole of octane, 8 mol $\\mathrm{CO_2}$ produced. Mass $\\mathrm{CO_2}$ per gram octane = (8 × 44.01) / 114.26 = 352.08 / 114.26 = 3.08 g $\\mathrm{CO_2}$ per gram of octane."
+      },
+      {
+        "question": "Explain the greenhouse effect and describe how increased combustion of fossil fuels intensifies it.",
+        "markscheme": "The greenhouse effect: solar radiation (mainly UV and visible) passes through the atmosphere and heats Earth's surface. The warm surface emits infrared radiation, which is absorbed by greenhouse gases ($\\mathrm{CO_2}$, $\\mathrm{CH_4}$, $\\mathrm{H_2O}$, $\\mathrm{N_2O}$) in the atmosphere. These gases re-emit infrared in all directions, including back toward Earth, keeping the surface warmer than it would be otherwise — this is the natural greenhouse effect, essential for life. Enhanced effect: burning fossil fuels releases $\\mathrm{CO_2}$ stored for millions of years, significantly increasing atmospheric $\\mathrm{CO_2}$ concentration. Greater $\\mathrm{CO_2}$ concentration means more IR radiation is absorbed and retained, causing higher average global temperatures (global warming), driving climate change."
+      },
+      {
+        "question": "Compare the advantages and disadvantages of bioethanol as a fuel compared to petrol.",
+        "markscheme": "Advantages: renewable (produced by fermentation of sugar/starch crops); lower net $\\mathrm{CO_2}$ emissions (carbon cycle — $\\mathrm{CO_2}$ released was recently fixed by photosynthesis); biodegradable; can be blended with petrol (flex-fuel vehicles). Disadvantages: lower energy density than petrol (ethanol contains oxygen, so less energy per unit mass); requires large land areas for crops (competition with food production); crops require water and fertiliser; may have higher lifecycle $\\mathrm{CO_2}$ emissions when land use change is considered; infrastructure changes needed for high blends."
+      },
+      {
+        "question": "Write the half-equations for the electrode reactions in an acidic hydrogen-oxygen fuel cell.",
+        "markscheme": "Anode (oxidation): $\\mathrm{H_2(g) \\rightarrow 2H^+(aq) + 2e^-}$. Cathode (reduction): $\\mathrm{O_2(g) + 4H^+(aq) + 4e^- \\rightarrow 2H_2O(l)}$. Overall: $\\mathrm{2H_2(g) + O_2(g) \\rightarrow 2H_2O(l)}$. In an alkaline fuel cell, anode: $\\mathrm{H_2(g) + 2OH^-(aq) \\rightarrow 2H_2O(l) + 2e^-}$; cathode: $\\mathrm{O_2(g) + 2H_2O(l) + 4e^- \\rightarrow 4OH^-(aq)}$. The only product is water; fuel cells are highly efficient and emission-free."
+      }
+    ]
+  },
+  {
+    "id": "R1.4",
+    "unit": 4,
+    "title": "Entropy and spontaneity",
+    "hl": "HL",
+    "objectives": [
+      "Predict whether a physical or chemical change will result in an increase or decrease in entropy.",
+      "Calculate standard entropy changes from standard entropy values.",
+      "Apply the equation $\\Delta G^\\circ = \\Delta H^\\circ - T\\Delta S^\\circ$ to calculate unknown values.",
+      "Interpret the sign of $\\Delta G$ to determine whether a reaction is spontaneous.",
+      "Determine the temperature at which a reaction becomes spontaneous.",
+      "Perform calculations using $\\Delta G = \\Delta G^\\circ + RT\\ln Q$ and $\\Delta G^\\circ = -RT\\ln K$."
+    ],
+    "summary": "Entropy (S) is a thermodynamic state function that measures the dispersal of energy and matter in a system. The more ways the energy and particles can be distributed — the more disordered or random the system — the higher its entropy. At a microscopic level, entropy relates to the number of possible microstates of a system. Under the same conditions, the entropy of a substance increases in the order: solid < liquid << gas. Entropy also increases with the complexity of molecules (more atoms per molecule = more ways to distribute vibrational energy) and with increasing temperature (more thermal energy to distribute).\n\nFor a chemical reaction, the standard entropy change $\\Delta S^\\circ$ can be calculated from standard molar entropy values S° (in $\\text{J K}^{-1}\\text{ mol}^{-1}$, given in the IB data booklet): $\\Delta S^\\circ = \\Sigma S^\\circ(\\text{products}) - \\Sigma S^\\circ(\\text{reactants})$. Reactions that produce more moles of gas than they consume typically have positive $\\Delta S^\\circ$; reactions that reduce the number of gas moles typically have negative $\\Delta S^\\circ$.\n\nThe Gibbs free energy change, $\\Delta G$, combines enthalpy and entropy contributions to determine the spontaneity of a reaction. At constant temperature and pressure, a process is spontaneous if $\\Delta G < 0$. The fundamental relationship is: $\\Delta G = \\Delta H - T\\Delta S$. Under standard conditions: $\\Delta G^\\circ = \\Delta H^\\circ - T\\Delta S^\\circ$. The sign of $\\Delta G$ depends on the signs and magnitudes of $\\Delta H$ and $\\Delta S$, and on temperature T (in kelvin). When $\\Delta H < 0$ and $\\Delta S > 0$, $\\Delta G$ is always negative (always spontaneous). When $\\Delta H > 0$ and $\\Delta S < 0$, $\\Delta G$ is always positive (never spontaneous). When $\\Delta H$ and $\\Delta S$ have the same sign, the reaction becomes spontaneous at temperatures above (if $\\Delta H > 0$, $\\Delta S > 0$) or below (if $\\Delta H < 0$, $\\Delta S < 0$) a crossover temperature $T = \\tfrac{\\Delta H^\\circ}{\\Delta S^\\circ}$.\n\n$\\Delta G$ is also related to the equilibrium constant K by: $\\Delta G^\\circ = -RT\\ln K$. A large negative $\\Delta G^\\circ$ corresponds to $K \\gg 1$ (products strongly favoured); a large positive $\\Delta G^\\circ$ corresponds to $K \\ll 1$ (reactants strongly favoured). For a reaction not at standard conditions, $\\Delta G = \\Delta G^\\circ + RT\\ln Q$, where Q is the reaction quotient. At equilibrium, $Q = K$ and $\\Delta G = 0$.",
+    "quiz": [
+      {
+        "question": "Predict the sign of $\\Delta S$ for the following reactions: (a) $\\mathrm{2SO_2(g) + O_2(g) \\rightarrow 2SO_3(g)}$; (b) $\\mathrm{CaCO_3(s) \\rightarrow CaO(s) + CO_2(g)}$.",
+        "markscheme": "(a) Reactants: 3 mol gas; products: 2 mol gas. Number of gas moles decreases, so disorder decreases → $\\Delta S < 0$ (negative). (b) Reactants: 1 mol solid; products: 1 mol solid + 1 mol gas. The formation of a gas from a solid greatly increases disorder → $\\Delta S > 0$ (positive). In general, $\\Delta S$ is more negative when gas moles decrease and more positive when gas moles increase."
+      },
+      {
+        "question": "Calculate $\\Delta G^\\circ$ at 298 K for a reaction where $\\Delta H^\\circ$ = -92 $\\text{kJ mol}^{-1}$ and $\\Delta S^\\circ$ = -198 $\\text{J K}^{-1}\\text{ mol}^{-1}$. Comment on the spontaneity at 25°C and determine the temperature at which the reaction ceases to be spontaneous.",
+        "markscheme": "$\\Delta G^\\circ = \\Delta H^\\circ - T\\Delta S^\\circ$ = -92000 $\\text{J mol}^{-1}$ - 298 × (-198) $\\text{J mol}^{-1}$ = -92000 + 58,998 = -33,002 $\\text{J mol}^{-1}$ ≈ -33.0 $\\text{kJ mol}^{-1}$. Since $\\Delta G^\\circ < 0$, the reaction is spontaneous at 25°C. Temperature at which $\\Delta G^\\circ = 0$: $T = \\tfrac{\\Delta H^\\circ}{\\Delta S^\\circ}$ = -92000/(-198) = 465 K. Above 465 K, the -T$\\Delta S^\\circ$ term (positive, since $\\Delta S^\\circ < 0$) dominates and $\\Delta G^\\circ > 0$, so the reaction becomes non-spontaneous above 465 K."
+      },
+      {
+        "question": "Explain the relationship between $\\Delta G^\\circ$ and the equilibrium constant K, and predict whether K is greater than or less than 1 for a reaction with $\\Delta G^\\circ$ = -20 $\\text{kJ mol}^{-1}$ at 298 K.",
+        "markscheme": "Relationship: $\\Delta G^\\circ = -RT\\ln K$, where $R = 8.31\\,\\text{J K}^{-1}\\text{ mol}^{-1}$. A negative $\\Delta G^\\circ$ gives a positive $\\ln K$, meaning $K > 1$ (products are favoured at equilibrium). Calculation: $\\ln K$ = -$\\Delta G^\\circ$/(RT) = -(-20000)/(8.31 × 298) = 20000/2476 = 8.08. K = $e^{8.08}$ ≈ 3200. Since $K \\gg 1$, the equilibrium strongly favours the products. A large negative $\\Delta G^\\circ$ corresponds to a large K."
+      },
+      {
+        "question": "For the reaction $\\mathrm{A(g) \\rightleftharpoons B(g)}$, $\\Delta G^\\circ$ = +5.0 $\\text{kJ mol}^{-1}$ at 500 K. Calculate the value of K and predict the direction the reaction will proceed from equal concentrations.",
+        "markscheme": "$K = e^{-\\Delta G^\\circ/RT}$ = e^(-5000/(8.31 × 500)) = $e^{-1.204}$ = 0.30. $K < 1$, so reactants are favoured. Q from equal concentrations of A and B = [B]/[A] = 1. Since $Q\\,(1) > K\\,(0.30)$, the reaction will proceed in the reverse direction (from B back to A) to reach equilibrium."
+      }
+    ]
+  },
+  {
+    "id": "R2.1",
+    "unit": 5,
+    "title": "How much? The amount of chemical change",
+    "hl": "SL",
+    "objectives": [
+      "Deduce chemical equations when reactants and products are specified.",
+      "Calculate reacting masses, volumes and concentrations of reactants and products.",
+      "Identify the limiting and excess reactants from given data.",
+      "Solve problems involving reacting quantities, limiting and excess reactants, theoretical and percentage yields.",
+      "Calculate the atom economy from the stoichiometry of a reaction."
+    ],
+    "summary": "Quantitative chemistry — the branch of chemistry dealing with amounts of substances in reactions — relies on the balanced chemical equation, which shows the mole ratios of all reactants and products. The stoichiometric coefficients in a balanced equation can be interpreted as the number of moles of each species reacting or produced. For example, in $\\mathrm{2H_2(g) + O_2(g) \\rightarrow 2H_2O(l)}$, 2 mol of hydrogen reacts with 1 mol of oxygen to produce 2 mol of water.\n\nThe mole ratio from the balanced equation allows calculation of the amounts of products formed from given amounts of reactants, and vice versa. The limiting reactant is the reactant that is completely consumed first and thereby limits the maximum amount of product that can be formed. The excess reactant is the one that remains after the limiting reactant is consumed. To identify the limiting reactant, calculate the moles of each reactant present and compare to the stoichiometric ratio required by the equation; the reactant with the smallest ratio of available moles to stoichiometric coefficient is the limiting reactant.\n\nThe theoretical yield is the maximum mass (or volume) of product calculated from the limiting reactant, assuming the reaction proceeds to completion with no losses. In practice, the actual (experimental) yield is usually less than the theoretical yield due to incomplete reactions, side reactions, losses during transfer, or failure of the reaction to reach completion. The percentage yield is defined as: $\\% \\text{ yield} = \\tfrac{\\text{actual yield}}{\\text{theoretical yield}} \\times 100\\%$.\n\nAtom economy is a measure of efficiency used in green chemistry, defined as the percentage of the mass of reactants that becomes incorporated into the desired product: atom economy = (M of desired product(s) / sum of M of all reactants) × 100%. A high atom economy indicates minimal waste. Addition reactions and reactions producing a single product have 100% atom economy; condensation reactions and those producing significant by-products have lower atom economy. Atom economy does not account for yield, energy use, or solvent waste, so it is used alongside other green chemistry metrics.",
+    "quiz": [
+      {
+        "question": "10.0 g of iron reacts with 10.0 g of sulfur to form iron(II) sulfide, $\\mathrm{FeS}$. Identify the limiting reactant and calculate the theoretical yield of $\\mathrm{FeS}$.",
+        "markscheme": "Equation: $\\mathrm{Fe(s) + S(s) \\rightarrow FeS(s)}$. M(Fe) = 55.85, M(S) = 32.07, M($\\mathrm{FeS}$) = 87.92 $\\text{g mol}^{-1}$. n(Fe) = 10.0/55.85 = 0.179 mol; n(S) = 10.0/32.07 = 0.312 mol. Mole ratio required 1:1. Fe provides 0.179 mol, S provides 0.312 mol. Fe is the limiting reactant (less mol relative to stoichiometry). n($\\mathrm{FeS}$) = n(Fe) = 0.179 mol. Theoretical yield = 0.179 × 87.92 = 15.7 g."
+      },
+      {
+        "question": "If 12.5 g of $\\mathrm{FeS}$ was actually obtained in the reaction above, calculate the percentage yield.",
+        "markscheme": "$\\% \\text{ yield} = \\tfrac{\\text{actual yield}}{\\text{theoretical yield}} \\times 100\\%$ = (12.5 / 15.7) × 100 = 79.6%. The reaction did not go to completion, or some product was lost during transfer/filtration, or a competing reaction occurred, reducing the actual yield below the theoretical maximum."
+      },
+      {
+        "question": "Calculate the atom economy for the synthesis of ethanol by fermentation: $\\mathrm{C_6H_{12}O_6(aq) \\rightarrow 2C_2H_5OH(aq) + 2CO_2(g)}$. The desired product is ethanol.",
+        "markscheme": "M($\\mathrm{C_6H_{12}O_6}$) = 180.18 $\\text{g mol}^{-1}$. M(2 × $\\mathrm{C_2H_5OH}$) = 2 × 46.08 = 92.16 $\\text{g mol}^{-1}$. $\\text{atom economy} = \\tfrac{\\text{mass of desired product}}{\\text{total mass of reactants}} \\times 100\\%$ = 92.16 / 180.18 × 100 = 51.1%. The other 48.9% of the mass is lost as $\\mathrm{CO_2}. This is relatively low atom economy because \\mathrm{CO_2}$ is a by-product. Compare to polymerisation of ethene: $\\mathrm{CH_2{=}CH_2 \\rightarrow {-}(CH_2CH_2){-}n}$, atom economy = 100% as all atoms end up in the product."
+      },
+      {
+        "question": "Calculate the volume of 0.200 $\\text{mol dm}^{-3}\\mathrm{H_2SO_4}$(aq) required to react completely with 25.0 $\\text{cm}^3$ of 0.100 $\\text{mol dm}^{-3}\\mathrm{NaOH}$(aq).",
+        "markscheme": "Equation: $\\mathrm{H_2SO_4 + 2NaOH \\rightarrow Na_2SO_4 + 2H_2O}$. n($\\mathrm{NaOH}$) = 0.025 $\\text{dm}^3$ × 0.100 $\\text{mol dm}^{-3}$ = 0.00250 mol. From stoichiometry: n($\\mathrm{H_2SO_4}$) = 0.00250/2 = 0.00125 mol. V($\\mathrm{H_2SO_4}$) = n/c = 0.00125/0.200 = 0.00625 $\\text{dm}^3$ = 6.25 $\\text{cm}^3$."
+      }
+    ]
+  },
+  {
+    "id": "R2.2",
+    "unit": 5,
+    "title": "How fast? The rate of chemical change",
+    "hl": "Some HL",
+    "objectives": [
+      "Determine rates of reaction using numerical data and graphs.",
+      "Explain the relationship between kinetic energy of particles and temperature, and the role of collision geometry.",
+      "Predict and explain the effects of changing concentration, pressure, surface area, temperature and catalysts on reaction rate.",
+      "Construct Maxwell-Boltzmann energy distribution curves to explain effects of temperature and $E_a$ on reaction rate.",
+      "Sketch and explain energy profiles with and without catalysts.",
+      "Evaluate proposed reaction mechanisms and recognize reaction intermediates.",
+      "Deduce rate equations from experimental data (Additional HL).",
+      "Analyse Arrhenius equation graphically to determine $E_a$ (Additional HL)."
+    ],
+    "summary": "The rate of a chemical reaction is defined as the change in concentration of a reactant or product per unit time: $\\text{rate} = \\tfrac{\\Delta[\\text{concentration}]}{\\Delta t}$ (units: $\\text{mol dm}^{-3}\\text{ s}^{-1}$). Rates can be determined from concentration-time graphs by taking the gradient at a specific time (instantaneous rate) or over a time interval (average rate). As a reaction proceeds, the rate typically decreases because reactant concentrations decrease.\n\nCollision theory provides a molecular-level explanation for reaction rates. For a reaction to occur, reacting particles must collide with sufficient energy (kinetic energy ≥ activation energy, $E_a$) and in the correct orientation. The fraction of particles with energy ≥ $E_a$ is represented by the area under the Maxwell-Boltzmann energy distribution curve to the right of the $E_a$ value.\n\nFactors affecting rate: concentration and pressure: increasing concentration (or pressure for gases) increases the frequency of collisions per unit volume, increasing the rate. Surface area: increasing the surface area of a solid increases the exposed surface for collisions, increasing the rate. Temperature: increasing temperature increases the average kinetic energy of particles; more particles have energy ≥ $E_a$, and the distribution shifts to higher energies. Even a modest temperature rise (e.g. 10°C) can approximately double the rate for many reactions because the fraction of particles above $E_a$ increases significantly. Catalysts provide an alternative reaction pathway with a lower activation energy; more particles have sufficient energy to react, increasing the rate without being consumed. This is shown on an energy profile by a lower peak for the catalysed pathway.\n\nAt the Additional Higher Level, the rate equation for a reaction is determined experimentally: $\\text{rate} = k[\\mathrm{A}]^m[\\mathrm{B}]^n$, where m and n are the orders of reaction with respect to each reactant and k is the rate constant. The overall order = m + n. Orders can only be determined from experimental data, not from the stoichiometric equation alone. The Arrhenius equation, $k = Ae^{-E_a/RT}$ (or $\\ln k = \\ln A - \\tfrac{E_a}{RT}$), relates k to temperature T, activation energy $E_a$, and the Arrhenius factor A. A graph of $\\ln k$ against 1/T has gradient -$E_a$/R and intercept $\\ln A$, allowing $E_a$ to be determined graphically.",
+    "quiz": [
+      {
+        "question": "Explain why increasing the temperature increases the rate of a chemical reaction, using the Maxwell-Boltzmann distribution.",
+        "markscheme": "At higher temperature, gas molecules have greater average kinetic energy; the Maxwell-Boltzmann distribution shifts to the right (higher energies) and broadens. The area under the curve to the right of $E_a$ (representing the fraction of molecules with energy ≥ $E_a$) increases significantly. More molecules now have sufficient energy for successful collisions, so the rate increases. Additionally, the increased average speed means more frequent collisions. Even a small temperature increase (e.g. 10 K) substantially increases the proportion of high-energy molecules and can approximately double the rate."
+      },
+      {
+        "question": "Explain how a catalyst increases the rate of a reaction without being consumed, with reference to an energy profile diagram.",
+        "markscheme": "A catalyst provides an alternative reaction mechanism (pathway) with a lower activation energy, $E_a$. On the energy profile, the uncatalysed reaction has a higher activation energy peak; the catalysed reaction shows a lower peak, possibly through an intermediate (two smaller peaks via an intermediate state). The starting energies of reactants and the final energies of products are unchanged — $\\Delta H$ is the same with or without catalyst — but more molecules have sufficient energy to overcome the lower barrier, so the reaction rate increases. The catalyst participates in the reaction but is regenerated in a subsequent step, so it is not consumed overall."
+      },
+      {
+        "question": "Experimental data shows: doubling [A] doubles the rate; doubling [B] quadruples the rate; [C] has no effect. Deduce the rate equation and overall order.",
+        "markscheme": "$\\text{rate} \\propto [\\mathrm{A}]^1$ (doubling [A] doubles rate → first order in A). $\\text{rate} \\propto [\\mathrm{B}]^2$ (doubling [B] quadruples rate → second order in B). $\\text{rate} \\propto [\\mathrm{C}]^0$ (changing [C] has no effect → zero order in C). Rate equation: $\\text{rate} = k[\\mathrm{A}][\\mathrm{B}]^2$. Overall order = 1 + 2 + 0 = 3 (third order). Units of k: $\\text{mol dm}^{-3}\\text{ s}^{-1}$ / ($\\text{mol dm}^{-3}$)$^3$ = $\\text{dm}^6\\text{ mol}^{-2}\\text{ s}^{-1}$."
+      },
+      {
+        "question": "Predict and explain the effect on reaction rate of increasing the concentration of a dissolved reactant.",
+        "markscheme": "Increasing concentration increases the number of solute particles per unit volume. This increases the frequency of collisions between reacting particles. With more frequent collisions overall, there are more collisions per unit time with energy ≥ $E_a$ and in the correct orientation — successful collisions increase in proportion. Therefore, the rate of reaction increases. For a reaction that is first order in a reactant, doubling concentration doubles the rate; for second order, doubling concentration quadruples the rate."
+      }
+    ]
+  },
+  {
+    "id": "R2.3",
+    "unit": 5,
+    "title": "How far? The extent of chemical change",
+    "hl": "Some HL",
+    "objectives": [
+      "Describe the characteristics of a physical and chemical system at equilibrium.",
+      "Deduce the equilibrium constant expression from an equation for a homogeneous reaction.",
+      "Determine relationships between K values for reverse reactions at the same temperature.",
+      "Apply Le Chatelier's principle to predict and explain responses of a system at equilibrium to changes in concentration, pressure and temperature.",
+      "Calculate Q and determine reaction direction (Additional HL).",
+      "Solve problems involving K and equilibrium concentrations (Additional HL).",
+      "Perform calculations using $\\Delta G^\\circ = -RT\\ln K$ (Additional HL)."
+    ],
+    "summary": "A reversible reaction is one that can proceed in both forward and reverse directions simultaneously. In a closed system, such a reaction eventually reaches a state of dynamic equilibrium in which the rate of the forward reaction exactly equals the rate of the reverse reaction, so the macroscopic concentrations of all species remain constant. The equilibrium is dynamic, not static: at the microscopic level, reactants continue to form products and vice versa, but at equal rates.\n\nThe equilibrium law describes the mathematical relationship at equilibrium. For a general homogeneous reaction $a\\mathrm{A} + b\\mathrm{B} \\rightleftharpoons x\\mathrm{X} + y\\mathrm{Y}$, the equilibrium constant $K_c$ is: $K_c = \\tfrac{[\\mathrm{X}]^x[\\mathrm{Y}]^y}{[\\mathrm{A}]^a[\\mathrm{B}]^b}$. Concentrations are equilibrium values, in $\\text{mol dm}^{-3}$. For the reverse reaction, $K_c$(reverse) = 1/$K_c$(forward). Pure solids and liquids are excluded from K expressions (their concentrations are defined as 1). A large K (>> 1) means products are favoured; a small K (<< 1) means reactants are favoured. K is temperature-dependent.\n\nLe Chatelier's principle states that when a system at equilibrium is subjected to a change (stress), the system will shift in the direction that partially counteracts that change and re-establishes equilibrium. Key applications: adding a reactant shifts equilibrium towards products; removing a product also shifts towards products; increasing pressure (for gaseous equilibria) shifts the equilibrium towards fewer moles of gas; decreasing pressure shifts towards more moles of gas; increasing temperature shifts the equilibrium in the endothermic direction (increases K if endothermic, decreases K if exothermic). A catalyst does not shift the position of equilibrium (does not change K) but allows equilibrium to be reached more quickly.\n\nAt the Additional Higher Level, the reaction quotient Q is calculated using the same expression as $K_c$ but with non-equilibrium concentrations. Comparing Q with K predicts the direction of net reaction: if $Q < K$, the reaction proceeds forward (towards products); if $Q > K$, it proceeds in reverse; if $Q = K$, the system is at equilibrium. The relationship $\\Delta G^\\circ = -RT\\ln K$ links thermodynamics and equilibrium, allowing K to be calculated from $\\Delta G^\\circ$ or vice versa, and relating spontaneity to equilibrium position.",
+    "quiz": [
+      {
+        "question": "Describe the characteristics of a system at dynamic equilibrium.",
+        "markscheme": "At dynamic equilibrium: (1) the system is closed (no exchange of matter with surroundings); (2) the rates of the forward and reverse reactions are equal; (3) the macroscopic concentrations (and thus colour, pressure, density) of all reactants and products remain constant; (4) the equilibrium is dynamic — reactions continue in both directions at the molecular level; (5) the equilibrium can be reached from either direction (from reactants or products side); (6) the equilibrium constant K has a fixed value at a given temperature."
+      },
+      {
+        "question": "Write the equilibrium constant expression for $\\mathrm{N_2(g) + 3H_2(g) \\rightleftharpoons 2NH_3(g)}$ and state whether $K > 1$ or $K < 1$ if the equilibrium mixture is predominantly ammonia.",
+        "markscheme": "$K_c = \\tfrac{[\\mathrm{NH_3}]^2}{[\\mathrm{N_2}][\\mathrm{H_2}]^3}$. If the equilibrium mixture contains predominantly $\\mathrm{NH_3}$ (products favoured), then [$\\mathrm{NH_3}$] is large relative to [$\\mathrm{N_2}$] and [$\\mathrm{H_2}$]. The numerator is large and the denominator is small, so $K_c$ >> 1. This indicates that at this temperature, the forward reaction (synthesis of $\\mathrm{NH_3}$) is strongly favoured. In the Haber process, moderately high K is achieved by using a temperature of around 450°C as a compromise between yield and rate."
+      },
+      {
+        "question": "Explain, using Le Chatelier's principle, what happens to the equilibrium position and to K when the temperature is increased for the endothermic reaction $\\mathrm{A(g) + B(g) \\rightleftharpoons C(g)}$.",
+        "markscheme": "The forward reaction is endothermic ($\\Delta H > 0$). Increasing temperature adds thermal energy — this acts as a stress on the system. To partially counteract this stress (absorb the extra energy), the equilibrium shifts in the endothermic direction, i.e. towards the products (forward direction). The concentration of C increases and concentrations of A and B decrease. The value of K increases (becomes larger) because K is temperature-dependent and the equilibrium has shifted towards products. Note: for an exothermic reaction, increasing temperature would decrease K."
+      },
+      {
+        "question": "For the reaction $\\mathrm{2SO_2(g) + O_2(g) \\rightleftharpoons 2SO_3(g)}$, $K_c$ = $280\\,\\text{dm}^3\\text{ mol}^{-1}$ at 700 K. Predict the direction of reaction if at a certain point [$\\mathrm{SO_2}$] = 0.10 $\\text{mol dm}^{-3}$, [$\\mathrm{O_2}$] = 0.10 $\\text{mol dm}^{-3}$, [$\\mathrm{SO_3}$] = 0.40 $\\text{mol dm}^{-3}$.",
+        "markscheme": "$Q = \\tfrac{[\\mathrm{SO_3}]^2}{[\\mathrm{SO_2}]^2[\\mathrm{O_2}]}$ = $(0.40)^2$ / ($(0.10)^2$(0.10)) = 0.16 / (0.001) = 160. Since $Q\\,(160) < K\\,(280)$, the system has not yet reached equilibrium. The reaction will proceed in the forward direction (producing more $\\mathrm{SO_3}$) to increase Q towards K. The concentration of $\\mathrm{SO_3}$ will increase and those of $\\mathrm{SO_2}$ and $\\mathrm{O_2}$ will decrease until Q = $K_c$ = 280."
+      }
+    ]
+  },
+  {
+    "id": "R3.1",
+    "unit": 6,
+    "title": "Proton transfer reactions",
+    "hl": "Some HL",
+    "objectives": [
+      "Deduce the Bronsted-Lowry acid and base in a reaction.",
+      "Deduce the formula of the conjugate acid or base for any Bronsted-Lowry base or acid.",
+      "Perform calculations involving the logarithmic relationship between $\\mathrm{pH}$ and [$\\mathrm{H^+}$].",
+      "Recognize solutions as acidic, neutral and basic from relative values of [$\\mathrm{H^+}$] and [$\\mathrm{OH^-}$].",
+      "Formulate equations for reactions of acids with metal oxides, hydroxides, hydrogencarbonates and carbonates.",
+      "Sketch and interpret the general shape of $\\mathrm{pH}$ curves.",
+      "Solve problems involving $K_a$, $K_b$, $\\mathrm{p}K_a$, $\\mathrm{p}K_b$, and buffer solutions (Additional HL)."
+    ],
+    "summary": "The Bronsted-Lowry theory defines an acid as a proton ($\\mathrm{H^+}$) donor and a base as a proton ($\\mathrm{H^+}$) acceptor. In any acid-base reaction, the acid donates a proton to the base, forming the conjugate base of the acid and the conjugate acid of the base. A conjugate acid-base pair differs by a single proton. For example, in $\\mathrm{HCl(aq) + H_2O(l) \\rightarrow H_3O^+(aq) + Cl^-(aq)}$: $\\mathrm{HCl}$ is the acid; $\\mathrm{H_2O}$ is the base; $\\mathrm{Cl^-}$ is the conjugate base of $\\mathrm{HCl}$; $\\mathrm{H_3O^+}$ is the conjugate acid of $\\mathrm{H_2O}$. Some species can act as both acids and bases (amphoteric or amphiprotic), such as water and $\\mathrm{HCO_3^-}$.\n\nThe $\\mathrm{pH}$ scale quantifies acidity: $\\mathrm{pH} = -\\log_{10}[\\mathrm{H^+}]$, and $[\\mathrm{H^+}] = 10^{-\\mathrm{pH}}$. The $\\mathrm{pH}$ of pure water at 25°C is 7, reflecting the autoionisation of water: $\\mathrm{H_2O(l) \\rightleftharpoons H^+(aq) + OH^-(aq)}$, with $K_w = [\\mathrm{H^+}][\\mathrm{OH^-}]$ = $1.00 \\times 10^{-14}\\text{mol}^2\\text{ dm}^{-6}$ at 25°C. Acidic solutions have [$\\mathrm{H^+}$] > [$\\mathrm{OH^-}$] ($\\mathrm{pH} < 7$); basic solutions have [$\\mathrm{OH^-}$] > [$\\mathrm{H^+}$] ($\\mathrm{pH} > 7$); neutral solutions have [$\\mathrm{H^+}$] = [$\\mathrm{OH^-}$] ($\\mathrm{pH} = 7$ at 25°C).\n\nStrong acids (e.g. $\\mathrm{HCl}$, $\\mathrm{H_2SO_4}$, $\\mathrm{HNO_3}$) and strong bases (e.g. $\\mathrm{NaOH}$, $\\mathrm{KOH}$) fully dissociate in water. Weak acids (e.g. ethanoic acid, $\\mathrm{CH_3COOH}$) and weak bases (e.g. $\\mathrm{NH_3}$) only partially ionise, establishing equilibria characterised by $K_a$ (acid dissociation constant) or $K_b$. A stronger acid has a larger $K_a$ and a smaller $\\mathrm{p}K_a$ ($\\mathrm{p}K_a = -\\log K_a$). For a conjugate acid-base pair: $K_a \\times K_b = K_w$.\n\nAcids react with metal oxides, metal hydroxides, hydrogencarbonates, and carbonates in neutralisation reactions, producing a salt and water (with carbonates also producing $\\mathrm{CO_2}$). $\\mathrm{pH}$ curves for acid-base titrations have characteristic S-shapes with sharp jumps at the equivalence point; the gradient of the jump at equivalence point is greatest for strong acid/strong base combinations.\n\nAt the Additional Higher Level, buffer solutions resist large changes in $\\mathrm{pH}$ upon addition of small amounts of acid or base. An acidic buffer consists of a weak acid and its conjugate base (a salt); a basic buffer consists of a weak base and its conjugate acid. The Henderson-Hasselbalch equation, $\\mathrm{pH} = \\mathrm{p}K_a + \\log\\tfrac{[\\mathrm{A^-}]}{[\\mathrm{HA}]}$, allows calculation of buffer $\\mathrm{pH}$ from $K_a$ and component concentrations.",
+    "quiz": [
+      {
+        "question": "Identify the Bronsted-Lowry acid and base, and the conjugate pairs, in the reaction: $\\mathrm{NH_3(aq) + H_2O(l) \\rightleftharpoons NH_4^+(aq) + OH^-(aq)}$.",
+        "markscheme": "$\\mathrm{H_2O}$ donates a proton to $\\mathrm{NH_3}$ → $\\mathrm{H_2O}$ is the Bronsted-Lowry acid; $\\mathrm{NH_3}$ accepts the proton → $\\mathrm{NH_3}$ is the Bronsted-Lowry base. Products: $\\mathrm{NH_4^+}$ is the conjugate acid of $\\mathrm{NH_3}$ (gained a proton); $\\mathrm{OH^-}$ is the conjugate base of $\\mathrm{H_2O}$ (lost a proton). Conjugate pairs: ($\\mathrm{NH_3}$ / $\\mathrm{NH_4^+}$) and ($\\mathrm{H_2O}$ / $\\mathrm{OH^-}$). Water is acting as an acid here, demonstrating its amphiprotic nature."
+      },
+      {
+        "question": "Calculate the $\\mathrm{pH}$ of: (a) a 0.10 $\\text{mol dm}^{-3}$ solution of $\\mathrm{HCl}$ (a strong acid); (b) a solution with [$\\mathrm{OH^-}$] = $2.0 \\times 10^{-4}\\text{mol dm}^{-3}$.",
+        "markscheme": "(a) $\\mathrm{HCl}$ fully dissociates: [$\\mathrm{H^+}$] = 0.10 $\\text{mol dm}^{-3}$. $\\mathrm{pH} = -\\log(0.10)$ = 1.00. (b) [$\\mathrm{H^+}$] = $K_w$/[$\\mathrm{OH^-}$] = $1.00 \\times 10^{-14}$ / $2.0 \\times 10^{-4}$ = $5.0 \\times 10^{-11}\\text{mol dm}^{-3}$. $\\mathrm{pH} = -\\log(5.0 \\times 10^{-11})$ = 10.30. The solution is basic ($\\mathrm{pH} > 7$) because [$\\mathrm{OH^-}$] > [$\\mathrm{H^+}$]."
+      },
+      {
+        "question": "Sketch and describe the $\\mathrm{pH}$ curve for a titration of 25 $\\text{cm}^3$ of 0.10 $\\text{mol dm}^{-3}$ weak acid ($\\mathrm{p}K_a$ = 4.76) with 0.10 $\\text{mol dm}^{-3}\\mathrm{NaOH}$. Mark the equivalence point and buffer region.",
+        "markscheme": "Starting $\\mathrm{pH}$: slightly acidic (around $\\mathrm{pH}$ 3-4 for a 0.10 $\\text{mol dm}^{-3}$ weak acid). Buffer region: gradual rise in $\\mathrm{pH}$, relatively flat section from ~10–90% neutralisation (between approximately 2.5 and 22.5 $\\text{cm}^3\\mathrm{NaOH}$). Half-equivalence point: at 12.5 $\\text{cm}^3\\mathrm{NaOH}$ added, $\\mathrm{pH} \\approx \\mathrm{p}K_a = 4.76$ (buffer region midpoint). Equivalence point: at 25.0 $\\text{cm}^3\\mathrm{NaOH}$, the solution contains only the salt (sodium ethanoate), which is basic — $\\mathrm{pH} \\approx 8–9$ (above 7 because the anion hydrolyses). End-point jump: less sharp than strong acid/strong base. Past equivalence: slow rise as excess $\\mathrm{NaOH}$ is added."
+      },
+      {
+        "question": "Calculate the $\\mathrm{pH}$ of a buffer solution made from 0.20 $\\text{mol dm}^{-3}\\mathrm{CH_3COOH}$ and 0.10 $\\text{mol dm}^{-3}\\mathrm{CH_3COO^-Na^+}$. $K_a$($\\mathrm{CH_3COOH}$) = $1.8 \\times 10^{-5}\\text{mol dm}^{-3}$.",
+        "markscheme": "Using Henderson-Hasselbalch: $\\mathrm{pH} = \\mathrm{p}K_a + \\log\\tfrac{[\\mathrm{A^-}]}{[\\mathrm{HA}]}$ = $-\\log(1.8 \\times 10^{-5})$ + log(0.10/0.20) = 4.74 + log(0.5) = 4.74 + (-0.301) = 4.44. Alternatively, $K_a = \\tfrac{[\\mathrm{H^+}][\\mathrm{A^-}]}{[\\mathrm{HA}]}$; $[\\mathrm{H^+}] = K_a \\times \\tfrac{[\\mathrm{HA}]}{[\\mathrm{A^-}]}$ = $1.8 \\times 10^{-5}$ × 0.20/0.10 = $3.6 \\times 10^{-5}$; $\\mathrm{pH} = -\\log(3.6 \\times 10^{-5})$ = 4.44. The buffer is more acidic than the $\\mathrm{p}K_a$ because $[\\mathrm{HA}] > [\\mathrm{A^-}]$."
+      }
+    ]
+  },
+  {
+    "id": "R3.2",
+    "unit": 6,
+    "title": "Electron transfer reactions",
+    "hl": "Some HL",
+    "objectives": [
+      "Deduce oxidation states of an atom in a compound or anion.",
+      "Identify the oxidized and reduced species and the oxidizing and reducing agents.",
+      "Deduce redox half-equations and overall equations in acidic or neutral solutions.",
+      "Predict the relative ease of oxidation of metals and reduction of halogens.",
+      "Identify electrodes as anode and cathode in voltaic and electrolytic cells.",
+      "Deduce products of the electrolysis of molten salts and aqueous solutions.",
+      "Interpret standard electrode potential data (Additional HL).",
+      "Determine $\\Delta G^\\circ$ from standard electrode potentials (Additional HL)."
+    ],
+    "summary": "Redox reactions involve the simultaneous transfer of electrons from one species (which is oxidised) to another (which is reduced). Oxidation and reduction can be defined in complementary ways: oxidation is loss of electrons/increase in oxidation state/gain of oxygen/loss of hydrogen; reduction is gain of electrons/decrease in oxidation state/loss of oxygen/gain of hydrogen. The species that causes another to be oxidised (by accepting electrons) is the oxidising agent and is itself reduced; the reducing agent is itself oxidised.\n\nOxidation states are assigned using rules: free elements have OS = 0; in most compounds, O = -2 (except peroxides, -1), H = +1 (except metal hydrides, -1); for monatomic ions, OS = charge; the sum of OS in a compound is 0; in polyatomic ions, OS sum equals the charge. Half-equations separate the two processes. In acidic conditions, $\\mathrm{H_2O}$ and $\\mathrm{H^+}$ are used to balance; in basic conditions, $\\mathrm{H_2O}$ and $\\mathrm{OH^-}$ are used.\n\nThe relative ease of oxidation of metals and reduction of halogens can be predicted from the periodic table: metals lower in the electrochemical series are more easily oxidised; more reactive halogens are more easily reduced. Reactions between metals and aqueous metal ion solutions demonstrate this: a more reactive metal displaces a less reactive metal from solution.\n\nElectrochemical cells harness redox reactions. A voltaic (galvanic) cell uses a spontaneous redox reaction to generate electrical energy. Oxidation occurs at the anode (negative terminal in a voltaic cell); reduction occurs at the cathode (positive terminal). A salt bridge maintains electrical neutrality by allowing ion migration. An electrolytic cell uses electrical energy to drive a non-spontaneous redox reaction. The anode is positive (connected to the positive terminal of the power supply) and the cathode is negative. In electrolysis of molten salts, cations are reduced at the cathode and anions are oxidised at the anode.\n\nAt the Additional Higher Level, standard electrode potentials ($E^\\circ$, measured against the standard hydrogen electrode, $E^\\circ = 0\\,\\text{V}$) quantify the tendency of reduction to occur. The standard cell potential $E^\\circ_{\\text{cell}} = E^\\circ_{\\text{cathode}} - E^\\circ_{\\text{anode}}$; a positive $E^\\circ_{\\text{cell}}$ indicates a spontaneous reaction. The relationship $\\Delta G^\\circ = -nFE^\\circ$cell (where n is the moles of electrons and $F = 96500\\,\\text{C mol}^{-1}$) connects thermodynamics and electrochemistry.",
+    "quiz": [
+      {
+        "question": "Deduce the oxidation states of all elements in (a) $\\mathrm{K_2Cr_2O_7}$ and (b) $\\mathrm{Na_2O_2}$ (sodium peroxide).",
+        "markscheme": "(a) $\\mathrm{K_2Cr_2O_7}$: K = +1 (group 1); O = -2. 2(+1) + 2(Cr) + 7(-2) = 0 → 2Cr = +12 → Cr = +6. (b) $\\mathrm{Na_2O_2}$: Na = +1 (group 1); peroxide ion $\\mathrm{O_2^{2-}}$: O = -1 (not the usual -2). 2(+1) + 2(O) = 0 → 2O = -2 → O = -1. This is an exception to the O = -2 rule, as sodium peroxide contains the peroxide ion."
+      },
+      {
+        "question": "Write the half-equations and overall ionic equation for the reaction between acidified potassium dichromate(VI) ($\\mathrm{Cr_2O_7^{2-}}$) and iron(II) ions ($\\mathrm{Fe^{2+}}$).",
+        "markscheme": "Reduction ($\\mathrm{Cr_2O_7^{2-}}$ → $\\mathrm{Cr^{3+}}$): $\\mathrm{Cr_2O_7^{2-}(aq) + 14H^+(aq) + 6e^- \\rightarrow 2Cr^{3+}(aq) + 7H_2O(l)}$. Oxidation ($\\mathrm{Fe^{2+}}$ → $\\mathrm{Fe^{3+}}$): $\\mathrm{Fe^{2+}(aq) \\rightarrow Fe^{3+}(aq) + e^-}$; multiply by 6: $\\mathrm{6Fe^{2+}(aq) \\rightarrow 6Fe^{3+}(aq) + 6e^-}$. Overall: $\\mathrm{Cr_2O_7^{2-}(aq) + 14H^+(aq) + 6Fe^{2+}(aq) \\rightarrow 2Cr^{3+}(aq) + 7H_2O(l) + 6Fe^{3+}(aq)}. \\mathrm{Cr_2O_7^{2-}}$ is the oxidising agent (reduced from +6 to +3); $\\mathrm{Fe^{2+}}$ is the reducing agent (oxidised from +2 to +3)."
+      },
+      {
+        "question": "Describe the products of the electrolysis of dilute aqueous sodium chloride solution, explaining which species is discharged at each electrode.",
+        "markscheme": "Cathode (reduction): $\\mathrm{H^+(aq) + e^- \\rightarrow \\tfrac{1}{2}H_2(g)}$; hydrogen gas is produced. Despite $\\mathrm{Na^+}$ being present, $\\mathrm{H^+}$ is preferentially reduced because it requires less energy ($\\mathrm{Na^+}$ reduction would require very negative potential). Anode (oxidation): if dilute, $\\mathrm{2H_2O(l) \\rightarrow O_2(g) + 4H^+(aq) + 4e^-}$; oxygen gas is produced. In concentrated solution, $\\mathrm{Cl^-}$ ions would be oxidised instead: $\\mathrm{2Cl^-(aq) \\rightarrow Cl_2(g) + 2e^-}$. With dilute NaCl, the lower concentration of $\\mathrm{Cl^-}$ means water is oxidised preferentially at the anode. The solution becomes basic as $\\mathrm{OH^-}$ ions remain after $\\mathrm{H_2}$ evolution."
+      },
+      {
+        "question": "Explain what happens during the electrolysis of molten lead(II) bromide, writing equations for each electrode.",
+        "markscheme": "Molten $\\mathrm{PbBr_2}$ contains $\\mathrm{Pb^{2+}}$ and $\\mathrm{Br^-}$ ions, which are free to move to electrodes. Cathode (negative electrode, reduction): $\\mathrm{Pb^{2+}(l) + 2e^- \\rightarrow Pb(l)}$; lead metal is deposited at the cathode. Anode (positive electrode, oxidation): $\\mathrm{2Br^-(l) \\rightarrow Br_2(g) + 2e^-}$; bromine gas (or vapour) is produced at the anode. Overall: $\\mathrm{PbBr_2(l) \\rightarrow Pb(l) + Br_2(g)}$. This is non-spontaneous ($\\Delta G^\\circ > 0$) and requires an external power supply to proceed. The electrolysis of molten salts is used industrially to extract reactive metals such as sodium, aluminium, and lithium."
+      }
+    ]
+  },
+  {
+    "id": "R3.3",
+    "unit": 6,
+    "title": "Electron sharing reactions",
+    "hl": "SL",
+    "objectives": [
+      "Identify and represent radicals using dot notation.",
+      "Explain, using equations, the homolytic fission of halogens as the initiation step in a chain reaction.",
+      "Explain, using equations, the propagation and termination steps in radical substitution reactions of alkanes."
+    ],
+    "summary": "A radical (formerly called a free radical) is a chemical species with an unpaired valence electron, represented by a dot (e.g. Cl· or ·CH3). Radicals are extremely reactive due to the tendency to pair the unpaired electron by forming a new bond. They are typically formed as transient intermediates in chain reactions.\n\nHomolytic fission is the breaking of a covalent bond in which each fragment retains one of the two bonding electrons, producing two radicals. This contrasts with heterolytic fission, in which both electrons are retained by one fragment (producing ions). Homolytic fission is shown in mechanism drawings using single-headed (fish-hook) curved arrows, one from each end of the bond. Halogen molecules ($\\mathrm{Cl_2}$, $\\mathrm{Br_2}$) undergo homolytic fission when exposed to ultraviolet (UV) light or heat: $\\mathrm{Cl_2 \\rightarrow 2Cl{\\cdot}}$ (hν required).\n\nRadical substitution (SR) is the mechanism by which halogens react with alkanes. The reaction proceeds via three types of step:\n\n1. Initiation: UV light or heat causes homolytic fission of the halogen molecule, generating two radicals: $\\mathrm{Cl_2 \\rightarrow 2Cl{\\cdot}}$ (hν). These energetic, reactive species begin the chain.\n\n2. Propagation: the radical reacts with an alkane molecule, abstracting a hydrogen atom and forming a new carbon radical; the carbon radical then reacts with another halogen molecule: $\\mathrm{Cl{\\cdot} + CH_4 \\rightarrow HCl + {\\cdot}CH_3}$; $\\mathrm{{\\cdot}CH_3 + Cl_2 \\rightarrow CH_3Cl + Cl{\\cdot}}$. These steps regenerate a radical, sustaining the chain reaction.\n\n3. Termination: two radicals collide and combine, consuming radicals without regenerating them and ending the chain: $\\mathrm{Cl{\\cdot} + Cl{\\cdot} \\rightarrow Cl_2}$; $\\mathrm{{\\cdot}CH_3 + Cl{\\cdot} \\rightarrow CH_3Cl}$; $\\mathrm{{\\cdot}CH_3 + {\\cdot}CH_3 \\rightarrow C_2H_6}$.\n\nBecause the radical can substitute at any position in larger alkane molecules, and because multiple substitution steps can occur, the product of radical halogenation is typically a mixture of different halogenoalkane isomers and polyhalogenated compounds, reducing selectivity.",
+    "quiz": [
+      {
+        "question": "Explain the initiation step in the radical substitution of methane with chlorine, including the role of UV light.",
+        "markscheme": "Initiation: $\\mathrm{Cl_2(g) \\rightarrow 2Cl{\\cdot}(g)}$ (requires UV light, hν). UV photons provide sufficient energy to break the Cl-Cl bond by homolytic fission — each chlorine atom retains one of the two bonding electrons. The Cl-Cl bond is relatively weak (~242 $\\text{kJ mol}^{-1}$), so UV light has sufficient energy to break it. The resulting chlorine radicals are highly reactive species with an unpaired electron that initiate the chain reaction. Without UV light or sufficient heat, no radicals are produced and the reaction does not proceed."
+      },
+      {
+        "question": "Write the propagation steps for the reaction of Cl· with ethane, $\\mathrm{C_2H_6}$.",
+        "markscheme": "Propagation step 1: $\\mathrm{Cl{\\cdot} + C_2H_6 \\rightarrow HCl + {\\cdot}C_2H_5}$. A chlorine radical abstracts a hydrogen atom from ethane, forming $\\mathrm{HCl}$ and an ethyl radical (·C2H5). Propagation step 2: $\\mathrm{{\\cdot}C_2H_5 + Cl_2 \\rightarrow C_2H_5Cl + Cl{\\cdot}}$. The ethyl radical reacts with a chlorine molecule, producing chloroethane (the desired product) and regenerating a chlorine radical. The regenerated Cl· can continue the chain. Each propagation step consumes one radical and produces another, allowing the chain to continue until termination."
+      },
+      {
+        "question": "Explain why radical substitution of propane with $\\mathrm{Cl_2}$ produces a mixture of products.",
+        "markscheme": "Propane ($\\mathrm{CH_3CH_2CH_3}$) has two types of C-H bonds: primary (C1 and C3: 6 equivalent H atoms) and secondary (C2: 2 H atoms). The chlorine radical can abstract any hydrogen, so substitution can occur at C1 or C2. At C1: gives 1-chloropropane ($\\mathrm{CH_3CH_2CH_2Cl}$). At C2: gives 2-chloropropane ($\\mathrm{CH_3CHClCH_3}$). Furthermore, once one halogen is introduced, further substitution of the same molecule can occur (di-, tri-, tetrachlorination), giving a range of polyhalogenated products. The lack of selectivity of radical reactions makes them poor for the synthesis of a single pure product."
+      }
+    ]
+  },
+  {
+    "id": "R3.4",
+    "unit": 6,
+    "title": "Electron-pair sharing reactions",
+    "hl": "Some HL",
+    "objectives": [
+      "Recognize nucleophiles in chemical reactions.",
+      "Deduce equations with descriptions and explanations of nucleophilic substitution reactions.",
+      "Explain heterolytic fission with equations.",
+      "Recognize electrophiles in chemical reactions.",
+      "Deduce equations for reactions of alkenes with water, halogens and hydrogen halides.",
+      "Apply Lewis acid-base theory to identify the role of reacting species (Additional HL).",
+      "Describe and explain the mechanisms of nucleophilic substitution in primary and tertiary halogenoalkanes (Additional HL).",
+      "Describe and explain the mechanisms of electrophilic addition to symmetrical and unsymmetrical alkenes (Additional HL)."
+    ],
+    "summary": "In electron-pair sharing (polar) reactions, both electrons in a bond are moved together (heterolytic fission), producing ions. A nucleophile is an electron-pair donor that attacks electron-deficient (positively charged or partially positive) centres; it is a Lewis base. Examples include $\\mathrm{OH^-}$, CN-, $\\mathrm{NH_3}$, and $\\mathrm{H_2O}$. An electrophile is an electron-pair acceptor; it is a Lewis acid. Examples include $\\mathrm{H^+}$, $\\mathrm{Br_2}$, carbocations (R+), and +NO2.\n\nNucleophilic substitution (SN) reactions involve a nucleophile attacking a carbon bearing a leaving group. In halogenoalkanes, the C-X bond is polarised (carbon is δ+) due to the greater electronegativity of the halogen. The nucleophile replaces the halogen (the leaving group). Example: $\\mathrm{CH_3CH_2Br + OH^- \\rightarrow CH_3CH_2OH + Br^-}$. The reaction rate depends on the identity of the leaving group: C-I is weaker than C-Br < C-Cl < C-F, so iodide is the best leaving group.\n\nAt the Additional Higher Level, two mechanisms operate for halogenoalkanes. SN2 (bimolecular nucleophilic substitution): the nucleophile attacks the carbon from the back as the leaving group departs simultaneously (concerted mechanism); $\\text{rate} = k[\\mathrm{RX}][\\mathrm{Nu}]$; favoured for primary halogenoalkanes in polar aprotic solvents; results in inversion of configuration. SN1 (unimolecular nucleophilic substitution): the halide first ionises to form a carbocation intermediate; then the nucleophile attacks the flat carbocation; $\\text{rate} = k[\\mathrm{RX}]$; favoured for tertiary halogenoalkanes (more stable tertiary carbocations) in polar protic solvents; gives a racemic mixture.\n\nElectrophilic addition reactions occur with alkenes because the high electron density of the C=C double bond attracts electrophiles. Examples: $\\mathrm{Br_2}$(aq) adds across the double bond (decolorisation of bromine water is a test for unsaturation); $\\mathrm{HBr}$ adds to give bromoalkanes; $\\mathrm{H_2O}$ adds (in acidic conditions) to give alcohols. For unsymmetrical alkenes, Markovnikov's rule applies: the electrophile ($\\mathrm{H^+}$ or the δ+ end of HX) adds to the carbon with more hydrogen atoms, as this produces the more stable (more substituted) carbocation intermediate. The Lewis acid-base model (HL) generalises nucleophiles as Lewis bases and electrophiles as Lewis acids, with coordinate bond formation in complex ion chemistry.",
+    "quiz": [
+      {
+        "question": "Explain, with reference to electron-pair movement using curly arrows, the mechanism of nucleophilic substitution of bromoethane with hydroxide ions.",
+        "markscheme": "Bromoethane: the C-Br bond is polar (C is δ+, Br is δ-) because Br is more electronegative than C. $\\mathrm{OH^-}$(aq) is a nucleophile (has lone pairs, electron-pair donor). Mechanism (SN2): $\\mathrm{OH^-}$ attacks the δ+ carbon from the back at 180° to the C-Br bond; a curly arrow from the lone pair of $\\mathrm{OH^-}$ goes to the carbon; simultaneously, another curly arrow from the C-Br bond goes to Br; the C-O bond forms as the C-Br bond breaks. Products: $\\mathrm{CH_3CH_2OH}$ + $\\mathrm{Br^-}$. The transition state is pentacoordinate. Rate = k[$\\mathrm{CH_3CH_2Br}$][$\\mathrm{OH^-}$] (bimolecular)."
+      },
+      {
+        "question": "Describe the mechanism of the reaction between ethene and bromine water, explaining why bromine water is decolourised.",
+        "markscheme": "Ethene ($\\mathrm{CH_2{=}CH_2}$) has a high-density π electron cloud above and below the C=C bond. When $\\mathrm{Br_2}$ approaches, the electron-rich C=C induces a dipole in $\\mathrm{Br_2}$ (δ+Br-Br δ-). The δ+ end of $\\mathrm{Br_2}$ is the electrophile. Mechanism (electrophilic addition): the π electrons attack the δ+Br; a curly arrow from C=C to Br; the Br-Br bond breaks heterolytically (curly arrow to $\\mathrm{Br^-}$); a carbocation intermediate (bromonium ion or carbocation) forms; $\\mathrm{Br^-}$ then attacks the carbocation. Product: BrCH2CH2Br (1,2-dibromoethane, a colourless liquid). The orange/yellow colour of $\\mathrm{Br_2}$(aq) disappears because $\\mathrm{Br_2}$ is consumed."
+      },
+      {
+        "question": "Apply Markovnikov's rule to predict the major product of the addition of $\\mathrm{HBr}$ to propene ($\\mathrm{CH_3CH{=}CH_2}$), and explain the reasoning in terms of carbocation stability.",
+        "markscheme": "Markovnikov's rule: $\\mathrm{H^+}$ (electrophile) adds to the carbon with more H atoms. In propene (CH3-CH=CH2): C1 (=CH2) has 2 H; C2 (=CH-) has 1 H. $\\mathrm{H^+}$ adds to C1, forming a secondary carbocation on C2: CH3-CH+(CH3) actually... $\\mathrm{H^+}$ adds to C1 to give CH3-C+(H)-CH3 (secondary carbocation). Alternative: $\\mathrm{H^+}$ adds to C2 giving CH3-CH+-CH2- (primary carbocation). The secondary carbocation is more stable (two alkyl groups donate electron density, stabilising the positive charge) than the primary carbocation (one alkyl group). Therefore the predominant product is 2-bromopropane ($\\mathrm{CH_3CHBrCH_3}$), not 1-bromopropane."
+      },
+      {
+        "question": "Apply Lewis acid-base theory to explain the reaction between $\\mathrm{BF_3}$ and $\\mathrm{NH_3}$.",
+        "markscheme": "Lewis acid: $\\mathrm{BF_3}$ has an incomplete octet — boron has only 6 electrons in its outer shell and is electron deficient. $\\mathrm{BF_3}$ is a Lewis acid (electron-pair acceptor). Lewis base: $\\mathrm{NH_3}$ has a lone pair of electrons on nitrogen. $\\mathrm{NH_3}$ is a Lewis base (electron-pair donor). Reaction: $\\mathrm{NH_3}$ donates its lone pair to the empty orbital on B in $\\mathrm{BF_3}$, forming a coordinate (dative) bond. Product: F3B←$\\mathrm{NH_3}$ (an adduct). The formation of this new coordinate bond releases energy, making the reaction exothermic. This reaction exemplifies the Lewis acid-base theory, which is more general than the Bronsted-Lowry theory as it does not require proton transfer."
+      }
+    ]
+  }
+]
