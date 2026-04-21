@@ -263,7 +263,7 @@ function renderSearchResults(query) {
   const resEl = document.getElementById('search-results');
   if (!resEl) return;
   if (!query || !query.trim()) {
-    resEl.innerHTML = '<div class="search-empty">Type to search topics, objectives, and vocabulary across all subjects.</div>';
+    resEl.innerHTML = '';
     SEARCH_LAST_RESULTS = [];
     return;
   }
@@ -405,10 +405,18 @@ function renderMarkdown(src) {
   const lines = src.replace(/\r\n/g, '\n').split('\n');
   const out = [];
   let i = 0;
-  const inline = (t) =>
-    esc(t)
+  const inline = (t) => {
+    // Protect math spans from markdown substitution
+    const slots = [];
+    const guarded = esc(t).replace(
+      /\$\$[\s\S]+?\$\$|\\\[[\s\S]+?\\\]|\$[^$\n]+?\$|\\\([^)]+?\\\)/g,
+      m => { slots.push(m); return '\x00' + (slots.length - 1) + '\x00'; }
+    );
+    return guarded
       .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
-      .replace(/(?<!\*)\*([^*\n]+?)\*(?!\*)/g, '<em>$1</em>');
+      .replace(/(?<!\*)\*([^*\n]+?)\*(?!\*)/g, '<em>$1</em>')
+      .replace(/\x00(\d+)\x00/g, (_, i) => slots[+i]);
+  };
   while (i < lines.length) {
     const line = lines[i];
     if (/^\s*$/.test(line)) { i++; continue; }
@@ -563,7 +571,7 @@ function renderTopic(key, id) {
   quizEl.innerHTML = (c.quiz || []).map((q, i) => `
     <div class="q">
       <div class="q-num">Question ${String(i + 1).padStart(2, '0')}</div>
-      <p class="q-text">${escapeHtml(q.question)}</p>
+      <div class="q-text">${renderMarkdown(q.question)}</div>
       <button class="q-toggle" data-i="${i}">Show markscheme</button>
       <div class="q-mark" data-i="${i}">
         <span class="label">Markscheme</span>

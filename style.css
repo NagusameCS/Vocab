@@ -735,6 +735,8 @@ main {
   margin: 0 0 14px;
   line-height: 1.55;
 }
+.q-text p { margin: 0; }
+.q-text p + p { margin-top: 8px; }
 .q-toggle, .ghost {
   background: transparent;
   color: var(--muted);
