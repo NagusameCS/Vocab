@@ -52,10 +52,9 @@ a:hover { color: #fff; }
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   max-width: var(--maxw);
   margin: 0 auto;
-  padding: 20px 32px 8px;
+  padding: 18px 32px 12px;
   font-size: 14px;
   letter-spacing: .04em;
   gap: 16px;
@@ -68,86 +67,87 @@ a:hover { color: #fff; }
 .brand { font-weight: 500; color: var(--text); letter-spacing: .08em; }
 .brand .dot { color: var(--muted); margin: 0 4px; }
 .brand .muted { color: var(--muted); font-weight: 300; }
-.nav { display: flex; align-items: center; gap: 2px; }
+.nav { display: flex; align-items: center; gap: 2px; flex: 1; min-width: 0; overflow: hidden; white-space: nowrap; transition: opacity 0.25s ease; }
 .nav a { color: var(--muted); padding: 0 6px; }
 .nav a.active { color: var(--text); }
 .nav a:hover { color: var(--text); }
 .nav .sep { color: var(--line); margin: 0 4px; }
+.top.search-open .nav { opacity: 0; pointer-events: none; }
 
-/* Search — inline expanding bar */
-.search-inline {
-  position: absolute;
-  right: 32px;
-  top: 50%;
-  transform: translateY(-50%);
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  overflow: hidden;
-  width: 28px;
-  transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
-.top.search-open .search-inline {
-  width: calc(100% - 64px);
-}
-.search-inline::after {
+/* ── Search ── */
+
+/* Underline sweeps left → right when search opens */
+.top::after {
   content: '';
   position: absolute;
-  bottom: -8px;
-  left: 0;
-  right: 0;
+  bottom: 0;
+  left: 32px;
+  right: 32px;
   height: 1px;
   background: var(--line);
-  transform-origin: left center;
   transform: scaleX(0);
-  transition: transform 0.35s ease 0.15s;
+  transform-origin: left center;
+  transition: transform 0.42s cubic-bezier(0.4, 0, 0.2, 1) 0.06s;
+  pointer-events: none;
 }
-.top.search-open .search-inline::after {
-  transform: scaleX(1);
-}
+.top.search-open::after { transform: scaleX(1); }
 
+/* Trigger icon — normal flex child at the far right */
 .search-trigger {
+  flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 28px;
   height: 28px;
-  flex-shrink: 0;
   border: none;
   background: transparent;
   color: var(--muted);
   cursor: pointer;
-  transition: color .15s ease;
   padding: 0;
+  position: relative;
+  z-index: 3;
+  /* transition handles both the fly-left (open) and fly-right (close) */
+  transition: color 0.15s ease, transform 0.42s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .search-trigger:hover { color: var(--text); }
-.search-trigger svg { display: block; }
+.search-trigger svg { display: block; pointer-events: none; }
+
+/* Input overlay — sits over the nav space, revealed after icon has flown */
+.search-input-wrap {
+  position: absolute;
+  left: calc(32px + 28px + 12px);
+  right: calc(32px + 28px + 12px);
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.18s ease 0.32s;
+}
+.top.search-open .search-input-wrap {
+  opacity: 1;
+  pointer-events: auto;
+}
 
 #search-input {
-  flex: 1;
-  min-width: 0;
+  width: 100%;
   border: none;
   background: transparent;
   color: var(--text);
   font-family: inherit;
   font-size: 14px;
   outline: none;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.18s ease 0.28s;
-}
-.top.search-open #search-input {
-  opacity: 1;
-  pointer-events: auto;
+  padding: 0;
 }
 #search-input::placeholder { color: var(--muted); }
 
-/* Search results dropdown */
+/* Results dropdown */
 .search-results-dropdown {
   position: fixed;
   left: 50%;
   transform: translateX(-50%);
-  top: 52px;
+  top: 54px;
   width: min(620px, calc(100vw - 32px));
   max-height: 60vh;
   overflow-y: auto;
@@ -163,7 +163,7 @@ a:hover { color: #fff; }
 .search-backdrop-inline {
   position: fixed;
   inset: 0;
-  top: 52px;
+  top: 54px;
   z-index: 499;
   background: rgba(0,0,0,0.45);
 }

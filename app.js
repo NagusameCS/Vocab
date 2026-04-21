@@ -309,23 +309,32 @@ function setActiveResult(i) {
 
 function openSearch() {
   const topBar = document.getElementById('top-bar');
+  const trigger = document.getElementById('search-trigger');
   const inp = document.getElementById('search-input');
   const results = document.getElementById('search-results');
   const backdrop = document.getElementById('search-backdrop-inline');
-  if (!topBar || !inp) return;
+  if (!topBar || !trigger || !inp) return;
+  // Fly the icon: compute how far left it needs to travel to reach the header's left padding
+  const topRect = topBar.getBoundingClientRect();
+  const trigRect = trigger.getBoundingClientRect();
+  const dx = (topRect.left + 32) - trigRect.left;
+  trigger.style.transform = `translateX(${dx}px)`;
   topBar.classList.add('search-open');
   if (results) results.classList.remove('hidden');
   if (backdrop) backdrop.classList.remove('hidden');
-  setTimeout(() => { inp.focus(); }, 420);
+  setTimeout(() => { inp.focus(); }, 400);
   renderSearchResults(inp.value);
 }
 
 function closeSearch() {
   const topBar = document.getElementById('top-bar');
+  const trigger = document.getElementById('search-trigger');
   const inp = document.getElementById('search-input');
   const results = document.getElementById('search-results');
   const backdrop = document.getElementById('search-backdrop-inline');
   if (!topBar) return;
+  // Clearing the inline transform lets the CSS transition animate the icon flying back right
+  if (trigger) trigger.style.transform = '';
   topBar.classList.remove('search-open');
   if (results) results.classList.add('hidden');
   if (backdrop) backdrop.classList.add('hidden');
