@@ -308,30 +308,41 @@ function setActiveResult(i) {
 }
 
 function openSearch() {
-  const ov = document.getElementById('search-overlay');
+  const topBar = document.getElementById('top-bar');
   const inp = document.getElementById('search-input');
-  if (!ov || !inp) return;
-  ov.classList.remove('hidden');
-  document.body.classList.add('search-open');
-  setTimeout(() => { inp.focus(); inp.select(); }, 10);
+  const results = document.getElementById('search-results');
+  const backdrop = document.getElementById('search-backdrop-inline');
+  if (!topBar || !inp) return;
+  topBar.classList.add('search-open');
+  if (results) results.classList.remove('hidden');
+  if (backdrop) backdrop.classList.remove('hidden');
+  setTimeout(() => { inp.focus(); }, 420);
   renderSearchResults(inp.value);
 }
 
 function closeSearch() {
-  const ov = document.getElementById('search-overlay');
-  if (!ov) return;
-  ov.classList.add('hidden');
-  document.body.classList.remove('search-open');
+  const topBar = document.getElementById('top-bar');
+  const inp = document.getElementById('search-input');
+  const results = document.getElementById('search-results');
+  const backdrop = document.getElementById('search-backdrop-inline');
+  if (!topBar) return;
+  topBar.classList.remove('search-open');
+  if (results) results.classList.add('hidden');
+  if (backdrop) backdrop.classList.add('hidden');
+  if (inp) { inp.value = ''; inp.blur(); }
 }
 
 function initSearch() {
   const trigger = document.getElementById('search-trigger');
   const input = document.getElementById('search-input');
-  const overlay = document.getElementById('search-overlay');
-  if (!trigger || !input || !overlay) return;
+  const backdrop = document.getElementById('search-backdrop-inline');
+  if (!trigger || !input) return;
 
-  trigger.addEventListener('click', openSearch);
-  overlay.querySelectorAll('[data-search-close]').forEach(el => el.addEventListener('click', closeSearch));
+  trigger.addEventListener('click', () => {
+    const topBar = document.getElementById('top-bar');
+    if (topBar && topBar.classList.contains('search-open')) { closeSearch(); } else { openSearch(); }
+  });
+  if (backdrop) backdrop.addEventListener('click', closeSearch);
 
   let debounceT;
   input.addEventListener('input', () => {
@@ -371,8 +382,9 @@ function initSearch() {
     } else if ((e.key === 'k' || e.key === 'K') && (e.metaKey || e.ctrlKey)) {
       e.preventDefault();
       openSearch();
-    } else if (e.key === 'Escape' && !document.getElementById('search-overlay').classList.contains('hidden')) {
-      closeSearch();
+    } else if (e.key === 'Escape') {
+      const topBar = document.getElementById('top-bar');
+      if (topBar && topBar.classList.contains('search-open')) closeSearch();
     }
   });
 }
