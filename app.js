@@ -567,6 +567,43 @@ function renderTopic(key, id) {
   objList.innerHTML = (c.objectives || []).map(o => `<li>${escapeHtml(o)}</li>`).join('');
   renderMath(objList);
 
+  // Stop any TTS from a previous topic
+  ttsStop();
+
+  // Add TTS button to summary block
+  if ('speechSynthesis' in window) {
+    const summarySection = summaryEl.parentElement;
+    const h2 = summarySection && summarySection.querySelector('h2');
+    if (h2) {
+      const blockHead = document.createElement('div');
+      blockHead.className = 'block-head';
+      h2.replaceWith(blockHead);
+      blockHead.appendChild(h2);
+      const btn = createTTSBtn(summaryEl);
+      if (btn) blockHead.appendChild(btn);
+    }
+  }
+
+  // Add TTS button to objectives (inside the <details><summary> row)
+  if ('speechSynthesis' in window) {
+    const objSummaryEl = document.querySelector('.obj-summary');
+    if (objSummaryEl) {
+      const chevron = objSummaryEl.querySelector('.obj-chevron');
+      const rightWrap = document.createElement('div');
+      rightWrap.className = 'obj-right-wrap';
+      const objBtn = createTTSBtn(objList);
+      if (objBtn) rightWrap.appendChild(objBtn);
+      if (chevron) {
+        chevron.replaceWith(rightWrap);
+        rightWrap.appendChild(chevron);
+      } else {
+        objSummaryEl.appendChild(rightWrap);
+      }
+      // Prevent TTS button click from toggling the details
+      if (objBtn) objBtn.addEventListener('click', e => e.stopPropagation());
+    }
+  }
+
   const quizEl = document.getElementById('t-quiz');
   quizEl.innerHTML = (c.quiz || []).map((q, i) => `
     <div class="q">
@@ -654,6 +691,7 @@ function show(viewId) {
 }
 
 async function route() {
+  ttsStop();
   const h = window.location.hash || '#/';
   // #/<subject>/<id>
   const topicMatch = h.match(/^#\/([a-z]+)\/(.+)$/);
@@ -771,6 +809,328 @@ function initOrbitSocials() {
   requestAnimationFrame(animate);
 }
 
+// ============================================================
+// SETTINGS
+// ============================================================
+const SETTINGS_KEY = 'vocab_reader_v1';
+const DEFAULT_SETTINGS = {
+  theme: 'dark',
+  fontSize: 'md',
+  fontFamily: 'inter',
+  lineHeight: 'normal',
+  readingWidth: 'medium',
+  letterSpacing: 'normal',
+  lineFocus: false,
+  ttsRate: 1.0,
+  ttsVoice: '',
+};
+
+function loadSettings() {
+  try {
+    return Object.assign({}, DEFAULT_SETTINGS, JSON.parse(localStorage.getItem(SETTINGS_KEY) || '{}'));
+  } catch { return Object.assign({}, DEFAULT_SETTINGS); }
+}
+
+function saveSettings(s) {
+  try { localStorage.setItem(SETTINGS_KEY, JSON.stringify(s)); } catch {}
+}
+
+let SETTINGS = loadSettings();
+
+function applySettings(s) {
+  const root = document.documentElement;
+  // Theme
+  root.classList.toggle('light-mode', s.theme === 'light');
+  root.classList.toggle('sepia-mode', s.theme === 'sepia');
+  // Font size
+  const fontSizes = { sm: '13px', md: '15px', lg: '17px', xl: '19px' };
+  root.style.setProperty('--reader-font-size', fontSizes[s.fontSize] || '15px');
+  // Font family
+  const fonts = {
+    inter: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif",
+    serif: "Georgia, 'Times New Roman', serif",
+    mono: "'JetBrains Mono', ui-monospace, monospace",
+  };
+  root.style.setProperty('--reader-font', fonts[s.fontFamily] || fonts.inter);
+  // Line height
+  const lineHeights = { compact: '1.5', normal: '1.75', relaxed: '2.1' };
+  root.style.setProperty('--reader-line-height', lineHeights[s.lineHeight] || '1.75');
+  // Reading width
+  const widths = { narrow: '680px', medium: '920px', wide: '1100px' };
+  root.style.setProperty('--maxw', widths[s.readingWidth] || '920px');
+  // Letter spacing
+  const spacings = { normal: '0em', wide: '0.03em' };
+  root.style.setProperty('--reader-letter-spacing', spacings[s.letterSpacing] || '0em');
+  // Line focus
+  root.classList.toggle('line-focus', !!s.lineFocus);
+}
+
+function initSettingsPanel() {
+  applySettings(SETTINGS);
+  const trigger = document.getElementById('settings-trigger');
+  const panel = document.getElementById('settings-panel');
+  const backdrop = document.getElementById('settings-backdrop');
+  if (!trigger || !panel || !backdrop) return;
+
+  function openPanel() {
+    panel.classList.add('open');
+    backdrop.classList.add('open');
+    trigger.classList.add('open');
+    trigger.setAttribute('aria-expanded', 'true');
+  }
+  function closePanel() {
+    panel.classList.remove('open');
+    backdrop.classList.remove('open');
+    trigger.classList.remove('open');
+    trigger.setAttribute('aria-expanded', 'false');
+  }
+
+  trigger.addEventListener('click', () => {
+    if (panel.classList.contains('open')) closePanel(); else openPanel();
+  });
+  backdrop.addEventListener('click', closePanel);
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && panel.classList.contains('open')) closePanel();
+  });
+
+  // Chip group helper
+  function initChips(id, key) {
+    const container = document.getElementById(id);
+    if (!container) return;
+    container.querySelectorAll('.sp-chip').forEach(btn => {
+      btn.classList.toggle('active', btn.dataset.val === String(SETTINGS[key]));
+    });
+    container.addEventListener('click', e => {
+      const btn = e.target.closest('.sp-chip');
+      if (!btn) return;
+      container.querySelectorAll('.sp-chip').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      SETTINGS[key] = btn.dataset.val;
+      saveSettings(SETTINGS);
+      applySettings(SETTINGS);
+    });
+  }
+
+  initChips('sp-theme', 'theme');
+  initChips('sp-fontsize', 'fontSize');
+  initChips('sp-font', 'fontFamily');
+  initChips('sp-lineh', 'lineHeight');
+  initChips('sp-width', 'readingWidth');
+  initChips('sp-lspacing', 'letterSpacing');
+
+  // Line focus toggle
+  const lfToggle = document.getElementById('sp-linefocus');
+  if (lfToggle) {
+    lfToggle.setAttribute('aria-checked', String(!!SETTINGS.lineFocus));
+    lfToggle.addEventListener('click', () => {
+      SETTINGS.lineFocus = !SETTINGS.lineFocus;
+      lfToggle.setAttribute('aria-checked', String(SETTINGS.lineFocus));
+      saveSettings(SETTINGS);
+      applySettings(SETTINGS);
+    });
+  }
+
+  // TTS rate slider
+  const ttsRateSlider = document.getElementById('sp-tts-rate');
+  const ttsRateLabel = document.getElementById('sp-tts-rate-label');
+  if (ttsRateSlider && ttsRateLabel) {
+    ttsRateSlider.value = SETTINGS.ttsRate;
+    ttsRateLabel.textContent = parseFloat(SETTINGS.ttsRate).toFixed(1) + '\xd7';
+    ttsRateSlider.addEventListener('input', () => {
+      SETTINGS.ttsRate = parseFloat(ttsRateSlider.value);
+      ttsRateLabel.textContent = SETTINGS.ttsRate.toFixed(1) + '\xd7';
+      saveSettings(SETTINGS);
+      // If currently playing, restart with new rate
+      if (TTS.active && TTS.targetEl) {
+        const el = TTS.targetEl;
+        const btn = TTS.btnEl;
+        ttsStop();
+        ttsPlay(el, btn);
+      }
+    });
+  }
+
+  // TTS voice selector (populate asynchronously)
+  const voiceSel = document.getElementById('sp-tts-voice');
+  const ttsGroup = document.getElementById('sp-tts-group');
+  if ('speechSynthesis' in window) {
+    if (ttsGroup) ttsGroup.style.display = '';
+    if (voiceSel) {
+      function populateVoices() {
+        const voices = window.speechSynthesis.getVoices().filter(v => v.lang.startsWith('en'));
+        if (!voices.length) return;
+        voiceSel.innerHTML = '<option value="">Default</option>' +
+          voices.map(v =>
+            `<option value="${escapeHtml(v.name)}"${v.name === SETTINGS.ttsVoice ? ' selected' : ''}>${escapeHtml(v.name)}</option>`
+          ).join('');
+      }
+      populateVoices();
+      window.speechSynthesis.addEventListener('voiceschanged', populateVoices);
+      voiceSel.addEventListener('change', () => {
+        SETTINGS.ttsVoice = voiceSel.value;
+        saveSettings(SETTINGS);
+      });
+    }
+  }
+}
+
+// ============================================================
+// TTS — word-by-word highlight
+// ============================================================
+const TTS = {
+  active: false,
+  utterance: null,
+  wordSpans: [],
+  currentHighlight: null,
+  targetEl: null,
+  btnEl: null,
+};
+
+const TTS_ICON_PLAY = `<svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>`;
+const TTS_ICON_STOP = `<svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="6" width="12" height="12" rx="1"/></svg>`;
+
+function setTTSBtnState(btn, playing) {
+  if (!btn) return;
+  btn.classList.toggle('playing', playing);
+  btn.innerHTML = playing
+    ? TTS_ICON_STOP + '<span>Stop</span>'
+    : TTS_ICON_PLAY + '<span>Read</span>';
+}
+
+function ttsUnwrap(el) {
+  if (!el) return;
+  el.querySelectorAll('.tts-word').forEach(s => s.replaceWith(document.createTextNode(s.textContent)));
+  el.normalize();
+}
+
+function buildTTSContent(el) {
+  // Collect text nodes, skipping .katex / script / style subtrees
+  const segments = [];
+  const walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT, {
+    acceptNode(node) {
+      if (node.parentElement && node.parentElement.closest('.katex, script, style'))
+        return NodeFilter.FILTER_REJECT;
+      return NodeFilter.FILTER_ACCEPT;
+    },
+  });
+  let node;
+  while ((node = walker.nextNode())) segments.push({ node, text: node.nodeValue });
+
+  let utteranceText = '';
+  const wordSpans = [];
+
+  segments.forEach(({ node: tn, text }) => {
+    const segStart = utteranceText.length;
+    utteranceText += text;
+    const parent = tn.parentNode;
+    if (!parent) return;
+
+    const frag = document.createDocumentFragment();
+    let pos = 0;
+    const re = /\S+/g;
+    let m;
+    while ((m = re.exec(text)) !== null) {
+      if (m.index > pos) frag.appendChild(document.createTextNode(text.slice(pos, m.index)));
+      const span = document.createElement('span');
+      span.className = 'tts-word';
+      const wStart = segStart + m.index;
+      span.dataset.start = wStart;
+      span.dataset.end = wStart + m[0].length;
+      span.textContent = m[0];
+      frag.appendChild(span);
+      wordSpans.push({ span, start: wStart, end: wStart + m[0].length });
+      pos = m.index + m[0].length;
+    }
+    if (pos < text.length) frag.appendChild(document.createTextNode(text.slice(pos)));
+    parent.replaceChild(frag, tn);
+  });
+
+  return { utteranceText, wordSpans };
+}
+
+function findWordSpan(wordSpans, charIndex) {
+  let lo = 0, hi = wordSpans.length - 1;
+  while (lo <= hi) {
+    const mid = (lo + hi) >> 1;
+    const ws = wordSpans[mid];
+    if (charIndex >= ws.end) lo = mid + 1;
+    else if (charIndex < ws.start) hi = mid - 1;
+    else return ws;
+  }
+  // Nearest fallback
+  return wordSpans[lo] || wordSpans[lo - 1] || null;
+}
+
+function ttsStop() {
+  if ('speechSynthesis' in window) window.speechSynthesis.cancel();
+  if (TTS.currentHighlight) { TTS.currentHighlight.classList.remove('tts-active'); TTS.currentHighlight = null; }
+  if (TTS.targetEl) ttsUnwrap(TTS.targetEl);
+  if (TTS.btnEl) setTTSBtnState(TTS.btnEl, false);
+  TTS.active = false;
+  TTS.utterance = null;
+  TTS.wordSpans = [];
+  TTS.targetEl = null;
+  TTS.btnEl = null;
+}
+
+function ttsPlay(el, btn) {
+  if (!('speechSynthesis' in window)) return;
+  // Toggle off if same element is already playing
+  if (TTS.active && TTS.targetEl === el) { ttsStop(); return; }
+  if (TTS.active) ttsStop();
+
+  // Open any collapsed <details> ancestors so content is reachable
+  let details = el.closest('details');
+  while (details) {
+    if (!details.open) details.open = true;
+    details = details.parentElement && details.parentElement.closest('details');
+  }
+
+  const { utteranceText, wordSpans } = buildTTSContent(el);
+  if (!utteranceText.trim()) return;
+
+  TTS.active = true;
+  TTS.targetEl = el;
+  TTS.btnEl = btn;
+  TTS.wordSpans = wordSpans;
+  setTTSBtnState(btn, true);
+
+  const utt = new SpeechSynthesisUtterance(utteranceText);
+  utt.rate = parseFloat(SETTINGS.ttsRate) || 1.0;
+
+  if (SETTINGS.ttsVoice) {
+    const voice = window.speechSynthesis.getVoices().find(v => v.name === SETTINGS.ttsVoice);
+    if (voice) utt.voice = voice;
+  }
+
+  utt.onboundary = (e) => {
+    if (e.name !== 'word') return;
+    if (TTS.currentHighlight) { TTS.currentHighlight.classList.remove('tts-active'); TTS.currentHighlight = null; }
+    const ws = findWordSpan(wordSpans, e.charIndex);
+    if (ws) {
+      ws.span.classList.add('tts-active');
+      TTS.currentHighlight = ws.span;
+      ws.span.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+    }
+  };
+  utt.onend = () => ttsStop();
+  utt.onerror = (e) => { if (e.error !== 'interrupted') ttsStop(); };
+
+  TTS.utterance = utt;
+  window.speechSynthesis.speak(utt);
+}
+
+function createTTSBtn(targetEl) {
+  if (!('speechSynthesis' in window)) return null;
+  const btn = document.createElement('button');
+  btn.className = 'tts-btn';
+  btn.setAttribute('aria-label', 'Read aloud');
+  btn.title = 'Read aloud';
+  setTTSBtnState(btn, false);
+  btn.addEventListener('click', () => ttsPlay(targetEl, btn));
+  return btn;
+}
+
 // ------- Init -------
 function init() {
   renderLanding();
@@ -778,6 +1138,7 @@ function init() {
   route();
   setTimeout(initOrbitSocials, 400);
   initSearch();
+  initSettingsPanel();
   // Build search index in background after first paint
   setTimeout(() => { buildSearchIndex(); }, 200);
   // Reinit orbit on resize (handle mobile <-> desktop)

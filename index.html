@@ -13,6 +13,15 @@
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" integrity="sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg" crossorigin="anonymous"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="style.css" />
+<script>
+(function(){
+  try{
+    var s=JSON.parse(localStorage.getItem('vocab_reader_v1')||'{}');
+    if(s.theme==='light')document.documentElement.classList.add('light-mode');
+    else if(s.theme==='sepia')document.documentElement.classList.add('sepia-mode');
+  }catch(e){}
+})();
+</script>
 </head>
 <body>
   <header class="top" id="top-bar">
@@ -22,6 +31,11 @@
     </div>
     <button id="search-trigger" class="search-trigger" aria-label="Search" title="Search (press /)">
       <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"></circle><path d="m21 21-4.35-4.35"></path></svg>
+    </button>
+    <button id="settings-trigger" class="settings-trigger" aria-label="Reading settings" title="Reading settings" aria-expanded="false">
+      <span class="burg"></span>
+      <span class="burg"></span>
+      <span class="burg"></span>
     </button>
   </header>
 
@@ -129,6 +143,97 @@
       </article>
     </section>
   </main>
+
+  <!-- Settings panel -->
+  <div id="settings-backdrop" class="settings-backdrop"></div>
+  <aside id="settings-panel" class="settings-panel" role="dialog" aria-modal="true" aria-label="Reading settings">
+    <div class="sp-inner">
+      <div class="sp-head">
+        <span class="sp-title">Reading settings</span>
+      </div>
+      <div class="sp-body">
+
+        <div class="sp-group">
+          <div class="sp-label">Theme</div>
+          <div class="sp-chips" id="sp-theme">
+            <button class="sp-chip" data-val="dark">Dark</button>
+            <button class="sp-chip" data-val="light">Light</button>
+            <button class="sp-chip" data-val="sepia">Sepia</button>
+          </div>
+        </div>
+
+        <div class="sp-group">
+          <div class="sp-label">Font size</div>
+          <div class="sp-chips" id="sp-fontsize">
+            <button class="sp-chip sp-chip-sz" data-val="sm" style="font-size:11px">A</button>
+            <button class="sp-chip sp-chip-sz" data-val="md" style="font-size:13px">A</button>
+            <button class="sp-chip sp-chip-sz" data-val="lg" style="font-size:15px">A</button>
+            <button class="sp-chip sp-chip-sz" data-val="xl" style="font-size:17px">A</button>
+          </div>
+        </div>
+
+        <div class="sp-group">
+          <div class="sp-label">Typeface</div>
+          <div class="sp-chips" id="sp-font">
+            <button class="sp-chip" data-val="inter">Sans</button>
+            <button class="sp-chip" data-val="serif" style="font-family:Georgia,serif">Serif</button>
+            <button class="sp-chip" data-val="mono" style="font-family:'JetBrains Mono',monospace">Mono</button>
+          </div>
+        </div>
+
+        <div class="sp-group">
+          <div class="sp-label">Line spacing</div>
+          <div class="sp-chips" id="sp-lineh">
+            <button class="sp-chip" data-val="compact">Compact</button>
+            <button class="sp-chip" data-val="normal">Normal</button>
+            <button class="sp-chip" data-val="relaxed">Relaxed</button>
+          </div>
+        </div>
+
+        <div class="sp-group">
+          <div class="sp-label">Column width</div>
+          <div class="sp-chips" id="sp-width">
+            <button class="sp-chip" data-val="narrow">Narrow</button>
+            <button class="sp-chip" data-val="medium">Medium</button>
+            <button class="sp-chip" data-val="wide">Wide</button>
+          </div>
+        </div>
+
+        <div class="sp-group">
+          <div class="sp-label">Letter spacing</div>
+          <div class="sp-chips" id="sp-lspacing">
+            <button class="sp-chip" data-val="normal">Normal</button>
+            <button class="sp-chip" data-val="wide">Wide</button>
+          </div>
+        </div>
+
+        <div class="sp-group">
+          <div class="sp-toggle-row">
+            <div>
+              <div class="sp-label" style="margin-bottom:3px">Line focus</div>
+              <div class="sp-hint">Dims surrounding text so you follow one line at a time.</div>
+            </div>
+            <button class="sp-toggle" id="sp-linefocus" role="switch" aria-checked="false">
+              <span class="sp-knob"></span>
+            </button>
+          </div>
+        </div>
+
+        <div class="sp-group" id="sp-tts-group" style="display:none">
+          <div class="sp-label">Read-aloud speed</div>
+          <div class="sp-slider-row">
+            <span class="sp-hint">0.5×</span>
+            <input type="range" id="sp-tts-rate" min="0.5" max="2.5" step="0.1" value="1" class="sp-slider" />
+            <span class="sp-hint">2.5×</span>
+          </div>
+          <div class="sp-rate-display" id="sp-tts-rate-label">1.0×</div>
+          <div class="sp-label" style="margin-top:16px;margin-bottom:8px">Voice</div>
+          <select id="sp-tts-voice" class="sp-select"></select>
+        </div>
+
+      </div>
+    </div>
+  </aside>
 
   <script src="app.js"></script>
 <script data-pplx-inline-edit>
