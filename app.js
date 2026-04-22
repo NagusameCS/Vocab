@@ -1196,6 +1196,154 @@ function createTTSBtn(targetEl) {
   return btn;
 }
 
+// ============================================================
+// WORD DEFINITION TOOLTIP
+// ============================================================
+const DEF_CACHE = new Map();
+
+function getWordAtPoint(x, y) {
+  let range;
+  try {
+    if (document.caretRangeFromPoint) {
+      range = document.caretRangeFromPoint(x, y);
+    } else if (document.caretPositionFromPoint) {
+      const pos = document.caretPositionFromPoint(x, y);
+      if (!pos) return null;
+      range = document.createRange();
+      range.setStart(pos.offsetNode, pos.offset);
+    }
+  } catch { return null; }
+  if (!range || range.startContainer.nodeType !== Node.TEXT_NODE) return null;
+  // Skip math and code
+  if (range.startContainer.parentElement && range.startContainer.parentElement.closest('.katex, code, .tts-btn')) return null;
+  const text = range.startContainer.textContent;
+  const offset = range.startOffset;
+  let start = offset;
+  let end = offset;
+  while (start > 0 && /[a-zA-Z'\-]/.test(text[start - 1])) start--;
+  while (end < text.length && /[a-zA-Z'\-]/.test(text[end])) end++;
+  if (start >= end) return null;
+  const word = text.slice(start, end).replace(/^['-]+|['-]+$/g, '');
+  if (word.length < 3 || /^[\d\-']+$/.test(word)) return null;
+  return word.toLowerCase();
+}
+
+async function fetchDefinition(word) {
+  if (DEF_CACHE.has(word)) return DEF_CACHE.get(word);
+  try {
+    const res = await fetch(
+      'https://api.dictionaryapi.dev/api/v2/entries/en/' + encodeURIComponent(word),
+      { signal: AbortSignal.timeout ? AbortSignal.timeout(4000) : undefined }
+    );
+    if (!res.ok) { DEF_CACHE.set(word, null); return null; }
+    const data = await res.json();
+    const entry = Array.isArray(data) && data[0];
+    if (!entry) { DEF_CACHE.set(word, null); return null; }
+    const meaning = entry.meanings && entry.meanings[0];
+    const defObj = meaning && meaning.definitions && meaning.definitions[0];
+    const result = {
+      word: entry.word || word,
+      phonetic: entry.phonetic || (entry.phonetics && entry.phonetics.find(p => p.text) || {}).text || '',
+      pos: (meaning && meaning.partOfSpeech) || '',
+      def: (defObj && defObj.definition) || null,
+    };
+    DEF_CACHE.set(word, result);
+    return result;
+  } catch {
+    DEF_CACHE.set(word, null);
+    return null;
+  }
+}
+
+function initWordTooltip() {
+  const tip = document.getElementById('word-tooltip');
+  if (!tip) return;
+
+  const termEl = tip.querySelector('.wt-term');
+  const phonEl = tip.querySelector('.wt-phon');
+  const posEl  = tip.querySelector('.wt-pos');
+  const defEl  = tip.querySelector('.wt-def');
+
+  let debounceT = null;
+  let lastWord = null;
+  let mouseX = 0, mouseY = 0;
+
+  function showTip(x, y) {
+    // Smart positioning: prefer below cursor, flip above if near bottom
+    const tw = 272;
+    const th = tip.offsetHeight || 100;
+    const margin = 12;
+    const cursorGap = 22;
+    let left = x - tw / 2;
+    let top = y + cursorGap;
+    if (left + tw + margin > window.innerWidth) left = window.innerWidth - tw - margin;
+    if (left < margin) left = margin;
+    if (top + th + margin > window.innerHeight) top = y - th - 10;
+    tip.style.left = left + 'px';
+    tip.style.top = top + 'px';
+    tip.classList.add('visible');
+    tip.setAttribute('aria-hidden', 'false');
+  }
+
+  function hideTip() {
+    tip.classList.remove('visible');
+    tip.setAttribute('aria-hidden', 'true');
+    lastWord = null;
+  }
+
+  function setLoading(word) {
+    termEl.textContent = word;
+    phonEl.textContent = '';
+    posEl.textContent = '';
+    defEl.innerHTML = '<span class="wt-loading">looking up…</span>';
+  }
+
+  function setResult(r) {
+    termEl.textContent = r.word;
+    phonEl.textContent = r.phonetic || '';
+    posEl.textContent = r.pos || '';
+    defEl.textContent = r.def || '';
+  }
+
+  const CONTENT_SELECTOR = '.prose, .obj-list, .q-text, .q-mark';
+
+  document.addEventListener('mousemove', (e) => {
+    // Only activate inside topic content areas
+    if (!e.target || !e.target.closest || !e.target.closest(CONTENT_SELECTOR)) {
+      clearTimeout(debounceT);
+      hideTip();
+      return;
+    }
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+    clearTimeout(debounceT);
+    debounceT = setTimeout(async () => {
+      const word = getWordAtPoint(mouseX, mouseY);
+      if (!word) { hideTip(); return; }
+      if (word === lastWord) { showTip(mouseX, mouseY); return; }
+      lastWord = word;
+      // Show loading immediately if we'll need to fetch
+      if (!DEF_CACHE.has(word)) {
+        setLoading(word);
+        showTip(mouseX, mouseY);
+      }
+      const result = await fetchDefinition(word);
+      // By the time fetch returns, user may have moved away
+      if (word !== lastWord) return;
+      if (!result || !result.def) { hideTip(); lastWord = null; return; }
+      setResult(result);
+      showTip(mouseX, mouseY);
+    }, 420);
+  });
+
+  // Hide when leaving content areas
+  document.addEventListener('mouseleave', hideTip);
+  document.addEventListener('scroll', hideTip, { capture: true, passive: true });
+
+  // Hide on hash change (navigation)
+  window.addEventListener('hashchange', hideTip);
+}
+
 // ------- Init -------
 function init() {
   renderLanding();
@@ -1204,6 +1352,7 @@ function init() {
   setTimeout(initOrbitSocials, 400);
   initSearch();
   initSettingsPanel();
+  initWordTooltip();
   // Build search index in background after first paint
   setTimeout(() => { buildSearchIndex(); }, 200);
   // Reinit orbit on resize (handle mobile <-> desktop)

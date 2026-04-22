@@ -1160,6 +1160,68 @@ html.light-mode .sp-knob, html.sepia-mode .sp-knob { background: #fff; }
 }
 
 /* ============================================================
+   WORD DEFINITION TOOLTIP
+   ============================================================ */
+.word-tooltip {
+  position: fixed;
+  z-index: 800;
+  max-width: 272px;
+  min-width: 140px;
+  background: var(--bg-elev);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 11px 15px 12px;
+  box-shadow: 0 10px 36px rgba(0,0,0,0.45), 0 2px 8px rgba(0,0,0,0.3);
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(5px);
+  transition: opacity 0.14s ease, transform 0.14s ease;
+  font-size: 13px;
+  line-height: 1.5;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+.word-tooltip.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.wt-word {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin-bottom: 3px;
+}
+.wt-term {
+  font-weight: 600;
+  color: var(--text);
+  font-size: 14px;
+}
+.wt-phon {
+  color: var(--muted);
+  font-size: 11px;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  letter-spacing: 0;
+}
+.wt-pos {
+  font-size: 10px;
+  color: var(--hl);
+  text-transform: uppercase;
+  letter-spacing: .14em;
+  font-style: italic;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+.wt-def {
+  color: var(--text-soft);
+  font-size: 13px;
+  line-height: 1.6;
+}
+.wt-loading {
+  color: var(--muted);
+  font-size: 12px;
+  letter-spacing: .04em;
+}
+
+/* ============================================================
    LINE FOCUS MODE
    ============================================================ */
 html.line-focus .prose p,
