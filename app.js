@@ -68,6 +68,21 @@ const SUBJECTS = {
     desc: 'Tim Kirk Study Guide · 5 themes',
     source: 'Study Guide (Kirk, 2023)',
   },
+  english: {
+    title: 'English A: Language & Literature',
+    tag: 'IB Diploma · English A',
+    sub: 'Examination techniques, language analysis, close reading, essay writing, and prescribed literary works.',
+    content: 'english_content.json',
+    units: {
+      1: 'Examinations & Assessment',
+      2: 'Language & Stylistic Analysis',
+      3: 'Close Reading & Authorial Choice',
+      4: 'Literary Essay Writing',
+      5: 'Prescribed Literary Works',
+    },
+    desc: 'IB English A · 5 units, 30 topics',
+    source: 'Language & Literature (SL/HL)',
+  },
   dt: {
     title: 'Design & Technology',
     tag: 'IB Diploma · D&T',
@@ -90,7 +105,7 @@ const SUBJECTS = {
   },
 };
 
-const SUBJECT_ORDER = ['business', 'chemistry', 'math', 'physics', 'dt'];
+const SUBJECT_ORDER = ['business', 'chemistry', 'english', 'math', 'physics', 'dt'];
 
 let CURRENT_SUBJECT = null;
 let DATA = [];
