@@ -956,16 +956,81 @@ function initSettingsPanel() {
   if ('speechSynthesis' in window) {
     if (ttsGroup) ttsGroup.style.display = '';
     if (voiceSel) {
+      function voiceScore(v) {
+        const n = v.name.toLowerCase();
+        // Microsoft Natural (Edge neural voices) — best quality
+        if (n.includes('natural')) return 0;
+        // Microsoft Online (also high quality)
+        if (n.includes('online') && n.includes('microsoft')) return 1;
+        // Any other Microsoft voice
+        if (n.includes('microsoft')) return 2;
+        // Google voices
+        if (n.includes('google')) return 3;
+        // Everything else (OS built-ins, eSpeak, etc.)
+        return 4;
+      }
+
+      function bestDefaultVoice(voices) {
+        // Pick the top-ranked English voice, preferring en-US
+        const sorted = [...voices].sort((a, b) => {
+          const sd = voiceScore(a) - voiceScore(b);
+          if (sd !== 0) return sd;
+          // Within same tier prefer en-US
+          const aUS = a.lang === 'en-US' ? 0 : 1;
+          const bUS = b.lang === 'en-US' ? 0 : 1;
+          return aUS - bUS;
+        });
+        return sorted[0] || null;
+      }
+
+      let voicesPopulated = false;
       function populateVoices() {
-        const voices = window.speechSynthesis.getVoices().filter(v => v.lang.startsWith('en'));
-        if (!voices.length) return;
-        voiceSel.innerHTML = '<option value="">Default</option>' +
-          voices.map(v =>
-            `<option value="${escapeHtml(v.name)}"${v.name === SETTINGS.ttsVoice ? ' selected' : ''}>${escapeHtml(v.name)}</option>`
+        const all = window.speechSynthesis.getVoices().filter(v => v.lang.startsWith('en'));
+        if (!all.length) return;
+        voicesPopulated = true;
+
+        // Auto-pick a nice default the very first time (no saved preference)
+        if (!SETTINGS.ttsVoice) {
+          const best = bestDefaultVoice(all);
+          if (best) {
+            SETTINGS.ttsVoice = best.name;
+            saveSettings(SETTINGS);
+          }
+        }
+
+        // Group into Natural / Online / Other Microsoft / Other
+        const groups = [
+          { label: 'Natural (Neural)', voices: [] },
+          { label: 'Microsoft Online', voices: [] },
+          { label: 'Microsoft', voices: [] },
+          { label: 'Other', voices: [] },
+        ];
+        all.forEach(v => {
+          groups[voiceScore(v) > 3 ? 3 : voiceScore(v)].voices.push(v);
+        });
+
+        voiceSel.innerHTML = groups
+          .filter(g => g.voices.length)
+          .map(g =>
+            `<optgroup label="${escapeHtml(g.label)}">${
+              g.voices.map(v =>
+                `<option value="${escapeHtml(v.name)}"${v.name === SETTINGS.ttsVoice ? ' selected' : ''}>${escapeHtml(v.name.replace(/^Microsoft\s+/i, '').replace(/\s*Online\s*\(Natural\)/i, ' ✦').replace(/\s*Online/i, ''))}</option>`
+              ).join('')
+            }</optgroup>`
           ).join('');
       }
+
       populateVoices();
       window.speechSynthesis.addEventListener('voiceschanged', populateVoices);
+      // Edge loads voices late — retry a few times if empty
+      if (!voicesPopulated) {
+        let retries = 0;
+        const retryT = setInterval(() => {
+          populateVoices();
+          if (voicesPopulated || ++retries >= 8) clearInterval(retryT);
+        }, 250);
+      }
+
       voiceSel.addEventListener('change', () => {
         SETTINGS.ttsVoice = voiceSel.value;
         saveSettings(SETTINGS);
